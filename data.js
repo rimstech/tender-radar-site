@@ -1,5 +1,5 @@
 window.__RADAR__ = {
-  "generated_at": "2026-10-02T16:00:08+00:00",
+  "generated_at": "2026-10-02T19:01:28+00:00",
   "demo": false,
   "profile": {
     "company": "Portfolio",
@@ -168,7 +168,7 @@ window.__RADAR__ = {
       "zone": "intel",
       "related": [
         {
-          "title": "XRG takes final investment decision on next phase of Azerbaijan’s Absheron gas field - Oil & Gas Middle East",
+          "title": "XRG takes final investment decision on next phase of Azerbaijan’s Absheron gas field - oilandgasmiddleeast.com",
           "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQdDZNUzZDT1Zic05xRUlnQk9FTWI4Wl9fcUx1eWx6Wnk2c3ZDb3l2UnhJM0paSm9UQ0ZVS0dtVVhrU3MybXlzNFF1R1FYTVBhaVdMT01LQWFVRzlwUHl3aFo3Nk1MZGVBNDlUUTRKeEZDVHNKYzVhM2puNkhWeTBsS09ILXl3Q1NIOUM3bzZxd0Zxdl85ckxDUU5yejlMdUhZcTVxb1R1OE5OTTBrbW9saHVudWozcFNBTTdyVzkwZ3FUUQ?oc=5",
           "source": "Google News: contract award / EPC / FEED (Azərbaycan, Xəzər)"
         },
@@ -188,12 +188,12 @@ window.__RADAR__ = {
           "source": "Upstream · OGJ · Offshore Mag · Rigzone · Offshore Energy (Google News)"
         },
         {
-          "title": "TotalEnergies takes final investment decision on Absheron full-field development - azernews.az",
+          "title": "TotalEnergies takes final investment decision on Absheron full-field development - Azernews.az",
           "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE92TkJiaWZYZnV2dkR6STlaM3ZqNkx6VW5DSGwwRjRFU0F4WndwcmtIa3BFcUdPdHUzNXNPd3I0SnVmekFwaHVQVGtwRGRfaTRFUE1vcW41MA?oc=5",
           "source": "Google News: servis şirkətləri və operatorlar"
         },
         {
-          "title": "TotalEnergies takes FID on Absheron gas development offshore Azerbaijan - World Oil",
+          "title": "TotalEnergies takes FID on Absheron gas development offshore Azerbaijan - worldoil.com",
           "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNaDU0YjBxdmthbE81dUlJUjBDb0xPcGludXlETWxkZUtmVjhnWjlfTXoxeEt2ODMwdVRUSFpySUNwWEhMM3VsWTNwNkFCVmt4ak4zZWtBdlVrcGtMSHZMSWo0b1BpRGR1OHBTWVBFd3pNYUZGcjdNaXVLVFNMa0lVRmdxdkd0MnBycVJzZm5sbXA1eF8yclptdElLdVJqYk5Vb2w3M2xjWEdCclEwWUQzVUpB?oc=5",
           "source": "Google News: pipeline expansion / refinery upgrade / compression"
         },
@@ -687,6 +687,53 @@ window.__RADAR__ = {
       "zone": "news"
     },
     {
+      "id": "3b4b21fdef93",
+      "title": "bp completes gas reinjection expansion and subsea intervention projects on ACG Field - Offshore Magazine",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQMHZmRk1qdWc1bXZKRmtDbzJzalB2VGRKTndMMXFmQjdUcUs0Nm1vRkczX1ZqazFBN2JzeEpGeEZtZGpPejN0NFBrdDljS2xqaUhZSlZqZTFfLUFHWTExRVRoUTZGTWV0dHBwSkNLM0xjSXYySDdqUnJYWWx3ZEc1WEVvM2xJRE1jcXZ3c21zUWp2MDB1a0RERW5TR1Z0T19sb0dFYUFyZTcxQXZTZjlVZzk1aFBSM3prNnFIWmF2Xzh4YVMzLU94NTBfRkFuNWpnZElxcg?oc=5",
+      "source_id": "gn_trade_press",
+      "source": "Upstream · OGJ · Offshore Mag · Rigzone · Offshore Energy (Google News)",
+      "category": "early_signal",
+      "buyer": null,
+      "score": 32,
+      "tier": "WATCH",
+      "reasons": [
+        "sector: acg, offshore, subsea (+10)",
+        "procurement_stage: expansion (+12)",
+        "şirkət: bp (AIOC/BTC/SCP/Shah Deniz) (+10)"
+      ],
+      "keywords": [
+        "acg",
+        "offshore",
+        "subsea"
+      ],
+      "companies": [
+        {
+          "name": "bp (AIOC/BTC/SCP/Shah Deniz)",
+          "role": "operator"
+        }
+      ],
+      "contractors": [],
+      "action": "Erkən siqnal: bp (AIOC/BTC/SCP/Shah Deniz) layihəsinin EPC podratçısını müəyyən edib vendor list-ə müraciət edin.",
+      "action_en": "Early signal: identify the EPC contractor of the bp (AIOC/BTC/SCP/Shah Deniz) project and apply for its vendor list.",
+      "source_en": "Upstream · OGJ · Offshore Mag · Rigzone · Offshore Energy (Google News)",
+      "deadline": null,
+      "published": "2026-10-02",
+      "first_seen": "2026-10-02T19:01:28+00:00",
+      "is_new": true,
+      "changes": [],
+      "demo": false,
+      "score10": 3,
+      "competition": "Aşağı (erkən mərhələ, tender hələ elan olunmayıb)",
+      "strategic_value": "Orta",
+      "revenue_potential": "Potensial yüksək (layihə səviyyəsi, büdcə məlum deyil)",
+      "competition_en": "Low (early stage, no tender yet)",
+      "strategic_value_en": "Medium",
+      "revenue_potential_en": "Potentially high (project level, budget unknown)",
+      "segment": "Layihə siqnalı",
+      "signal_type": "Layihə xəbəri",
+      "zone": "news"
+    },
+    {
       "id": "e45aacd29cc8",
       "title": "Central Azeri planned turnaround programme successfully completed",
       "url": "https://www.bp.com/en_az/azerbaijan/home/news/press-releases/Central-azeri-planned-turnaround-programme-successfully-completed.html",
@@ -933,7 +980,7 @@ window.__RADAR__ = {
       "deadline": null,
       "published": null,
       "first_seen": "2026-10-02T16:00:08+00:00",
-      "is_new": true,
+      "is_new": false,
       "changes": [],
       "demo": false,
       "score10": 2,
@@ -948,8 +995,8 @@ window.__RADAR__ = {
       "zone": "news"
     },
     {
-      "id": "b7f265aab582",
-      "title": "Greenlight given for Azerbaijan offshore gas field expansion - Baird Maritime",
+      "id": "d371b8d4330f",
+      "title": "Greenlight given for Azerbaijan offshore gas field expansion - bairdmaritime.com",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPUHllbU1HXzQtYzFhUXIzdXdEUE1SYzdNZzhsdmtJZ2RVWjFQZE5MbHd4eUpRWTEyUzctT0hCYTRqRXJORnpzeFNmQXlkTjk2V2ZLZ1JoOGROSHVCR1pVSmZ5WlhKODdlUHdpNzZhYlVyTzRLRnVvN2ppcUppSTFtUzRBcmZ3Yk5qbzh0edIBmgFBVV95cUxNXzY5YXBYaDNBT3lYVkd2STMtZGZwRXdhLU1EMnozaU1NWjZiY2pMSHl5Qkg4VlZqOEoybWozaDZfeGJpcGI2X1MwVUp5RnNaaEdwN01nTzk5b1lxRWR5ZURTZURoVWFPSlFjbVkxTWVmaGJRd3QteWRmNzVYOU1rQVM0Mm41OU5sb2dwVXpEUFhBbTZCcDE4aGVR?oc=5",
       "source_id": "gn_expansion",
       "source": "Google News: pipeline expansion / refinery upgrade / compression",
@@ -1096,7 +1143,7 @@ window.__RADAR__ = {
       "fetched": 30,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-02T16:00:08+00:00"
+      "at": "2026-10-02T19:01:28+00:00"
     },
     {
       "source": "GlobalTenders - Azerbaijan Oil & Gas",
@@ -1105,7 +1152,7 @@ window.__RADAR__ = {
       "fetched": 20,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-02T16:00:08+00:00"
+      "at": "2026-10-02T19:01:28+00:00"
     },
     {
       "source": "Trend Tenders bölməsi",
@@ -1114,7 +1161,7 @@ window.__RADAR__ = {
       "fetched": 183,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-02T16:00:08+00:00"
+      "at": "2026-10-02T19:01:28+00:00"
     },
     {
       "source": "ADSEA elanları (satınalma, EOI)",
@@ -1123,7 +1170,7 @@ window.__RADAR__ = {
       "fetched": 9,
       "relevant": 4,
       "error": null,
-      "at": "2026-10-02T16:00:08+00:00"
+      "at": "2026-10-02T19:01:28+00:00"
     },
     {
       "source": "bp Azerbaijan xəbərləri (press-reliz)",
@@ -1132,34 +1179,34 @@ window.__RADAR__ = {
       "fetched": 10,
       "relevant": 2,
       "error": null,
-      "at": "2026-10-02T16:00:08+00:00"
+      "at": "2026-10-02T19:01:28+00:00"
     },
     {
       "source": "Google News: Azerbaijan EPC / FEED",
       "source_en": "Google News: Azerbaijan EPC / FEED",
       "id": "gn_epc",
-      "fetched": 38,
+      "fetched": 39,
       "relevant": 1,
       "error": null,
-      "at": "2026-10-02T16:00:08+00:00"
+      "at": "2026-10-02T19:01:28+00:00"
     },
     {
       "source": "Google News: SOCAR tender / contract",
       "source_en": "Google News: SOCAR tender / contract",
       "id": "gn_socar",
-      "fetched": 34,
+      "fetched": 35,
       "relevant": 1,
       "error": null,
-      "at": "2026-10-02T16:00:08+00:00"
+      "at": "2026-10-02T19:01:28+00:00"
     },
     {
       "source": "Google News: bp Azerbaijan projects",
       "source_en": "Google News: bp Azerbaijan projects",
       "id": "gn_bp",
-      "fetched": 51,
-      "relevant": 4,
+      "fetched": 53,
+      "relevant": 5,
       "error": null,
-      "at": "2026-10-02T16:00:08+00:00"
+      "at": "2026-10-02T19:01:28+00:00"
     },
     {
       "source": "Google News: EPC / fabrikasiya podratçıları",
@@ -1168,7 +1215,7 @@ window.__RADAR__ = {
       "fetched": 10,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-02T16:00:08+00:00"
+      "at": "2026-10-02T19:01:28+00:00"
     },
     {
       "source": "Google News: servis şirkətləri və operatorlar",
@@ -1177,7 +1224,7 @@ window.__RADAR__ = {
       "fetched": 51,
       "relevant": 13,
       "error": null,
-      "at": "2026-10-02T16:00:08+00:00"
+      "at": "2026-10-02T19:01:28+00:00"
     },
     {
       "source": "Google News: SOCAR qrupu və törəmələri",
@@ -1186,7 +1233,7 @@ window.__RADAR__ = {
       "fetched": 41,
       "relevant": 1,
       "error": null,
-      "at": "2026-10-02T16:00:08+00:00"
+      "at": "2026-10-02T19:01:28+00:00"
     },
     {
       "source": "Google News: JOCAP, Nobel qrupu, SOCAR Upstream",
@@ -1195,16 +1242,16 @@ window.__RADAR__ = {
       "fetched": 7,
       "relevant": 1,
       "error": null,
-      "at": "2026-10-02T16:00:08+00:00"
+      "at": "2026-10-02T19:01:28+00:00"
     },
     {
       "source": "Google News (RU dili, AZ): SOCAR tender / podrat",
       "source_en": "Google News (Russian, AZ): SOCAR tenders / contractors",
       "id": "gn_az",
-      "fetched": 45,
+      "fetched": 44,
       "relevant": 2,
       "error": null,
-      "at": "2026-10-02T16:00:08+00:00"
+      "at": "2026-10-02T19:01:28+00:00"
     },
     {
       "source": "Trend News (ümumi lent)",
@@ -1213,7 +1260,7 @@ window.__RADAR__ = {
       "fetched": 25,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-02T16:00:08+00:00"
+      "at": "2026-10-02T19:01:28+00:00"
     },
     {
       "source": "Trend Energy bölməsi",
@@ -1222,7 +1269,7 @@ window.__RADAR__ = {
       "fetched": 176,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-02T16:00:08+00:00"
+      "at": "2026-10-02T19:01:28+00:00"
     },
     {
       "source": "Offshore Energy (RSS)",
@@ -1231,7 +1278,7 @@ window.__RADAR__ = {
       "fetched": 50,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-02T16:00:08+00:00"
+      "at": "2026-10-02T19:01:28+00:00"
     },
     {
       "source": "Rigzone (RSS)",
@@ -1240,16 +1287,16 @@ window.__RADAR__ = {
       "fetched": 20,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-02T16:00:08+00:00"
+      "at": "2026-10-02T19:01:28+00:00"
     },
     {
       "source": "Upstream · OGJ · Offshore Mag · Rigzone · Offshore Energy (Google News)",
       "source_en": "Upstream · OGJ · Offshore Mag · Rigzone · Offshore Energy (Google News)",
       "id": "gn_trade_press",
       "fetched": 100,
-      "relevant": 1,
+      "relevant": 2,
       "error": null,
-      "at": "2026-10-02T16:00:08+00:00"
+      "at": "2026-10-02T19:01:28+00:00"
     },
     {
       "source": "Google News: contract award / EPC / FEED (Azərbaycan, Xəzər)",
@@ -1258,25 +1305,25 @@ window.__RADAR__ = {
       "fetched": 53,
       "relevant": 2,
       "error": null,
-      "at": "2026-10-02T16:00:08+00:00"
+      "at": "2026-10-02T19:01:28+00:00"
     },
     {
       "source": "Google News: brownfield / turnaround / offshore maintenance / valve replacement",
       "source_en": "Google News: brownfield / turnaround / offshore maintenance / valve replacement",
       "id": "gn_brownfield",
-      "fetched": 30,
+      "fetched": 31,
       "relevant": 1,
       "error": null,
-      "at": "2026-10-02T16:00:08+00:00"
+      "at": "2026-10-02T19:01:28+00:00"
     },
     {
       "source": "Google News: pipeline expansion / refinery upgrade / compression",
       "source_en": "Google News: pipeline expansion / refinery upgrade / compression",
       "id": "gn_expansion",
-      "fetched": 21,
+      "fetched": 20,
       "relevant": 3,
       "error": null,
-      "at": "2026-10-02T16:00:08+00:00"
+      "at": "2026-10-02T19:01:28+00:00"
     },
     {
       "source": "Azfen xəbərləri",
@@ -1285,7 +1332,7 @@ window.__RADAR__ = {
       "fetched": 10,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-02T16:00:08+00:00"
+      "at": "2026-10-02T19:01:28+00:00"
     },
     {
       "source": "Baku Shipyard xəbərləri",
@@ -1294,7 +1341,7 @@ window.__RADAR__ = {
       "fetched": 6,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-02T16:00:08+00:00"
+      "at": "2026-10-02T19:01:28+00:00"
     },
     {
       "source": "SOCAR-KBR xəbər və tender elanları",
@@ -1303,7 +1350,7 @@ window.__RADAR__ = {
       "fetched": 1,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-02T16:00:08+00:00"
+      "at": "2026-10-02T19:01:28+00:00"
     },
     {
       "source": "World Bank satınalma (Azərbaycan)",
@@ -1312,7 +1359,7 @@ window.__RADAR__ = {
       "fetched": 39,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-02T16:00:08+00:00"
+      "at": "2026-10-02T19:01:28+00:00"
     },
     {
       "source": "EBRD ECEPP satınalma (Azərbaycan)",
@@ -1321,7 +1368,7 @@ window.__RADAR__ = {
       "fetched": 30,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-02T16:00:08+00:00"
+      "at": "2026-10-02T19:01:28+00:00"
     },
     {
       "source": "etender.gov.az (dövlət satınalma portalı)",
@@ -1366,7 +1413,7 @@ window.__RADAR__ = {
       "fetched": 18,
       "relevant": 13,
       "error": null,
-      "at": "2026-10-02T16:00:08+00:00"
+      "at": "2026-10-02T19:01:28+00:00"
     },
     {
       "source": "AICC Caspian (asset integrity, corrosion)",
@@ -1375,7 +1422,7 @@ window.__RADAR__ = {
       "fetched": 1,
       "relevant": 1,
       "error": null,
-      "at": "2026-10-02T16:00:08+00:00"
+      "at": "2026-10-02T19:01:28+00:00"
     }
   ],
   "companies": [
