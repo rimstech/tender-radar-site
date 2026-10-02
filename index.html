@@ -1,0 +1,1372 @@
+<!doctype html>
+<html lang="az" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tender Agent · Portfolio</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%2040%2040%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22lgA%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%2316344F%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%230A1A2B%22%2F%3E%3C%2FlinearGradient%3E%3CradialGradient%20id%3D%22rgA%22%20cx%3D%220%22%20cy%3D%221%22%20r%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%232BB3B1%22%20stop-opacity%3D%22.35%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%232BB3B1%22%20stop-opacity%3D%220%22%2F%3E%3C%2FradialGradient%3E%3C%2Fdefs%3E%3Crect%20x%3D%221%22%20y%3D%221%22%20rx%3D%2211%22%20fill%3D%22url%28%23lgA%29%22%20stroke%3D%22%232BB3B1%22%20stroke-opacity%3D%22.45%22%2F%3E%3Cpath%20d%3D%22M10%2030L10%208A22%2022%200%200%201%2025.6%2014.4Z%22%20fill%3D%22url%28%23rgA%29%22%2F%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%232BB3B1%22%20stroke-linecap%3D%22round%22%20stroke-width%3D%222.2%22%3E%3Cpath%20d%3D%22M10%2022a8%208%200%200%201%208%208%22%20opacity%3D%22.55%22%2F%3E%3Cpath%20d%3D%22M10%2015a15%2015%200%200%201%2015%2015%22%20opacity%3D%22.8%22%2F%3E%3Cpath%20d%3D%22M10%208a22%2022%200%200%201%2022%2022%22%2F%3E%3C%2Fg%3E%3Cpath%20d%3D%22M10%2030L25.6%2014.4%22%20stroke%3D%22%23E8A93B%22%20stroke-width%3D%221.6%22%20stroke-linecap%3D%22round%22%2F%3E%3Ccircle%20cx%3D%2227%22%20cy%3D%2224%22%20r%3D%224.8%22%20fill%3D%22%23E8A93B%22%20opacity%3D%22.22%22%2F%3E%3Ccircle%20cx%3D%2227%22%20cy%3D%2224%22%20r%3D%222.5%22%20fill%3D%22%23E8A93B%22%2F%3E%3Ccircle%20cx%3D%2210%22%20cy%3D%2230%22%20r%3D%222.3%22%20fill%3D%22%23EAF0F6%22%2F%3E%3C%2Fsvg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&family=JetBrains+Mono:wght@500;600&display=swap">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+<script>(function(){ try{ const t = localStorage.getItem("tenderRadar.theme"); if(t) document.documentElement.dataset.theme = t; const l = localStorage.getItem("tenderRadar.lang"); if(l) document.documentElement.lang = l; }catch(e){} })();</script>
+<style>
+/* ============ Portfolio brand tokens (from the company presentation) ============ */
+:root{
+  --bg:#0A1522; --rail:#0C1A2A; --card:#102136; --card2:#0D1C2E; --line:#1C3149; --line2:#264463;
+  --text:#EAF0F6; --text2:#A6B6C8; --muted:#6F86A0;
+  --teal:#2BB3B1; --teal2:#3FCFCB; --teal-soft:rgba(43,179,177,.14);
+  --amber:#E8A93B; --amber-soft:rgba(232,169,59,.14);
+  --good:#22C55E; --warn:#F59E0B; --crit:#EF4444;
+  --m1:#3987e5; --m2:#d95926; --m3:#199e70; --m4:#9085e9;
+  --s1:#1E9E9C; --s2:#d95926; --s3:#9085e9;
+  --h0:#13263C; --h1:#0F4A55; --h2:#136B70; --h3:#1F8E8C; --h4:#2BB3B1; --h5:#8FE3DF; --hct3:#fff; --hct5:#06201F;
+  --shadow:0 1px 0 rgba(255,255,255,.02) inset, 0 10px 30px rgba(0,0,0,.25);
+  --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+  --head:Manrope,Inter,system-ui,sans-serif;
+  color-scheme:dark;
+}
+:root[data-theme="light"]{
+  --bg:#F3F6F9; --rail:#FFFFFF; --card:#FFFFFF; --card2:#F7F9FB; --line:#E3E9F0; --line2:#D2DBE5;
+  --text:#0E1A2B; --text2:#3E5168; --muted:#6B7D93;
+  --teal:#178A88; --teal2:#0F7471; --teal-soft:rgba(23,138,136,.10);
+  --amber:#B57A1C; --amber-soft:rgba(181,122,28,.10);
+  --good:#15803D; --warn:#B45309; --crit:#DC2626;
+  --m1:#2a78d6; --m2:#eb6834; --m3:#1baf7a; --m4:#4a3aa7;
+  --s1:#0E9A95; --s2:#eb6834; --s3:#4a3aa7;
+  --h0:#EEF3F7; --h1:#CDEDEC; --h2:#9CDCDA; --h3:#5CC3C0; --h4:#1F9E9B; --h5:#0F6E6C; --hct3:#06201F; --hct5:#fff;
+  --shadow:0 1px 2px rgba(14,26,43,.04), 0 6px 18px rgba(14,26,43,.05);
+  color-scheme:light;
+}
+*{box-sizing:border-box} html,body{margin:0}
+body{background:var(--bg);color:var(--text);font:14px/1.55 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+button,input,select,textarea{font:inherit;color:inherit}
+a{color:var(--teal2)} :root[data-theme="light"] a{color:var(--teal)}
+[hidden]{display:none!important}
+.num{font-variant-numeric:tabular-nums}
+h1,h2,h3{font-family:var(--head);letter-spacing:-.01em}
+
+/* ---------- shell: rail + main; the header zone stays put, only the content scrolls ---------- */
+.app{display:grid;grid-template-columns:240px minmax(0,1fr);height:100vh}
+.rail{height:100vh;background:var(--rail);border-right:1px solid var(--line);display:flex;flex-direction:column;padding:20px 14px;overflow-y:auto}
+.brand{display:flex;align-items:center;gap:11px;padding:0 6px 22px}
+.brand b{font-family:var(--head);font-size:15px;letter-spacing:.3px;display:block}
+.brand small{color:var(--muted);font-size:10.5px;letter-spacing:1.4px;text-transform:uppercase}
+.nav{display:flex;flex-direction:column;gap:2px}
+.nav .sep{margin:14px 10px 6px;font-size:10.5px;letter-spacing:1.2px;text-transform:uppercase;color:var(--muted)}
+.nav button{display:flex;align-items:center;gap:11px;padding:9px 10px;border:0;background:none;border-radius:10px;color:var(--text2);cursor:pointer;text-align:left;font-weight:500}
+.nav button:hover{background:var(--card2);color:var(--text)}
+.nav button.on{background:var(--teal-soft);color:var(--text)}
+.nav button.on svg{color:var(--teal)}
+.nav svg{width:18px;height:18px;flex:none}
+.nav .cnt{margin-left:auto;font:600 11px var(--mono);color:var(--muted)}
+.nav button.on .cnt{color:var(--teal2)}
+.rail .foot{margin-top:auto;padding:14px 8px 0;border-top:1px solid var(--line);font-size:11.5px;color:var(--muted)}
+.rail .foot i{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--good);margin-right:7px}
+
+.main{min-width:0;height:100vh;display:flex;flex-direction:column;overflow:hidden}
+.top{flex:none;display:flex;align-items:center;gap:10px;padding:14px 28px;background:var(--bg);border-bottom:1px solid var(--line)}
+.pinned{flex:none;padding:20px 28px 16px;display:flex;flex-direction:column;gap:16px;border-bottom:1px solid var(--line);background:var(--bg)}
+.scroll{flex:1;min-height:0;overflow-y:auto}
+.content{isolation:isolate;padding:20px 28px 48px;display:flex;flex-direction:column;gap:20px;max-width:1500px}
+.pinned > *{max-width:1444px}
+.search{flex:1;max-width:520px;display:flex;align-items:center;gap:9px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:0 12px;height:40px}
+.search:focus-within{border-color:var(--teal);box-shadow:0 0 0 3px var(--teal-soft)}
+.search input{flex:1;border:0;background:none;outline:none}
+.search kbd{font:11px var(--mono);color:var(--muted);border:1px solid var(--line2);border-radius:5px;padding:0 5px}
+.ibtn{position:relative;height:40px;min-width:40px;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:0 12px;border:1px solid var(--line);background:var(--card);border-radius:12px;cursor:pointer;color:var(--text2)}
+.ibtn:hover{color:var(--text);border-color:var(--line2)}
+.ibtn svg{width:18px;height:18px}
+.badge{position:absolute;top:-5px;right:-5px;min-width:18px;height:18px;border-radius:99px;background:var(--crit);color:#fff;font:700 10.5px Inter;display:grid;place-items:center;padding:0 5px}
+.ibtn.ai{background:var(--teal);border-color:var(--teal);color:#06201F;font-weight:700}
+.ibtn.ai:hover{background:var(--teal2);color:#06201F}
+.lang{display:inline-flex;height:40px;padding:3px;border:1px solid var(--line);border-radius:12px;background:var(--card)}
+.lang button{border:0;background:none;border-radius:9px;padding:0 11px;cursor:pointer;color:var(--text2);font:700 12px Inter;letter-spacing:.5px}
+.lang button.on{background:var(--teal);color:#06201F}
+.spacer{flex:1}
+
+.head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap}
+.head h1{margin:0;font-size:24px;font-weight:800}
+.head p{margin:3px 0 0;color:var(--muted);font-size:13px;max-width:760px}
+.live{display:inline-flex;align-items:center;gap:7px;font-size:12px;color:var(--text2);border:1px solid var(--line);border-radius:99px;padding:5px 12px;background:var(--card)}
+.live i{width:7px;height:7px;border-radius:50%;background:var(--good)}
+.demo{background:var(--amber);color:#1b1205;font:700 11px Inter;padding:3px 9px;border-radius:6px}
+
+.panel{background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);min-width:0}
+.ph{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 18px 12px;flex-wrap:wrap}
+.ph.stick{position:sticky;top:0;z-index:3;background:var(--card);border-radius:16px 16px 0 0;border-bottom:1px solid var(--line)}
+.ph h2{margin:0;font-size:15px;font-weight:700}
+.ph .hint{color:var(--muted);font-size:12px}
+.pb{padding:4px 18px 18px}
+.row2{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:20px}
+.row2e{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px}
+
+/* ---------- KPI strip ---------- */
+.kpis{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}
+.kpi{position:relative;text-align:left;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:13px 16px 12px;cursor:pointer;box-shadow:var(--shadow);overflow:hidden}
+.kpi:hover{border-color:var(--line2)}
+.kpi::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--c,var(--teal))}
+.kpi .l{color:var(--text2);font-size:12px;font-weight:500}
+.kpi .v{font:800 24px/1.15 var(--head);margin-top:4px;font-variant-numeric:tabular-nums}
+.kpi .s{color:var(--muted);font-size:11.5px;margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+/* ---------- lists / tables ---------- */
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.toolbar select{height:34px;border:1px solid var(--line);background:var(--card2);border-radius:9px;padding:0 10px;color:var(--text2);font-size:12.5px}
+.seg{display:inline-flex;gap:2px;padding:3px;border:1px solid var(--line);border-radius:10px;background:var(--card2)}
+.seg button{border:0;background:none;border-radius:7px;padding:4px 11px;cursor:pointer;color:var(--text2);font-size:12.5px}
+.seg button.on{background:var(--teal);color:#06201F;font-weight:600}
+.tw{overflow-x:auto}
+table{width:100%;border-collapse:collapse;min-width:860px}
+th{text-align:left;font-size:11px;font-weight:600;letter-spacing:.6px;text-transform:uppercase;color:var(--muted);padding:10px 14px;border-bottom:1px solid var(--line);cursor:pointer;white-space:nowrap;user-select:none}
+th.sorted{color:var(--text)} th .ar{margin-left:4px;opacity:.5}
+td{padding:13px 14px;border-bottom:1px solid var(--line);font-size:13px;vertical-align:middle}
+td.nw,td .nw{white-space:nowrap}
+tr.r{cursor:pointer} tr.r:hover td{background:var(--card2)}
+tr.r:last-child td{border-bottom:0}
+.tt{font-weight:600;line-height:1.38;max-width:560px;min-width:240px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.ts{margin-top:5px;display:flex;gap:6px;flex-wrap:wrap;align-items:center;color:var(--muted);font-size:11.5px}
+.cl{max-width:240px;color:var(--text2);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.score{--c:var(--crit);display:inline-grid;place-items:center;width:42px;height:28px;border-radius:8px;font:600 13px var(--mono);color:var(--text);background:color-mix(in srgb,var(--c) 16%,transparent);box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--c) 70%,transparent)}
+.s-g{--c:var(--good)} .s-t{--c:var(--teal)} .s-y{--c:var(--warn)} .s-r{--c:var(--crit)}
+.chip{display:inline-flex;align-items:center;gap:5px;padding:2px 8px;border-radius:99px;background:var(--card2);border:1px solid var(--line);color:var(--text2);font-size:11.5px;white-space:nowrap}
+.chip.new{border-color:var(--teal);color:var(--text);background:var(--teal-soft);font-weight:600}
+.chip.fid{border-color:var(--m3);color:var(--text);background:color-mix(in srgb,var(--m3) 16%,transparent);font-weight:600}
+.chip.aw{border-color:var(--m2);color:var(--text);background:color-mix(in srgb,var(--m2) 14%,transparent);font-weight:600}
+.chip.fit{border-color:color-mix(in srgb,var(--good) 70%,transparent);color:var(--text);background:color-mix(in srgb,var(--good) 12%,transparent)}
+.chip.warn{border-color:var(--warn);color:var(--text)}
+.dl{display:inline-flex;align-items:center;gap:7px;white-space:nowrap;font-size:12.5px}
+.dl i{width:8px;height:8px;border-radius:50%;background:var(--muted)}
+.dl.u0 i{background:var(--crit)} .dl.u1 i{background:var(--warn)} .dl.u2 i{background:var(--teal)} .dl.u3 i{background:var(--good)}
+.st{height:32px;border:1px solid var(--line);background:var(--card2);border-radius:9px;padding:0 8px;font-size:12.5px;color:var(--text2)}
+.empty{padding:34px 18px;text-align:center;color:var(--muted);font-size:13px}
+.empty b{display:block;color:var(--text);font:700 15px var(--head);margin-bottom:6px}
+.empty .src{display:flex;gap:6px;flex-wrap:wrap;justify-content:center;margin-top:10px}
+
+/* ---------- priority list ---------- */
+.prio{display:flex;flex-direction:column}
+.pi{display:grid;grid-template-columns:20px 44px minmax(0,1fr) 128px 84px;gap:12px;align-items:center;padding:11px 18px;border-top:1px solid var(--line);cursor:pointer}
+.pi:hover{background:var(--card2)}
+.pi.ph2{cursor:default;padding-top:8px;padding-bottom:8px;background:var(--card2);font:700 10.5px var(--mono);color:var(--muted);letter-spacing:.6px;text-transform:uppercase}
+.pi.ph2:hover{background:var(--card2)}
+.pi .rk{font:700 12px var(--mono);color:var(--muted);text-align:center}
+.pi .score{justify-self:start}
+.pi .bd{min-width:0}
+.pi .t{font-weight:600;line-height:1.35;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.pi .mt{margin-top:3px;font-size:12px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis} .pi .mt i{font-style:normal;opacity:.6;margin:0 2px}
+.pi .why{display:flex;gap:5px;flex-wrap:wrap;align-content:center} .pi .why .dash{color:var(--muted)}
+.pi .z{display:inline-flex;align-items:center;gap:7px;font-size:11px;color:var(--text2);text-transform:uppercase;letter-spacing:.6px}
+.pi .z i{width:8px;height:8px;border-radius:50%;flex:none}
+@media (max-width:900px){ .pi{grid-template-columns:22px 46px minmax(0,1fr)} .pi.ph2{display:none} .pi .why{grid-column:3} .pi .z{grid-column:3} }
+
+/* ---------- news ---------- */
+.news{display:flex;flex-direction:column}
+.nd{padding:10px 18px 6px;font:700 11px var(--mono);color:var(--muted);letter-spacing:.6px;text-transform:uppercase;border-top:1px solid var(--line);background:var(--card2)}
+.ni{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px;padding:12px 18px;border-top:1px solid var(--line);cursor:pointer}
+.ni:hover{background:var(--card2)}
+.ni .t{font-weight:600;line-height:1.38}
+.ni .m{margin-top:5px;display:flex;gap:6px;flex-wrap:wrap;align-items:center;color:var(--muted);font-size:11.5px}
+
+/* ---------- deadlines ---------- */
+.lanes{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
+.lane{border:1px solid var(--line);border-radius:12px;padding:10px;background:var(--card2);min-height:112px;display:flex;flex-direction:column;gap:7px}
+.lane h4{margin:0;display:flex;justify-content:space-between;font:600 12px Inter;color:var(--text2)}
+.lane h4 b{font:700 15px var(--mono);color:var(--text)}
+.lane .bar{height:3px;border-radius:2px;background:var(--lc)}
+.lane .it{font-size:12px;line-height:1.35;padding:7px 8px;border-radius:8px;background:var(--card);border:1px solid var(--line);cursor:pointer}
+.lane .it small{display:block;color:var(--muted);font-size:11px;margin-top:2px}
+.lane .none{margin:auto 0;text-align:center;color:var(--muted);font-size:11.5px}
+.lanes.compact{grid-template-columns:1fr}
+.lanes.compact .lane{min-height:auto;flex-direction:row;align-items:center;justify-content:space-between}
+.lanes.compact .lane .bar,.lanes.compact .lane .it,.lanes.compact .lane .none{display:none}
+.lanes.compact .lane h4{flex:1}
+
+/* ---------- charts / coverage ---------- */
+.chart svg{display:block;width:100%;height:auto;overflow:visible}
+.ax{fill:var(--muted);font-size:10.5px}
+.grid{stroke:var(--line)}
+.tip{position:fixed;z-index:80;pointer-events:none;background:var(--card);border:1px solid var(--line2);border-radius:9px;padding:7px 10px;font-size:12px;box-shadow:0 10px 30px rgba(0,0,0,.35);max-width:280px}
+.tip b{display:block}
+.cov{display:flex;flex-direction:column}
+.cv{display:grid;grid-template-columns:minmax(0,1fr) 70px 90px 60px;gap:10px;align-items:center;padding:9px 0;border-bottom:1px solid var(--line);font-size:12.5px}
+.cv:last-child{border-bottom:0}
+.cv.h{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.6px;padding-top:0}
+.cv .n{text-align:right;font-family:var(--mono)}
+.cv .bar{height:6px;border-radius:3px;background:var(--line);overflow:hidden;margin-top:5px}
+.cv .bar i{display:block;height:100%;background:var(--teal);border-radius:3px}
+.heat{display:grid;gap:3px;font-size:11.5px}
+.heat .hc{height:24px;border-radius:4px;display:grid;place-items:center;font:600 10.5px var(--mono);color:transparent}
+.heat .hc.v1,.heat .hc.v2{color:var(--text)} .heat .hc.v3{color:var(--hct3)} .heat .hc.v4,.heat .hc.v5{color:var(--hct5)}
+.heat .rl{color:var(--text2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding-right:6px;align-self:center}
+.heat .c2{color:var(--muted);text-align:center;font-size:10.5px}
+.legend{display:flex;gap:12px;flex-wrap:wrap;color:var(--text2);font-size:11.5px;align-items:center}
+.legend span{display:inline-flex;align-items:center;gap:5px} .legend i{width:10px;height:10px;border-radius:50%}
+.ramp{display:inline-flex;gap:2px} .ramp i{width:14px;height:10px;border-radius:2px}
+
+/* ---------- map ---------- */
+#map{position:relative;z-index:0;height:480px;border-radius:0 0 16px 16px;background:#0b2238}
+.leaflet-container{background:#0b2238;font:12px Inter,system-ui,sans-serif}
+.leaflet-popup-content-wrapper,.leaflet-popup-tip{background:var(--card);color:var(--text);border:1px solid var(--line2)}
+.leaflet-control-attribution{background:rgba(10,21,34,.7)!important;color:#c9d6e3!important}
+.leaflet-control-attribution a{color:#fff!important}
+.leaflet-control-layers{background:var(--card)!important;color:var(--text)!important;border:1px solid var(--line2)!important;border-radius:10px!important}
+.mapfb{height:480px;display:grid;place-items:center;color:var(--muted);text-align:center;padding:20px}
+.mk{filter:drop-shadow(0 0 6px rgba(255,255,255,.35))}
+
+/* ---------- companies ---------- */
+.cgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.cc{border:1px solid var(--line);border-radius:12px;padding:13px;background:var(--card2)}
+.cc .n{display:flex;justify-content:space-between;gap:8px;font-weight:700}
+.cc .r{color:var(--muted);font-size:11px;font-weight:500}
+.cc .stats{display:flex;gap:16px;margin:8px 0 6px}
+.cc .stats div{font-size:11px;color:var(--muted)} .cc .stats b{display:block;font:700 16px var(--mono);color:var(--text)}
+.cc .p{font-size:12px;color:var(--muted);margin-top:4px}
+.cc .aw{font-size:12px;color:var(--text2);border-top:1px dashed var(--line);padding-top:7px;margin-top:6px}
+.lnk{color:var(--teal2);cursor:pointer;text-decoration:underline} :root[data-theme="light"] .lnk{color:var(--teal)}
+.cc .stats div b{white-space:nowrap}
+.cc.rv{border-left:3px solid var(--s2)}
+.wr{display:grid;grid-template-columns:86px minmax(0,1.1fr) minmax(0,1fr) minmax(0,1.6fr) 110px;gap:12px;align-items:center;padding:9px 12px;border-top:1px solid var(--line);font-size:12.5px;cursor:pointer}
+.wr:hover{background:var(--card2)} .wr.wh{cursor:default;background:var(--card2);font:700 10.5px var(--mono);color:var(--muted);letter-spacing:.6px;text-transform:uppercase;border-top:0;border-radius:8px}
+.wr.hit{background:color-mix(in srgb,var(--warn) 10%,transparent)} .wr .tt{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--text2)} .wr span{min-width:0}
+@media (max-width:900px){ .wr{grid-template-columns:80px minmax(0,1fr) 90px} .wr > span:nth-child(3), .wr > span:nth-child(4){display:none} }
+.vp{display:grid;grid-template-columns:minmax(0,1.4fr) 150px 140px minmax(0,1fr);gap:10px;align-items:center;padding:11px 18px;border-top:1px solid var(--line);font-size:13px}
+.vp .o{color:var(--muted);font-size:11.5px}
+.vp input,.vp select{height:32px;border:1px solid var(--line);background:var(--card2);border-radius:8px;padding:0 8px;font-size:12px;width:100%}
+.tabs{display:flex;gap:4px;border-bottom:1px solid var(--line);padding:0 18px}
+.tabs button{border:0;background:none;padding:12px 12px 10px;cursor:pointer;color:var(--text2);border-bottom:2px solid transparent;font-weight:600}
+.tabs button.on{color:var(--text);border-bottom-color:var(--teal)}
+
+/* ---------- drawer (detail) & copilot ---------- */
+.scrim{position:fixed;inset:0;background:rgba(3,10,18,.45);z-index:45}
+.drawer,.copilot{position:fixed;top:0;right:0;bottom:0;width:560px;max-width:100vw;z-index:50;background:var(--card);border-left:1px solid var(--line2);transform:translateX(100%);transition:transform .25s ease;display:flex;flex-direction:column;box-shadow:-24px 0 60px rgba(0,0,0,.35)}
+.copilot{width:420px;z-index:55}
+.drawer.open,.copilot.open{transform:none}
+.drawer:not(.open),.copilot:not(.open){box-shadow:none;visibility:hidden;transition:transform .25s ease,visibility 0s .25s}
+.dh{padding:18px 20px 14px;border-bottom:1px solid var(--line);display:flex;gap:14px;align-items:flex-start}
+.dh h3{margin:0;font-size:17px;line-height:1.35}
+.db{flex:1;overflow-y:auto;padding:4px 20px 24px}
+.gauge{position:relative;width:76px;height:76px;flex:none}
+.gauge svg{width:100%;height:100%;transform:rotate(-90deg)}
+.gauge b{position:absolute;inset:0;display:grid;place-items:center;font:700 21px var(--mono)}
+.acts{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.btn{height:34px;padding:0 13px;border-radius:9px;border:1px solid var(--line2);background:var(--card2);cursor:pointer;color:var(--text);font-size:12.5px;display:inline-flex;align-items:center;gap:6px;text-decoration:none}
+.btn.p,a.btn.p,:root[data-theme="light"] a.btn.p{background:var(--teal);border-color:var(--teal);color:#06201F;font-weight:700}
+:root[data-theme="light"] .btn.p,:root[data-theme="light"] a.btn.p{color:#fff}
+a.btn,:root[data-theme="light"] a.btn{color:var(--text)}
+.btn.d{border-color:var(--crit);color:var(--crit);background:none}
+.sec{margin-top:18px}
+.sec h4{margin:0 0 8px;font:700 11px Inter;letter-spacing:.8px;text-transform:uppercase;color:var(--muted)}
+.sec ul{margin:0;padding-left:18px} .sec li{margin:3px 0}
+.summary{border-left:3px solid var(--teal);background:var(--teal-soft);border-radius:0 10px 10px 0;padding:11px 14px;font-size:13.5px}
+.summary small{display:block;color:var(--muted);font-size:10.5px;letter-spacing:.8px;text-transform:uppercase;margin-bottom:3px}
+.mets{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.met{border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--card2)}
+.met small{color:var(--muted);font-size:10.5px;letter-spacing:.6px;text-transform:uppercase}
+.met div{margin-top:3px;font-weight:600;font-size:13px}
+.met .na{color:var(--muted);font-weight:500}
+.risk{display:flex;gap:8px;margin:4px 0} .risk i{flex:none;width:8px;height:8px;border-radius:2px;margin-top:6px}
+.risk.r0 i{background:var(--crit)} .risk.r1 i{background:var(--warn)} .risk.r2 i{background:var(--teal)}
+.kv{display:grid;grid-template-columns:130px 1fr;gap:6px 12px;font-size:13px;margin:0}
+.kv dt{color:var(--muted)} .kv dd{margin:0;min-width:0;overflow-wrap:anywhere}
+details.sec summary{cursor:pointer;font:700 11px Inter;letter-spacing:.8px;text-transform:uppercase;color:var(--muted)}
+details.sec[open] summary{margin-bottom:8px}
+textarea{width:100%;min-height:70px;border:1px solid var(--line);background:var(--card2);border-radius:10px;padding:9px 11px;resize:vertical}
+.cph{padding:16px 18px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:11px}
+.orb{width:30px;height:30px;border-radius:50%;background:conic-gradient(from 200deg,var(--teal),var(--amber),var(--teal))}
+.cph b{display:block;font-family:var(--head)} .cph small{color:var(--muted);font-size:11px}
+.cpn{margin:10px 18px 0;font-size:11.5px;color:var(--muted);border:1px solid var(--line);border-radius:10px;padding:8px 10px;background:var(--card2)}
+.cpx{margin:8px 18px 0;font-size:12px;color:var(--text2)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;padding:10px 18px}
+.chips button{border:1px solid var(--line2);background:var(--card2);border-radius:99px;padding:5px 10px;font-size:12px;cursor:pointer;color:var(--text2)}
+.chips button:hover{border-color:var(--teal);color:var(--text)}
+.msgs{flex:1;overflow-y:auto;padding:6px 18px 16px;display:flex;flex-direction:column;gap:10px}
+.msg{max-width:92%;padding:9px 12px;border-radius:12px;font-size:13px}
+.msg.u{align-self:flex-end;background:var(--teal);color:#06201F;border-bottom-right-radius:4px}
+.msg.a{align-self:flex-start;background:var(--card2);border:1px solid var(--line);border-bottom-left-radius:4px}
+.msg.a ul{margin:4px 0;padding-left:18px}
+.cpi{display:flex;gap:8px;padding:12px 18px;border-top:1px solid var(--line)}
+.cpi input{flex:1;height:40px;border:1px solid var(--line);background:var(--card2);border-radius:10px;padding:0 12px;outline:none}
+
+/* ---------- popover / settings ---------- */
+.wrap{position:relative}
+.pop{position:absolute;top:48px;right:0;width:370px;max-width:calc(100vw - 32px);background:var(--card);border:1px solid var(--line2);border-radius:14px;box-shadow:0 20px 50px rgba(0,0,0,.4);z-index:30;overflow:hidden}
+.pop h4{margin:0;padding:12px 14px;border-bottom:1px solid var(--line);font:700 13px var(--head)}
+.pop .n{display:flex;gap:10px;padding:10px 14px;border-bottom:1px solid var(--line);cursor:pointer;font-size:12.5px}
+.pop .n:hover{background:var(--card2)} .pop .n i{flex:none;width:8px;height:8px;border-radius:50%;margin-top:6px}
+.pop .n small{display:block;color:var(--muted);font-size:11px}
+.pop .n:not(.hot){color:var(--text2)} .pop .n.hot{background:var(--teal-soft);font-weight:600}
+.pop h4 .nw{margin-left:6px;padding:1px 8px;border-radius:99px;background:var(--teal);color:#06201F;font-size:11px}
+.pop{max-height:min(72vh,580px);overflow-y:auto}
+.pop .pf{padding:9px 14px;font-size:11px;color:var(--muted);background:var(--card2)}
+.sg h5{margin:14px 0 4px;font:700 11px Inter;letter-spacing:.8px;text-transform:uppercase;color:var(--muted)}
+.srow{display:flex;justify-content:space-between;gap:10px;padding:6px 0;border-bottom:1px solid var(--line);font-size:12.5px}
+.srow .d{width:7px;height:7px;border-radius:50%;background:var(--good);display:inline-block;margin-right:8px} .srow .d.e{background:var(--crit)}
+.note{color:var(--muted);font-size:12.5px;line-height:1.6}
+
+/* ---------- executive ---------- */
+.brief{display:flex;gap:16px;align-items:center;padding:18px 20px;border-radius:16px;border:1px solid var(--line);background:linear-gradient(120deg,color-mix(in srgb,var(--teal) 14%,var(--card)) 0%,var(--card) 55%,color-mix(in srgb,var(--amber) 9%,var(--card)) 100%);box-shadow:var(--shadow)}
+.brief .ico{flex:none;width:46px;height:46px;border-radius:12px;display:grid;place-items:center;background:var(--teal-soft);color:var(--teal)}
+.brief .ico svg{width:24px;height:24px}
+.brief small{display:block;color:var(--muted);font-size:11px;letter-spacing:.8px;text-transform:uppercase;margin-bottom:3px}
+.brief p{margin:0;font:600 16px/1.5 var(--head)}
+.brief .bw{min-width:0;flex:1}
+.bstats{display:flex;flex-wrap:wrap;gap:8px;margin:4px 0 8px}
+.bs{display:inline-flex;align-items:baseline;gap:7px;padding:5px 12px;border-radius:10px;border:1px solid var(--line2);background:var(--card);cursor:pointer;color:var(--text2);font-size:12.5px}
+.bs b{font:800 18px var(--head);color:var(--text)} .bs:hover{border-color:var(--teal)} .bs.z b{color:var(--muted)}
+.btop{display:flex;gap:10px;align-items:baseline;font-size:13.5px;min-width:0} .btop>span:first-child{flex:none;color:var(--muted);font-size:11px;letter-spacing:.6px;text-transform:uppercase}
+.btop .lnk{font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0} .btop em{color:var(--muted)}
+.brief p b{color:var(--teal2)} :root[data-theme="light"] .brief p b{color:var(--teal)}
+.path{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px}
+.stage{position:relative;border:1px solid var(--line);border-radius:12px;padding:12px 12px 10px;background:var(--card2);cursor:pointer;min-height:118px;display:flex;flex-direction:column}
+.stage:hover{border-color:var(--line2)}
+.stage:not(:last-child)::after{content:"";position:absolute;right:-9px;top:50%;width:8px;height:2px;background:var(--line2)}
+.stage .k{font:700 11px Inter;letter-spacing:.6px;text-transform:uppercase;color:var(--muted)}
+.stage .n{font:800 30px/1.1 var(--head);margin:6px 0 8px;font-variant-numeric:tabular-nums}
+.stage .fill{margin-top:auto;height:6px;border-radius:3px;background:var(--line);overflow:hidden}
+.stage .fill i{display:block;height:100%;border-radius:3px;background:var(--teal);transform-origin:left;animation:growX .9s cubic-bezier(.2,.8,.2,1) both}
+.stage .hint2{font-size:11.5px;color:var(--muted);line-height:1.35}
+.stage.on{border-color:var(--teal);box-shadow:inset 0 0 0 1px var(--teal)}
+.proj{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,2fr) minmax(0,1.5fr);gap:14px;align-items:center;padding:12px 18px;border-top:1px solid var(--line);cursor:pointer}
+.proj:hover{background:var(--card2)}
+.proj .nm{font-weight:700}
+.proj .nm small{display:block;color:var(--muted);font-weight:500;font-size:11.5px}
+.dots{display:flex;align-items:center;gap:0}
+.dots i{flex:1;height:4px;background:var(--line)}
+.dots b{flex:none;width:12px;height:12px;border-radius:50%;background:var(--line);border:2px solid var(--card)}
+.dots b.done{background:var(--teal)} .dots i.done{background:var(--teal)}
+.dots b.cur{background:var(--amber);box-shadow:0 0 0 4px var(--amber-soft)}
+.proj .nx{font-size:12.5px;color:var(--text2)}
+.acts3{display:flex;flex-direction:column}
+.a3{display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;padding:13px 18px;border-top:1px solid var(--line);cursor:pointer}
+.a3:hover{background:var(--card2)}
+.a3 .no{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font:800 13px var(--head);color:#06201F;background:var(--amber)}
+.a3 .t{font-weight:600;line-height:1.35}
+.a3 .d{color:var(--text2);font-size:12.5px;margin-top:3px}
+.mleg{display:flex;gap:14px;font-size:11.5px;color:var(--text2)} .mleg span{display:inline-flex;align-items:center;gap:5px} .mleg i{width:10px;height:10px;border-radius:2px}
+
+/* ---------- motion (purposeful, once; off for reduced-motion users) ---------- */
+@keyframes growX{from{transform:scaleX(0)}}
+@keyframes growY{from{transform:scaleY(0)}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(8px)}}
+@keyframes sweep{0%{transform:rotate(-40deg)}50%{transform:rotate(40deg)}100%{transform:rotate(-40deg)}}
+@keyframes blip{0%,100%{opacity:.25}50%{opacity:1}}
+@keyframes pulse{0%{transform:scale(.6);opacity:.9}100%{transform:scale(2.2);opacity:0}}
+.logo .sweep{transform-box:view-box;transform-origin:10px 30px;animation:sweep 6s ease-in-out infinite}
+.logo .blip{animation:blip 3s ease-in-out infinite}
+.bar-in{transform-box:fill-box;transform-origin:bottom;animation:growY .8s cubic-bezier(.2,.8,.2,1) both}
+.fade-in > *{animation:fadeUp .5s ease both}
+.fade-in > *:nth-child(2){animation-delay:.06s} .fade-in > *:nth-child(3){animation-delay:.12s} .fade-in > *:nth-child(4){animation-delay:.18s} .fade-in > *:nth-child(5){animation-delay:.24s} .fade-in > *:nth-child(6){animation-delay:.3s}
+.mk-pulse{transform-box:fill-box;transform-origin:center;animation:pulse 2.4s ease-out infinite}
+/* exhibitions */
+.evhero{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:18px;align-items:center;margin:14px 18px 0;padding:16px 18px;border-radius:14px;border:1px solid var(--line);background:linear-gradient(120deg,color-mix(in srgb,var(--teal) 14%,var(--card2)) 0%,var(--card2) 60%,color-mix(in srgb,var(--amber) 10%,var(--card2)) 100%);animation:fadeUp .4s ease both}
+.evhero .cd{width:86px;height:86px;border-radius:16px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:var(--teal-soft);border:1px solid color-mix(in srgb,var(--teal) 45%,transparent)}
+.evhero .cd b{font:800 28px/1 var(--head);color:var(--text)} .evhero .cd small{font:700 10.5px var(--mono);color:var(--muted);text-transform:uppercase;margin-top:5px}
+.evhero .k{display:block;color:var(--muted);font-size:11px;letter-spacing:.8px;text-transform:uppercase}
+.evhero h3{margin:3px 0 4px;font:700 18px/1.3 var(--head)}
+.evhero .m{font-size:12.5px;color:var(--text2)}
+.evhero .hs{display:flex;flex-direction:column;gap:8px;font-size:12px;color:var(--text2);text-align:right} .evhero .hs b{display:block;font:700 20px var(--mono);color:var(--text)}
+.evhero .hs b.sm{font:700 14px/1.3 var(--head);margin-bottom:2px}
+.evhero.x{margin:0;background:linear-gradient(120deg,color-mix(in srgb,var(--amber) 16%,var(--card)) 0%,var(--card) 55%,color-mix(in srgb,var(--teal) 10%,var(--card)) 100%);box-shadow:var(--shadow)}
+.evhero.x .cd{background:var(--amber-soft);border-color:color-mix(in srgb,var(--amber) 45%,transparent)}
+.chip.hot{border-color:var(--amber);background:var(--amber-soft);color:var(--text);font-weight:800;letter-spacing:.6px;vertical-align:1px}
+.evacts{display:flex;flex-wrap:wrap;gap:6px;margin-top:9px} .evacts .btn{height:30px;font-size:12px;padding:0 10px}
+.evgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:12px;padding:14px 18px 18px}
+.evm{grid-column:1/-1;font:700 11px var(--mono);color:var(--muted);letter-spacing:.6px;text-transform:uppercase;margin-top:6px}
+.ev{display:grid;grid-template-columns:62px minmax(0,1fr);gap:12px;border:1px solid var(--line);border-left:3px solid var(--line2);border-radius:12px;padding:13px;background:var(--card2);animation:fadeUp .35s ease both}
+.ev.core{border-left-color:var(--teal)} .ev.related{border-left-color:var(--amber)}
+.ev .dt{align-self:start;text-align:center;border-radius:10px;background:var(--card);border:1px solid var(--line);padding:7px 0 6px}
+.ev .dt b{display:block;font:800 21px/1.1 var(--head)} .ev .dt b span{font-size:14px;color:var(--text2)} .ev .dt small{font:700 10px var(--mono);color:var(--muted);text-transform:uppercase}
+.ev h3{margin:0 0 3px;font:700 14px/1.35 var(--head)}
+.ev .m{font-size:12px;color:var(--muted)}
+.ev .tags{display:flex;flex-wrap:wrap;gap:5px;margin:8px 0 0}
+.ev .tp{font-size:12px;color:var(--text2);border-top:1px dashed var(--line);padding-top:8px;margin-top:9px}
+.ev .own{display:grid;grid-template-columns:170px minmax(0,1fr);gap:6px;margin-top:9px}
+.ev .own select,.ev .own input{height:30px;border:1px solid var(--line);background:var(--card);border-radius:8px;padding:0 8px;font-size:12px;width:100%;color:var(--text)}
+@media (max-width:700px){ .evhero{grid-template-columns:auto minmax(0,1fr)} .evhero .hs{grid-column:1/-1;flex-direction:row;text-align:left;gap:20px} }
+@media (max-width:560px){ .evgrid{grid-template-columns:1fr;padding:12px} .ev .own{grid-template-columns:1fr} .evhero{margin:12px 12px 0} }
+@media (prefers-reduced-motion:reduce){ *,*::before,*::after{animation:none!important;transition:none!important} }
+
+/* ---------- responsive ---------- */
+@media (max-width:1300px){ .kpis{grid-template-columns:repeat(3,minmax(0,1fr))} .cgrid{grid-template-columns:repeat(2,minmax(0,1fr))} }
+@media (max-width:1100px){ .row2,.row2e{grid-template-columns:1fr} .lanes{grid-template-columns:repeat(3,minmax(0,1fr))} .path{grid-template-columns:repeat(3,minmax(0,1fr))} .stage::after{display:none} .proj{grid-template-columns:1fr} }
+@media (max-width:900px){
+  /* small screens: normal page flow, nothing pinned */
+  .app{grid-template-columns:minmax(0,1fr);height:auto}
+  .main{height:auto;overflow:visible} .scroll{overflow:visible}
+  .rail{position:sticky;top:0;z-index:25;height:auto;flex-direction:row;align-items:center;padding:8px 12px;overflow-x:auto;min-width:0;border-right:0;border-bottom:1px solid var(--line)}
+  .brand{padding:0 8px 0 0}.brand div{display:none}
+  .nav{flex-direction:row}.nav .sep,.nav .cnt,.rail .foot{display:none}.nav button{white-space:nowrap;padding:7px 10px}
+  .top{padding:10px 16px;flex-wrap:wrap}
+  .pinned{padding:16px 16px 12px} .content{padding:16px 16px 40px}
+  .ph.stick{position:static}
+  .cgrid{grid-template-columns:1fr} .lanes{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .vp{grid-template-columns:1fr 1fr}
+}
+@media (max-width:560px){ .kpis{grid-template-columns:repeat(2,minmax(0,1fr))} .kpi .v{font-size:21px} .lanes{grid-template-columns:1fr} .ibtn.ai span{display:none} .kv{grid-template-columns:1fr} .search kbd{display:none} }
+</style>
+</head>
+<body>
+<div class="app">
+  <aside class="rail">
+    <div class="brand">
+      <svg class="logo" width="38" height="38" viewBox="0 0 40 40" role="img" aria-label="Tender Agent"><defs><linearGradient id="lgA" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#16344F"/><stop offset="1" stop-color="#0A1A2B"/></linearGradient><radialGradient id="rgA" cx="0" cy="1" r="1"><stop offset="0" stop-color="#2BB3B1" stop-opacity=".35"/><stop offset="1" stop-color="#2BB3B1" stop-opacity="0"/></radialGradient></defs><rect x="1" y="1" width="38" height="38" rx="11" fill="url(#lgA)" stroke="#2BB3B1" stroke-opacity=".45"/><path d="M10 30L10 8A22 22 0 0 1 25.6 14.4Z" fill="url(#rgA)"/><g fill="none" stroke="#2BB3B1" stroke-linecap="round" stroke-width="2.2"><path d="M10 22a8 8 0 0 1 8 8" opacity=".55"/><path d="M10 15a15 15 0 0 1 15 15" opacity=".8"/><path d="M10 8a22 22 0 0 1 22 22"/></g><g class="sweep"><path d="M10 30L25.6 14.4" stroke="#E8A93B" stroke-width="1.6" stroke-linecap="round"/></g><circle class="blip" cx="27" cy="24" r="4.8" fill="#E8A93B" opacity=".22"/><circle cx="27" cy="24" r="2.5" fill="#E8A93B"/><circle cx="10" cy="30" r="2.3" fill="#EAF0F6"/></svg>
+      <div><b>Tender Agent</b></div>
+    </div>
+    <nav class="nav" id="nav"></nav>
+    <div class="foot"><i></i><span id="sideGen">—</span></div>
+  </aside>
+
+  <div class="main">
+    <header class="top">
+      <label class="search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--muted)"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="q" autocomplete="off"><kbd>/</kbd></label>
+      <span class="spacer"></span>
+      <div class="lang" id="langSeg" role="group" aria-label="Language"><button data-l="az">AZ</button><button data-l="en">EN</button></div>
+      <div class="wrap"><button class="ibtn" id="bellBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg><span class="badge" id="bellCnt" hidden></span></button><div class="pop" id="bellPop" hidden></div></div>
+      <button class="ibtn" id="themeBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg></button>
+      <button class="ibtn ai" id="aiBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/></svg><span>AI Insight</span></button>
+    </header>
+
+    <!-- pinned zone: title + KPIs never scroll away -->
+    <div class="pinned">
+      <div class="head"><div><h1 id="vTitle"></h1><p id="vSub"></p></div>
+        <div style="display:flex;gap:8px;align-items:center"><span class="demo" id="demoBadge" hidden>DEMO</span><span class="live"><i></i><span id="gen">—</span></span></div></div>
+      <section class="kpis" id="kpis"></section>
+      <section class="kpis" id="xkpis" hidden></section>
+    </div>
+
+    <div class="scroll" id="scroller">
+    <main class="content">
+      <!-- ============ EXECUTIVE ============ -->
+      <div data-v="executive" class="brief fade-in" id="brief"></div>
+      <div data-v="executive" id="evExec"></div>
+      <section data-v="executive" class="panel"><div class="ph"><h2 data-i="pathT"></h2><span class="hint" data-i="pathH"></span></div><div class="pb"><div class="path" id="path"></div></div></section>
+      <div data-v="executive" class="row2">
+        <section class="panel"><div class="ph"><h2 data-i="projT"></h2><span class="hint" data-i="projH"></span></div><div id="projects"></div></section>
+        <section class="panel"><div class="ph"><h2 data-i="actT"></h2><span class="hint" data-i="actH"></span></div><div class="acts3" id="acts3"></div></section>
+      </div>
+      <section data-v="executive" class="panel"><div class="ph"><h2 data-i="momT"></h2><div class="mleg" id="momLeg"></div></div><div class="pb chart" id="momentum"></div></section>
+
+      <!-- ============ OVERVIEW ============ -->
+      <div data-v="overview" class="row2">
+        <section class="panel"><div class="ph"><h2 data-i="prioT"></h2><span class="hint" data-i="prioH"></span></div><div class="prio" id="prio"></div></section>
+        <section class="panel"><div class="ph"><h2 data-i="dlT"></h2><span class="hint" data-i="dlH"></span></div><div class="pb"><div class="lanes compact" id="lanesMini"></div></div></section>
+      </div>
+      <div data-v="overview" class="row2e">
+        <section class="panel"><div class="ph"><h2 data-i="trendT"></h2><span class="hint" data-i="trendH"></span></div><div class="pb chart" id="trend"></div></section>
+        <section class="panel"><div class="ph"><h2 data-i="covT"></h2><span class="hint" id="covH"></span></div><div class="pb"><div class="cov" id="cov"></div></div></section>
+      </div>
+
+      <!-- ============ LIST (opportunities / intel) ============ -->
+      <section data-v="opportunities intel" class="panel">
+        <div class="ph stick"><div class="toolbar" id="listTools"></div><span class="hint" id="listHint"></span></div>
+        <div class="tw"><table><thead><tr id="thead"></tr></thead><tbody id="tbody"></tbody></table></div>
+      </section>
+      <section data-v="opportunities" class="panel"><div class="ph"><h2 data-i="trackT"></h2><span class="hint" data-i="trackH"></span></div><div class="pb"><div class="lanes" id="lanes"></div></div></section>
+      <section data-v="intel" class="panel"><div class="ph"><h2 data-i="mapT"></h2><div class="legend" id="mapLegend"></div></div><div id="map"></div></section>
+
+      <!-- ============ NEWS ============ -->
+      <section data-v="news" class="panel">
+        <div class="ph stick"><div class="toolbar"><div class="seg" id="nGroup"><button data-g="" class="on" data-i="all"></button><button data-g="local" data-i="gLocal"></button><button data-g="press" data-i="gPress"></button><button data-g="company" data-i="gCompany"></button></div></div><span class="hint" data-i="newsH"></span></div>
+        <div class="news" id="news"></div>
+      </section>
+
+      <!-- ============ COMPANIES ============ -->
+      <section data-v="companies" class="panel">
+        <div class="tabs" id="cTabs"><button data-t="cust" class="on" data-i="tabCust"></button><button data-t="rival" data-i="tabRival"></button><button data-t="dir" data-i="tabDir"></button><button data-t="vendor" data-i="tabVendor"></button></div>
+        <div data-t="rival" class="pb" style="padding-top:16px" hidden><p class="note" data-i="rivalNote" style="margin-top:0"></p><div class="cgrid" id="rivals"></div><div class="sec"><h4 data-i="winT"></h4><p class="note" data-i="winNote" style="margin:0 0 10px"></p><div id="winners"></div></div></div>
+        <div data-t="cust" class="pb" style="padding-top:16px"><p class="note" data-i="custNote" style="margin-top:0"></p><div class="cgrid" id="comp"></div>
+          <div class="sec"><h4 data-i="heatT"></h4><div class="heat" id="heat"></div>
+            <div class="legend" style="margin-top:8px"><span data-i="less"></span><span class="ramp"><i style="background:var(--h0)"></i><i style="background:var(--h1)"></i><i style="background:var(--h2)"></i><i style="background:var(--h3)"></i><i style="background:var(--h4)"></i><i style="background:var(--h5)"></i></span><span data-i="more"></span></div></div></div>
+        <div data-t="dir" class="pb" style="padding-top:16px" hidden>
+          <div class="toolbar" style="margin-bottom:12px"><select id="dRole"></select><div class="seg" id="dCt"><button data-c="" class="on" data-i="all"></button><button data-c="1" data-i="withContact"></button></div></div>
+          <div class="cgrid" id="dir"></div>
+          <p class="note" data-i="dirNote"></p></div>
+        <div data-t="vendor" hidden>
+          <div class="ph" style="padding-top:14px"><span class="note" data-i="vendorNote"></span></div>
+          <div id="vendor"></div>
+          <div class="pb sec"><h4 data-i="reportsT"></h4><ul id="reports"></ul></div></div>
+      </section>
+
+      <!-- ============ EXHIBITIONS ============ -->
+      <section data-v="events" class="panel" id="evPanel">
+        <div class="ph stick"><div class="toolbar"><div class="seg" id="eRel"><button data-r="rel" class="on" data-i="evRel"></button><button data-r="core" data-i="evCore"></button><button data-r="" data-i="all"></button></div><div class="seg" id="eWhen"><button data-w="up" class="on" data-i="evUp"></button><button data-w="past" data-i="evPast"></button></div></div><span class="hint" id="evH"></span></div>
+        <div id="evHero"></div>
+        <div class="evgrid" id="events"></div>
+        <div class="pb" style="padding-top:0"><p class="note" data-i="evNote"></p></div>
+      </section>
+
+      <!-- ============ SETTINGS ============ -->
+      <div data-v="settings" class="row2e">
+        <section class="panel"><div class="ph"><h2 data-i="setT"></h2></div><div class="pb" style="display:flex;flex-direction:column;gap:16px">
+          <div><div style="font-weight:600;margin-bottom:6px" data-i="theme"></div><div class="seg" id="themeSeg"><button data-th="dark" data-i="dark"></button><button data-th="light" data-i="light"></button></div></div>
+          <div><div style="font-weight:600;margin-bottom:6px" data-i="data"></div><div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn p" id="exportBtn" data-i="csv"></button><button class="btn d" id="resetBtn" data-i="reset"></button></div>
+            <div id="resetAsk" hidden style="margin-top:8px;font-size:12.5px"><span data-i="resetQ"></span> <button class="btn d" id="resetYes" data-i="yesDel"></button> <button class="btn" id="resetNo" data-i="cancel"></button></div></div>
+          <p class="note" data-i="howNote"></p>
+        </div></section>
+        <section class="panel"><div class="ph"><h2 data-i="srcT"></h2><span class="hint" id="srcSum"></span></div><div class="pb sg" id="sources"></div></section>
+      </div>
+    </main>
+    </div>
+  </div>
+</div>
+
+<div class="scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" aria-hidden="true"></aside>
+<aside class="copilot" id="copilot" aria-hidden="true">
+  <div class="cph"><div class="orb"></div><div><b>AI Insight</b><small data-i="cpSub"></small></div><button class="ibtn" id="cpClose" style="margin-left:auto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg></button></div>
+  <div class="cpn" data-i="cpNote"></div>
+  <div class="cpx" id="cpCtx"></div>
+  <div class="chips" id="cpChips"></div>
+  <div class="msgs" id="cpMsgs"></div>
+  <form class="cpi" id="cpForm"><input id="cpIn" autocomplete="off"><button class="btn p" type="submit" data-i="send"></button></form>
+</aside>
+<div class="tip" id="tip" hidden></div>
+
+<!-- data.js is written by collector/run.py and works from file:// too.
+     The query string defeats GitHub Pages' 10-minute browser cache, so every open shows the latest run. -->
+<script>document.write('<script src="data.js?v=' + Date.now() + '"><\/script>');</script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script>
+/* ================= LANGUAGE ================= */
+let lang = document.documentElement.lang === "en" ? "en" : "az";
+const tr = (az, en) => lang === "en" ? en : az;
+const UI = {
+  custNote:["Operator, SOCAR qrupu və EPC şirkətləri: kim FID alır, kim award qazanır, kimdə açıq imkan var. Siqnalı olan şirkətlər avtomatik çıxır; ən aktivlər yuxarıda.","Operators, SOCAR group and EPC contractors: who takes an FID, who wins an award, who has an open opportunity. Companies appear automatically once they have a signal; the most active first."],
+  rivalNote:["Valve, aktuator və valve servisi üzrə rəqiblər. Siyahı config.json-da \"competitor\": true ilə idarə olunur: yerli distribyutorları da belə əlavə edin.","Valve, actuator and valve-service competitors. The list is driven by \"competitor\": true in config.json: add local distributors the same way."],
+  winT:["Award qalibləri: kim nəyi, neçəyə qazanıb","Award winners: who won what, at what value"],
+  winNote:["Bağlanmış müqavilələrdən (əsasən etender). Rəqibin qazandığı sətir vurğulanır. Qiymət səviyyəsini və hansı sifarişçinin kimlə işlədiyini göstərir.","From concluded contracts (mostly etender). Rows won by a competitor are highlighted. Shows price levels and which buyer works with whom."],
+  evRel:["Uyğun","Relevant"], evCore:["Neft-qaz / enerji","Oil & gas / energy"], evUp:["Qarşıdakı","Upcoming"], evPast:["Keçmiş","Past"],
+  evNote:["Mənbələr: Iteca Caspian sərgi təqvimi (iteca.az, cari və gələn il) və AICC Caspian; hər toplanışda avtomatik yenilənir. Bilet, stend və delegat qiymətləri təşkilatçının saytındadır. Status və qeydlər yalnız bu brauzerdə saxlanır.","Sources: Iteca Caspian exhibition calendar (iteca.az, this year and next) and AICC Caspian; refreshed automatically on every run. Ticket, stand and delegate prices are on the organiser's site. Statuses and notes stay in this browser only."],
+  pathT:["Opportunity Path: imkan hansı mərhələdədir","Opportunity Path: where each signal stands"], pathH:["Mərhələyə klikləyin: siqnallar açılır","Click a stage to open its signals"],
+  projT:["Layihə izləmə lövhəsi","Project watch board"], projH:["Ən irəli mərhələ və növbəti addım","Furthest stage and next step"],
+  actT:["Bu həftənin 3 addımı","This week's 3 actions"], actH:["Prioritet sırasına görə","From the priority ranking"],
+  momT:["Bazar dinamikası: həftələr üzrə","Market momentum by week"],
+  prioT:["Bu gün diqqət tələb edənlər","Needs attention today"], prioH:["Son tarix, yenilik, FID və uyğunluğa görə","Ranked by deadline, novelty, FID and fit"],
+  dlT:["Son tarixlər","Deadlines"], dlH:["Aktiv imkanlar","Active items"], trendT:["Axın: son 30 gün","Flow: last 30 days"], trendH:["Yeni imkan, kəşfiyyat və xəbər","New opportunities, intel and news"],
+  covT:["Mənbə əhatəsi","Source coverage"], trackT:["Son tarix izləyicisi","Deadline tracker"], trackH:["Avtomatik təcililik","Automatic urgency"],
+  mapT:["Aktivlər və layihələr","Assets and projects"], all:["Hamısı","All"], gLocal:["Yerli","Local"], gPress:["Sənaye","Industry"], gCompany:["Şirkət","Company"],
+  newsH:["Profilə uyğun, son 45 gün","Profile-relevant, last 45 days"], tabCust:["Müştəri aktivliyi","Customer activity"], tabRival:["Rəqiblər","Competitors"], tabDir:["Kataloq və əlaqələr","Directory & contacts"], tabVendor:["Vendor qeydiyyatı","Vendor registration"],
+  heatT:["Aktivlik: şirkət × həftə","Activity: company × week"], less:["Az","Less"], more:["Çox","More"], withContact:["Əlaqəsi olan","With contacts"],
+  dirNote:["Əlaqələr yalnız rəsmi saytlardan götürülüb, mənbə linki ilə. Olmayanları config.json → companies → contact sahəsinə əlavə edin.","Contacts come only from official websites, with a source link. Add missing ones in config.json → companies → contact."],
+  vendorNote:["Login tələb edən portallar avtomatik oxunmur. Statusu burada qeyd edin; parol saxlanmır. Məlumat yalnız bu brauzerdə qalır.","Login-gated portals are not read automatically. Track the status here; no passwords are stored. Data stays in this browser only."],
+  reportsT:["Hesabatlar və layihə səhifələri","Reports and project pages"], setT:["Parametrlər","Settings"], theme:["Tema","Theme"], dark:["Qaranlıq","Dark"], light:["İşıqlı","Light"],
+  data:["Məlumat","Data"], csv:["CSV ixrac","Export CSV"], reset:["Status və qeydləri sıfırla","Reset statuses & notes"], resetQ:["Bütün status və qeydlər bu brauzerdən silinsin?","Delete all statuses and notes from this browser?"],
+  yesDel:["Bəli, sil","Yes, delete"], cancel:["Ləğv et","Cancel"],
+  howNote:["Məlumat iş günləri 4 dəfə avtomatik toplanır. Status, qeyd və vendor statusları yalnız bu brauzerdə saxlanır. \"AI\" hissələri brauzerdə qaydalarla işləyir (LLM deyil). Qalib gəlmə ehtimalı qəsdən göstərilmir: bunun üçün keçmiş tender nəticələri lazımdır.","Data is collected automatically 4 times per working day. Statuses, notes and vendor statuses stay in this browser only. The \"AI\" parts run as rules in the browser (not an LLM). Win probability is deliberately not shown: it needs past tender results."],
+  srcT:["Mənbə sağlamlığı","Source health"], cpSub:["lokal köməkçi · qaydalar əsasında","local assistant · rule-based"],
+  cpNote:["Brauzerdə, toplanmış məlumat üzərində işləyir (LLM deyil). Sənəd paketini həmişə özünüz yoxlayın.","Runs in your browser on the collected data (not an LLM). Always check the tender documents yourself."],
+  send:["Göndər","Send"], q:["Axtar: tender, şirkət, layihə, valve, RFQ №…","Search: tender, company, project, valve, RFQ no.…"], cpIn:["Sual: bu həftə hansı son tarixlər var?","Ask: which deadlines are this week?"]
+};
+function applyStatic(){
+  document.documentElement.lang = lang;
+  document.querySelectorAll("[data-i]").forEach(el => { const v = UI[el.dataset.i]; if(v) el.textContent = tr(v[0], v[1]); });
+  $("#q").placeholder = tr(...UI.q); $("#cpIn").placeholder = tr(...UI.cpIn);
+  $("#bellBtn").setAttribute("aria-label", tr("Bildirişlər","Notifications")); $("#themeBtn").setAttribute("aria-label", tr("Tema","Theme"));
+  $("#langSeg").querySelectorAll("button").forEach(b => b.classList.toggle("on", b.dataset.l === lang));
+  $("#dRole").innerHTML = `<option value="">${esc(tr("Bütün rollar","All roles"))}</option>` + Object.keys(ROLE_AZ).map(k => `<option value="${k}">${esc(roleName(k))}</option>`).join("");
+  $("#cpChips").innerHTML = CHIPS().map(c => `<button type="button">${esc(c)}</button>`).join("");
+}
+
+/* ================= DATA ================= */
+const DATA = window.__RADAR__ || {tenders:[],sources:[],profile:{},companies:[]};
+const T = DATA.tenders || [];
+const LS = "tenderRadar.v1", LSV = "tenderRadar.vendors.v1";
+const ls = { get(k){ try{ return JSON.parse(localStorage.getItem(k)) || {}; }catch(e){ return {}; } }, set(k,v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} } };
+let state = ls.get(LS), vstate = ls.get(LSV);
+const meta = id => { const m = state[id] || {status:"new", note:""}; return m.status === "bid" ? {...m, status:"rfq"} : m; };
+const save = (id, patch) => { state[id] = {...meta(id), ...patch}; ls.set(LS, state); renderAll(); if(drawerId === id) openDrawer(id); };
+
+/* ================= HELPERS ================= */
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const safeUrl = u => /^https?:\/\//i.test(u || "") ? u : "";
+const isEmail = e => /^[^\s@<>"']+@[^\s@<>"']+\.[a-z]{2,}$/i.test(e || "");
+const telHref = t => "tel:" + String(t || "").replace(/[^\d+]/g, "");
+const today0 = () => new Date(new Date().toDateString());
+const daysLeft = d => d ? Math.ceil((new Date(d) - today0()) / 864e5) : null;
+const isToday = iso => iso && new Date(iso).toDateString() === new Date().toDateString();
+const fmtAZN = v => v >= 1e6 ? (v/1e6).toFixed(v >= 1e7 ? 0 : 1) + tr(" mln AZN"," mn AZN") : v >= 1e3 ? Math.round(v/1e3) + tr(" min AZN","k AZN") : Math.round(v) + " AZN";
+const short = (t, n) => t.length > n ? t.slice(0, n) + "…" : t;
+const STAT = () => ({new:tr("Yeni","New"), review:tr("Baxılır","Reviewing"), rfq:tr("Aktiv RFQ","Active RFQ"), submitted:tr("Təklif verildi","Offer submitted"), won:tr("Qazanıldı","Won"), lost:tr("Uduzuldu","Lost"), pass:tr("Keçildi","Passed")});
+const ROLE_AZ = {operator:"Operator", soc:"SOCAR qrupu", utility:"Dövlət / kommunal", epc:"EPC podratçı", fabricator:"Fabrikasiya", service:"Xidmət / avadanlıq"};
+const ROLE_EN = {operator:"Operator", soc:"SOCAR group", utility:"State / utility", epc:"EPC contractor", fabricator:"Fabrication", service:"Services / equipment"};
+const roleName = k => (lang === "en" ? ROLE_EN : ROLE_AZ)[k] || "";
+const ZONE = () => ({opportunity:tr("İmkan","Opportunity"), intel:tr("Kəşfiyyat","Intel"), news:tr("Xəbər","News")});
+const zoneOf = x => x.zone || (x.category === "direct_tender" ? "opportunity" : x.category === "award" ? "intel" : "news");
+const GROUP = DATA.source_groups || {};
+const groupOf = x => ({local_news:"local", press:"press", topics:"press", company:"company"})[GROUP[x.source_id]] || "local";
+const scoreCls = s => s >= 90 ? "s-g" : s >= 70 ? "s-t" : s >= 50 ? "s-y" : "s-r";
+const scoreVar = s => s >= 90 ? "var(--good)" : s >= 70 ? "var(--teal)" : s >= 50 ? "var(--warn)" : "var(--crit)";
+const urg = d => d === null ? "" : d <= 3 ? "u0" : d <= 7 ? "u1" : d <= 14 ? "u2" : "u3";
+const active = x => { const s = meta(x.id).status, d = daysLeft(x.deadline); return !["pass","lost","won"].includes(s) && !(d !== null && d < 0); };
+const isAward = x => x.signal_type === "Award" || x.category === "award";
+const mentions = (x, name) => (x.companies || []).some(c => c.name === name);
+const ROSTER = Object.fromEntries((DATA.companies || []).map(c => [c.name, c]));
+// generated texts: English twins come from the collector; the rest is mapped here
+const tx = (x, k) => lang === "en" ? (x[k + "_en"] || x[k]) : x[k];
+const srcName = x => lang === "en" ? (x.source_en || x.source) : x.source;
+const segName = s => lang === "en" ? ({"Layihə siqnalı":"Project signal"})[s] || s : s;
+const sigName = s => lang === "en" ? ({"Layihə xəbəri":"Project news"})[s] || s : s;
+const noteOf = c => lang === "en" ? (c.note_en || c.note || "") : (c.note || "");
+function trText(r){
+  if(lang !== "en" || !r) return r;
+  return r.replace(/^şirkət:/, "company:").replace(/^mənfi:/, "negative:").replace(/Son tarixə (\d+) gün/, "$1 days to deadline").replace("Son tarix keçib", "Deadline passed")
+    .replace("EPC award/FEED siqnalı", "EPC award/FEED signal").replace("FID siqnalı: layihə icraya keçir", "FID signal: project moves to execution")
+    .replace("Valve/satınalma siqnalı yoxdur", "No valve/procurement signal").replace("Award: valve/avadanlıq mövqeyi yoxdur", "Award: no valve/equipment line item").replace("Dövlət/kommunal sifarişçi: valve mövqeyi yoxdur", "State/utility buyer: no valve line item")
+    .replace("Neft-qaz konteksti yoxdur", "No oil & gas context").replace(/^Minimum (\d+) iştirakçı/, "Minimum $1 bidders").replace(/^İştirak haqqı/, "Participation fee")
+    .replace(/^Sənədə baxış haqqı/, "Document fee").replace(": son tarix ", ": deadline ");
+}
+const sigChip = x => x.signal_type === "FID" ? '<span class="chip fid">FID</span>' : isAward(x) ? '<span class="chip aw">Award</span>' : "";
+const fitChip = x => (x.product_fit||[]).length ? `<span class="chip fit" title="${esc(x.product_fit.map(f => f.line + " · " + f.brand).join("; "))}">Portfolio: ${esc(x.product_fit[0].line.split(" (")[0])}${x.product_fit.length > 1 ? " +" + (x.product_fit.length-1) : ""}</span>` : "";
+const AZ_M = ["yanvar","fevral","mart","aprel","may","iyun","iyul","avqust","sentyabr","oktyabr","noyabr","dekabr"], EN_M = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+const AZ_D = ["bazar","bazar ertəsi","çərşənbə axşamı","çərşənbə","cümə axşamı","cümə","şənbə"], EN_D = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+const azDay = iso => { const d = new Date(iso); if(isNaN(d)) return String(iso || ""); return lang === "en" ? `${EN_D[d.getDay()]}, ${d.getDate()} ${EN_M[d.getMonth()]}` : `${d.getDate()} ${AZ_M[d.getMonth()]}, ${AZ_D[d.getDay()]}`; };
+const azShort = d => `${String(d.getDate()).padStart(2,"0")}.${String(d.getMonth()+1).padStart(2,"0")}`;
+const azStamp = iso => { const d = new Date(iso); if(isNaN(d)) return ""; const hm = `${String(d.getHours()).padStart(2,"0")}:${String(d.getMinutes()).padStart(2,"0")}`; return lang === "en" ? `${d.getDate()} ${EN_M[d.getMonth()]} ${d.getFullYear()}, ${hm}` : `${d.getDate()} ${AZ_M[d.getMonth()]} ${d.getFullYear()}, ${hm}`; };
+
+function contactHtml(ct){
+  if(!ct) return "";
+  const row = (l, v) => v ? `<dt>${esc(l)}</dt><dd>${v}</dd>` : "";
+  const mail = e => isEmail(e) ? `<a href="mailto:${esc(e)}">${esc(e)}</a>` : "";
+  const link = (u, t) => safeUrl(u) ? `<a href="${esc(u)}" target="_blank" rel="noopener noreferrer">${esc(t)} ↗</a>` : "";
+  return `<dl class="kv">${row(tr("Ünvan","Address"), esc(ct.address))}${row(tr("Telefon","Phone"), ct.phone ? `<a href="${esc(telHref(ct.phone))}">${esc(ct.phone)}</a>` : "")}${row("Email", mail(ct.email))}${row(tr("Satınalma email","Procurement email"), mail(ct.procurement_email))}${row(tr("Satınalma","Procurement"), link(ct.procurement, tr("Satınalma səhifəsi","Procurement page")))}${row(tr("Qeyd","Note"), esc(tx(ct, "procurement_note")))}${row(tr("Sayt","Website"), link(ct.website, tr("Rəsmi sayt","Official site")))}${row(tr("Mənbə","Source"), link(ct.source, tr("Yoxlanıb ","Verified ") + (ct.verified || "")))}</dl>`;
+}
+
+/* ================= VIEWS ================= */
+const ICON = {
+  executive:'<path d="M3 3v18h18"/><path d="M7 15l4-5 3 3 5-7"/><circle cx="19" cy="6" r="1.6"/>',
+  overview:'<path d="M3 13h8V3H3zM13 21h8V11h-8zM3 21h8v-6H3zM13 3v6h8V3z"/>',
+  opportunities:'<path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/>',
+  intel:'<circle cx="12" cy="12" r="9"/><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/><circle cx="12" cy="12" r="2"/>',
+  news:'<path d="M4 4h13a3 3 0 0 1 3 3v13H7a3 3 0 0 1-3-3z"/><path d="M8 8h8M8 12h8M8 16h5"/>',
+  companies:'<path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M9 9h1M14 9h1M9 13h1M14 13h1M9 17h1M14 17h1"/>',
+  events:'<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4M8 14h3v3H8z"/>',
+  settings:'<circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9 7 7M17 17l2.1 2.1M4.9 19.1 7 17M17 7l2.1-2.1"/>'
+};
+const VIEWS = () => ({
+  executive:     {label:tr("Executive","Executive"), sub:tr("Rəhbərlik üçün 30 saniyəlik mənzərə: bazarda nə baş verir, bizim üçün hansı imkan yaranır, bu həftə nə etməli.","A 30-second view for leadership: what is moving in the market, where our opportunity is, what to do this week.")},
+  overview:      {label:tr("İcmal","Overview"), sub:tr("Bu günün vəziyyəti: nə yenidir, nə təcilidir, hansı siqnallar vacibdir.","Today at a glance: what is new, what is urgent, which signals matter.")},
+  opportunities: {label:tr("İmkanlar","Opportunities"), sub:tr("İştirak edə biləcəyiniz açıq tender, RFQ və satınalmalar: SOCAR, etender, SOCAR-KBR, Trend Tenders, World Bank, EBRD və s.","Open tenders, RFQs and procurements you can bid on: SOCAR, etender, SOCAR-KBR, Trend Tenders, World Bank, EBRD and more."), count:x => zoneOf(x) === "opportunity" && active(x)},
+  intel:         {label:tr("Bazar kəşfiyyatı","Market intel"), sub:tr("Tender elan olunmamışdan əvvəlki siqnallar: FID, bağlanmış müqavilələr (award), EPC/FEED və layihə mərhələləri.","Signals before a tender exists: FIDs, concluded contracts (awards), EPC/FEED and project milestones."), count:x => zoneOf(x) === "intel"},
+  news:          {label:tr("Xəbərlər","News"), sub:tr("Ölkədə və sənayedə profilinizə aid baş verənlər: yerli xəbər saytları, sənaye nəşrləri və şirkətlərin öz xəbərləri.","What is happening in the country and the industry that touches your profile: local news, trade press and company news."), count:x => zoneOf(x) === "news"},
+  companies:     {label:tr("Şirkətlər","Companies"), sub:tr("Müştərilər nə edir, rəqiblər nəyi qazanır, şirkət kataloqu və yoxlanmış əlaqələr, vendor qeydiyyatı izləyicisi.","What customers are doing, what competitors win, company directory with verified contacts, vendor registration tracker.")},
+  events:        {label:tr("Sərgilər","Exhibitions"), sub:tr("Azərbaycanda qarşıdakı və gedən sərgi, forum və konfranslar: neft-qaz, enerji, tikinti və əlaqəli sektorlar. Bilet, stend, delegat qeydiyyatı və təqvimə əlavə buradan.","Upcoming and current exhibitions, forums and conferences in Azerbaijan: oil & gas, energy, construction and related sectors. Tickets, stands, delegate registration and calendar invites from here."), n:() => evUp().length},
+  settings:      {label:tr("Parametrlər","Settings"), sub:tr("Tema, ixrac, mənbələrin vəziyyəti.","Theme, export, source health.")}
+});
+let view = "executive", sortKey = "score", sortDir = -1, typeF = "", segF = "", compF = "", newsG = "", drawerId = null, lastSel = null, cTab = "cust", dirCt = "";
+
+function renderNav(){
+  const V = VIEWS(), item = k => { const v = V[k], n = v.n ? v.n() : v.count ? T.filter(v.count).length : null;
+    return `<button data-v="${k}" class="${k===view?'on':''}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">${ICON[k]}</svg>${esc(v.label)}${n !== null ? `<span class="cnt">${n}</span>` : ""}</button>`; };
+  $("#nav").innerHTML = item("executive") + item("overview") + `<div class="sep">${esc(tr("Kəşfiyyat","Intelligence"))}</div>` + ["opportunities","intel","news","companies","events"].map(item).join("") + `<div class="sep">${esc(tr("Sistem","System"))}</div>` + item("settings");
+}
+function setView(v, keepScroll){
+  if(v === "executive" && !keepScroll) animateNext = true;
+  view = v; const V = VIEWS()[v];
+  $("#vTitle").textContent = V.label; $("#vSub").textContent = V.sub;
+  document.querySelectorAll("main.content > [data-v]").forEach(el => el.hidden = !el.dataset.v.split(" ").includes(v));
+  $("#kpis").hidden = v !== "overview"; $("#xkpis").hidden = v !== "executive";
+  if(!keepScroll){ sortKey = v === "intel" ? "first_seen" : "score"; sortDir = -1; typeF = ""; segF = ""; compF = ""; $("#scroller").scrollTop = 0; }
+  renderAll();
+  if(v === "intel"){ initMap(); setTimeout(() => mapObj && mapObj.invalidateSize(), 80); }
+}
+
+/* ================= EXECUTIVE ================= */
+// Opportunity Path stages, mapped from what each signal says about the project lifecycle.
+const STAGES = () => [
+  ["announce", tr("Layihə elanı","Project announced"), tr("PSA, kəşfiyyat, yeni layihə","PSA, exploration, new project")],
+  ["feed", tr("FEED · FID","FEED · FID"), tr("Layihələndirmə, investisiya qərarı","Engineering, investment decision")],
+  ["epc", tr("EPC award","EPC award"), tr("Baş podratçı seçilir","Main contractor selected")],
+  ["vendor", tr("Vendor qeydiyyatı","Vendor registration"), tr("Pre-kvalifikasiya, EOI","Pre-qualification, EOI")],
+  ["rfq", tr("RFQ / tender","RFQ / tender"), tr("Açıq satınalma","Open procurement")],
+  ["contract", tr("Müqavilə","Contract"), tr("Bağlanmış müqavilə (award)","Concluded contract (award)")]
+];
+const STAGE_IX = {announce:0, feed:1, epc:2, vendor:3, rfq:4, contract:5};
+function stageOf(x){
+  const t = (x.title + " " + (x.text || "")).toLowerCase();
+  if(x.category === "award") return "contract";
+  if(/pre-?qualif|expression of interest|\beoi\b|vendor (list|registration)|approved vendor|pre-kvalifikasiya/.test(t)) return "vendor";
+  if(x.category === "direct_tender") return "rfq";
+  if(/\bepc\b|\bepci\b|awarded|\bawards?\b|contract (award|signed)|wins? (a |the )?contract|letter of award|hook-?up|fabrication contract|müqavilə imzala/.test(t)) return "epc";
+  if(x.signal_type === "FID" || /\bfeed\b|front[- ]end engineering|pre-?feed|basic engineering|investment decision/.test(t)) return "feed";
+  return "announce";
+}
+const PROJECTS = [
+  {n:"Absheron", sub:"JOCAP · TotalEnergies · SOCAR · XRG", k:["absheron","jocap"]},
+  {n:"Shah Deniz", sub:"bp · SDC compression", k:["shah deniz","şahdəniz","sdc"]},
+  {n:"ACG", sub:"bp · Azeri-Chirag-Gunashli", k:["acg","azeri","chirag","gunashli","günəşli"]},
+  {n:"Umid-Babek", sub:"UBOC · SOCAR", k:["umid","ümid","babek","babək"]},
+  {n:"Karabakh field", sub:"SOCAR · Equinor", k:["karabakh field","karabagh field"]},
+  {n:"Sangachal / STEL", sub:"bp", k:["sangachal","səngəçal","stel"]},
+  {n:"Middle Kura (unconventional)", sub:"SOCAR · ExxonMobil", k:["middle kura","unconventional"]},
+  {n:"Shamakhi-Gobustan", sub:"MOL · SOCAR", k:["shamakhi","gobustan"]},
+  {n:"Onshore PSAs", sub:"SOCAR · Gran Tierra", k:["gran tierra"]},
+  {n:"Baku refinery", sub:"SOCAR Downstream", k:["refinery","neft emalı","haor"]},
+  {n:"Sumgait chemicals", sub:"SOCAR Polymer · Azerikimya", k:["socar polymer","azerikimya","sumgait","sumqayıt","carbamide","methanol"]},
+  {n:"Power & gas network", sub:"Azerenerji · Azerigas", k:["azərenerji","azerenerji","azəriqaz","azerigaz","ksés","kses"]}
+];
+const NEXT = () => ({
+  announce: tr("FEED / FID xəbərini izləyin; operatorla tanışlıq görüşü","Watch for FEED / FID; arrange an intro with the operator"),
+  feed: tr("EPC tender qısa siyahısını öyrənin; operator və EPC-lərdə vendor qeydiyyatı","Find the EPC shortlist; register as vendor with operator and EPCs"),
+  epc: tr("EPC podratçısının satınalma komandası ilə əlaqə; valve paketlərinin MTO tarixləri","Contact the EPC procurement team; valve package MTO dates"),
+  vendor: tr("Pre-kvalifikasiya sənədlərini tamamlayıb təqdim edin","Complete and submit the pre-qualification"),
+  rfq: tr("Təklifi hazırlayın: texniki uyğunluq + qiymət","Prepare the bid: compliance + price"),
+  contract: tr("Qaliblə subpodrat / təchizat danışığı","Talk subcontract / supply with the winner")
+});
+let pathF = null, animateNext = true;
+function countUp(root){
+  if(matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  root.querySelectorAll("[data-count]").forEach(el => {
+    const end = +el.dataset.count, fmt = el.dataset.fmt, t0 = performance.now(), dur = 900;
+    const step = now => { const k = Math.min(1, (now - t0)/dur), v = end * (1 - Math.pow(1 - k, 3));
+      el.textContent = fmt === "azn" ? fmtAZN(v) : Math.round(v).toLocaleString("en-US"); if(k < 1) requestAnimationFrame(step); };
+    requestAnimationFrame(step);
+  });
+}
+function renderExec(){
+  if(view !== "executive") return;
+  const now = today0(), w7 = new Date(now), m30 = new Date(now); w7.setDate(w7.getDate() - 7); m30.setDate(m30.getDate() - 30);
+  const recent = T.filter(x => new Date(x.first_seen) >= w7);
+  const act = T.filter(active), opp = act.filter(x => zoneOf(x) === "opportunity");
+  const fids = T.filter(x => x.signal_type === "FID" && new Date(x.first_seen) >= m30), awards = T.filter(x => isAward(x) && new Date(x.first_seen) >= m30);
+  const awardValue = awards.reduce((a,x) => a + (x.category === "award" ? (x.budget_value || 0) : 0), 0);
+  const scanned = (DATA.sources||[]).reduce((a,s) => a + (s.fetched||0), 0);
+  const tracked = PROJECTS.filter(p => T.some(x => zoneOf(x) !== "news" && p.k.some(k => x.title.toLowerCase().includes(k))));
+  const top = priorities()[0];
+  // 1. brief
+  const bs = [["intel", recent.filter(x => x.signal_type === "FID").length, "FID"], ["intel", recent.filter(isAward).length, "Award"],
+    ["opportunities", recent.filter(x => zoneOf(x) === "opportunity").length, tr("Açıq tender","Open tenders")], ["news", recent.filter(x => zoneOf(x) === "news").length, tr("Xəbər","News")]];
+  $("#brief").innerHTML = `<div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/></svg></div>
+    <div class="bw"><small>${esc(tr("Həftənin xülasəsi · son 7 gün","This week in brief · last 7 days"))}</small>
+      <div class="bstats">${bs.map(([go,v,l]) => `<button type="button" class="bs${v ? "" : " z"}" data-go="${go}"><b>${v}</b>${esc(l)}</button>`).join("")}</div>
+      <div class="btop"><span>${esc(tr("Ən vacibi","Top item"))}</span>${top ? `<span class="lnk" data-id="${esc(top.x.id)}">${esc(short(top.x.title, 95))}</span>` : `<em>${esc(tr("təcili element yoxdur","nothing urgent"))}</em>`}</div></div>`;
+  $("#evExec").innerHTML = evHotHtml(true);
+  // 2. KPIs (count up)
+  const K = [
+    ["opportunities", tr("Açıq imkanlar","Open opportunities"), opp.length, "", tr("iştirak edilə bilən","biddable now"), "var(--teal)"],
+    ["intel", tr("FID · 30 gün","FIDs · 30 days"), fids.length, "", tr("layihələr icraya keçir","projects moving to execution"), "var(--s1)"],
+    ["intel", tr("Award · 30 gün","Awards · 30 days"), awards.length, "", awardValue ? fmtAZN(awardValue) + tr(" bağlanmış müqavilə"," in concluded contracts") : tr("bağlanmış müqavilələr","concluded contracts"), "var(--s2)"],
+    ["exec", tr("İzlənən layihələr","Projects with signals"), tracked.length, "", tr(`${PROJECTS.length} əsas layihədən`, `of ${PROJECTS.length} key projects`), "var(--s3)"],
+    ["settings", tr("Yoxlanan elanlar","Notices scanned"), scanned, "", tr(`${(DATA.sources||[]).length} mənbə, hər toplanışda`, `${(DATA.sources||[]).length} sources, every run`), "var(--amber)"]
+  ];
+  $("#xkpis").innerHTML = K.map(([go,l,v,f,s,c]) => `<button class="kpi" data-k="${go}" style="--c:${c}"><div class="l">${esc(l)}</div><div class="v" data-count="${v}" ${f ? `data-fmt="${f}"` : ""}>${Number(v).toLocaleString("en-US")}</div><div class="s" title="${esc(s)}">${esc(s)}</div></button>`).join("");
+  // 3. opportunity path
+  const live = T.filter(x => zoneOf(x) !== "news" && active(x)), counts = {};
+  live.forEach(x => { const st = stageOf(x); counts[st] = (counts[st] || 0) + 1; });
+  const maxC = Math.max(1, ...Object.values(counts));
+  $("#path").innerHTML = STAGES().map(([k,l,h]) => `<div class="stage ${pathF===k?'on':''}" data-st="${k}"><span class="k">${esc(l)}</span><span class="n" data-count="${counts[k]||0}">${counts[k]||0}</span><span class="hint2">${esc(h)}</span><div class="fill" style="margin-top:8px"><i style="width:${Math.max(3, 100*(counts[k]||0)/maxC)}%"></i></div></div>`).join("");
+  // 4. project board
+  const NX = NEXT(), ST = STAGES();
+  const rowsP = PROJECTS.map(p => { const its = T.filter(x => zoneOf(x) !== "news" && p.k.some(k => (x.title + " " + (x.buyer||"")).toLowerCase().includes(k)));
+    if(!its.length) return null; const ix = Math.max(...its.map(x => STAGE_IX[stageOf(x)])); const lead = its.sort((a,b) => STAGE_IX[stageOf(b)] - STAGE_IX[stageOf(a)] || b.score - a.score)[0];
+    return {p, its, ix, lead}; }).filter(Boolean).sort((a,b) => b.ix - a.ix || b.its.length - a.its.length);
+  $("#projects").innerHTML = rowsP.length ? rowsP.map(({p, its, ix, lead}) => `<div class="proj" data-id="${esc(lead.id)}"><div class="nm">${esc(p.n)}<small>${esc(p.sub)} · ${its.length} ${esc(tr("siqnal","signals"))}</small></div>
+      <div><div class="dots">${ST.map((s,i) => `${i ? `<i class="${i <= ix ? "done" : ""}"></i>` : ""}<b class="${i < ix ? "done" : i === ix ? "cur" : ""}" title="${esc(s[1])}"></b>`).join("")}</div><div class="ts" style="margin-top:6px">${esc(ST[ix][1])}</div></div>
+      <div class="nx">${esc(NX[ST[ix][0]])}</div></div>`).join("")
+    : `<div class="empty"><b>${esc(tr("Əsas layihələr üzrə siqnal yoxdur","No signals on key projects yet"))}</b></div>`;
+  // 5. three actions
+  const P3 = priorities().slice(0, 3);
+  $("#acts3").innerHTML = P3.length ? P3.map(({x}, i) => `<div class="a3" data-id="${esc(x.id)}"><span class="no">${i+1}</span><div><div class="t">${esc(short(x.title, 100))}</div><div class="d">${esc(steps(x)[x.signal_type === "FID" ? 1 : 0] || "")}</div></div></div>`).join("")
+    : `<div class="empty"><b>${esc(tr("Bu həftə üçün təcili addım yoxdur","No urgent action this week"))}</b></div>`;
+  // 6. momentum: weekly counts by zone (stacked, 3 validated series)
+  const weeks = 8, start = new Date(now); start.setDate(start.getDate() - 7*weeks + 1);
+  const W = Array.from({length:weeks}, (_,i) => { const d = new Date(start); d.setDate(d.getDate() + 7*i); return {d, opportunity:0, intel:0, news:0}; });
+  T.forEach(x => { const i = Math.floor((new Date(x.first_seen) - start)/(7*864e5)); if(i >= 0 && i < weeks) W[i][zoneOf(x)]++; });
+  const SER = [["opportunity", tr("İmkan","Opportunity"), "var(--s1)"], ["intel", tr("Kəşfiyyat","Intel"), "var(--s2)"], ["news", tr("Xəbər","News"), "var(--s3)"]];
+  $("#momLeg").innerHTML = SER.map(([,l,c]) => `<span><i style="background:${c}"></i>${esc(l)}</span>`).join("");
+  const mx = Math.max(1, ...W.map(w => w.opportunity + w.intel + w.news)), Wd = 900, H = 200, pl = 28, pb = 24, pt = 8, bw = (Wd - pl)/weeks, y = v => (H - pt - pb) * v/mx;
+  let svg = `<svg viewBox="0 0 ${Wd} ${H}" role="img" aria-label="${esc(tr("Həftələr üzrə siqnallar","Signals per week"))}">`;
+  [0, Math.ceil(mx/2), mx].filter((v,i,a) => a.indexOf(v) === i).forEach(v => svg += `<line class="grid" x1="${pl}" x2="${Wd}" y1="${H-pb-y(v)}" y2="${H-pb-y(v)}"/><text class="ax" x="${pl-6}" y="${H-pb-y(v)+3}" text-anchor="end">${v}</text>`);
+  W.forEach((w,i) => { let base = H - pb; const x = pl + i*bw + bw*.22, bwid = bw*.56;
+    svg += `<rect class="hit" data-i="${i}" x="${pl + i*bw}" y="${pt}" width="${bw}" height="${H-pt-pb}" fill="transparent"/>`;
+    SER.forEach(([k,,c], si) => { const h = y(w[k]); if(!h) return; const gap = base < H - pb ? 2 : 0;
+      svg += `<rect class="bar-in" style="animation-delay:${i*40}ms" x="${x}" y="${base - h + gap}" width="${bwid}" height="${Math.max(0, h - gap)}" rx="${si === SER.length - 1 || !SER.slice(si+1).some(([k2]) => w[k2]) ? 4 : 0}" fill="${c}" pointer-events="none"/>`; base -= h; });
+    svg += `<text class="ax" x="${x + bwid/2}" y="${H-7}" text-anchor="middle">${azShort(w.d)}</text>`; });
+  $("#momentum").innerHTML = svg + `<line x1="${pl}" x2="${Wd}" y1="${H-pb}" y2="${H-pb}" stroke="var(--line2)"/></svg>` +
+    `<div class="note" style="font-size:11.5px;margin-top:6px">${esc(tr("Məlumat 1 oktyabr 2026-dan toplanır: qrafik həftə-həftə dolacaq.","Data is collected since 1 October 2026: the chart fills week by week."))}</div>`;
+  $("#momentum").querySelectorAll(".hit").forEach(r => { const w = W[+r.dataset.i];
+    r.onmousemove = e => showTip(e, `<b>${esc(azDay(w.d))} →</b>${SER.map(([k,l]) => `${esc(l)}: ${w[k]}`).join("<br>")}`); r.onmouseleave = hideTip; });
+  if(animateNext){ countUp($("#xkpis")); countUp($("#path")); animateNext = false; }
+}
+
+/* ================= OVERVIEW ================= */
+function renderKpis(){
+  const act = T.filter(active), opp = act.filter(x => zoneOf(x) === "opportunity");
+  const newT = T.filter(x => isToday(x.first_seen));
+  const budgets = opp.filter(x => x.budget_value), pipe = budgets.reduce((a,x) => a + x.budget_value, 0);
+  const week = act.filter(x => { const d = daysLeft(x.deadline); return d !== null && d >= 0 && d <= 7; }).length;
+  const m30 = new Date(); m30.setDate(m30.getDate() - 30);
+  const intel = T.filter(x => zoneOf(x) === "intel" && new Date(x.first_seen) >= m30);
+  const k = [
+    ["opportunities", tr("Açıq imkanlar","Open opportunities"), opp.length, opp.length ? tr(`${newT.filter(x => zoneOf(x)==="opportunity").length} bu gün yeni`, `${newT.filter(x => zoneOf(x)==="opportunity").length} new today`) : tr("hazırda profilə uyğun açıq tender yoxdur","no matching open tender right now"), "var(--teal)"],
+    ["week", tr("Bu həftə son tarix","Due this week"), week, tr("7 gün ərzində bağlanır","closing within 7 days"), "var(--warn)"],
+    ["pipe", tr("Açıq tender dəyəri","Open tender value"), pipe ? fmtAZN(pipe) : "—", pipe ? tr(`${budgets.length}/${opp.length} tenderdə büdcə məlumdur`, `budget known for ${budgets.length}/${opp.length}`) : tr("büdcə dərc olunmayıb","no budget published"), "var(--amber)"],
+    ["intel", tr("Bazar siqnalları · 30 gün","Market signals · 30 days"), intel.length, `${intel.filter(x => x.signal_type === "FID").length} FID · ${intel.filter(isAward).length} award`, "var(--m3)"],
+    ["news", tr("Xəbərlər","News"), T.filter(x => zoneOf(x) === "news").length, tr(`${newT.filter(x => zoneOf(x)==="news").length} bu gün`, `${newT.filter(x => zoneOf(x)==="news").length} today`), "var(--m1)"]
+  ];
+  $("#kpis").innerHTML = k.map(([id,l,v,s,c]) => `<button class="kpi" data-k="${id}" style="--c:${c}"><div class="l">${esc(l)}</div><div class="v">${esc(v)}</div><div class="s" title="${esc(s)}">${esc(s)}</div></button>`).join("");
+}
+function priorities(){
+  return T.filter(active).map(x => {
+    const d = daysLeft(x.deadline), why = [];
+    let p = x.score + (zoneOf(x) === "opportunity" ? 10 : 0);
+    if(d !== null && d <= 3){ p += 40; why.push(`<span class="chip warn">${d === 0 ? tr("Bu gün","Today") : tr(d + " gün qalıb", d + " days left")}</span>`); }
+    else if(d !== null && d <= 7){ p += 25; why.push(`<span class="chip warn">${tr(d + " gün qalıb", d + " days left")}</span>`); }
+    if(x.is_new || isToday(x.first_seen)){ p += 10; why.push(`<span class="chip new">${tr("YENİ","NEW")}</span>`); }
+    if(x.signal_type === "FID"){ p += 10; why.push('<span class="chip fid">FID</span>'); }
+    if(isAward(x)) why.push('<span class="chip aw">Award</span>');
+    if((x.product_fit||[]).length){ p += 8; why.push(fitChip(x)); }
+    if((x.changes||[]).length){ p += 10; why.push(`<span class="chip warn">${tr("Son tarix dəyişib","Deadline changed")}</span>`); }
+    return {x, p, why};
+  }).sort((a,b) => b.p - a.p).slice(0, 7);
+}
+// Google News titles end in " - Publisher": show the publisher in the meta line instead of the title.
+const splitTitle = x => { const m = /^(.{25,}?)\s+[-–|]\s+([^-–|]{2,40})$/.exec(x.title || ""); return m ? [m[1], m[2]] : [x.title || "", ""]; };
+function renderPrio(){
+  const P = priorities(), Z = ZONE(), ZC = {opportunity:"var(--s1)", intel:"var(--s2)", news:"var(--s3)"};
+  $("#prio").innerHTML = P.length ? `<div class="pi ph2"><span>#</span><span>${esc(tr("Skor","Score"))}</span><span>${esc(tr("Element","Item"))}</span><span>${esc(tr("Niyə indi","Why now"))}</span><span>${esc(tr("Zona","Zone"))}</span></div>` + P.map(({x, why}, i) => {
+      const [title, pub] = splitTitle(x), who = x.buyer || (x.companies||[]).map(c => c.name).slice(0,2).join(", ");
+      const d = new Date(x.published || x.first_seen), when = isNaN(d) ? "" : azShort(d);
+      const meta = [who, pub || srcName(x), when].filter(Boolean).map(v => esc(short(String(v), 48))).join(' <i>·</i> ');
+      return `<div class="pi" data-id="${esc(x.id)}"><span class="rk">${i + 1}</span><span class="score ${scoreCls(x.score)}">${x.score}</span>
+        <div class="bd"><div class="t" title="${esc(x.title)}">${esc(title)}</div><div class="mt">${meta}</div></div>
+        <div class="why">${why.join("") || '<span class="dash">—</span>'}</div>
+        <span class="z"><i style="background:${ZC[zoneOf(x)]}"></i>${esc(Z[zoneOf(x)])}</span></div>`; }).join("")
+    : `<div class="empty"><b>${esc(tr("Diqqət tələb edən element yoxdur","Nothing needs attention"))}</b>${esc(tr("Yeni elan toplanan kimi burada görünəcək.","New items will appear here as soon as they are collected."))}</div>`;
+}
+const GROUPS = () => ({procurement:tr("Satınalma portalları","Procurement portals"), banks:tr("İnkişaf bankları","Development banks"), topics:tr("Mövzu sorğuları","Topic queries"), press:tr("Sənaye nəşrləri","Trade press"), local_news:tr("Yerli xəbər saytları","Local news sites"), company:tr("Şirkət xəbərləri","Company news"), events:tr("Sərgi təqvimləri","Exhibition calendars")});
+function renderCoverage(){
+  const S = DATA.sources || [], G = GROUPS();
+  const rows = Object.entries(G).map(([g,l]) => { const ss = S.filter(s => (GROUP[s.id] || "topics") === g); return {l, n:ss.length, f:ss.reduce((a,s) => a + (s.fetched||0), 0), r:ss.reduce((a,s) => a + (s.relevant||0), 0), e:ss.filter(s => s.error).length}; }).filter(r => r.n);
+  const max = Math.max(1, ...rows.map(r => r.f)), tot = rows.reduce((a,r) => a + r.f, 0);
+  $("#covH").textContent = tr(`${S.length} mənbə · ${tot.toLocaleString("en-US")} elan yoxlandı`, `${S.length} sources · ${tot.toLocaleString("en-US")} items scanned`);
+  $("#cov").innerHTML = `<div class="cv h"><span>${esc(tr("Qrup","Group"))}</span><span class="n">${esc(tr("Mənbə","Sources"))}</span><span class="n">${esc(tr("Yoxlandı","Scanned"))}</span><span class="n">${esc(tr("Uyğun","Relevant"))}</span></div>` +
+    rows.map(r => `<div class="cv"><div>${esc(r.l)}${r.e ? ` <span class="chip warn">${r.e} ${esc(tr("xəta","error"))}</span>` : ""}<div class="bar"><i style="width:${Math.max(1, 100*r.f/max)}%"></i></div></div><span class="n">${r.n}</span><span class="n">${r.f.toLocaleString("en-US")}</span><span class="n">${r.r}</span></div>`).join("");
+}
+
+/* ================= LIST (opportunities / intel) ================= */
+const COLS = () => ({
+  opportunities: [["score",tr("Skor","Score")],["title",tr("İmkan","Opportunity")],["buyer",tr("Sifarişçi","Buyer")],["segment",tr("Kateqoriya","Category")],["budget_value",tr("Büdcə","Budget")],["deadline",tr("Son tarix","Deadline")]],
+  intel: [["score",tr("Skor","Score")],["title",tr("Siqnal","Signal")],["buyer",tr("Şirkət / qalib","Company / winner")],["signal_type",tr("Tip","Type")],["budget_value",tr("Məbləğ","Value")],["first_seen",tr("Tarix","Date")]]
+});
+function listTools(){
+  const Z = T.filter(x => zoneOf(x) === view);
+  const segs = [...new Set(Z.map(x => x.segment).filter(Boolean))].sort();
+  const comps = {}; Z.forEach(t => (t.companies||[]).forEach(c => comps[c.name] = (comps[c.name]||0) + 1));
+  const types = [["",tr("Hamısı","All")],["FID","FID"],["Award","Award"],["Layihə xəbəri",tr("EPC / layihə","EPC / project")]];
+  $("#listTools").innerHTML = (view === "intel" ? `<div class="seg" id="lType">${types.map(([v,l]) => `<button data-ty="${esc(v)}" class="${typeF===v?'on':''}">${esc(l)}</button>`).join("")}</div>` : "") +
+    `<select id="lSeg" aria-label="${esc(tr("Kateqoriya","Category"))}"><option value="">${esc(tr("Bütün kateqoriyalar","All categories"))}</option>${segs.map(s => `<option value="${esc(s)}" ${s===segF?"selected":""}>${esc(segName(s))}</option>`).join("")}</select>` +
+    `<select id="lComp" aria-label="${esc(tr("Şirkət","Company"))}"><option value="">${esc(tr("Bütün şirkətlər","All companies"))}</option>${Object.entries(comps).sort((a,b) => b[1]-a[1]).map(([k,v]) => `<option value="${esc(k)}" ${k===compF?"selected":""}>${esc(k)} (${v})</option>`).join("")}</select>`;
+}
+function rows(){
+  const q = $("#q").value.trim().toLowerCase();
+  const r = T.filter(x => zoneOf(x) === view && (!typeF || x.signal_type === typeF || (typeF === "Award" && isAward(x))) && (!segF || x.segment === segF) && (!compF || mentions(x, compF)) &&
+    (!q || [x.title, x.buyer, x.winner, x.segment, x.tender_no, (x.companies||[]).map(c => c.name).join(" ")].join(" ").toLowerCase().includes(q)));
+  const val = x => sortKey === "deadline" ? (x.deadline || "9999") : sortKey === "budget_value" ? (x.budget_value || 0) : (x[sortKey] ?? "");
+  return r.sort((a,b) => { const A = val(a), B = val(b); return (typeof A === "number" ? A - B : String(A).localeCompare(String(B))) * sortDir; });
+}
+function renderList(){
+  if(!["opportunities","intel"].includes(view)) return;
+  listTools();
+  const cols = COLS()[view];
+  $("#thead").innerHTML = cols.map(([k,l]) => `<th data-k="${k}" class="${k===sortKey?'sorted':''}">${esc(l)}<span class="ar">${k===sortKey ? (sortDir < 0 ? "↓" : "↑") : "↕"}</span></th>`).join("");
+  const R = rows();
+  $("#listHint").textContent = tr(`${R.length} element`, `${R.length} items`);
+  if(!R.length){
+    const srcs = (DATA.sources||[]).filter(s => (view === "opportunities" ? ["procurement","banks"] : ["topics","press"]).includes(GROUP[s.id]));
+    const total = srcs.reduce((a,s) => a + (s.fetched||0), 0);
+    $("#tbody").innerHTML = `<tr><td colspan="${cols.length}"><div class="empty"><b>${esc(view === "opportunities" ? tr("Hazırda profilə uyğun açıq tender yoxdur","No matching open tender right now") : tr("Bu filtrlə siqnal yoxdur","No signals for this filter"))}</b>${esc(view === "opportunities" ? tr(`Sistem son toplanışda ${total.toLocaleString("en-US")} elanı yoxladı. Uyğun tender çıxan kimi burada görünəcək.`, `The last run scanned ${total.toLocaleString("en-US")} notices. Matching tenders will show up here.`) : tr("Filtrləri dəyişin.","Change the filters."))}<div class="src">${srcs.slice(0,10).map(s => `<span class="chip">${esc((lang === "en" ? s.source_en || s.source : s.source).split(" (")[0])}</span>`).join("")}</div></div></td></tr>`;
+    return;
+  }
+  $("#tbody").innerHTML = R.map(x => {
+    const d = daysLeft(x.deadline);
+    const dl = view === "intel" ? `<span class="num nw" style="color:var(--text2)">${esc((x.published || x.first_seen || "").slice(0,10))}</span>`
+      : x.deadline ? `<span class="dl ${urg(d)}"><i></i>${d === 0 ? tr("Bu gün","Today") : tr(d + " gün", d + " d")} · ${esc(x.deadline)}</span>` : '<span style="color:var(--muted)">—</span>';
+    const third = view === "intel" ? (sigChip(x) || `<span class="chip">${esc(tr("EPC / layihə","EPC / project"))}</span>`) : `<span class="chip">${esc(segName(x.segment) || "—")}</span>`;
+    return `<tr class="r" data-id="${esc(x.id)}">
+      <td><span class="score ${scoreCls(x.score)}">${x.score}</span></td>
+      <td><div class="tt">${esc(x.title)}</div><div class="ts">${x.is_new ? `<span class="chip new">${tr("YENİ","NEW")}</span>` : ""}${fitChip(x)}${(x.related||[]).length ? `<span class="chip">+${x.related.length} ${esc(tr("mənbə","sources"))}</span>` : ""}${(x.changes||[]).length ? `<span class="chip warn">${esc(tr("Dəyişiklik","Changed"))}</span>` : ""}${esc(srcName(x))}${x.tender_no ? " · № " + esc(x.tender_no) : ""}</div></td>
+      <td><div class="cl">${esc(x.winner || x.buyer || (x.companies||[]).map(c => c.name).slice(0,2).join(", ") || "—")}</div></td>
+      <td>${third}</td>
+      <td class="num nw">${x.budget ? esc(x.budget) : '<span style="color:var(--muted)">—</span>'}</td>
+      <td>${dl}</td></tr>`;
+  }).join("");
+}
+
+/* ================= NEWS ================= */
+function renderNews(){
+  if(view !== "news") return;
+  const q = $("#q").value.trim().toLowerCase();
+  const N = T.filter(x => zoneOf(x) === "news" && (!newsG || groupOf(x) === newsG) && (!q || (x.title + " " + (x.companies||[]).map(c => c.name).join(" ")).toLowerCase().includes(q)))
+    .sort((a,b) => String(b.published || b.first_seen).localeCompare(String(a.published || a.first_seen)));
+  if(!N.length){ $("#news").innerHTML = `<div class="empty"><b>${esc(tr("Bu filtrlə xəbər yoxdur","No news for this filter"))}</b></div>`; return; }
+  let last = "", h = "";
+  N.forEach(x => {
+    const day = (x.published || x.first_seen || "").slice(0,10);
+    if(day !== last){ h += `<div class="nd">${esc(azDay(day))}</div>`; last = day; }
+    const u = safeUrl(x.url);
+    h += `<div class="ni" data-id="${esc(x.id)}"><div style="min-width:0"><div class="t">${esc(x.title)}</div>
+      <div class="m"><span>${esc(srcName(x).split(" (")[0])}</span>${(x.companies||[]).slice(0,3).map(c => `<span class="chip">${esc(c.name.split(" (")[0])}</span>`).join("")}${fitChip(x)}</div></div>
+      ${u ? `<a class="btn" href="${esc(u)}" target="_blank" rel="noopener noreferrer" data-stop="1">${esc(tr("Oxu","Read"))} ↗</a>` : ""}</div>`;
+  });
+  $("#news").innerHTML = h;
+}
+
+/* ================= DEADLINES ================= */
+const LANES = () => [[tr("Bu gün","Today"),0,0,"var(--crit)"],[tr("3 gün","3 days"),1,3,"var(--crit)"],[tr("7 gün","7 days"),4,7,"var(--warn)"],[tr("14 gün","14 days"),8,14,"var(--teal)"],[tr("30 gün","30 days"),15,30,"var(--good)"]];
+function laneItems(a, b){ return T.filter(active).filter(x => { const d = daysLeft(x.deadline); return d !== null && d >= a && d <= b; }).sort((p,q) => p.deadline.localeCompare(q.deadline)); }
+function renderLanes(){
+  const html = LANES().map(([l,a,b,c]) => { const its = laneItems(a, b);
+    return `<div class="lane" style="--lc:${c}"><h4>${esc(l)}<b>${its.length}</b></h4><div class="bar"></div>${its.length ? its.slice(0,5).map(x => `<div class="it" data-id="${esc(x.id)}">${esc(short(x.title, 70))}<small>${esc(x.deadline)} · ${esc(x.buyer || srcName(x))}</small></div>`).join("") : `<div class="none">${esc(tr("Son tarix yoxdur","No deadlines"))}</div>`}</div>`; }).join("");
+  $("#lanes").innerHTML = html; $("#lanesMini").innerHTML = html;
+}
+
+/* ================= TREND ================= */
+const tip = $("#tip");
+function showTip(e, html){ tip.innerHTML = html; tip.hidden = false; tip.style.left = Math.min(e.clientX + 14, innerWidth - tip.offsetWidth - 8) + "px"; tip.style.top = (e.clientY + 14) + "px"; }
+function hideTip(){ tip.hidden = true; }
+function renderTrend(){
+  const days = 30, base = today0(), B = [];
+  for(let i = days - 1; i >= 0; i--){ const d = new Date(base); d.setDate(d.getDate() - i); B.push({d, n:0, z:{opportunity:0, intel:0, news:0}}); }
+  T.forEach(x => { const f = new Date(new Date(x.first_seen).toDateString()), i = Math.round((f - B[0].d)/864e5); if(i >= 0 && i < days){ B[i].n++; B[i].z[zoneOf(x)]++; } });
+  const max = Math.max(1, ...B.map(b => b.n)), W = 600, H = 180, pl = 26, pb = 22, pt = 8, bw = (W - pl)/days, y = v => pt + (H - pt - pb) * (1 - v/max);
+  let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(tr("Son 30 gündə yeni elementlər","New items in the last 30 days"))}">`;
+  [0, Math.ceil(max/2), max].filter((v,i,a) => a.indexOf(v) === i).forEach(v => s += `<line class="grid" x1="${pl}" x2="${W}" y1="${y(v)}" y2="${y(v)}"/><text class="ax" x="${pl-6}" y="${y(v)+3}" text-anchor="end">${v}</text>`);
+  B.forEach((b,i) => { const x = pl + i*bw + 2, h = (H - pt - pb) - (y(b.n) - pt);
+    s += `<rect class="hit" data-i="${i}" x="${pl + i*bw}" y="${pt}" width="${bw}" height="${H-pt-pb}" fill="transparent"/>`;
+    if(b.n) s += `<path d="M${x},${H-pb} v${-(h-4)} q0,-4 4,-4 h${bw-8} q4,0 4,4 v${h-4} z" fill="var(--teal)" pointer-events="none"/>`;
+    if(i % 6 === 5 || i === days-1) s += `<text class="ax" x="${x + (bw-4)/2}" y="${H-6}" text-anchor="middle">${azShort(b.d)}</text>`; });
+  $("#trend").innerHTML = s + `<line x1="${pl}" x2="${W}" y1="${H-pb}" y2="${H-pb}" stroke="var(--line2)"/></svg>`;
+  $("#trend").querySelectorAll(".hit").forEach(r => { const b = B[+r.dataset.i];
+    r.onmousemove = e => showTip(e, `<b>${esc(azDay(b.d))}</b>${b.n} ${esc(tr("yeni","new"))}<br><span style="color:var(--muted)">${b.z.opportunity} ${esc(tr("imkan","opportunities"))} · ${b.z.intel} ${esc(tr("kəşfiyyat","intel"))} · ${b.z.news} ${esc(tr("xəbər","news"))}</span>`); r.onmouseleave = hideTip; });
+}
+
+/* ================= COMPANIES ================= */
+const SHORT = n => n.split(" (")[0].split(" / ")[0];
+const CUST_ROLES = ["operator", "soc", "utility", "epc"];
+const RIVALS = () => (DATA.companies || []).filter(c => c.competitor);
+const wonBy = (x, c) => { const w = (x.winner || "").toLowerCase(); return !!w && [c.name, ...(c.aliases || [])].some(a => a && w.includes(a.toLowerCase())); };
+function custRows(){
+  return (DATA.companies || []).filter(c => CUST_ROLES.includes(c.role) && !c.competitor).map(c => {
+    const its = T.filter(x => mentions(x, c.name)).sort((a,b) => b.first_seen.localeCompare(a.first_seen));
+    const k = {n:its.length, opp:its.filter(x => zoneOf(x) === "opportunity" && active(x)).length, fid:its.filter(x => x.signal_type === "FID").length, aw:its.filter(isAward).length};
+    return {c, its, k, rank:k.opp*4 + k.fid*3 + k.aw*2 + k.n};
+  }).filter(r => r.k.n).sort((a,b) => b.rank - a.rank || a.c.name.localeCompare(b.c.name));
+}
+function renderCompanies(){
+  if(view !== "companies") return;
+  const NX = NEXT(), R = custRows();
+  // customer activity: who is moving, and the step that follows from their latest signal
+  $("#comp").innerHTML = R.length ? R.slice(0, 12).map(({c, its, k}) => { const lead = its.find(x => zoneOf(x) !== "news") || its[0], pu = safeUrl((c.contact || {}).procurement);
+    return `<div class="cc"><div class="n">${esc(SHORT(c.name))}<span class="r">${esc(roleName(c.role))}</span></div>
+      <div class="stats"><div><b>${k.n}</b>${esc(tr("Siqnal","Signals"))}</div><div><b>${k.opp}</b>${esc(tr("Açıq imkan","Open opp."))}</div><div><b>${k.fid}</b>FID</div><div><b>${k.aw}</b>Award</div></div>
+      <div class="aw">${esc(tr("Son siqnal","Latest signal"))}: <span class="lnk" data-id="${esc(lead.id)}">${esc(short(lead.title, 90))}</span></div>
+      <div class="p"><b>${esc(tr("Növbəti addım","Next step"))}:</b> ${esc(zoneOf(lead) === "news" ? tr("İzləyin; layihə mərhələsi bəlli olanda hərəkət edin","Watch; act once a project stage is known") : NX[stageOf(lead)])}${pu ? ` · <a href="${esc(pu)}" target="_blank" rel="noopener noreferrer">${esc(tr("Satınalma səhifəsi","Procurement page"))} ↗</a>` : ""}</div></div>`; }).join("")
+    : `<div class="empty" style="grid-column:1/-1"><b>${esc(tr("Hələ siqnal yoxdur","No signals yet"))}</b>${esc(tr("Toplanış davam etdikcə şirkətlər burada avtomatik görünəcək.","Companies will appear here automatically as runs accumulate."))}</div>`;
+  // heatmap: the ten most mentioned customers, last 8 weeks
+  const HW = R.slice().sort((a,b) => b.k.n - a.k.n).slice(0, 10).map(r => r.c.name);
+  const weeks = 8, start = today0(); start.setDate(start.getDate() - 7*weeks + 1);
+  const grid = HW.map(n => { const r = Array(weeks).fill(0); T.forEach(x => { if(!mentions(x, n)) return; const i = Math.floor((new Date(x.first_seen) - start)/(7*864e5)); if(i >= 0 && i < weeks) r[i]++; }); return r; });
+  const max = Math.max(1, ...grid.flat()), lvl = v => v ? Math.min(5, 1 + Math.floor(4*v/max)) : 0;
+  let h = `<div style="display:grid;grid-template-columns:150px repeat(${weeks},minmax(0,1fr));gap:3px"><div></div>`;
+  for(let i = 0; i < weeks; i++){ const d = new Date(start); d.setDate(d.getDate() + 7*i); h += `<div class="c2">${esc(azShort(d))}</div>`; }
+  grid.forEach((r,ri) => { h += `<div class="rl">${esc(SHORT(HW[ri]))}</div>` + r.map((v,i) => `<div class="hc v${lvl(v)}" style="background:var(--h${lvl(v)})" data-r="${ri}" data-i="${i}">${v || ""}</div>`).join(""); });
+  $("#heat").innerHTML = HW.length ? h + "</div>" : `<div class="empty">${esc(tr("Məlumat yığıldıqca dolacaq","Fills as data accumulates"))}</div>`;
+  $("#heat").querySelectorAll(".hc").forEach(c => { const r = +c.dataset.r, i = +c.dataset.i; c.onmousemove = e => showTip(e, `<b>${esc(SHORT(HW[r]))}</b>${grid[r][i]} ${esc(tr("siqnal","signals"))}`); c.onmouseleave = hideTip; });
+  // competitors: what they sell against us, what they won, where they were last seen
+  const AW = T.filter(isAward);
+  $("#rivals").innerHTML = RIVALS().map(c => { const its = T.filter(x => mentions(x, c.name)).sort((a,b) => b.first_seen.localeCompare(a.first_seen)), won = AW.filter(x => wonBy(x, c));
+    const wv = won.reduce((a,x) => a + (x.budget_value || 0), 0), last = its[0];
+    return `<div class="cc rv"><div class="n">${esc(SHORT(c.name))}<span class="r">${esc(tr("Rəqib","Competitor"))}</span></div>
+      <div class="p">${esc(lang === "en" ? c.competes_in_en || c.competes_in : c.competes_in)}</div>
+      <div class="stats"><div><b>${its.length}</b>${esc(tr("Qeyd","Mentions"))}</div><div><b>${won.length}</b>${esc(tr("Qazandığı","Won"))}</div><div><b>${wv ? esc(fmtAZN(wv)) : "—"}</b>${esc(tr("Məbləğ","Value"))}</div></div>
+      <div class="aw">${last ? `${esc(tr("Son görünmə","Last seen"))}: <span class="lnk" data-id="${esc(last.id)}">${esc(short(last.title, 90))}</span>` : esc(tr("Toplanmış məlumatda hələ görünməyib","Not seen in the collected data yet"))}</div></div>`; }).join("");
+  const rv = RIVALS();
+  $("#winners").innerHTML = AW.length ? `<div class="wr wh"><span>${esc(tr("Tarix","Date"))}</span><span>${esc(tr("Qalib","Winner"))}</span><span>${esc(tr("Sifarişçi","Buyer"))}</span><span>${esc(tr("Mövzu","Subject"))}</span><span style="text-align:right">${esc(tr("Məbləğ","Value"))}</span></div>` +
+    AW.slice().sort((a,b) => (b.published || b.first_seen).localeCompare(a.published || a.first_seen)).map(x => { const rc = rv.find(c => wonBy(x, c)), d = new Date(x.published || x.first_seen);
+      return `<div class="wr${rc ? " hit" : ""}" data-id="${esc(x.id)}"><span class="num">${isNaN(d) ? "" : esc(azShort(d) + "." + d.getFullYear())}</span><span><b>${esc(x.winner || "—")}</b>${rc ? ` <span class="chip warn">${esc(tr("Rəqib","Competitor"))}</span>` : ""}</span><span>${esc(x.buyer || "—")}</span><span class="tt">${esc(x.title.replace(/^Award:\s*/i, "").split(" → ")[0])}</span><span class="num" style="text-align:right">${x.budget_value ? esc(fmtAZN(x.budget_value)) : esc(x.budget || "—")}</span></div>`; }).join("")
+    : `<div class="empty">${esc(tr("Hələ bağlanmış müqavilə yoxdur","No concluded contracts yet"))}</div>`;
+  const q = $("#q").value.trim().toLowerCase(), role = $("#dRole").value;
+  const list = (DATA.companies||[]).filter(c => (!role || c.role === role) && (!dirCt || c.contact) && (!q || (c.name + " " + noteOf(c)).toLowerCase().includes(q)))
+    .sort((a,b) => (b.contact ? 1 : 0) - (a.contact ? 1 : 0) || a.name.localeCompare(b.name));
+  $("#dir").innerHTML = list.map(c => `<div class="cc"><div class="n">${esc(c.name)}<span class="r">${esc(roleName(c.role))}</span></div><div class="p">${esc(noteOf(c))}</div><div class="p">${T.filter(x => mentions(x, c.name)).length} ${esc(tr("qeyd","mentions"))}</div>${c.contact ? `<div style="margin-top:8px;font-size:12.5px">${contactHtml(c.contact)}</div>` : ""}</div>`).join("") || `<div class="empty">${esc(tr("Uyğun şirkət yoxdur","No matching company"))}</div>`;
+  const VS = {todo:tr("Başlanmayıb","Not started"), progress:tr("Davam edir","In progress"), approved:tr("Təsdiqlənib","Approved"), na:tr("Aid deyil","Not applicable")};
+  $("#vendor").innerHTML = (DATA.vendor_portals||[]).map(p => { const s = vstate[p.id] || {}, u = safeUrl(p.url), nm = tx(p, "name"), nt = tx(p, "note");
+    return `<div class="vp" data-p="${esc(p.id)}"><div><b>${u ? `<a href="${esc(u)}" target="_blank" rel="noopener noreferrer">${esc(nm)} ↗</a>` : esc(nm)}</b><div class="o">${esc(p.owner === "Platforma" ? tr("Platforma","Platform") : p.owner)}${nt ? " · " + esc(nt) : ""}</div></div>
+      <select data-f="status" aria-label="Status">${Object.entries(VS).map(([k,v]) => `<option value="${k}" ${(s.status||"todo")===k?"selected":""}>${esc(v)}</option>`).join("")}</select>
+      <input type="date" data-f="expiry" value="${esc(s.expiry || "")}" title="${esc(tr("Qeydiyyatın bitmə / yenilənmə tarixi","Registration expiry / renewal date"))}">
+      <input data-f="note" value="${esc(s.note || "")}" placeholder="${esc(tr("Qeyd: vendor ID, kontakt…","Note: vendor ID, contact…"))}"></div>`; }).join("");
+  $("#reports").innerHTML = (DATA.reports||[]).map(r => { const u = safeUrl(r.url); return `<li>${u ? `<a href="${esc(u)}" target="_blank" rel="noopener noreferrer">${esc(tx(r, "name"))} ↗</a>` : esc(tx(r, "name"))}</li>`; }).join("");
+}
+
+/* ================= MAP (satellite imagery + labels, or colourful street map) ================= */
+const BP = "https://www.bp.com/en_az/azerbaijan/home/who-we-are/operationsprojects";
+const ASSETS = [
+  {n:"ACG (Azeri-Chirag-Gunashli)", t:1, ll:[40.10,50.95], org:"bp (operator)", src:BP + "/acg2.html", k:["acg","azeri","chirag","günəşli","gunashli","central azeri"]},
+  {n:"Shah Deniz", t:1, ll:[39.93,50.32], org:"bp (operator)", src:BP + "/shahdeniz.html", k:["shah deniz","şahdəniz","sdc"]},
+  {n:"Absheron", t:1, ll:[40.04,50.58], org:"JOCAP (TotalEnergies / SOCAR / XRG)", src:"https://totalenergies.com/azerbaijan", k:["absheron","jocap"]},
+  {n:"Umid-Babek", t:1, ll:[39.75,49.95], org:"UBOC", src:"https://uboc.az/en/what-we-do/operations", k:["umid","ümid","babek","babək"]},
+  {n:"Neft Dashlari (Oil Rocks)", t:1, ll:[40.22,50.84], org:"SOCAR / Azneft", src:"https://socar.az/en/page/upstream", k:["neft daşları","oil rocks"]},
+  {n:"Sangachal Terminal", t:2, ll:[40.18,49.47], org:"bp (operator)", src:BP + ".html", k:["sangachal","səngəçal","stel"]},
+  {n:"Heydar Aliyev Baku Refinery", t:3, ll:[40.36,49.94], org:"SOCAR Downstream", src:"https://socardownstream.az/", k:["refinery","neft emalı","haor"]},
+  {n:"Gas Processing Plant (Garadagh)", t:3, ll:[40.30,49.74], org:"SOCAR", src:"https://socar.az/en/page/midstream", k:["gas processing","qaz emalı","garadagh"]},
+  {n:"Sumgait Chemical Park", t:3, ll:[40.60,49.62], org:"SOCAR Polymer / Azerikimya", src:"https://socarpolymer.az/en", k:["sumgait","sumqayıt","socar polymer","azerikimya","carbamide","methanol"]},
+  {n:"Baku Deep Water Jacket Factory", t:4, ll:[40.21,49.56], org:"BOS Shelf", src:"http://www.bos-shelf.com/category/baku-deep-water-jacket-factory-operated-by-bos-shelf-11/", k:["jacket","bos shelf","topsides"]},
+  {n:"Baku Shipyard", t:4, ll:[40.33,49.73], org:"Baku Shipyard", src:"https://bakushipyard.com/", k:["baku shipyard","gəmiqayırma"]}
+];
+// bright marker colours that read on satellite imagery
+const ATYPE = () => ({1:[tr("Offshore yataq","Offshore field"),"#38BDF8"],2:[tr("Terminal","Terminal"),"#FB923C"],3:[tr("Emal / kimya","Refining / chemicals"),"#4ADE80"],4:[tr("Fabrikasiya","Fabrication"),"#C084FC"]});
+let mapObj = null, markers = null, layerCtl = null;
+function mapLegend(){ $("#mapLegend").innerHTML = Object.values(ATYPE()).map(([l,c]) => `<span><i style="background:${c}"></i>${esc(l)}</span>`).join("") + `<span><i style="border:2px solid #FACC15"></i>${esc(tr("Aktiv siqnal","Active signal"))}</span>`; }
+function initMap(){
+  mapLegend();
+  if(mapObj || !$("#map") || $("#map").classList.contains("mapfb")) return;
+  if(!window.L){ $("#map").outerHTML = `<div class="mapfb" id="map">${esc(tr("Xəritə yüklənmədi (internet bağlantısını yoxlayın).","The map did not load (check the internet connection)."))}</div>`; return; }
+  mapObj = L.map("map", {scrollWheelZoom:true});
+  const sat = L.layerGroup([
+    L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}", {maxZoom:17, attribution:"Imagery &copy; Esri, Maxar, Earthstar Geographics"}),
+    L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}", {maxZoom:17})
+  ]);
+  const street = L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {maxZoom:17, attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'});
+  sat.addTo(mapObj);
+  layerCtl = L.control.layers({"Satellite": sat, "Map": street}, null, {position:"topright", collapsed:false}).addTo(mapObj);
+  const home = () => mapObj.fitBounds(ASSETS.map(a => a.ll), {padding:[40,40]}); home();
+  const R = L.Control.extend({options:{position:"topleft"}, onAdd(){ const b = L.DomUtil.create("button","btn"); b.type = "button"; b.style.marginTop = "6px"; b.textContent = "⤢"; b.title = tr("Bütün obyektlər","All assets"); L.DomEvent.on(b, "click", e => { L.DomEvent.stop(e); mapObj.closePopup(); home(); }); return b; }});
+  mapObj.addControl(new R());
+  mapObj.on("popupopen", ev => ev.popup.getElement().querySelectorAll(".lnk").forEach(l => l.onclick = () => openDrawer(l.dataset.id)));
+  drawMarkers();
+}
+function drawMarkers(){
+  if(!mapObj) return; if(markers) mapObj.removeLayer(markers); markers = L.layerGroup().addTo(mapObj);
+  const AT = ATYPE();
+  ASSETS.forEach(a => {
+    const its = T.filter(x => zoneOf(x) !== "news" && a.k.some(k => (x.title + " " + (x.buyer||"")).toLowerCase().includes(k)));
+    if(its.length){ L.circleMarker(a.ll, {radius:12, color:"#FACC15", weight:2, fill:false, className:"mk-pulse", interactive:false}).addTo(markers);
+      L.circleMarker(a.ll, {radius:17, color:"#FACC15", weight:3, fill:true, fillColor:"#FACC15", fillOpacity:.15, className:"mk"}).addTo(markers); }
+    const m = L.circleMarker(a.ll, {radius:its.length ? 10 : 8, color:"#ffffff", weight:2.5, fillColor:AT[a.t][1], fillOpacity:1, className:"mk"}).addTo(markers);
+    const src = safeUrl(a.src);
+    m.bindTooltip(esc(a.n) + (its.length ? ` · ${its.length} ${tr("siqnal","signals")}` : ""), {direction:"top", offset:[0,-8]});
+    m.bindPopup(`<b>${esc(a.n)}</b><br><span style="color:var(--muted)">${esc(AT[a.t][0])} · ${esc(a.org)} · ${esc(tr("təxmini mövqe","approximate position"))}</span>` +
+      (its.length ? `<ul style="margin:6px 0 0;padding-left:16px">${its.slice(0,5).map(x => `<li><span class="lnk" data-id="${esc(x.id)}">${esc(short(x.title, 80))}</span></li>`).join("")}</ul>` : "") +
+      (src ? `<div style="margin-top:8px"><a class="btn p" href="${esc(src)}" target="_blank" rel="noopener noreferrer">${esc(tr("Rəsmi mənbə","Official source"))} ↗</a></div>` : ""), {maxWidth:300});
+    m.on("click", () => mapObj.flyTo(a.ll, Math.max(mapObj.getZoom(), 11), {duration:.8}));
+  });
+}
+
+/* ================= DETAIL DRAWER (rule-based analysis) ================= */
+function risks(x){
+  const o = [], d = daysLeft(x.deadline);
+  if(d !== null && d <= 3) o.push([0, tr(`Vaxt riski: son tarixə ${d} gün qalıb`, `Time risk: ${d} days to deadline`)]); else if(d !== null && d <= 7) o.push([1, tr(`Son tarixə ${d} gün: sənəd hazırlığı sıx olacaq`, `${d} days to deadline: document preparation will be tight`)]);
+  if(!x.deadline && x.category === "direct_tender") o.push([1, tr("Son tarix məlum deyil: mənbədən dəqiqləşdirin","Deadline unknown: confirm at the source")]);
+  if(x.category === "early_signal" && zoneOf(x) === "intel") o.push([1, tr("Tender hələ elan olunmayıb: vendor list-ə vaxtında düşməmək riski","No tender yet: risk of missing the vendor list")]);
+  if(x.category === "award") o.push([2, tr("Müqavilə artıq bağlanıb: imkan yalnız subpodrat / təchizat səviyyəsindədir","Contract already awarded: opportunity is at subcontract / supply level only")]);
+  if(x.category === "direct_tender" && !x.budget) o.push([2, tr("Büdcə dərc olunmayıb: marja planlaması çətindir","No published budget: margin planning is harder")]);
+  if((x.reasons||[]).some(r => r.startsWith("mənfi"))) o.push([1, tr("Mənfi açar sözlər var: uyğunluğu yoxlayın","Negative keywords present: check the fit")]);
+  if(!o.length) o.push([2, tr("Əhəmiyyətli risk aşkarlanmadı","No significant risk detected")]);
+  return o;
+}
+function steps(x){
+  const s = [tx(x, "action")], epc = (x.companies||[]).filter(c => ["epc","fabricator"].includes(c.role)).map(c => c.name);
+  if(x.category === "direct_tender"){
+    if((x.contacts||[]).length) s.push(tr("Əlaqə şəxsi ilə danışın: ","Call the contact person: ") + `${x.contacts[0].name || ""}${x.contacts[0].phone ? " (" + x.contacts[0].phone + ")" : ""}`);
+    if((x.items_preview||[]).length) s.push(tr("Mal siyahısını məhsul kataloqu ilə tutuşdurun","Match the item list against the product catalogue"));
+    s.push(tr("Texniki uyğunluq cədvəli (API/ISO sertifikatları) və qiymət təklifini hazırlayın","Prepare the compliance matrix (API/ISO certificates) and the price offer"));
+  } else if(x.category === "award"){
+    if(x.winner) s.push(tr(`${x.winner} ilə əlaqə: subpodrat / valve-actuator təchizatı təklif edin`, `Contact ${x.winner}: offer subcontract / valve-actuator supply`));
+  } else {
+    if(x.signal_type === "FID") s.push(tr("EPC podratçısının seçilib-seçilmədiyini yoxlayın: seçilibsə, onun satınalma şöbəsi ilə vendor qeydiyyatı","Check whether the EPC contractor is selected; if so, register with its procurement team"));
+    if(epc.length) s.push(tr(`${epc.slice(0,2).join(", ")} satınalma şöbəsi ilə əlaqə: vendor qeydiyyatı və MTO tarixləri`, `Contact ${epc.slice(0,2).join(", ")} procurement: vendor registration and MTO dates`));
+    s.push(tr("Layihənin valve/actuator paketlərini (ESD, control, choke, HIPPS) müəyyən edin","Identify the project's valve/actuator packages (ESD, control, choke, HIPPS)"));
+  }
+  return s;
+}
+function summaryText(x){
+  const d = daysLeft(x.deadline), who = x.buyer || (x.companies||[]).map(c => c.name).slice(0,2).join(tr(" və "," and ")) || tr("Mənbə","Source");
+  const seg = segName(x.segment);
+  const a = x.category === "award" ? tr(`${x.buyer || "Sifarişçi"} müqaviləni ${x.winner || "qalib şirkət"} ilə bağlayıb${seg ? " (" + seg + ")" : ""}. Qalib subpodrat və təchizat üçün potensial müştəridir.`, `${x.buyer || "The buyer"} awarded the contract to ${x.winner || "the winner"}${seg ? " (" + seg + ")" : ""}. The winner is a potential customer for subcontract and supply.`)
+    : x.signal_type === "FID" ? tr(`${who}: yekun investisiya qərarı (FID). Layihə icraya keçir, EPC və avadanlıq paketləri yaxın aylarda verilə bilər.`, `${who}: final investment decision (FID). The project moves to execution; EPC and equipment packages may be let in the coming months.`)
+    : x.category === "direct_tender" ? tr(`${who} tərəfindən elan olunmuş ${seg ? seg.toLowerCase() + " üzrə " : ""}satınalma.`, `${seg ? seg + " " : ""}procurement announced by ${who}.`)
+    : zoneOf(x) === "news" ? tr(`${who} ilə bağlı sənaye xəbəri: kontekst üçün, birbaşa imkan deyil.`, `Industry news about ${who}: context, not a direct opportunity.`) : tr(`${who} ilə bağlı erkən layihə siqnalı: tender hələ elan olunmayıb.`, `Early project signal about ${who}: no tender yet.`);
+  return a + (x.budget ? tr(` Məbləğ ${x.budget}.`, ` Value ${x.budget}.`) : "") + (d !== null ? tr(` Son tarixə ${d} gün qalıb.`, ` ${d} days to deadline.`) : "") +
+    (x.score >= 70 ? tr(" Profilinizə yüksək uyğundur.", " Strong fit with your profile.") : x.score >= 50 ? tr(" Orta uyğunluq: texniki tələbləri yoxlayın.", " Medium fit: check the technical requirements.") : "");
+}
+function gauge(s){ const r = 32, c = 2*Math.PI*r; return `<div class="gauge"><svg viewBox="0 0 76 76"><circle cx="38" cy="38" r="${r}" fill="none" stroke="var(--line)" stroke-width="7"/><circle cx="38" cy="38" r="${r}" fill="none" stroke="${scoreVar(s)}" stroke-width="7" stroke-linecap="round" stroke-dasharray="${c*Math.min(100,s)/100} ${c}"/></svg><b>${s}</b></div>`; }
+function openDrawer(id){
+  const x = T.find(t => t.id === id); if(!x) return;
+  drawerId = id; lastSel = id; closeCopilot(true);
+  const m = meta(id), u = safeUrl(x.url), ST = STAT(), Z = ZONE();
+  const tc = (x.contacts||[]).map(c => `${esc(c.name||"")}${c.position ? " · " + esc(c.position) : ""}<br><span class="num">${esc(c.phone||"")}</span>${isEmail(c.email) ? " · " + esc(c.email) : ""}`).join("<br>");
+  const cs = (x.companies||[]).map(c => ROSTER[c.name]).filter(c => c && c.contact);
+  $("#drawer").innerHTML = `
+    <div class="dh">${gauge(x.score)}<div style="min-width:0;flex:1"><h3>${esc(x.title)}</h3>
+      <div class="ts" style="margin-top:7px"><span class="chip">${esc(Z[zoneOf(x)])}</span>${sigChip(x)}${x.segment ? `<span class="chip">${esc(segName(x.segment))}</span>` : ""}${x.is_new ? `<span class="chip new">${tr("YENİ","NEW")}</span>` : ""}</div>
+      <div class="acts"><select class="st" id="dStat" aria-label="Status">${Object.entries(ST).map(([k,v]) => `<option value="${k}" ${m.status===k?"selected":""}>${esc(v)}</option>`).join("")}</select>
+        ${u ? `<a class="btn p" href="${esc(u)}" target="_blank" rel="noopener noreferrer">${esc(tr("Mənbəyə keç","Open source"))} ↗</a>` : ""}<button class="btn" id="dAsk">${esc(tr("AI Insight-dan soruş","Ask AI Insight"))}</button></div></div>
+      <button class="ibtn" id="dClose" aria-label="${esc(tr("Bağla","Close"))}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg></button></div>
+    <div class="db">
+      <div class="sec summary"><small>${esc(tr("Avtomatik xülasə · qaydalar əsasında","Automatic summary · rule-based"))}</small>${esc(summaryText(x))}</div>
+      <div class="sec mets">
+        <div class="met"><small>${esc(tr("Skor","Score"))}</small><div>${esc(String(x.score10 ?? Math.round(x.score/10)))} / 10</div></div>
+        <div class="met"><small>${esc(tr("Strateji əhəmiyyət","Strategic value"))}</small><div>${esc(tx(x, "strategic_value") || "—")}</div></div>
+        <div class="met"><small>${esc(x.category === "award" ? tr("Müqavilə məbləği","Contract value") : tr("Büdcə / gəlir","Budget / revenue"))}</small><div>${esc(tx(x, "revenue_potential") || "—")}</div></div>
+        <div class="met"><small>${esc(tr("Rəqabət","Competition"))}</small><div>${esc(tx(x, "competition") || "—")}</div></div>
+        <div class="met" style="grid-column:1/-1"><small>${esc(tr("Portfolio uyğunluğu","Portfolio fit"))}</small><div>${(x.product_fit||[]).length ? x.product_fit.map(f => `<span class="chip fit" style="margin:2px 4px 2px 0">${esc(f.line)} · ${esc(f.brand)}</span>`).join("") : `<span class="na">${esc(tr("Birbaşa məhsul adı keçmir","No product named directly"))}</span>`}</div></div></div>
+      <div class="sec"><h4>${esc(tr("Tövsiyə olunan addımlar","Recommended actions"))}</h4><ul>${steps(x).map(s => `<li>${esc(s)}</li>`).join("")}</ul></div>
+      <div class="sec"><h4>${esc(tr("Risklər","Risks"))}</h4>${risks(x).map(([l,t]) => `<div class="risk r${l}"><i></i><span>${esc(t)}</span></div>`).join("")}</div>
+      <div class="sec"><h4>${esc(tr("Detallar","Details"))}</h4><dl class="kv">
+        ${x.tender_no ? `<dt>${esc(tr("Tender №","Tender no."))}</dt><dd class="num">${esc(x.tender_no)}</dd>` : ""}
+        <dt>${esc(tr("Sifarişçi","Buyer"))}</dt><dd>${esc(x.buyer || "—")}</dd>
+        ${x.winner ? `<dt>${esc(tr("Qalib","Winner"))}</dt><dd><b>${esc(x.winner)}</b></dd>` : ""}
+        ${x.contract_date ? `<dt>${esc(tr("Müqavilə tarixi","Contract date"))}</dt><dd class="num">${esc(x.contract_date)}${x.tender_type ? " · " + esc(x.tender_type) : ""}</dd>` : ""}
+        <dt>${esc(tr("Dərc tarixi","Published"))}</dt><dd class="num">${esc(x.published || "—")}</dd>
+        <dt>${esc(tr("Son tarix","Deadline"))}</dt><dd class="num">${esc(x.deadline || "—")}</dd>
+        ${tc ? `<dt>${esc(tr("Əlaqə şəxsi","Contact person"))}</dt><dd>${tc}</dd>` : ""}
+        ${x.address ? `<dt>${esc(tr("Ünvan","Address"))}</dt><dd>${esc(x.address)}</dd>` : ""}
+        ${(x.eligibility||[]).length ? `<dt>${esc(tr("İştirak şərtləri","Eligibility"))}</dt><dd>${x.eligibility.map(e => esc(trText(e))).join("<br>")}</dd>` : ""}
+        <dt>${esc(tr("Mənbə","Source"))}</dt><dd>${esc(srcName(x))}</dd></dl></div>
+      ${(x.items_preview||[]).length ? `<div class="sec"><h4>${esc(tr("Mal / xidmət siyahısı","Items / services"))}${x.items_total ? " · " + esc(String(x.items_total)) : ""}</h4><ul>${x.items_preview.map(i => `<li>${esc(i)}</li>`).join("")}</ul></div>` : ""}
+      ${(x.changes||[]).length ? `<div class="sec"><h4>${esc(tr("Dəyişikliklər","Changes"))}</h4><ul>${x.changes.map(i => `<li>${esc(trText(i))}</li>`).join("")}</ul></div>` : ""}
+      ${cs.length ? `<div class="sec"><h4>${esc(tr("Şirkət əlaqələri","Company contacts"))}</h4>${cs.map(c => `<div style="margin-bottom:10px"><b>${esc(c.name)}</b>${contactHtml(c.contact)}</div>`).join("")}</div>` : ""}
+      ${(x.related||[]).length ? `<details class="sec"><summary>${esc(tr("Eyni xəbər digər mənbələrdə","Same story elsewhere"))} · ${x.related.length}</summary><ul>${x.related.map(r => { const ru = safeUrl(r.url); return `<li>${ru ? `<a href="${esc(ru)}" target="_blank" rel="noopener noreferrer">${esc(r.title)}</a>` : esc(r.title)}</li>`; }).join("")}</ul></details>` : ""}
+      <details class="sec"><summary>${esc(tr("Niyə bu skor","Why this score"))}</summary><ul>${(x.reasons||[]).map(r => `<li>${esc(trText(r))}</li>`).join("")}</ul></details>
+      <div class="sec"><h4>${esc(tr("Qeyd","Note"))}</h4><textarea id="dNote" placeholder="${esc(tr("Kontakt, RFQ nömrəsi, növbəti addım…","Contact, RFQ number, next step…"))}">${esc(m.note)}</textarea></div>
+    </div>`;
+  $("#drawer").classList.add("open"); $("#drawer").setAttribute("aria-hidden","false"); $("#scrim").hidden = false;
+  $("#dClose").onclick = closeDrawer;
+  $("#dStat").onchange = e => save(id, {status:e.target.value});
+  $("#dNote").onchange = e => save(id, {note:e.target.value});
+  $("#dAsk").onclick = () => { openCopilot(); ask(tr("Bid strategiyası","Bid strategy")); };
+}
+function closeDrawer(){ drawerId = null; $("#drawer").classList.remove("open"); $("#drawer").setAttribute("aria-hidden","true"); if(!$("#copilot").classList.contains("open")) $("#scrim").hidden = true; }
+
+/* ================= COPILOT (local, rule-based) ================= */
+const CHIPS = () => [tr("Bu gün nə yenidir?","What's new today?"), tr("Hansına dəyər?","What's worth pursuing?"), tr("Bu həftə son tarixlər","Deadlines this week"), tr("Son FID və award-lar","Latest FIDs and awards"), tr("Bid strategiyası","Bid strategy"), tr("Lazımi sənədlər","Required documents"), tr("Qiymət yanaşması","Pricing approach"), tr("Əlaqə məlumatları","Contact details")];
+function openCopilot(){ $("#copilot").classList.add("open"); $("#copilot").setAttribute("aria-hidden","false"); $("#scrim").hidden = false; cpCtx(); if(!$("#cpMsgs").children.length) say("a", esc(tr(`Salam. ${T.length} element üzərində işləyirəm: ${T.filter(x => zoneOf(x)==="opportunity").length} imkan, ${T.filter(x => zoneOf(x)==="intel").length} kəşfiyyat, ${T.filter(x => zoneOf(x)==="news").length} xəbər.`, `Hello. Working on ${T.length} items: ${T.filter(x => zoneOf(x)==="opportunity").length} opportunities, ${T.filter(x => zoneOf(x)==="intel").length} intel, ${T.filter(x => zoneOf(x)==="news").length} news.`))); setTimeout(() => $("#cpIn").focus(), 200); }
+function closeCopilot(keepScrim){ $("#copilot").classList.remove("open"); $("#copilot").setAttribute("aria-hidden","true"); if(!keepScrim && !drawerId) $("#scrim").hidden = true; }
+function cpCtx(){ const x = T.find(t => t.id === (drawerId || lastSel)); $("#cpCtx").innerHTML = x ? `${esc(tr("Seçilmiş","Selected"))}: <b>${esc(short(x.title, 80))}</b>` : esc(tr("Element seçilməyib: ümumi suallar verin.","Nothing selected: ask general questions.")); }
+function say(who, html){ const d = document.createElement("div"); d.className = "msg " + who; d.innerHTML = html; $("#cpMsgs").appendChild(d); $("#cpMsgs").scrollTop = 1e9; }
+const li = x => `<li><span class="lnk" data-id="${esc(x.id)}">${esc(short(x.title, 90))}</span> <span style="color:var(--muted)">· ${x.score}${x.deadline ? " · " + esc(x.deadline) : ""}</span></li>`;
+function answer(q){
+  const s = q.toLowerCase(), x = T.find(t => t.id === (drawerId || lastSel)), has = (...w) => w.some(k => s.includes(k));
+  if(has("yeni","today","bu gün","new")){ const r = T.filter(t => t.is_new || isToday(t.first_seen)); return r.length ? `${esc(tr("Son toplanışda","Last run found"))} <b>${r.length}</b> ${esc(tr("yeni element:","new items:"))}<ul>${r.slice(0,8).map(li).join("")}</ul>` : esc(tr("Bu gün yeni element yoxdur.","Nothing new today.")); }
+  if(has("fid","award")){ const r = T.filter(t => t.signal_type === "FID" || isAward(t)).slice(0,8); return r.length ? `${esc(tr("Son FID və award-lar:","Latest FIDs and awards:"))}<ul>${r.map(li).join("")}</ul>` : esc(tr("Son 30 gündə FID və ya award yoxdur.","No FIDs or awards in the last 30 days.")); }
+  if(has("dəyər","worth","prioritet","ən yaxşı","pursu")){ const r = priorities().map(p => p.x).slice(0,6); return r.length ? `${esc(tr("Prioritet sıra (son tarix, yenilik, FID, uyğunluq):","Priority order (deadline, novelty, FID, fit):"))}<ul>${r.map(li).join("")}</ul>` : esc(tr("Aktiv element yoxdur.","No active items.")); }
+  if(has("son tarix","deadline","həftə","week")){ const r = laneItems(0, 14); return r.length ? `${esc(tr("14 gün ərzində bağlananlar:","Closing within 14 days:"))}<ul>${r.map(li).join("")}</ul>` : esc(tr("Növbəti 14 gündə son tarixi olan aktiv element yoxdur.","No active item closes in the next 14 days.")); }
+  if(!x) return esc(tr("Əvvəlcə siyahıdan bir element açın, sonra bu sualı yenidən verin.","Open an item from a list first, then ask again."));
+  if(has("əlaqə","contact","telefon","phone","email")){
+    const cs = (x.companies||[]).map(c => ROSTER[c.name]).filter(c => c && c.contact);
+    const tcs = (x.contacts||[]).map(c => `<li>${esc(c.name||"")} · ${esc(c.position||"")} · ${esc(c.phone||"")}${isEmail(c.email) ? " · " + esc(c.email) : ""}</li>`).join("");
+    return `<b>${esc(tr("Əlaqələr","Contacts"))}</b>${tcs ? `<ul>${tcs}</ul>` : ""}${cs.length ? cs.map(c => `<br><b>${esc(c.name)}</b>${contactHtml(c.contact)}`).join("") : "<br>" + esc(tr("Kataloqda yoxlanmış əlaqə yoxdur (Şirkətlər → Kataloq).","No verified contact in the directory (Companies → Directory)."))}`;
+  }
+  if(has("strategiya","strategy","bid")) return `<b>${esc(tr("Bid strategiyası","Bid strategy"))}</b><ul><li>${esc(x.category === "direct_tender" ? tr("Birbaşa tender: texniki uyğunluq + qiymət","Direct tender: technical compliance + price") : x.category === "award" ? tr("Bağlanmış müqavilə: qaliblə subpodrat / təchizat","Awarded contract: subcontract / supply with the winner") : tr("Erkən mərhələ: tender elanından əvvəl vendor list-ə girmək","Early stage: get onto the vendor list before the tender"))}</li><li>${esc(tr("Rəqabət","Competition"))}: ${esc(tx(x, "competition") || "—")}</li>${steps(x).map(t => `<li>${esc(t)}</li>`).join("")}</ul><b>${esc(tr("Diqqət:","Watch out:"))}</b><ul>${risks(x).map(([,t]) => `<li>${esc(t)}</li>`).join("")}</ul>`;
+  if(has("sənəd","document")) return `<b>${esc(tr("Adətən tələb olunan sənədlər","Usually required documents"))}</b> ${esc(tr("(tender sənədindən dəqiqləşdirin):","(confirm in the tender documents):"))}<ul>${(x.eligibility||[]).map(e => `<li>${esc(trText(e))}</li>`).join("")}${/etender/.test(x.source_id||"") ? `<li>${esc(tr("etender.gov.az-da qeydiyyat və elektron imza","Registration and e-signature on etender.gov.az"))}</li><li>${esc(tr("İştirak haqqının ödənişi","Payment of the participation fee"))}</li><li>${esc(tr("Vergi borcu olmaması arayışı","Certificate of no tax arrears"))}</li>` : `<li>${esc(tr("Vendor qeydiyyatı / pre-kvalifikasiya (Şirkətlər → Vendor qeydiyyatı)","Vendor registration / pre-qualification (Companies → Vendor registration)"))}</li>`}<li>${esc(tr("Şirkət qeydiyyat sənədləri, maliyyə göstəriciləri","Company registration documents, financials"))}</li><li>${esc(tr("Məhsul sertifikatları (API 6D/6A/607, ISO 9001, NACE MR0175)","Product certificates (API 6D/6A/607, ISO 9001, NACE MR0175)"))}</li><li>${esc(tr("Texniki təklif, uyğunluq cədvəli, çatdırılma və zəmanət","Technical offer, compliance matrix, delivery and warranty"))}</li><li>${esc(tr("PetrolValves avtorizasiya məktubu (distribyutorluq)","PetrolValves letter of authorisation (distributorship)"))}</li></ul>`;
+  if(has("qiymət","pricing","price")) return `<b>${esc(tr("Qiymət yanaşması","Pricing approach"))}</b> ${esc(tr("(ümumi)","(general)"))}<ul><li>${esc(x.budget ? tr(`Məbləğ: ${x.budget}: təklifi bu həddə uyğunlaşdırın.`, `Value: ${x.budget}: keep the offer within it.`) : tr("Büdcə məlum deyil: oxşar award-lardan istinad götürün (Kəşfiyyat → Award).","Budget unknown: benchmark against similar awards (Intel → Award)."))}</li><li>${esc(/açıq dövlət/.test(x.competition||"") ? tr("Açıq tender: yerli anbar və qısa çatdırılma güclü arqumentdir.","Open tender: local stock and short delivery are strong arguments.") : tr("Operator/EPC: TCO, sertifikat, servis və ehtiyat hissə dəstəyi qiymətdən vacib ola bilər.","Operator/EPC: TCO, certificates, service and spares support can outweigh price."))}</li><li>${esc(tr("100% yerli məzmun: operatorların local content hədəfləri üçün üstünlük.","100% local content: an advantage for operators' local-content targets."))}</li></ul>`;
+  const w = s.split(/\s+/).filter(v => v.length >= 3), hits = T.filter(t => w.some(k => (t.title + " " + (t.buyer||"")).toLowerCase().includes(k))).slice(0,6);
+  return hits.length ? `${esc(tr("Uyğun elementlər:","Matching items:"))}<ul>${hits.map(li).join("")}</ul>` : esc(tr("Başa düşmədim. Düymələrdən birini seçin və ya şirkət/layihə adı yazın.","I didn't understand. Pick a button or type a company/project name."));
+}
+function ask(q){ say("u", esc(q)); setTimeout(() => say("a", answer(q)), 150); }
+
+/* ================= EXHIBITIONS ================= */
+const EV = DATA.events || [], LSE = "tenderRadar.events.v1";
+let estate = ls.get(LSE), evRel = "rel", evWhen = "up";
+const pd = s => { const [y,m,d] = String(s||"").split("-").map(Number); return new Date(y, (m||1)-1, d||1); };
+const evDays = s => Math.round((pd(s) - today0()) / 864e5);
+const TAG = () => ({oil_gas:tr("Neft-qaz","Oil & gas"), energy:tr("Enerji","Energy"), power:tr("Elektrik enerjisi","Power"), integrity:tr("Bütövlük · korroziya","Integrity · corrosion"), construction:tr("Tikinti","Construction"), infrastructure:tr("İnfrastruktur","Infrastructure"), polymers:tr("Polimer","Polymers"), logistics:tr("Logistika","Logistics"), water:tr("Su","Water"), hvac:"HVAC", safety:tr("Təhlükəsizlik","Safety")});
+const REL = () => ({core:tr("Əsas: neft-qaz / enerji","Core: oil & gas / energy"), related:tr("Əlaqəli sektor","Related sector"), other:tr("Profildən kənar","Outside our profile")});
+const EST = () => ({"":tr("Qərar verilməyib","Not decided"), visit:tr("Ziyarət edəcəyik","We will visit"), exhibit:tr("Stendlə iştirak","Exhibiting (stand)"), registered:tr("Qeydiyyatdan keçdik","Registered"), skip:tr("Keçirik","Skip")});
+const evPast = e => !e.tba && evDays(e.end || e.start) < 0;
+const evUp = () => EV.filter(e => !e.tba && !evPast(e) && e.relevance !== "other");
+const evSort = (a,b) => a.start.localeCompare(b.start);
+function evWhenTxt(e){
+  if(e.tba) return tr("Növbəti tarix elan olunmayıb","Next date not announced");
+  const d = evDays(e.start), de = evDays(e.end || e.start);
+  if(de < 0) return tr("Keçirilib","Took place");
+  if(d <= 0) return tr("İndi gedir","Happening now");
+  return d === 1 ? tr("Sabah","Tomorrow") : tr(`${d} gün qalıb`, `in ${d} days`);
+}
+function evRange(e){
+  const a = pd(e.start), b = pd(e.end || e.start), M = lang === "en" ? EN_M : AZ_M;
+  if(isNaN(a)) return e.dates_text || "";
+  if(a.getMonth() === b.getMonth() && a.getFullYear() === b.getFullYear()) return `${a.getDate()}${+b !== +a ? "–" + b.getDate() : ""} ${M[a.getMonth()]} ${a.getFullYear()}`;
+  return `${a.getDate()} ${M[a.getMonth()]} – ${b.getDate()} ${M[b.getMonth()]} ${b.getFullYear()}`;
+}
+function evTip(e){
+  if(e.relevance === "core") return evDays(e.start) > 60
+    ? tr("Operator və EPC satınalma komandaları burada olur. Stend üçün qərarı indi verin: yerlər adətən aylar əvvəl dolur. Görüşləri 2–3 həftə əvvəl təyin edin.","Operator and EPC procurement teams attend. Decide on a stand now: space usually sells out months ahead. Book meetings 2–3 weeks before.")
+    : tr("Operator və EPC satınalma komandaları burada olur. Görüşləri indi təyin edin, kataloq və PetrolValves materiallarını hazırlayın.","Operator and EPC procurement teams attend. Book meetings now; prepare catalogues and PetrolValves material.");
+  if(e.relevance === "related") return tr("EPC və tikinti podratçıları ilə yeni tanışlıq imkanı: ziyarət kifayətdir.","A chance to meet EPC and construction contractors: a visit is enough.");
+  return tr("Profilə birbaşa aid deyil.","Not directly relevant to our profile.");
+}
+const evBtn = (u, l, cls) => safeUrl(u) ? `<a class="btn ${cls||""}" href="${esc(u)}" target="_blank" rel="noopener noreferrer">${esc(l)} ↗</a>` : "";
+function evLinks(e, compact){
+  const fut = !e.tba && !evPast(e);
+  return evBtn(e.ticket, tr("Bilet / ziyarətçi qeydiyyatı","Ticket / visitor registration"), fut && e.relevance !== "other" ? "p" : "")
+    + evBtn(e.stand, tr("Stend sifarişi","Book a stand"))
+    + (compact ? "" : evBtn(e.delegate, tr("Delegat qeydiyyatı","Delegate registration")) + evBtn(e.sponsor, tr("Sponsorluq","Sponsorship")))
+    + evBtn(e.url, tr("Rəsmi sayt","Official site"))
+    + (fut ? `<button type="button" class="btn" data-ics="${esc(e.id)}">${esc(tr("Təqvimə əlavə et","Add to calendar"))}</button>` : "");
+}
+function evCard(e, i){
+  const s = estate[e.id] || {}, a = pd(e.start), b = pd(e.end || e.start), M = lang === "en" ? EN_M : AZ_M, d = evDays(e.start);
+  const live = !e.tba && d <= 0 && evDays(e.end || e.start) >= 0, soon = !e.tba && d > 0 && d <= 30 && e.relevance !== "other";
+  const sel = EST();
+  return `<article class="ev ${esc(e.relevance)}" data-e="${esc(e.id)}" style="animation-delay:${Math.min(i, 12) * 30}ms">
+    <div class="dt"><b>${a.getDate()}${+b !== +a && a.getMonth() === b.getMonth() ? `<span>–${b.getDate()}</span>` : ""}</b><small>${esc(M[a.getMonth()].slice(0,3))} ${a.getFullYear()}</small></div>
+    <div><h3>${esc(e.title)}</h3>
+      <div class="m">${e.tba ? esc(tr("Son buraxılış: ","Last edition: ")) : ""}${esc(evRange(e))} · ${esc(e.venue || "")} · ${esc(e.organizer || "")}</div>
+      <div class="tags"><span class="chip ${live ? "new" : soon ? "warn" : ""}">${esc(evWhenTxt(e))}</span><span class="chip">${esc(REL()[e.relevance] || "")}</span>${(e.tags||[]).map(t => `<span class="chip">${esc(TAG()[t] || t)}</span>`).join("")}</div>
+      <div class="evacts">${evLinks(e)}</div>
+      <div class="tp">${esc(evTip(e))}</div>
+      <div class="own"><select data-f="status" aria-label="${esc(tr("Status","Status"))}">${Object.entries(sel).map(([k,l]) => `<option value="${k}" ${(s.status||"") === k ? "selected" : ""}>${esc(l)}</option>`).join("")}</select>
+        <input data-f="note" value="${esc(s.note || "")}" placeholder="${esc(tr("Qeyd: kim gedir, görüşlər…","Note: who attends, meetings…"))}"></div></div></article>`;
+}
+// HOT exhibition: the nearest core (oil & gas / energy) event, ongoing ones first; falls back to the nearest related one.
+const evHot = () => { const up = evUp().sort(evSort); return up.find(e => e.relevance === "core") || up[0]; };
+function evHotHtml(exec){
+  const up = evUp().sort(evSort), next = evHot();
+  if(!next) return "";
+  const d = evDays(next.start), st = (estate[next.id]||{}).status || "";
+  const in90 = up.filter(e => evDays(e.start) <= 90).length, open = up.filter(e => !(estate[e.id]||{}).status).length;
+  const sooner = exec ? up.find(e => e.id !== next.id && evDays(e.start) < d && evDays(e.start) <= 30) : null;
+  const side = exec
+    ? `<div><b class="sm">${esc(EST()[st])}</b>${esc(tr("komandanın qərarı","team decision"))}</div><div><button type="button" class="btn" data-go="events">${esc(tr("Bütün sərgilər","All exhibitions"))} →</button></div>`
+    : `<div><b>${in90}</b>${esc(tr("uyğun sərgi · 90 gün","relevant · next 90 days"))}</div><div><b>${open}</b>${esc(tr("qərar gözləyir","awaiting a decision"))}</div>`;
+  return `<div class="evhero${exec ? " x" : ""}" data-e="${esc(next.id)}"><div class="cd"><b>${d <= 0 ? esc(tr("İndi","Now")) : d}</b><small>${d <= 0 ? esc(tr("gedir","on")) : esc(tr("gün","days"))}</small></div>
+    <div><span class="k">${exec ? '<span class="chip hot">HOT</span> ' : ""}${esc(next.relevance === "core" ? tr("Növbəti əsas sərgi","Next key exhibition") : tr("Növbəti uyğun sərgi","Next relevant exhibition"))}</span><h3>${esc(next.title)}</h3>
+      <div class="m">${esc(evRange(next))} · ${esc(next.venue || "")}${exec ? " · " + esc(evTip(next)) : ""}</div>
+      ${sooner ? `<div class="m" style="margin-top:4px">${esc(tr("Daha yaxın: ","Sooner: "))}${esc(sooner.title)} · ${esc(evRange(sooner))} (${esc(evWhenTxt(sooner))})</div>` : ""}
+      <div class="evacts">${evLinks(next, true)}</div></div>
+    <div class="hs">${side}</div></div>`;
+}
+function evHero(){ $("#evHero").innerHTML = evHotHtml(false); }
+function renderEvents(){
+  if(view !== "events") return;
+  evHero();
+  const q = ($("#q").value || "").toLowerCase().trim(), M = lang === "en" ? EN_M : AZ_M;
+  let EL = EV.filter(e => evRel === "" || (evRel === "core" ? e.relevance === "core" : e.relevance !== "other"))
+    .filter(e => evWhen === "past" ? evPast(e) : !evPast(e))
+    .filter(e => !q || (e.title + " " + (e.organizer||"") + " " + (e.tags||[]).join(" ")).toLowerCase().includes(q));
+  EL = evWhen === "past" ? EL.sort((a,b) => evSort(b,a)) : EL.sort((a,b) => (a.tba - b.tba) || evSort(a,b));
+  $("#evH").textContent = tr(`${EL.length} sərgi`, `${EL.length} events`);
+  let last = "", i = 0;
+  $("#events").innerHTML = EL.length ? EL.map(e => { const a = pd(e.start), g = e.tba ? tr("Növbəti tarix gözlənilir","Next date pending") : `${M[a.getMonth()]} ${a.getFullYear()}`;
+      const h = g !== last ? `<div class="evm">${esc(g)}</div>` : ""; last = g; return h + evCard(e, i++); }).join("")
+    : `<div class="empty" style="grid-column:1/-1"><b>${esc(EV.length ? tr("Bu filtrə uyğun sərgi yoxdur","No exhibitions match this filter") : tr("Sərgi məlumatı hələ toplanmayıb","No exhibition data collected yet"))}</b></div>`;
+}
+function icsFile(e){
+  const ymd = dt => `${dt.getFullYear()}${String(dt.getMonth()+1).padStart(2,"0")}${String(dt.getDate()).padStart(2,"0")}`;
+  const t = v => String(v || "").replace(/[\\;,]/g, m => "\\" + m).replace(/\r?\n/g, "\\n");
+  const end = pd(e.end || e.start); end.setDate(end.getDate() + 1);
+  const desc = [e.organizer, safeUrl(e.ticket) && tr("Bilet: ","Ticket: ") + e.ticket, safeUrl(e.stand) && tr("Stend: ","Stand: ") + e.stand].filter(Boolean).join("\n");
+  const body = ["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//Portfolio//Tender Agent//EN","BEGIN:VEVENT",`UID:${e.id}@tender-agent`,
+    `DTSTAMP:${new Date().toISOString().replace(/[-:]/g,"").slice(0,15)}Z`,`DTSTART;VALUE=DATE:${ymd(pd(e.start))}`,`DTEND;VALUE=DATE:${ymd(end)}`,
+    `SUMMARY:${t(e.title)}`,`LOCATION:${t(e.venue)}`,`URL:${safeUrl(e.url)}`,`DESCRIPTION:${t(desc)}`,"END:VEVENT","END:VCALENDAR"].join("\r\n");
+  const a = Object.assign(document.createElement("a"), {href:URL.createObjectURL(new Blob([body], {type:"text/calendar;charset=utf-8"})), download:(e.title.replace(/[^\w]+/g,"-").slice(0,50) || "event") + ".ics"});
+  a.click(); URL.revokeObjectURL(a.href);
+}
+
+/* ================= NOTIFICATIONS / SOURCES ================= */
+// Bell: a notification stays listed while its condition holds; the badge counts only unread ones.
+// Opening the panel marks them read (per browser). Keys carry the stage, so a deadline re-alerts at 3 days, 1 day and today.
+const LSN = "tenderRadar.seen.v1";
+let seen = ls.get(LSN), bellHot = new Set();
+function bellItems(){
+  const n = [];
+  T.filter(x => x.is_new && zoneOf(x) !== "news").forEach(x => n.push([0, tr("Yeni: ","New: ") + x.title, srcName(x), x.id, "n:" + x.id]));
+  T.filter(x => (x.changes||[]).length).forEach(x => n.push([1, tr("Son tarix dəyişdi: ","Deadline changed: ") + x.title, trText(x.changes[x.changes.length-1]), x.id, "c:" + x.id + ":" + x.changes.length]));
+  T.filter(active).forEach(x => { const d = daysLeft(x.deadline); if(d !== null && d <= 3) n.push([2, (d === 0 ? tr("Bu gün","Today") : tr(d + " gün qalıb", d + " days left")) + ": " + x.title, x.deadline, x.id, "d:" + x.id + ":" + (d <= 0 ? 0 : d <= 1 ? 1 : 3)]); });
+  (DATA.sources||[]).filter(s => s.error).forEach(s => n.push([2, tr("Mənbə xətası: ","Source error: ") + (lang === "en" ? s.source_en || s.source : s.source), s.error, "", "e:" + s.id]));
+  evUp().forEach(e => { const d = evDays(e.start), st = (estate[e.id]||{}).status;
+    if(d <= 0 && e.relevance === "core") n.push([0, tr("Sərgi indi gedir: ","Exhibition on now: ") + e.title, evRange(e), "ev:" + e.id, "eo:" + e.id]);
+    else if(d > 0 && d <= 30 && !st) n.push([1, tr(`Sərgi ${d} gün sonra, qərar verin: `, `Exhibition in ${d} days, decide: `) + e.title, evRange(e), "ev:" + e.id, "ed:" + e.id + ":" + (d <= 7 ? 7 : 30)]); });
+  return n;
+}
+function markBellRead(){
+  const n = bellItems(), keep = {};
+  bellHot = new Set(n.filter(x => !seen[x[4]]).map(x => x[4]));
+  n.forEach(x => keep[x[4]] = seen[x[4]] || Date.now());   // drop keys of resolved notifications
+  seen = keep; ls.set(LSN, seen); renderBell();
+}
+function renderBell(){
+  const n = bellItems(), unread = n.filter(x => !seen[x[4]]).length;
+  n.sort((a,b) => (bellHot.has(b[4]) || !seen[b[4]]) - (bellHot.has(a[4]) || !seen[a[4]]) || b[0] - a[0]);
+  const c = {0:"var(--teal)",1:"var(--warn)",2:"var(--crit)"};
+  $("#bellCnt").textContent = unread; $("#bellCnt").hidden = !unread;
+  $("#bellBtn").setAttribute("aria-label", tr("Bildirişlər","Notifications") + (unread ? ` (${unread} ${tr("oxunmamış","unread")})` : ""));
+  $("#bellPop").innerHTML = `<h4>${esc(tr("Bildirişlər","Notifications"))} · ${n.length}${bellHot.size ? ` <span class="nw">${bellHot.size} ${esc(tr("yeni","new"))}</span>` : ""}</h4>`
+    + (n.length ? n.slice(0,15).map(([l,t,s,id,k]) => `<div class="n${bellHot.has(k) ? " hot" : ""}" data-id="${esc(id)}"><i style="background:${c[l]}"></i><div>${esc(short(t, 110))}<small>${esc(s||"")}</small></div></div>`).join("")
+      + `<div class="pf">${esc(tr("Bildiriş şərt aradan qalxana qədər siyahıda qalır. Rəqəm yalnız oxunmamışları göstərir.","A notification stays listed until its condition clears. The number shows unread ones only."))}</div>`
+    : `<div class="empty">${esc(tr("Bildiriş yoxdur","No notifications"))}</div>`);
+}
+function renderSources(){
+  const S = DATA.sources || [], G = GROUPS();
+  $("#srcSum").textContent = tr(`${S.filter(s => !s.error).length}/${S.length} işləyir`, `${S.filter(s => !s.error).length}/${S.length} working`);
+  $("#sources").innerHTML = Object.entries(G).map(([g,l]) => { const ss = S.filter(s => (GROUP[s.id] || "topics") === g); return ss.length ? `<h5>${esc(l)}</h5>` + ss.map(s => `<div class="srow"><span><i class="d ${s.error?'e':''}"></i>${esc(lang === "en" ? s.source_en || s.source : s.source)}</span><span class="num" title="${esc(s.error||'')}" style="color:var(--text2)">${s.error ? esc(tr("xəta","error")) : s.relevant + " / " + s.fetched}</span></div>`).join("") : ""; }).join("");
+}
+
+/* ================= RENDER / EVENTS ================= */
+function renderAll(){ renderNav(); renderExec(); renderKpis(); renderPrio(); renderLanes(); renderTrend(); renderCoverage(); renderList(); renderNews(); renderCompanies(); renderEvents(); renderBell(); renderSources(); if(mapObj){ drawMarkers(); mapLegend(); } }
+function setLang(l){ lang = l; try{ localStorage.setItem("tenderRadar.lang", l); }catch(e){} applyStatic(); if(DATA.generated_at){ const g = azStamp(DATA.generated_at); $("#gen").textContent = tr("Yeniləndi: ","Updated: ") + g; $("#sideGen").textContent = tr("Canlı · ","Live · ") + g; } setView(view, true); if(drawerId) openDrawer(drawerId); cpCtx(); }
+$("#langSeg").addEventListener("click", e => { const b = e.target.closest("button"); if(b && b.dataset.l !== lang) setLang(b.dataset.l); });
+$("#nav").addEventListener("click", e => { const b = e.target.closest("button"); if(b) setView(b.dataset.v); });
+$("#xkpis").addEventListener("click", e => { const k = e.target.closest(".kpi"); if(!k) return; if(k.dataset.k !== "exec") setView(k.dataset.k); });
+$("#path").addEventListener("click", e => { const st = e.target.closest(".stage"); if(!st) return; const k = st.dataset.st;
+  const its = T.filter(x => zoneOf(x) !== "news" && active(x) && stageOf(x) === k);
+  if(its.length === 1){ openDrawer(its[0].id); return; }
+  setView(["rfq","vendor"].includes(k) && its.some(x => zoneOf(x) === "opportunity") ? "opportunities" : "intel"); });
+$("#kpis").addEventListener("click", e => { const k = e.target.closest(".kpi"); if(!k) return;
+  ({opportunities:() => setView("opportunities"), week:() => { setView("opportunities"); sortKey = "deadline"; sortDir = 1; renderList(); }, pipe:() => { setView("opportunities"); sortKey = "budget_value"; sortDir = -1; renderList(); }, intel:() => setView("intel"), news:() => setView("news")})[k.dataset.k](); });
+$("#thead").addEventListener("click", e => { const th = e.target.closest("th"); if(!th) return; const k = th.dataset.k; sortDir = k === sortKey ? -sortDir : (["title","buyer","segment","deadline","signal_type"].includes(k) ? 1 : -1); sortKey = k; renderList(); });
+$("#tbody").addEventListener("click", e => { const r = e.target.closest("tr.r"); if(r) openDrawer(r.dataset.id); });
+$("#listTools").addEventListener("input", e => { const id = e.target.id; if(id === "lSeg") segF = e.target.value; if(id === "lComp") compF = e.target.value; renderList(); });
+$("#listTools").addEventListener("click", e => { const b = e.target.closest("#lType button"); if(b){ typeF = b.dataset.ty; renderList(); } });
+$("#nGroup").addEventListener("click", e => { const b = e.target.closest("button"); if(!b) return; newsG = b.dataset.g; $("#nGroup").querySelectorAll("button").forEach(x => x.classList.toggle("on", x === b)); renderNews(); });
+$("#cTabs").addEventListener("click", e => { const b = e.target.closest("button"); if(!b) return; cTab = b.dataset.t; $("#cTabs").querySelectorAll("button").forEach(x => x.classList.toggle("on", x === b)); document.querySelectorAll('[data-v="companies"] > [data-t]').forEach(p => p.hidden = p.dataset.t !== cTab); });
+$("#dCt").addEventListener("click", e => { const b = e.target.closest("button"); if(!b) return; dirCt = b.dataset.c; $("#dCt").querySelectorAll("button").forEach(x => x.classList.toggle("on", x === b)); renderCompanies(); });
+$("#dRole").addEventListener("input", renderCompanies);
+$("#eRel").addEventListener("click", e => { const b = e.target.closest("button"); if(!b) return; evRel = b.dataset.r; $("#eRel").querySelectorAll("button").forEach(x => x.classList.toggle("on", x === b)); renderEvents(); });
+$("#eWhen").addEventListener("click", e => { const b = e.target.closest("button"); if(!b) return; evWhen = b.dataset.w; $("#eWhen").querySelectorAll("button").forEach(x => x.classList.toggle("on", x === b)); renderEvents(); });
+$("#evPanel").addEventListener("change", e => { const c = e.target.closest("[data-e]"), f = e.target.dataset.f; if(!c || !f) return; const id = c.dataset.e;
+  estate[id] = {...(estate[id]||{}), [f]: e.target.value}; ls.set(LSE, estate); renderNav(); renderBell(); evHero(); });
+$("#evPanel").addEventListener("click", e => { const b = e.target.closest("[data-ics]"); if(!b) return; const ev = EV.find(x => x.id === b.dataset.ics); if(ev) icsFile(ev); });
+$("#vendor").addEventListener("change", e => { const row = e.target.closest(".vp"), f = e.target.dataset.f; if(!row || !f) return; const id = row.dataset.p; vstate[id] = {...(vstate[id]||{}), [f]: e.target.value}; ls.set(LSV, vstate); });
+$("#q").addEventListener("input", () => { if(["executive","overview","settings"].includes(view)) setView("opportunities"); else renderAll(); });
+document.addEventListener("click", e => {
+  if(e.target.closest("[data-stop]")) return;
+  if(e.target.closest("[data-go]")){ setView(e.target.closest("[data-go]").dataset.go); return; }
+  const ic = e.target.closest("#evExec [data-ics]"); if(ic){ const ev = EV.find(x => x.id === ic.dataset.ics); if(ev) icsFile(ev); return; }
+  const t = e.target.closest(".pi, .ni, .wr, .lane .it, .cc .lnk, .msg .lnk, .proj, .a3, .brief .lnk"); if(t && t.dataset.id){ openDrawer(t.dataset.id); return; }
+  const n = e.target.closest(".pop .n"); if(n){ $("#bellPop").hidden = true; if(n.dataset.id.startsWith("ev:")) setView("events"); else if(n.dataset.id) openDrawer(n.dataset.id); return; }
+  if(!e.target.closest(".wrap")) $("#bellPop").hidden = true;
+});
+$("#scrim").onclick = () => { closeDrawer(); closeCopilot(); };
+$("#bellBtn").onclick = () => { const open = $("#bellPop").hidden; if(open) markBellRead(); else { bellHot = new Set(); renderBell(); } $("#bellPop").hidden = !open; };
+$("#aiBtn").onclick = () => $("#copilot").classList.contains("open") ? closeCopilot() : openCopilot();
+$("#cpClose").onclick = () => closeCopilot();
+$("#cpChips").addEventListener("click", e => { const b = e.target.closest("button"); if(b) ask(b.textContent); });
+$("#cpForm").addEventListener("submit", e => { e.preventDefault(); const v = $("#cpIn").value.trim(); if(v){ ask(v); $("#cpIn").value = ""; } });
+document.addEventListener("keydown", e => { if(e.key === "Escape"){ closeDrawer(); closeCopilot(); $("#bellPop").hidden = true; } if(e.key === "/" && !/input|textarea|select/i.test(document.activeElement.tagName)){ e.preventDefault(); $("#q").focus(); } });
+function setTheme(t){ document.documentElement.dataset.theme = t; try{ localStorage.setItem("tenderRadar.theme", t); }catch(e){} $("#themeSeg").querySelectorAll("button").forEach(b => b.classList.toggle("on", b.dataset.th === t)); }
+$("#themeBtn").onclick = () => setTheme(document.documentElement.dataset.theme === "light" ? "dark" : "light");
+$("#themeSeg").addEventListener("click", e => { const b = e.target.closest("button"); if(b) setTheme(b.dataset.th); });
+$("#resetBtn").onclick = () => { $("#resetAsk").hidden = false; };
+$("#resetNo").onclick = () => { $("#resetAsk").hidden = true; };
+$("#resetYes").onclick = () => { state = {}; ls.set(LS, state); $("#resetAsk").hidden = true; renderAll(); };
+$("#exportBtn").onclick = () => {
+  const cell = v => `"${String(v ?? "").replace(/"/g,'""').replace(/^([=+\-@\t\r])/,"'$1")}"`;   // CSV-injection safe
+  const Z = ZONE(), ST = STAT();
+  const head = ["zone","score","signal","status","title","buyer","winner","segment","budget","tender_no","deadline","published","source","url","note"];
+  const lines = T.map(x => [Z[zoneOf(x)],x.score,sigName(x.signal_type),ST[meta(x.id).status],x.title,x.buyer,x.winner,segName(x.segment),x.budget,x.tender_no,x.deadline,x.published,srcName(x),x.url,meta(x.id).note].map(cell).join(","));
+  const blob = new Blob(["\ufeff" + head.join(",") + "\n" + lines.join("\n")], {type:"text/csv;charset=utf-8"});
+  const a = Object.assign(document.createElement("a"), {href:URL.createObjectURL(blob), download:"tender-radar.csv"}); a.click(); URL.revokeObjectURL(a.href);
+};
+
+(function init(){
+  if(DATA.demo) $("#demoBadge").hidden = false;
+  $("#themeSeg").querySelectorAll("button").forEach(b => b.classList.toggle("on", b.dataset.th === (document.documentElement.dataset.theme || "dark")));
+  setLang(lang);
+  setView("executive");
+})();
+</script>
+</body>
+</html>
