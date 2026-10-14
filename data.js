@@ -1,5 +1,5 @@
 window.__RADAR__ = {
-  "generated_at": "2026-10-13T17:12:50+00:00",
+  "generated_at": "2026-10-14T08:45:24+00:00",
   "demo": false,
   "profile": {
     "company": "Portfolio",
@@ -32,7 +32,7 @@ window.__RADAR__ = {
         "procurement_stage: commissioning, expansion, əsaslı təmir (+20)",
         "şirkət: ADSEA (Dövlət Su Ehtiyatları Agentliyi) (+10)",
         "mənfi: heating (-20)",
-        "Son tarixə 15 gün (+5)"
+        "Son tarixə 14 gün (+5)"
       ],
       "keywords": [
         "check valves",
@@ -113,9 +113,95 @@ window.__RADAR__ = {
       ]
     },
     {
-      "id": "ec2bca52c67c",
+      "id": "d6ca49c2f136",
+      "title": "Qaracəmirli 3 saylı nasos stansiyasının (nasos,elektrik mühərriki,elektrik təsərrüfatı, sorma və vurma boruları, təzyiqli boru xətti və digər köməkçi avadanlıqlar) əsaslı təmiri işləri",
+      "url": "https://etender.gov.az/main/competition/detail/360253",
+      "source_id": "etender",
+      "source": "etender.gov.az (dövlət satınalma portalı)",
+      "category": "direct_tender",
+      "buyer": "\"REGİONAL SU MELİORASİYA XİDMƏTİ\" PUBLİK HÜQUQİ ŞƏXSİ",
+      "score": 79,
+      "tier": "HOT",
+      "reasons": [
+        "sector: qaz (+6)",
+        "valve_direct: klapan, siyirtmə (+30)",
+        "equipment: boru, flans, nasos, su kəməri (+28)",
+        "şirkət: ADSEA (Dövlət Su Ehtiyatları Agentliyi) (+10)",
+        "Son tarixə 21 gün (+5)"
+      ],
+      "keywords": [
+        "klapan",
+        "qaz",
+        "siyirtmə"
+      ],
+      "companies": [
+        {
+          "name": "ADSEA (Dövlət Su Ehtiyatları Agentliyi)",
+          "role": "utility"
+        }
+      ],
+      "contractors": [],
+      "action": "Tender sənədlərini endirin, vendor qeydiyyatını/pre-kvalifikasiyanı yoxlayın, son tarixi təqvimə yazın.",
+      "action_en": "Download the tender documents, check vendor registration / pre-qualification, put the deadline in the calendar.",
+      "source_en": "etender.gov.az (state procurement portal)",
+      "deadline": "2026-11-04",
+      "published": "2026-10-13",
+      "first_seen": "2026-10-14T08:45:24+00:00",
+      "is_new": true,
+      "changes": [],
+      "demo": false,
+      "tender_no": "2026/AT/05164/V1",
+      "budget": "80 000 AZN",
+      "contacts": [
+        {
+          "name": "Elşad Fərəcov",
+          "position": "Şöbə müdirinin müavini – sektor müdiri",
+          "phone": "+994 12 377 07 70 (601)",
+          "email": "elshad.ferecov@rsmx.gov.az"
+        }
+      ],
+      "address": "Bakı ş. AZ1000, Hökümət Evi, mər. 5",
+      "eligibility": [
+        "Minimum 2 iştirakçı",
+        "İştirak haqqı 160 AZN",
+        "Sənədə baxış haqqı 25 AZN"
+      ],
+      "items_preview": [
+        "4 MPa-a qədər şərti təzyiqli əl ilə ötürücülü və ya ötürücüsüz su kəməri üçün flans armaturu, şərti keçid diametri: 400 ",
+        "4 MPa-a qədər şərti təzyiqli əl ilə ötürücülü və ya ötürücüsüz su kəməri üçün flans armaturu, şərti keçid diametri: 400 ",
+        "Əl ilə idarə olunan kəpənək klapan D=400 (10atm) Nasos stansiya binası",
+        "4 MPa-a qədər şərti təzyiqli əl ilə ötürücülü və ya ötürücüsüz su kəməri üçün flans armaturu, şərti keçid diametri: 300 ",
+        "4 MPa-a qədər şərti təzyiqli əl ilə ötürücülü və ya ötürücüsüz su kəməri üçün flans armaturu, şərti keçid diametri: 300 ",
+        "Kəpənək siyirtmə yivli qutulu Özkan D=300mm 10bar Nasos stansiya binası",
+        "Çalovunun tutumu 0,65 (0,5-1) m3 olan ekskavatorlarla qruntun kənara atılaraq qazılması, qruntun qrupu: 2 Nasos stansiya",
+        "Dərinliyi 2 m-ə qədər olan yamaclı xəndəklərdə qruntun bərkitmələr olmadan əl ilə qazılması, qruntun qrupu: 2 (boru üstü"
+      ],
+      "items_total": 74,
+      "score10": 8,
+      "competition": "Yüksək (açıq dövlət tenderi)",
+      "strategic_value": "Yüksək",
+      "revenue_potential": "Orta (80 000 AZN)",
+      "competition_en": "High (open public tender)",
+      "strategic_value_en": "High",
+      "revenue_potential_en": "Medium (80 000 AZN)",
+      "budget_value": 80000,
+      "segment": "Valve & Actuator",
+      "signal_type": "Tender",
+      "zone": "opportunity",
+      "product_fit": [
+        {
+          "line": "Gate & globe valves",
+          "brand": "PetrolValves",
+          "terms": [
+            "siyirtmə"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9eff89543c84",
       "title": "\"Axın təmizləyici kranın, yardımçı avadanlıqların və işlər\" in satın alınması",
-      "url": "https://etender.gov.az/main/competition/detail/358841",
+      "url": "https://etender.gov.az/main/competition/detail/360286",
       "source_id": "etender",
       "source": "etender.gov.az (dövlət satınalma portalı)",
       "category": "direct_tender",
@@ -127,7 +213,7 @@ window.__RADAR__ = {
         "valve_direct: kran (+22)",
         "procurement_stage: quraşdırma (+12)",
         "şirkət: ADSEA (Dövlət Su Ehtiyatları Agentliyi) (+10)",
-        "Son tarixə 1 gün (+10)"
+        "Son tarixə 7 gün (+10)"
       ],
       "keywords": [
         "kran",
@@ -143,13 +229,13 @@ window.__RADAR__ = {
       "action": "Tender sənədlərini endirin, vendor qeydiyyatını/pre-kvalifikasiyanı yoxlayın, son tarixi təqvimə yazın.",
       "action_en": "Download the tender documents, check vendor registration / pre-qualification, put the deadline in the calendar.",
       "source_en": "etender.gov.az (state procurement portal)",
-      "deadline": "2026-10-14",
-      "published": "2026-09-22",
+      "deadline": "2026-10-21",
+      "published": "2026-10-13",
       "first_seen": "2026-10-01T20:20:32+00:00",
       "is_new": false,
       "changes": [],
       "demo": false,
-      "tender_no": "2026/AT/04667/V1",
+      "tender_no": "2026/AT/04667/V2",
       "budget": "937 215 AZN",
       "contacts": [
         {
@@ -199,7 +285,7 @@ window.__RADAR__ = {
         "valve_direct: choke, valve (+30)",
         "equipment: nasos (+14)",
         "şirkət: ADSEA (Dövlət Su Ehtiyatları Agentliyi) (+10)",
-        "Son tarixə 16 gün (+5)"
+        "Son tarixə 15 gün (+5)"
       ],
       "keywords": [
         "choke",
@@ -354,155 +440,6 @@ window.__RADAR__ = {
       ]
     },
     {
-      "id": "9e137a3e215d",
-      "title": "\"Pirəzə nov kanalının LREN-120 nov hissəsinin üzərindəki qurğularla birlikdə əsaslı təmiri\"",
-      "url": "https://etender.gov.az/main/competition/detail/359874",
-      "source_id": "etender",
-      "source": "etender.gov.az (dövlət satınalma portalı)",
-      "category": "direct_tender",
-      "buyer": "\"REGİONAL SU MELİORASİYA XİDMƏTİ\" PUBLİK HÜQUQİ ŞƏXSİ",
-      "score": 56,
-      "tier": "WARM",
-      "reasons": [
-        "valve_direct: armatur (+22)",
-        "equipment: boru (+14)",
-        "şirkət: ADSEA (Dövlət Su Ehtiyatları Agentliyi) (+10)",
-        "Son tarixə 0 gün (+10)"
-      ],
-      "keywords": [
-        "armatur"
-      ],
-      "companies": [
-        {
-          "name": "ADSEA (Dövlət Su Ehtiyatları Agentliyi)",
-          "role": "utility"
-        }
-      ],
-      "contractors": [],
-      "action": "Tender sənədlərini endirin, vendor qeydiyyatını/pre-kvalifikasiyanı yoxlayın, son tarixi təqvimə yazın.",
-      "action_en": "Download the tender documents, check vendor registration / pre-qualification, put the deadline in the calendar.",
-      "source_en": "etender.gov.az (state procurement portal)",
-      "deadline": "2026-10-13",
-      "published": "2026-10-07",
-      "first_seen": "2026-10-12T07:51:03+00:00",
-      "is_new": false,
-      "changes": [],
-      "demo": false,
-      "tender_no": "2026/AT/04382/V3",
-      "budget": "330 000 AZN",
-      "contacts": [
-        {
-          "name": "Elşad Fərəcov",
-          "position": "Satınalmaların təşkili sektorunun müdiri",
-          "phone": "+994 12 377 07 70 (601)",
-          "email": "elshad.ferecov@rsmx.gov.az"
-        }
-      ],
-      "address": "Bakı ş. AZ1000, Hökümət Evi, mər. 5",
-      "eligibility": [
-        "Minimum 3 iştirakçı",
-        "İştirak haqqı 350 AZN",
-        "Sənədə baxış haqqı 25 AZN"
-      ],
-      "items_preview": [
-        "Təbii yatımlı qruntlarda gücü 79 (İON) kVt (a.g.) olan traktor üzərində kolkəsənlərlə kolların və xırdamcşəliklərin kəsi",
-        "Çalovunun tutumu 0.65 (0.5-1) ııı3 olan ekskavatorlarla qruntun özüboşaldan avtomobillərə yüklənməklə qazılması, qruntun",
-        "Yükgötürmə qabiliyyəti 10 ton olan (kod 400052) karyerdən kənarda işləyən özüboşaldan avtomobillərlə yüklərin daşınması,",
-        "Qruntun 10 ın-ə qədər məsafəyə daşınmaqla qazılması, buldozerin gücü: 96 (130) kVt (a.g.), 2-ci qrup qrunt Kanalın LREN-",
-        "Qruntun hər növbəti 10 m daşınması zamanı əlavə etmək: Kanalın LREN-120 markalı novdan olan hissəsinin təmiri (1,=0,840 ",
-        "Yığma dəmir-betondan konstruksiyaların qurulması: calaqları rezinlə düzəltməklə novların (Yararsız hala düşmüş LREN-120 ",
-        "Yığma dəmir-betondan konstruksiyaların qurulması: dayaqların, dirəklərin, çərçivələrin (Yararsız yığma dəmir- beton CT 1",
-        "Yığma dəmir-betondan konstruksiyaların qurulması: dayaqlarım dirəklərin, çərçivələrin (Yararsız vəziyyətdə olan dirəkalt"
-      ],
-      "items_total": 66,
-      "score10": 6,
-      "competition": "Yüksək (açıq dövlət tenderi)",
-      "strategic_value": "Yüksək",
-      "revenue_potential": "Yüksək (330 000 AZN)",
-      "competition_en": "High (open public tender)",
-      "strategic_value_en": "High",
-      "revenue_potential_en": "High (330 000 AZN)",
-      "budget_value": 330000,
-      "segment": "Valve & Actuator",
-      "signal_type": "Tender",
-      "zone": "opportunity"
-    },
-    {
-      "id": "a7fc73f71ee6",
-      "title": "Dəftərxana və təsərrüfat mallarının satınalınması",
-      "url": "https://etender.gov.az/main/competition/detail/358837",
-      "source_id": "etender",
-      "source": "etender.gov.az (dövlət satınalma portalı)",
-      "category": "direct_tender",
-      "buyer": "AZƏRBAYCAN RESPUBLİKASI FÖVQƏLADƏ HALLAR NAZİRLİYİ DÖVLƏT YANĞINDAN MÜHAFİZƏ XİDMƏTİNİN AZƏRBAYCAN DÖVLƏT NEFT ŞİRKƏTİ OBYEKTLƏRİ ÜZRƏ YANĞINDAN MÜHAFİZƏ İDARƏSİ",
-      "score": 42,
-      "tier": "WARM",
-      "reasons": [
-        "sector: neft, qaz (+8)",
-        "equipment: boru (+14)",
-        "şirkət: SOCAR (+10)",
-        "Son tarixə 0 gün (+10)"
-      ],
-      "keywords": [
-        "neft",
-        "qaz"
-      ],
-      "companies": [
-        {
-          "name": "SOCAR",
-          "role": "soc"
-        }
-      ],
-      "contractors": [],
-      "action": "Tender sənədlərini endirin, vendor qeydiyyatını/pre-kvalifikasiyanı yoxlayın, son tarixi təqvimə yazın.",
-      "action_en": "Download the tender documents, check vendor registration / pre-qualification, put the deadline in the calendar.",
-      "source_en": "etender.gov.az (state procurement portal)",
-      "deadline": "2026-10-13",
-      "published": "2026-09-22",
-      "first_seen": "2026-10-01T20:20:32+00:00",
-      "is_new": false,
-      "changes": [],
-      "demo": false,
-      "tender_no": "2026/AT/04666/V1",
-      "budget": "75 899 AZN",
-      "contacts": [
-        {
-          "name": "Zaur Məmmədov",
-          "position": "Böyük inspektor",
-          "phone": "+994 70 200 76 42",
-          "email": "zaur17182@gmail.com"
-        }
-      ],
-      "address": "Bakı şəhəri, Suraxanı rayonu, Əmircan qəsəbəsi, S.Bəhlulzadə küçəsi 60",
-      "eligibility": [
-        "Minimum 3 iştirakçı",
-        "İştirak haqqı 152 AZN",
-        "Sənədə baxış haqqı 25 AZN"
-      ],
-      "items_preview": [
-        "Kağız A4 80qr 500 vərəq Kağız A4 80 qr A+ klas bəyazlıq minimum 169 CİE texniki göstərici ilə 210x297 mm 500 ədədli",
-        "Kağız A4 120qr 250 vərəq Kağız A4 120 qr A+ klas bəyazlıq minimum 169 CİE texniki göstərici ilə 210x297 mm 250 ədədli",
-        "Kağız A3 500 v Kağız A4 80 qr A+ klas bəyazlıq minimum 169 CİE texniki göstərici ilə 210x297 mm 500 ədədli",
-        "Arxiv qovluğu enli Böyük həcmdə sənədlərin uzunmüddətli arxivləşdirilməsi üçün; Mexanizm: qısqaclı, metal qoruyucu və kə",
-        "Arxiv qovluğu ensiz Daha az sayda sənədi səliqəli şəkildə qorumaq və arxivdə saxlamaq üçün dar (ensiz) mexanizmli qovluq",
-        "Kağız qovluq ipli qalın kardon Sənədləri içərisinə qoyub kənarlarındakı iplərlə bağlamaq üçün istifadə edilən ənənəvi ka",
-        "Kağız qovluq simli qalın karton sənədləri deşmədən və ya faylsız daxilinə sıxışdırıb saxlamaq üçün metal sıxaclı (simli)",
-        "Fayl A4 şəffaf . Sənədləri tozdan, nəmdən qorumaq və qovluqlara rahat yerləşdirmək üçün 80 mikron qalınlığında şəffaf pl"
-      ],
-      "items_total": 89,
-      "score10": 4,
-      "competition": "Yüksək (açıq dövlət tenderi)",
-      "strategic_value": "Yüksək",
-      "revenue_potential": "Orta (75 899 AZN)",
-      "competition_en": "High (open public tender)",
-      "strategic_value_en": "High",
-      "revenue_potential_en": "Medium (75 899 AZN)",
-      "budget_value": 75899.37,
-      "segment": "Piping",
-      "signal_type": "Tender",
-      "zone": "opportunity"
-    },
-    {
       "id": "86e3df447098",
       "title": "Yuxari Zeyxur kanalının (PK 98+50) cari təmir işlərinə mal-materialların satınalınması",
       "url": "https://etender.gov.az/main/competition/detail/360182",
@@ -515,7 +452,7 @@ window.__RADAR__ = {
       "reasons": [
         "valve_direct: armatur (+22)",
         "şirkət: ADSEA (Dövlət Su Ehtiyatları Agentliyi) (+10)",
-        "Son tarixə 3 gün (+10)"
+        "Son tarixə 2 gün (+10)"
       ],
       "keywords": [
         "armatur"
@@ -623,6 +560,79 @@ window.__RADAR__ = {
       "budget": "2 650 752 AZN"
     },
     {
+      "id": "ff6a8864552e",
+      "title": "\"Yuxarı Mil Kanalının və üzərində olan hidrotexniki qurğuların əsaslı təmiri\"",
+      "url": "https://etender.gov.az/main/competition/detail/360260",
+      "source_id": "etender",
+      "source": "etender.gov.az (dövlət satınalma portalı)",
+      "category": "direct_tender",
+      "buyer": "\"REGİONAL SU MELİORASİYA XİDMƏTİ\" PUBLİK HÜQUQİ ŞƏXSİ",
+      "score": 37,
+      "tier": "WARM",
+      "reasons": [
+        "valve_direct: armatur (+22)",
+        "şirkət: ADSEA (Dövlət Su Ehtiyatları Agentliyi) (+10)",
+        "Son tarixə 21 gün (+5)"
+      ],
+      "keywords": [
+        "armatur"
+      ],
+      "companies": [
+        {
+          "name": "ADSEA (Dövlət Su Ehtiyatları Agentliyi)",
+          "role": "utility"
+        }
+      ],
+      "contractors": [],
+      "action": "Tender sənədlərini endirin, vendor qeydiyyatını/pre-kvalifikasiyanı yoxlayın, son tarixi təqvimə yazın.",
+      "action_en": "Download the tender documents, check vendor registration / pre-qualification, put the deadline in the calendar.",
+      "source_en": "etender.gov.az (state procurement portal)",
+      "deadline": "2026-11-04",
+      "published": "2026-10-13",
+      "first_seen": "2026-10-14T08:45:24+00:00",
+      "is_new": true,
+      "changes": [],
+      "demo": false,
+      "tender_no": "2026/AT/05168/V1",
+      "budget": "200 000 AZN",
+      "contacts": [
+        {
+          "name": "Elşad Fərəcov",
+          "position": "Satınalmaların təşkili sektorunun müdiri",
+          "phone": "+994 12 377 07 70 (601)",
+          "email": "elshad.ferecov@rsmx.gov.az"
+        }
+      ],
+      "address": "Bakı ş. AZ1000, Hökümət Evi, mər. 5",
+      "eligibility": [
+        "Minimum 2 iştirakçı",
+        "İştirak haqqı 350 AZN",
+        "Sənədə baxış haqqı 25 AZN"
+      ],
+      "items_preview": [
+        "Çalovunun tutumu 0,65 (0,5- 0,8) m3 olan birçalovlu ekskavatorlarla kanalların və dambaların qurulması, qruntun qrupu: 3",
+        "Özüboşaldan avtomobil, daşınma məsafəsi - 5 km. Yuxarı Mil Kanalının (PK70+00÷ PK72+70 (L=270 pm) beton üzlüyün əsaslı t",
+        "Torpağın töküntü yerində işlərin yerinə yetirilməsi, qruntun qrupu: 2-3 Yuxarı Mil Kanalının (PK70+00÷ PK72+70 (L=270 pm",
+        "Çalovunun tutumu 1(1-1,2) m3 olan ekskavatorlarla qruntun özüboşaldan avtomobillərə yüklənməklə qazılması, qruntun qrupu",
+        "Özüboşaldan avtomobil, 20 t daşınma məsafəsi - 5 km. Yuxarı Mil Kanalının (PK70+00÷ PK72+70 (L=270 pm) beton üzlüyün əsa",
+        "Bəndlərin, dambaların, tökmələrin ekran və quru özəklərin aşağı hissələrinin əlaqəli qruntlardan, kütləsi 16 t-a qədər v",
+        "Çalovunun tutumu 1 (1-1,75) m3 olan birçalovlu ekskavatorlarla kanalların və dambaların qurulması, qruntun qrupu: 3 (kan",
+        "Çuxurların və tökmə torpağın yamaclarının ekskavatorlarla planlaşdırılması, qruntların qrupu: 3-4 Yuxarı Mil Kanalının ("
+      ],
+      "items_total": 20,
+      "score10": 4,
+      "competition": "Yüksək (açıq dövlət tenderi)",
+      "strategic_value": "Yüksək",
+      "revenue_potential": "Orta (200 000 AZN)",
+      "competition_en": "High (open public tender)",
+      "strategic_value_en": "High",
+      "revenue_potential_en": "Medium (200 000 AZN)",
+      "budget_value": 200000,
+      "segment": "Valve & Actuator",
+      "signal_type": "Tender",
+      "zone": "opportunity"
+    },
+    {
       "id": "81575c7d4dbf",
       "title": "SOCAR Downstream starts pre-project assessment for modernization of Congo's only oil refinery - Report.az",
       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOY2pXVFh2NDZjbUVwc3BpWjJfckZRS3YxZmE2RzZmNXZEbUJ0cnQ2WS16YUVWN1BabmpkeE1iME9SY1JqMmdLYldJRVd4WWlQVWdEZmVXS0tGSVdfaDVkdlJHNzVYSE56N2hoSnR6M0hfdW5GeHozR0cwT0VPSjVCXzRCaDlzXzN2ckxwRDFULVRXMFJHVkhIOVdKeThlcUhCWHEweGVSSXhVUDJUdExwZldBZzlOR3ZmWk0yYzdB0gHDAUFVX3lxTE5Ud1FQcmdja3ZRZVB1YVk1cEZGZlNkcGU1S1NKOHhNRFBWMDVHaVRpYVZkaG01bGFLZXBidnItQWdUT1VqNk1UWjBsRmdLMkh6TjJ2Y1F3S2FFUVhGNktvZlNwM0N2WXNYM1BhbzNWVzBXbjF1b0dfLUdFZzlBbVBDNEpMdmI4RFRWMElLUTdOY3lKZDhLcXJUdWVRRHhlLU9qTmxLa2U1SUc5UjNaMW9mSnFpVTNxRTB6SVJ0S1YxTjFEbw?oc=5",
@@ -724,6 +734,11 @@ window.__RADAR__ = {
           "title": "Vallourec awarded TotalEnergies contract for Absheron gas field development - Seeking Alpha",
           "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNWkVFX2lCemZUdHRwLVJNbFdlbWx5aVY2akI0MnBRWUJvZW15MFlqU3JxWVczMzNRNExFX1NGVzZnVmZ3dXd4UEY2TGJZc2tfRlVCZVdhSWl6R2RIWmVjRzZIRThYTUFwT1hpVDg2WHdSUVlFU21fcXRRUm5EMHo2MW5LVVRsWm55Qm9WMG9jRTg0Q3NzWDZ0MDA0M3lJdUtpcWNHWmJxWGhXVlZVajBUdFZNUQ?oc=5",
           "source": "Google News: contract award / EPC / FEED (Azərbaycan, Xəzər)"
+        },
+        {
+          "title": "TotalEnergies awards Vallourec tubulars contract for Absheron gas field tieback - Offshore Magazine",
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOWmV4VnFnalFhQmltanpBMEtwQ19LV0M0WG0xcGhTd2ZFeFlLQ0htMGNkWVA2NmR0U1RxR0tWRm0yYkw1ZTYyaWxiQjNUWlY3TmVCXzRhV0N5ZWVva294cUtfRHYxVk1FTTdjOVJnN3cxd1Vrcjc5bGN3SWRfck54NklLUktkaEhpRkt5WDFWWl9QUzFZZ3MyV3A3NWxDYkhheHBjMklpODhjME81c1dROUVMQW5JTjRnQ213TUxDT1dTenZob0Z0X1pieEV6QWdTRHJyZHF0ckVmQQ?oc=5",
+          "source": "Upstream · OGJ · Offshore Mag · Rigzone · Offshore Energy (Google News)"
         },
         {
           "title": "TotalEnergies awards contract for Absheron gas field - Oil & Gas Journal",
@@ -1212,7 +1227,7 @@ window.__RADAR__ = {
       "reasons": [
         "sector: gas pipeline, pipeline (+8)",
         "procurement_stage: procurement (+12)",
-        "Son tarixə 3 gün (+10)"
+        "Son tarixə 2 gün (+10)"
       ],
       "keywords": [
         "gas pipeline",
@@ -1239,52 +1254,6 @@ window.__RADAR__ = {
       "segment": "Procurement Package",
       "signal_type": "Tender",
       "zone": "opportunity"
-    },
-    {
-      "id": "65a7ecadfaf9",
-      "title": "Vallourec Wins TotalEnergies Contract for 16,000+ Tons of Tubulars at Absheron Gas Field - IndexBox",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPampOV21SWm1RT21HWHRBTTNYV0xnaWdOWWN2Ykwxb1RLOUZaVXpZdC05aWRmNUxLVjljeGRWakw1bUVXZ01CREhpYnNMa0VRVzgzMUN6UG5GazR4bVVmUHNHMFlOamN0eU5ZeHAwM3hvbnpwXzhqbW5nblZ5TDZhTnlya0VwWnN5a3hUTUQySmN6UHRKVjJHRU1zalN4dnRjd1BUcVljM3ZZTWtBR0JQeFJ0cjdXdGs?oc=5",
-      "source_id": "gn_service",
-      "source": "Google News: servis şirkətləri və operatorlar",
-      "category": "early_signal",
-      "buyer": null,
-      "score": 30,
-      "tier": "WATCH",
-      "reasons": [
-        "sector: absheron, gas field (+8)",
-        "procurement_stage: contract (+12)",
-        "şirkət: TotalEnergies (+10)"
-      ],
-      "keywords": [
-        "absheron",
-        "gas field"
-      ],
-      "companies": [
-        {
-          "name": "TotalEnergies",
-          "role": "operator"
-        }
-      ],
-      "contractors": [],
-      "action": "Erkən siqnal: TotalEnergies layihəsinin EPC podratçısını müəyyən edib vendor list-ə müraciət edin.",
-      "action_en": "Early signal: identify the EPC contractor of the TotalEnergies project and apply for its vendor list.",
-      "source_en": "Google News: service companies and operators",
-      "deadline": null,
-      "published": "2026-10-12",
-      "first_seen": "2026-10-13T08:03:25+00:00",
-      "is_new": false,
-      "changes": [],
-      "demo": false,
-      "score10": 3,
-      "competition": "Aşağı (erkən mərhələ, tender hələ elan olunmayıb)",
-      "strategic_value": "Orta",
-      "revenue_potential": "Potensial yüksək (layihə səviyyəsi, büdcə məlum deyil)",
-      "competition_en": "Low (early stage, no tender yet)",
-      "strategic_value_en": "Medium",
-      "revenue_potential_en": "Potentially high (project level, budget unknown)",
-      "segment": "Layihə siqnalı",
-      "signal_type": "Layihə xəbəri",
-      "zone": "news"
     },
     {
       "id": "eb0f244230b2",
@@ -1318,6 +1287,52 @@ window.__RADAR__ = {
       "deadline": null,
       "published": "2026-10-12",
       "first_seen": "2026-10-12T07:51:03+00:00",
+      "is_new": false,
+      "changes": [],
+      "demo": false,
+      "score10": 3,
+      "competition": "Aşağı (erkən mərhələ, tender hələ elan olunmayıb)",
+      "strategic_value": "Orta",
+      "revenue_potential": "Potensial yüksək (layihə səviyyəsi, büdcə məlum deyil)",
+      "competition_en": "Low (early stage, no tender yet)",
+      "strategic_value_en": "Medium",
+      "revenue_potential_en": "Potentially high (project level, budget unknown)",
+      "segment": "Layihə siqnalı",
+      "signal_type": "Layihə xəbəri",
+      "zone": "news"
+    },
+    {
+      "id": "65a7ecadfaf9",
+      "title": "Vallourec Wins TotalEnergies Contract for 16,000+ Tons of Tubulars at Absheron Gas Field - IndexBox",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPampOV21SWm1RT21HWHRBTTNYV0xnaWdOWWN2Ykwxb1RLOUZaVXpZdC05aWRmNUxLVjljeGRWakw1bUVXZ01CREhpYnNMa0VRVzgzMUN6UG5GazR4bVVmUHNHMFlOamN0eU5ZeHAwM3hvbnpwXzhqbW5nblZ5TDZhTnlya0VwWnN5a3hUTUQySmN6UHRKVjJHRU1zalN4dnRjd1BUcVljM3ZZTWtBR0JQeFJ0cjdXdGs?oc=5",
+      "source_id": "gn_service",
+      "source": "Google News: servis şirkətləri və operatorlar",
+      "category": "early_signal",
+      "buyer": null,
+      "score": 30,
+      "tier": "WATCH",
+      "reasons": [
+        "sector: absheron, gas field (+8)",
+        "procurement_stage: contract (+12)",
+        "şirkət: TotalEnergies (+10)"
+      ],
+      "keywords": [
+        "absheron",
+        "gas field"
+      ],
+      "companies": [
+        {
+          "name": "TotalEnergies",
+          "role": "operator"
+        }
+      ],
+      "contractors": [],
+      "action": "Erkən siqnal: TotalEnergies layihəsinin EPC podratçısını müəyyən edib vendor list-ə müraciət edin.",
+      "action_en": "Early signal: identify the EPC contractor of the TotalEnergies project and apply for its vendor list.",
+      "source_en": "Google News: service companies and operators",
+      "deadline": null,
+      "published": "2026-10-12",
+      "first_seen": "2026-10-13T08:03:25+00:00",
       "is_new": false,
       "changes": [],
       "demo": false,
@@ -1376,51 +1391,6 @@ window.__RADAR__ = {
       "segment": "Layihə siqnalı",
       "signal_type": "Layihə xəbəri",
       "zone": "intel"
-    },
-    {
-      "id": "ecdf4dade073",
-      "title": "BP completes Central Azeri Gas Expansion project - Report.az",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOcTlkQ2p4LS14RDFXeTZnV2lHNnBCV0lOaFB0NE1IQ0YxZ0pObnl1OGJESDNwcnN4dHJMUVVRcU10dDZxZElvR3NjMktmWHl0TzR1Y0RjVlliVmdwb2lsWXc4REc5ZklFMXM3d3J0OHcxOXhDUHVsRWxkV1dEQURFR2FB0gGHAUFVX3lxTE1yZkNmZk93X0xiRmpCTU5LcW04SGxFdGluSGpDcmFiOUtTLXBXbDlkWFVxOV9raUdLZlZKM21PMHZQeE5OMmhMejZ2MWFCZGJTenp6UENubWJmU0E0WnlUTW9udzNIZ0NqTVphYkF6M01NWHRadS1xNmlfZUNlMkNhcjBJeHlLSQ?oc=5",
-      "source_id": "gn_epc",
-      "source": "Google News: Azerbaijan EPC / FEED",
-      "category": "early_signal",
-      "buyer": null,
-      "score": 28,
-      "tier": "WATCH",
-      "reasons": [
-        "sector: azeri (+6)",
-        "procurement_stage: expansion (+12)",
-        "şirkət: bp (AIOC/BTC/SCP/Shah Deniz) (+10)"
-      ],
-      "keywords": [
-        "azeri"
-      ],
-      "companies": [
-        {
-          "name": "bp (AIOC/BTC/SCP/Shah Deniz)",
-          "role": "operator"
-        }
-      ],
-      "contractors": [],
-      "action": "Erkən siqnal: bp (AIOC/BTC/SCP/Shah Deniz) layihəsinin EPC podratçısını müəyyən edib vendor list-ə müraciət edin.",
-      "action_en": "Early signal: identify the EPC contractor of the bp (AIOC/BTC/SCP/Shah Deniz) project and apply for its vendor list.",
-      "source_en": "Google News: Azerbaijan EPC / FEED",
-      "deadline": null,
-      "published": "2026-09-30",
-      "first_seen": "2026-10-01T14:21:09+00:00",
-      "is_new": false,
-      "changes": [],
-      "demo": false,
-      "score10": 3,
-      "competition": "Aşağı (erkən mərhələ, tender hələ elan olunmayıb)",
-      "strategic_value": "Orta",
-      "revenue_potential": "Potensial yüksək (layihə səviyyəsi, büdcə məlum deyil)",
-      "competition_en": "Low (early stage, no tender yet)",
-      "strategic_value_en": "Medium",
-      "revenue_potential_en": "Potentially high (project level, budget unknown)",
-      "segment": "Layihə siqnalı",
-      "signal_type": "Layihə xəbəri",
-      "zone": "news"
     },
     {
       "id": "3ea19312b3cb",
@@ -1588,6 +1558,51 @@ window.__RADAR__ = {
       "deadline": null,
       "published": "2026-10-12",
       "first_seen": "2026-10-12T10:35:32+00:00",
+      "is_new": false,
+      "changes": [],
+      "demo": false,
+      "score10": 3,
+      "competition": "Aşağı (erkən mərhələ, tender hələ elan olunmayıb)",
+      "strategic_value": "Orta",
+      "revenue_potential": "Potensial yüksək (layihə səviyyəsi, büdcə məlum deyil)",
+      "competition_en": "Low (early stage, no tender yet)",
+      "strategic_value_en": "Medium",
+      "revenue_potential_en": "Potentially high (project level, budget unknown)",
+      "segment": "Layihə siqnalı",
+      "signal_type": "Layihə xəbəri",
+      "zone": "news"
+    },
+    {
+      "id": "ecdf4dade073",
+      "title": "BP completes Central Azeri Gas Expansion project - Report.az",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOcTlkQ2p4LS14RDFXeTZnV2lHNnBCV0lOaFB0NE1IQ0YxZ0pObnl1OGJESDNwcnN4dHJMUVVRcU10dDZxZElvR3NjMktmWHl0TzR1Y0RjVlliVmdwb2lsWXc4REc5ZklFMXM3d3J0OHcxOXhDUHVsRWxkV1dEQURFR2FB0gGHAUFVX3lxTE1yZkNmZk93X0xiRmpCTU5LcW04SGxFdGluSGpDcmFiOUtTLXBXbDlkWFVxOV9raUdLZlZKM21PMHZQeE5OMmhMejZ2MWFCZGJTenp6UENubWJmU0E0WnlUTW9udzNIZ0NqTVphYkF6M01NWHRadS1xNmlfZUNlMkNhcjBJeHlLSQ?oc=5",
+      "source_id": "gn_epc",
+      "source": "Google News: Azerbaijan EPC / FEED",
+      "category": "early_signal",
+      "buyer": null,
+      "score": 28,
+      "tier": "WATCH",
+      "reasons": [
+        "sector: azeri (+6)",
+        "procurement_stage: expansion (+12)",
+        "şirkət: bp (AIOC/BTC/SCP/Shah Deniz) (+10)"
+      ],
+      "keywords": [
+        "azeri"
+      ],
+      "companies": [
+        {
+          "name": "bp (AIOC/BTC/SCP/Shah Deniz)",
+          "role": "operator"
+        }
+      ],
+      "contractors": [],
+      "action": "Erkən siqnal: bp (AIOC/BTC/SCP/Shah Deniz) layihəsinin EPC podratçısını müəyyən edib vendor list-ə müraciət edin.",
+      "action_en": "Early signal: identify the EPC contractor of the bp (AIOC/BTC/SCP/Shah Deniz) project and apply for its vendor list.",
+      "source_en": "Google News: Azerbaijan EPC / FEED",
+      "deadline": null,
+      "published": "2026-09-30",
+      "first_seen": "2026-10-01T14:21:09+00:00",
       "is_new": false,
       "changes": [],
       "demo": false,
@@ -2019,7 +2034,7 @@ window.__RADAR__ = {
       "deadline": null,
       "published": "2026-09-08",
       "first_seen": "2026-10-13T17:12:50+00:00",
-      "is_new": true,
+      "is_new": false,
       "changes": [],
       "demo": false,
       "score10": 2,
@@ -2037,8 +2052,8 @@ window.__RADAR__ = {
       "id": "a3c3a413bb1f",
       "title": "Hema Energy targets EPC projects with Azerbaijani partner - Oman Observer",
       "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQOVJreHZwODdQNWtHUmFwZmwtY3hRX3FobGpvVURaUUY2UFBUWWg5dXR0NHNITXlkSndYTlhjZDhGaHV4dk1IbEpHZkxobm1oNmRaM0FhckhDQ2FURzVQS1FsQ0xfUXd6azdCZTdocVMwMUkySjE0MFJiVkNNZzk1bUpYTGVEQTNiMWMtalJmSGNkNGg1ZWRPclI3ZW93Y0RubFZFV3Z0bzdjZFdjMzNzT3ZRQnNCWl9U0gFaQVVfeXFMTlJmWElVRml2bVAtNGpYZnh1a2Rxald3MU51X0FMM0ZXcFZyZF9ncFRPWVBSajFVajhaNlR1RThqeVY3S0k3aExQUFNfc0V5TldpMndwckRPd0p3?oc=5",
-      "source_id": "gn_awards",
-      "source": "Google News: contract award / EPC / FEED (Azərbaycan, Xəzər)",
+      "source_id": "gn_epc",
+      "source": "Google News: Azerbaijan EPC / FEED",
       "category": "early_signal",
       "buyer": null,
       "score": 18,
@@ -2054,7 +2069,7 @@ window.__RADAR__ = {
       "contractors": [],
       "action": "Erkən siqnal: layihənin EPC podratçısını müəyyən edin və vendor list-ə müraciət edin.",
       "action_en": "Early signal: identify the project's EPC contractor and apply for its vendor list.",
-      "source_en": "Google News: contract award / EPC / FEED (Azerbaijan, Caspian)",
+      "source_en": "Google News: Azerbaijan EPC / FEED",
       "deadline": null,
       "published": "2026-10-05",
       "first_seen": "2026-10-05T18:56:05+00:00",
@@ -2348,7 +2363,25 @@ window.__RADAR__ = {
       "fetched": 30,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-13T17:12:50+00:00"
+      "at": "2026-10-14T08:45:24+00:00"
+    },
+    {
+      "source": "etender.gov.az (dövlət satınalma portalı)",
+      "source_en": "etender.gov.az (state procurement portal)",
+      "id": "etender",
+      "fetched": 5873,
+      "relevant": 7,
+      "error": null,
+      "at": "2026-10-14T08:45:24+00:00"
+    },
+    {
+      "source": "etender.gov.az bağlanmış müqavilələr (award)",
+      "source_en": "etender.gov.az concluded contracts (awards)",
+      "id": "etender_awards",
+      "fetched": 73,
+      "relevant": 1,
+      "error": null,
+      "at": "2026-10-14T08:45:24+00:00"
     },
     {
       "source": "GlobalTenders - Azerbaijan Oil & Gas",
@@ -2357,7 +2390,7 @@ window.__RADAR__ = {
       "fetched": 20,
       "relevant": 1,
       "error": null,
-      "at": "2026-10-13T17:12:50+00:00"
+      "at": "2026-10-14T08:45:24+00:00"
     },
     {
       "source": "Trend Tenders bölməsi",
@@ -2366,7 +2399,7 @@ window.__RADAR__ = {
       "fetched": 184,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-13T17:12:50+00:00"
+      "at": "2026-10-14T08:45:24+00:00"
     },
     {
       "source": "ADSEA elanları (satınalma, EOI)",
@@ -2375,7 +2408,7 @@ window.__RADAR__ = {
       "fetched": 9,
       "relevant": 3,
       "error": null,
-      "at": "2026-10-13T17:12:50+00:00"
+      "at": "2026-10-14T08:45:24+00:00"
     },
     {
       "source": "bp Azerbaijan xəbərləri (press-reliz)",
@@ -2384,34 +2417,34 @@ window.__RADAR__ = {
       "fetched": 10,
       "relevant": 2,
       "error": null,
-      "at": "2026-10-13T17:12:50+00:00"
+      "at": "2026-10-14T08:45:24+00:00"
     },
     {
       "source": "Google News: Azerbaijan EPC / FEED",
       "source_en": "Google News: Azerbaijan EPC / FEED",
       "id": "gn_epc",
-      "fetched": 64,
+      "fetched": 59,
       "relevant": 6,
       "error": null,
-      "at": "2026-10-13T17:12:50+00:00"
+      "at": "2026-10-14T08:45:24+00:00"
     },
     {
       "source": "Google News: SOCAR tender / contract",
       "source_en": "Google News: SOCAR tender / contract",
       "id": "gn_socar",
-      "fetched": 26,
+      "fetched": 29,
       "relevant": 2,
       "error": null,
-      "at": "2026-10-13T17:12:50+00:00"
+      "at": "2026-10-14T08:45:24+00:00"
     },
     {
       "source": "Google News: bp Azerbaijan projects",
       "source_en": "Google News: bp Azerbaijan projects",
       "id": "gn_bp",
-      "fetched": 27,
+      "fetched": 30,
       "relevant": 4,
       "error": null,
-      "at": "2026-10-13T17:12:50+00:00"
+      "at": "2026-10-14T08:45:24+00:00"
     },
     {
       "source": "Google News: EPC / fabrikasiya podratçıları",
@@ -2420,43 +2453,43 @@ window.__RADAR__ = {
       "fetched": 11,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-13T17:12:50+00:00"
+      "at": "2026-10-14T08:45:24+00:00"
     },
     {
       "source": "Google News: servis şirkətləri və operatorlar",
       "source_en": "Google News: service companies and operators",
       "id": "gn_service",
-      "fetched": 47,
-      "relevant": 22,
+      "fetched": 45,
+      "relevant": 23,
       "error": null,
-      "at": "2026-10-13T17:12:50+00:00"
+      "at": "2026-10-14T08:45:24+00:00"
     },
     {
       "source": "Google News: SOCAR qrupu və törəmələri",
       "source_en": "Google News: SOCAR group and affiliates",
       "id": "gn_socar_group",
-      "fetched": 14,
+      "fetched": 16,
       "relevant": 1,
       "error": null,
-      "at": "2026-10-13T17:12:50+00:00"
+      "at": "2026-10-14T08:45:24+00:00"
     },
     {
       "source": "Google News: JOCAP, Nobel qrupu, SOCAR Upstream",
       "source_en": "Google News: JOCAP, Nobel group, SOCAR Upstream",
       "id": "gn_nobel_jocap",
-      "fetched": 6,
+      "fetched": 7,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-13T17:12:50+00:00"
+      "at": "2026-10-14T08:45:24+00:00"
     },
     {
       "source": "Google News (RU dili, AZ): SOCAR tender / podrat",
       "source_en": "Google News (Russian, AZ): SOCAR tenders / contractors",
       "id": "gn_az",
-      "fetched": 38,
+      "fetched": 35,
       "relevant": 1,
       "error": null,
-      "at": "2026-10-13T17:12:50+00:00"
+      "at": "2026-10-14T08:45:24+00:00"
     },
     {
       "source": "Trend News (ümumi lent)",
@@ -2465,133 +2498,7 @@ window.__RADAR__ = {
       "fetched": 25,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-13T17:12:50+00:00"
-    },
-    {
-      "source": "Trend Energy bölməsi",
-      "source_en": "Trend Energy section",
-      "id": "trend_energy",
-      "fetched": 168,
-      "relevant": 0,
-      "error": null,
-      "at": "2026-10-13T17:12:50+00:00"
-    },
-    {
-      "source": "Offshore Energy (RSS)",
-      "source_en": "Offshore Energy (RSS)",
-      "id": "offshore_energy",
-      "fetched": 50,
-      "relevant": 1,
-      "error": null,
-      "at": "2026-10-13T17:12:50+00:00"
-    },
-    {
-      "source": "Rigzone (RSS)",
-      "source_en": "Rigzone (RSS)",
-      "id": "rigzone",
-      "fetched": 20,
-      "relevant": 0,
-      "error": null,
-      "at": "2026-10-13T17:12:50+00:00"
-    },
-    {
-      "source": "Upstream · OGJ · Offshore Mag · Rigzone · Offshore Energy (Google News)",
-      "source_en": "Upstream · OGJ · Offshore Mag · Rigzone · Offshore Energy (Google News)",
-      "id": "gn_trade_press",
-      "fetched": 100,
-      "relevant": 4,
-      "error": null,
-      "at": "2026-10-13T17:12:50+00:00"
-    },
-    {
-      "source": "Google News: contract award / EPC / FEED (Azərbaycan, Xəzər)",
-      "source_en": "Google News: contract award / EPC / FEED (Azerbaijan, Caspian)",
-      "id": "gn_awards",
-      "fetched": 57,
-      "relevant": 10,
-      "error": null,
-      "at": "2026-10-13T17:12:50+00:00"
-    },
-    {
-      "source": "Google News: brownfield / turnaround / offshore maintenance / valve replacement",
-      "source_en": "Google News: brownfield / turnaround / offshore maintenance / valve replacement",
-      "id": "gn_brownfield",
-      "fetched": 22,
-      "relevant": 0,
-      "error": null,
-      "at": "2026-10-13T17:12:50+00:00"
-    },
-    {
-      "source": "Google News: pipeline expansion / refinery upgrade / compression",
-      "source_en": "Google News: pipeline expansion / refinery upgrade / compression",
-      "id": "gn_expansion",
-      "fetched": 10,
-      "relevant": 2,
-      "error": null,
-      "at": "2026-10-13T17:12:50+00:00"
-    },
-    {
-      "source": "Azfen xəbərləri",
-      "source_en": "Azfen news",
-      "id": "azfen_news",
-      "fetched": 10,
-      "relevant": 0,
-      "error": null,
-      "at": "2026-10-13T17:12:50+00:00"
-    },
-    {
-      "source": "Baku Shipyard xəbərləri",
-      "source_en": "Baku Shipyard news",
-      "id": "bakushipyard_news",
-      "fetched": 6,
-      "relevant": 0,
-      "error": null,
-      "at": "2026-10-13T17:12:50+00:00"
-    },
-    {
-      "source": "SOCAR-KBR xəbər və tender elanları",
-      "source_en": "SOCAR-KBR news and tender notices",
-      "id": "socarkbr_blogs",
-      "fetched": 1,
-      "relevant": 0,
-      "error": null,
-      "at": "2026-10-13T17:12:50+00:00"
-    },
-    {
-      "source": "World Bank satınalma (Azərbaycan)",
-      "source_en": "World Bank procurement (Azerbaijan)",
-      "id": "worldbank",
-      "fetched": 38,
-      "relevant": 0,
-      "error": null,
-      "at": "2026-10-13T17:12:50+00:00"
-    },
-    {
-      "source": "EBRD ECEPP satınalma (Azərbaycan)",
-      "source_en": "EBRD ECEPP procurement (Azerbaijan)",
-      "id": "ebrd_ecepp",
-      "fetched": 30,
-      "relevant": 0,
-      "error": null,
-      "at": "2026-10-13T17:12:50+00:00"
-    },
-    {
-      "source": "etender.gov.az (dövlət satınalma portalı)",
-      "source_en": "etender.gov.az (state procurement portal)",
-      "id": "etender",
-      "fetched": 5831,
-      "relevant": 7,
-      "error": null,
-      "at": "2026-10-13T10:30:06+00:00"
-    },
-    {
-      "source": "etender.gov.az bağlanmış müqavilələr (award)",
-      "source_en": "etender.gov.az concluded contracts (awards)",
-      "id": "etender_awards",
-      "fetched": 71,
-      "relevant": 1,
-      "error": null,
-      "at": "2026-10-13T10:30:06+00:00"
+      "at": "2026-10-14T08:45:24+00:00"
     },
     {
       "source": "Report.az (ümumi lent)",
@@ -2600,16 +2507,124 @@ window.__RADAR__ = {
       "fetched": 30,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-13T10:30:06+00:00"
+      "at": "2026-10-14T08:45:24+00:00"
     },
     {
       "source": "Report.az Energy bölməsi",
       "source_en": "Report.az Energy section",
       "id": "report_energy",
-      "fetched": 16,
+      "fetched": 15,
       "relevant": 1,
       "error": null,
-      "at": "2026-10-13T10:30:06+00:00"
+      "at": "2026-10-14T08:45:24+00:00"
+    },
+    {
+      "source": "Trend Energy bölməsi",
+      "source_en": "Trend Energy section",
+      "id": "trend_energy",
+      "fetched": 168,
+      "relevant": 0,
+      "error": null,
+      "at": "2026-10-14T08:45:24+00:00"
+    },
+    {
+      "source": "Offshore Energy (RSS)",
+      "source_en": "Offshore Energy (RSS)",
+      "id": "offshore_energy",
+      "fetched": 50,
+      "relevant": 1,
+      "error": null,
+      "at": "2026-10-14T08:45:24+00:00"
+    },
+    {
+      "source": "Rigzone (RSS)",
+      "source_en": "Rigzone (RSS)",
+      "id": "rigzone",
+      "fetched": 20,
+      "relevant": 0,
+      "error": null,
+      "at": "2026-10-14T08:45:24+00:00"
+    },
+    {
+      "source": "Upstream · OGJ · Offshore Mag · Rigzone · Offshore Energy (Google News)",
+      "source_en": "Upstream · OGJ · Offshore Mag · Rigzone · Offshore Energy (Google News)",
+      "id": "gn_trade_press",
+      "fetched": 100,
+      "relevant": 5,
+      "error": null,
+      "at": "2026-10-14T08:45:24+00:00"
+    },
+    {
+      "source": "Google News: contract award / EPC / FEED (Azərbaycan, Xəzər)",
+      "source_en": "Google News: contract award / EPC / FEED (Azerbaijan, Caspian)",
+      "id": "gn_awards",
+      "fetched": 61,
+      "relevant": 10,
+      "error": null,
+      "at": "2026-10-14T08:45:24+00:00"
+    },
+    {
+      "source": "Google News: brownfield / turnaround / offshore maintenance / valve replacement",
+      "source_en": "Google News: brownfield / turnaround / offshore maintenance / valve replacement",
+      "id": "gn_brownfield",
+      "fetched": 24,
+      "relevant": 0,
+      "error": null,
+      "at": "2026-10-14T08:45:24+00:00"
+    },
+    {
+      "source": "Google News: pipeline expansion / refinery upgrade / compression",
+      "source_en": "Google News: pipeline expansion / refinery upgrade / compression",
+      "id": "gn_expansion",
+      "fetched": 12,
+      "relevant": 2,
+      "error": null,
+      "at": "2026-10-14T08:45:24+00:00"
+    },
+    {
+      "source": "Azfen xəbərləri",
+      "source_en": "Azfen news",
+      "id": "azfen_news",
+      "fetched": 10,
+      "relevant": 0,
+      "error": null,
+      "at": "2026-10-14T08:45:24+00:00"
+    },
+    {
+      "source": "Baku Shipyard xəbərləri",
+      "source_en": "Baku Shipyard news",
+      "id": "bakushipyard_news",
+      "fetched": 6,
+      "relevant": 0,
+      "error": null,
+      "at": "2026-10-14T08:45:24+00:00"
+    },
+    {
+      "source": "SOCAR-KBR xəbər və tender elanları",
+      "source_en": "SOCAR-KBR news and tender notices",
+      "id": "socarkbr_blogs",
+      "fetched": 1,
+      "relevant": 0,
+      "error": null,
+      "at": "2026-10-14T08:45:24+00:00"
+    },
+    {
+      "source": "World Bank satınalma (Azərbaycan)",
+      "source_en": "World Bank procurement (Azerbaijan)",
+      "id": "worldbank",
+      "fetched": 38,
+      "relevant": 0,
+      "error": null,
+      "at": "2026-10-14T08:45:24+00:00"
+    },
+    {
+      "source": "EBRD ECEPP satınalma (Azərbaycan)",
+      "source_en": "EBRD ECEPP procurement (Azerbaijan)",
+      "id": "ebrd_ecepp",
+      "fetched": 30,
+      "relevant": 0,
+      "error": null,
+      "at": "2026-10-14T08:45:24+00:00"
     },
     {
       "source": "Iteca Caspian sərgi təqvimi",
@@ -2618,7 +2633,7 @@ window.__RADAR__ = {
       "fetched": 16,
       "relevant": 12,
       "error": null,
-      "at": "2026-10-13T17:12:50+00:00"
+      "at": "2026-10-14T08:45:24+00:00"
     },
     {
       "source": "AICC Caspian (asset integrity, corrosion)",
@@ -2627,7 +2642,7 @@ window.__RADAR__ = {
       "fetched": 1,
       "relevant": 1,
       "error": null,
-      "at": "2026-10-13T17:12:50+00:00"
+      "at": "2026-10-14T08:45:24+00:00"
     }
   ],
   "companies": [
