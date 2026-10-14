@@ -1,5 +1,5 @@
 window.__RADAR__ = {
-  "generated_at": "2026-10-14T09:10:14+00:00",
+  "generated_at": "2026-10-14T14:45:38+00:00",
   "demo": false,
   "profile": {
     "company": "Portfolio",
@@ -2363,7 +2363,7 @@ window.__RADAR__ = {
       "fetched": 30,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-14T09:10:14+00:00"
+      "at": "2026-10-14T14:45:38+00:00"
     },
     {
       "source": "GlobalTenders - Azerbaijan Oil & Gas",
@@ -2372,16 +2372,16 @@ window.__RADAR__ = {
       "fetched": 20,
       "relevant": 1,
       "error": null,
-      "at": "2026-10-14T09:10:14+00:00"
+      "at": "2026-10-14T14:45:38+00:00"
     },
     {
       "source": "Trend Tenders bölməsi",
       "source_en": "Trend Tenders section",
       "id": "trend_tenders",
-      "fetched": 184,
+      "fetched": 181,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-14T09:10:14+00:00"
+      "at": "2026-10-14T14:45:38+00:00"
     },
     {
       "source": "ADSEA elanları (satınalma, EOI)",
@@ -2390,7 +2390,7 @@ window.__RADAR__ = {
       "fetched": 0,
       "relevant": 0,
       "error": "RuntimeError: <urlopen error timed out>",
-      "at": "2026-10-14T09:10:14+00:00"
+      "at": "2026-10-14T14:45:38+00:00"
     },
     {
       "source": "bp Azerbaijan xəbərləri (press-reliz)",
@@ -2399,25 +2399,25 @@ window.__RADAR__ = {
       "fetched": 10,
       "relevant": 2,
       "error": null,
-      "at": "2026-10-14T09:10:14+00:00"
+      "at": "2026-10-14T14:45:38+00:00"
     },
     {
       "source": "Google News: Azerbaijan EPC / FEED",
       "source_en": "Google News: Azerbaijan EPC / FEED",
       "id": "gn_epc",
-      "fetched": 58,
-      "relevant": 7,
+      "fetched": 57,
+      "relevant": 6,
       "error": null,
-      "at": "2026-10-14T09:10:14+00:00"
+      "at": "2026-10-14T14:45:38+00:00"
     },
     {
       "source": "Google News: SOCAR tender / contract",
       "source_en": "Google News: SOCAR tender / contract",
       "id": "gn_socar",
-      "fetched": 29,
+      "fetched": 28,
       "relevant": 2,
       "error": null,
-      "at": "2026-10-14T09:10:14+00:00"
+      "at": "2026-10-14T14:45:38+00:00"
     },
     {
       "source": "Google News: bp Azerbaijan projects",
@@ -2426,7 +2426,7 @@ window.__RADAR__ = {
       "fetched": 30,
       "relevant": 4,
       "error": null,
-      "at": "2026-10-14T09:10:14+00:00"
+      "at": "2026-10-14T14:45:38+00:00"
     },
     {
       "source": "Google News: EPC / fabrikasiya podratçıları",
@@ -2435,25 +2435,25 @@ window.__RADAR__ = {
       "fetched": 11,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-14T09:10:14+00:00"
+      "at": "2026-10-14T14:45:38+00:00"
     },
     {
       "source": "Google News: servis şirkətləri və operatorlar",
       "source_en": "Google News: service companies and operators",
       "id": "gn_service",
       "fetched": 45,
-      "relevant": 23,
+      "relevant": 22,
       "error": null,
-      "at": "2026-10-14T09:10:14+00:00"
+      "at": "2026-10-14T14:45:38+00:00"
     },
     {
       "source": "Google News: SOCAR qrupu və törəmələri",
       "source_en": "Google News: SOCAR group and affiliates",
       "id": "gn_socar_group",
-      "fetched": 16,
+      "fetched": 17,
       "relevant": 1,
       "error": null,
-      "at": "2026-10-14T09:10:14+00:00"
+      "at": "2026-10-14T14:45:38+00:00"
     },
     {
       "source": "Google News: JOCAP, Nobel qrupu, SOCAR Upstream",
@@ -2462,16 +2462,16 @@ window.__RADAR__ = {
       "fetched": 7,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-14T09:10:14+00:00"
+      "at": "2026-10-14T14:45:38+00:00"
     },
     {
       "source": "Google News (RU dili, AZ): SOCAR tender / podrat",
       "source_en": "Google News (Russian, AZ): SOCAR tenders / contractors",
       "id": "gn_az",
-      "fetched": 35,
+      "fetched": 34,
       "relevant": 1,
       "error": null,
-      "at": "2026-10-14T09:10:14+00:00"
+      "at": "2026-10-14T14:45:38+00:00"
     },
     {
       "source": "Trend News (ümumi lent)",
@@ -2480,16 +2480,16 @@ window.__RADAR__ = {
       "fetched": 25,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-14T09:10:14+00:00"
+      "at": "2026-10-14T14:45:38+00:00"
     },
     {
       "source": "Trend Energy bölməsi",
       "source_en": "Trend Energy section",
       "id": "trend_energy",
-      "fetched": 168,
+      "fetched": 171,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-14T09:10:14+00:00"
+      "at": "2026-10-14T14:45:38+00:00"
     },
     {
       "source": "Offshore Energy (RSS)",
@@ -2498,7 +2498,7 @@ window.__RADAR__ = {
       "fetched": 50,
       "relevant": 1,
       "error": null,
-      "at": "2026-10-14T09:10:14+00:00"
+      "at": "2026-10-14T14:45:38+00:00"
     },
     {
       "source": "Rigzone (RSS)",
@@ -2507,7 +2507,7 @@ window.__RADAR__ = {
       "fetched": 20,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-14T09:10:14+00:00"
+      "at": "2026-10-14T14:45:38+00:00"
     },
     {
       "source": "Upstream · OGJ · Offshore Mag · Rigzone · Offshore Energy (Google News)",
@@ -2516,16 +2516,16 @@ window.__RADAR__ = {
       "fetched": 100,
       "relevant": 5,
       "error": null,
-      "at": "2026-10-14T09:10:14+00:00"
+      "at": "2026-10-14T14:45:38+00:00"
     },
     {
       "source": "Google News: contract award / EPC / FEED (Azərbaycan, Xəzər)",
       "source_en": "Google News: contract award / EPC / FEED (Azerbaijan, Caspian)",
       "id": "gn_awards",
-      "fetched": 59,
-      "relevant": 9,
+      "fetched": 57,
+      "relevant": 8,
       "error": null,
-      "at": "2026-10-14T09:10:14+00:00"
+      "at": "2026-10-14T14:45:38+00:00"
     },
     {
       "source": "Google News: brownfield / turnaround / offshore maintenance / valve replacement",
@@ -2534,7 +2534,7 @@ window.__RADAR__ = {
       "fetched": 25,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-14T09:10:14+00:00"
+      "at": "2026-10-14T14:45:38+00:00"
     },
     {
       "source": "Google News: pipeline expansion / refinery upgrade / compression",
@@ -2543,7 +2543,7 @@ window.__RADAR__ = {
       "fetched": 12,
       "relevant": 2,
       "error": null,
-      "at": "2026-10-14T09:10:14+00:00"
+      "at": "2026-10-14T14:45:38+00:00"
     },
     {
       "source": "Azfen xəbərləri",
@@ -2552,7 +2552,7 @@ window.__RADAR__ = {
       "fetched": 10,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-14T09:10:14+00:00"
+      "at": "2026-10-14T14:45:38+00:00"
     },
     {
       "source": "Baku Shipyard xəbərləri",
@@ -2561,7 +2561,7 @@ window.__RADAR__ = {
       "fetched": 6,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-14T09:10:14+00:00"
+      "at": "2026-10-14T14:45:38+00:00"
     },
     {
       "source": "SOCAR-KBR xəbər və tender elanları",
@@ -2570,7 +2570,7 @@ window.__RADAR__ = {
       "fetched": 1,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-14T09:10:14+00:00"
+      "at": "2026-10-14T14:45:38+00:00"
     },
     {
       "source": "World Bank satınalma (Azərbaycan)",
@@ -2579,7 +2579,7 @@ window.__RADAR__ = {
       "fetched": 38,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-14T09:10:14+00:00"
+      "at": "2026-10-14T14:45:38+00:00"
     },
     {
       "source": "EBRD ECEPP satınalma (Azərbaycan)",
@@ -2588,7 +2588,7 @@ window.__RADAR__ = {
       "fetched": 30,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-14T09:10:14+00:00"
+      "at": "2026-10-14T14:45:38+00:00"
     },
     {
       "source": "etender.gov.az (dövlət satınalma portalı)",
@@ -2633,16 +2633,16 @@ window.__RADAR__ = {
       "fetched": 16,
       "relevant": 12,
       "error": null,
-      "at": "2026-10-14T09:10:14+00:00"
+      "at": "2026-10-14T14:45:38+00:00"
     },
     {
       "source": "AICC Caspian (asset integrity, corrosion)",
       "source_en": "AICC Caspian (asset integrity, corrosion)",
       "id": "aicc",
-      "fetched": 0,
-      "relevant": 0,
-      "error": "RuntimeError: <urlopen error [Errno 101] Network is unreachable>",
-      "at": "2026-10-14T09:10:14+00:00"
+      "fetched": 1,
+      "relevant": 1,
+      "error": null,
+      "at": "2026-10-14T14:45:38+00:00"
     }
   ],
   "companies": [
@@ -4636,6 +4636,27 @@ window.__RADAR__ = {
       "relevance": "other",
       "source_id": "iteca",
       "tba": false
+    },
+    {
+      "title": "AICC Caspian: Asset Integrity, Corrosion & Coatings Conference & Showcase",
+      "start": "2025-12-09",
+      "end": "2025-12-11",
+      "dates_text": "",
+      "url": "https://www.aicccaspian.com/",
+      "organizer": "Aldrich Energy",
+      "venue": "Baku",
+      "ticket": "https://www.aicccaspian.com/visitor-registration/",
+      "stand": "https://www.aicccaspian.com/become-an-exhibitor/",
+      "delegate": "https://www.aicccaspian.com/delegate-registration/",
+      "sponsor": "https://www.aicccaspian.com/sponsorship-enquiry/",
+      "id": "83e153673d",
+      "tags": [
+        "integrity",
+        "oil_gas"
+      ],
+      "relevance": "core",
+      "source_id": "aicc",
+      "tba": true
     }
   ]
 };
