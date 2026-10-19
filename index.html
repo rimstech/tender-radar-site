@@ -383,6 +383,71 @@ textarea{width:100%;min-height:70px;border:1px solid var(--line);background:var(
 .ev .own select,.ev .own input{height:30px;border:1px solid var(--line);background:var(--card);border-radius:8px;padding:0 8px;font-size:12px;width:100%;color:var(--text)}
 @media (max-width:700px){ .evhero{grid-template-columns:auto minmax(0,1fr)} .evhero .hs{grid-column:1/-1;flex-direction:row;text-align:left;gap:20px} }
 @media (max-width:560px){ .evgrid{grid-template-columns:1fr;padding:12px} .ev .own{grid-template-columns:1fr} .evhero{margin:12px 12px 0} }
+/* ---------- since last visit: triage ---------- */
+@keyframes flash{0%{background:color-mix(in srgb,var(--teal) 22%,transparent)}100%{background:transparent}}
+@keyframes draw{from{stroke-dashoffset:26}}
+@keyframes toastIn{from{opacity:0;transform:translate(-50%,10px)}}
+.tri{overflow:hidden}
+.tri-h{display:flex;align-items:center;gap:12px 18px;flex-wrap:wrap;padding:14px 18px}
+.tri-t{display:flex;align-items:center;gap:9px;font:700 14.5px var(--head)}
+.tri-t small{font:500 12px Inter;color:var(--muted)}
+.tri-t i{width:9px;height:9px;border-radius:50%;background:var(--teal);box-shadow:0 0 0 4px var(--teal-soft)}
+.tri-s{display:flex;gap:8px;flex-wrap:wrap}
+.tri-s .bs{overflow:hidden} .tri-s .bs b{display:inline-block}
+.tri-p{margin-left:auto;display:flex;align-items:center;gap:10px;font:600 12px var(--mono);color:var(--text2)}
+.tri-p .pbar{width:120px;height:6px;border-radius:3px;background:var(--line);overflow:hidden} .tri-p .pbar i{display:block;height:100%;background:var(--teal);border-radius:3px}
+.tc{position:relative;display:grid;grid-template-columns:44px minmax(0,1fr) auto;gap:14px;align-items:center;padding:11px 18px;border-top:1px solid var(--line);overflow:hidden}
+.tc::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--teal)}
+.tc.flash{animation:flash 1.6s ease-out both}
+.tc .bd{cursor:pointer;min-width:0} .tc .bd:hover .t{color:var(--teal2)}
+.tc .t{font-weight:600;line-height:1.35;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.tc .mt{margin-top:4px;display:flex;gap:6px;flex-wrap:wrap;align-items:center;color:var(--muted);font-size:11.5px}
+.tc .ta{display:flex;gap:6px}
+.tc .ta button{height:30px;padding:0 11px;border-radius:8px;border:1px solid var(--line2);background:var(--card2);color:var(--text2);font-size:12px;cursor:pointer;white-space:nowrap;transition:background .15s,border-color .15s,color .15s}
+.tc .ta .go:hover{border-color:var(--teal);background:var(--teal-soft);color:var(--text)}
+.tc .ta .wt:hover{border-color:var(--amber);background:var(--amber-soft);color:var(--text)}
+.tc .ta .no:hover{border-color:var(--crit);color:var(--crit)}
+.tc .ta kbd{font:600 10px var(--mono);color:var(--muted);margin-left:4px}
+.tri-more{display:block;width:100%;border:0;border-top:1px solid var(--line);background:var(--card2);color:var(--text2);padding:9px;font-size:12.5px;cursor:pointer}
+.tri-more:hover{color:var(--text)}
+.tri-done{display:flex;align-items:center;gap:12px;padding:13px 18px;border-top:1px solid var(--line);color:var(--text2);font-size:13px}
+.tri-done svg{flex:none;width:28px;height:28px} .tri-done path{stroke-dasharray:26;stroke-dashoffset:0}
+.tri-done.anim path{animation:draw .5s .1s ease-out both}
+.tri-done b{color:var(--text)}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:90;display:flex;align-items:center;gap:14px;padding:9px 10px 9px 16px;border-radius:12px;background:var(--card);border:1px solid var(--line2);box-shadow:0 16px 40px rgba(0,0,0,.35);font-size:13px;animation:toastIn .22s cubic-bezier(.2,.8,.2,1) both;max-width:calc(100vw - 32px)}
+tr.r.since td:first-child{box-shadow:inset 3px 0 0 var(--teal)}
+tr.r.flash td{animation:flash 1.6s ease-out both}
+@media (max-width:760px){ .tc{grid-template-columns:40px minmax(0,1fr)} .tc .ta{grid-column:2;flex-wrap:wrap} .tri-p{margin-left:0} .tc .ta kbd{display:none} }
+
+/* ---------- re-tender radar ---------- */
+.rt{display:grid;grid-template-columns:168px minmax(0,1.7fr) minmax(0,1fr) minmax(0,1.1fr) 96px 88px;gap:12px;align-items:center;padding:11px 18px;border-top:1px solid var(--line);font-size:12.5px;cursor:pointer}
+.rt:hover{background:var(--card2)}
+.rt.h{cursor:default;background:var(--card2);font:700 10.5px var(--mono);color:var(--muted);letter-spacing:.6px;text-transform:uppercase;padding-top:8px;padding-bottom:8px}
+.rt > span{min-width:0}
+.rt .t{font-weight:600;font-size:13px;line-height:1.35;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.rt .ts{margin-top:4px}
+.rt .cl{color:var(--text2);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.ws{display:inline-flex;align-items:flex-start;gap:8px;font-size:12px;font-weight:600}
+.ws i{position:relative;flex:none;width:8px;height:8px;border-radius:50%;background:var(--line2);margin-top:5px}
+.ws small{display:block;font-weight:500;color:var(--muted);font-size:11px}
+.ws.open i{background:var(--teal)} .ws.open i::after{content:"";position:absolute;inset:0;border-radius:50%;background:var(--teal);animation:pulse 2.4s ease-out infinite}
+.ws.gone i{background:var(--warn)}
+.chip.eq{border-color:color-mix(in srgb,var(--amber) 70%,transparent);background:var(--amber-soft);color:var(--text)}
+.chip.sus{border-color:var(--crit);color:var(--crit)}
+.bcard{cursor:pointer;transition:border-color .15s,transform .15s} .bcard:hover{border-color:var(--teal);transform:translateY(-2px)}
+.sb{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 10px;font-size:12px;margin:7px 0}
+.sb > span:first-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--text2)}
+.sb .bar{grid-column:1/-1;height:5px;border-radius:3px;background:var(--line);overflow:hidden}
+.sb .bar i{display:block;height:100%;background:var(--teal);border-radius:3px;transform-origin:left;animation:growX .7s cubic-bezier(.2,.8,.2,1) both}
+.sb.rv .bar i{background:var(--s2)}
+.bico{flex:none;width:56px;height:56px;border-radius:14px;display:grid;place-items:center;background:var(--teal-soft);color:var(--teal);border:1px solid color-mix(in srgb,var(--teal) 40%,transparent)}
+.bico svg{width:26px;height:26px}
+.rl2{display:grid;grid-template-columns:78px minmax(0,1fr) auto;gap:10px;padding:8px 0;border-bottom:1px solid var(--line);font-size:12.5px;align-items:start}
+.rl2:last-child{border-bottom:0} .rl2 .num{color:var(--muted)} .rl2 small{display:block;color:var(--muted);font-size:11.5px}
+.rl2.hi{background:var(--teal-soft);border-radius:8px;padding-left:8px;padding-right:8px}
+@media (max-width:900px){ .rt{grid-template-columns:130px minmax(0,1fr) 84px} .rt > span:nth-child(3), .rt > span:nth-child(4), .rt > span:nth-child(5){display:none} }
+@media (max-width:560px){ .rt{grid-template-columns:minmax(0,1fr) auto;gap:6px 12px;padding:11px 16px} .rt > span:first-child{grid-column:1/-1} .rt.h{display:none} }
+
 @media (prefers-reduced-motion:reduce){ *,*::before,*::after{animation:none!important;transition:none!important} }
 
 /* ---------- responsive ---------- */
@@ -436,6 +501,9 @@ textarea{width:100%;min-height:70px;border:1px solid var(--line);background:var(
 
     <div class="scroll" id="scroller">
     <main class="content">
+      <!-- ============ SINCE LAST VISIT (triage) ============ -->
+      <section data-v="executive overview" class="panel tri" id="triage" aria-live="polite"></section>
+
       <!-- ============ EXECUTIVE ============ -->
       <div data-v="executive" class="brief fade-in" id="brief"></div>
       <div data-v="executive" id="evExec"></div>
@@ -463,6 +531,15 @@ textarea{width:100%;min-height:70px;border:1px solid var(--line);background:var(
       </section>
       <section data-v="opportunities" class="panel"><div class="ph"><h2 data-i="trackT"></h2><span class="hint" data-i="trackH"></span></div><div class="pb"><div class="lanes" id="lanes"></div></div></section>
       <section data-v="intel" class="panel"><div class="ph"><h2 data-i="mapT"></h2><div class="legend" id="mapLegend"></div></div><div id="map"></div></section>
+
+      <!-- ============ RE-TENDER RADAR ============ -->
+      <section data-v="retender" class="panel"><div class="ph"><h2 data-i="rtChartT"></h2><div class="mleg" id="rtLeg"></div></div><div class="pb chart" id="rtChart"></div></section>
+      <section data-v="retender" class="panel">
+        <div class="ph stick"><div class="toolbar" id="rtTools"></div><span class="hint" id="rtHint"></span></div>
+        <div id="rtList"></div>
+        <div class="pb" style="padding-top:12px"><p class="note" id="rtNote" style="margin:0"></p></div>
+      </section>
+      <section data-v="retender" class="panel"><div class="ph"><h2 data-i="buyersT"></h2><span class="hint" data-i="buyersH"></span></div><div class="pb"><div class="cgrid" id="buyers"></div></div></section>
 
       <!-- ============ NEWS ============ -->
       <section data-v="news" class="panel">
@@ -521,6 +598,7 @@ textarea{width:100%;min-height:70px;border:1px solid var(--line);background:var(
   <form class="cpi" id="cpForm"><input id="cpIn" autocomplete="off"><button class="btn p" type="submit" data-i="send"></button></form>
 </aside>
 <div class="tip" id="tip" hidden></div>
+<div class="toast" id="toast" role="status" hidden></div>
 
 <!-- data.js is written by collector/run.py and works from file:// too.
      The query string defeats GitHub Pages' 10-minute browser cache, so every open shows the latest run. -->
@@ -553,6 +631,8 @@ const UI = {
   data:["Məlumat","Data"], csv:["CSV ixrac","Export CSV"], reset:["Status və qeydləri sıfırla","Reset statuses & notes"], resetQ:["Bütün status və qeydlər bu brauzerdən silinsin?","Delete all statuses and notes from this browser?"],
   yesDel:["Bəli, sil","Yes, delete"], cancel:["Ləğv et","Cancel"],
   howNote:["Məlumat iş günləri 4 dəfə avtomatik toplanır. Status, qeyd və vendor statusları yalnız bu brauzerdə saxlanır. \"AI\" hissələri brauzerdə qaydalarla işləyir (LLM deyil). Qalib gəlmə ehtimalı qəsdən göstərilmir: bunun üçün keçmiş tender nəticələri lazımdır.","Data is collected automatically 4 times per working day. Statuses, notes and vendor statuses stay in this browser only. The \"AI\" parts run as rules in the browser (not an LLM). Win probability is deliberately not shown: it needs past tender results."],
+  rtChartT:["Bitən müqavilələr: növbəti 13 ay","Contracts expiring: next 13 months"],
+  buyersT:["Sifarişçi profilləri","Buyer profiles"], buyersH:["Kim nə alır, kim udur · karta klikləyin","Who buys what, who wins · click a card"],
   srcT:["Mənbə sağlamlığı","Source health"], cpSub:["lokal köməkçi · qaydalar əsasında","local assistant · rule-based"],
   cpNote:["Brauzerdə, toplanmış məlumat üzərində işləyir (LLM deyil). Sənəd paketini həmişə özünüz yoxlayın.","Runs in your browser on the collected data (not an LLM). Always check the tender documents yourself."],
   send:["Göndər","Send"], q:["Axtar: tender, şirkət, layihə, valve, RFQ №…","Search: tender, company, project, valve, RFQ no.…"], cpIn:["Sual: bu həftə hansı son tarixlər var?","Ask: which deadlines are this week?"]
@@ -588,8 +668,8 @@ const isToday = iso => iso && new Date(iso).toDateString() === new Date().toDate
 const fmtAZN = v => v >= 1e6 ? (v/1e6).toFixed(v >= 1e7 ? 0 : 1) + tr(" mln AZN"," mn AZN") : v >= 1e3 ? Math.round(v/1e3) + tr(" min AZN","k AZN") : Math.round(v) + " AZN";
 const short = (t, n) => t.length > n ? t.slice(0, n) + "…" : t;
 const STAT = () => ({new:tr("Yeni","New"), review:tr("Baxılır","Reviewing"), rfq:tr("Aktiv RFQ","Active RFQ"), submitted:tr("Təklif verildi","Offer submitted"), won:tr("Qazanıldı","Won"), lost:tr("Uduzuldu","Lost"), pass:tr("Keçildi","Passed")});
-const ROLE_AZ = {operator:"Operator", soc:"SOCAR qrupu", utility:"Dövlət / kommunal", epc:"EPC podratçı", fabricator:"Fabrikasiya", service:"Xidmət / avadanlıq"};
-const ROLE_EN = {operator:"Operator", soc:"SOCAR group", utility:"State / utility", epc:"EPC contractor", fabricator:"Fabrication", service:"Services / equipment"};
+const ROLE_AZ = {operator:"Operator", soc:"SOCAR qrupu", state:"Dövlət şirkəti", utility:"Dövlət / kommunal", epc:"EPC podratçı", fabricator:"Fabrikasiya", service:"Xidmət / avadanlıq"};
+const ROLE_EN = {operator:"Operator", soc:"SOCAR group", state:"State company", utility:"State / utility", epc:"EPC contractor", fabricator:"Fabrication", service:"Services / equipment"};
 const roleName = k => (lang === "en" ? ROLE_EN : ROLE_AZ)[k] || "";
 const ZONE = () => ({opportunity:tr("İmkan","Opportunity"), intel:tr("Kəşfiyyat","Intel"), news:tr("Xəbər","News")});
 const zoneOf = x => x.zone || (x.category === "direct_tender" ? "opportunity" : x.category === "award" ? "intel" : "news");
@@ -638,6 +718,7 @@ const ICON = {
   overview:'<path d="M3 13h8V3H3zM13 21h8V11h-8zM3 21h8v-6H3zM13 3v6h8V3z"/>',
   opportunities:'<path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/>',
   intel:'<circle cx="12" cy="12" r="9"/><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/><circle cx="12" cy="12" r="2"/>',
+  retender:'<path d="M20.5 12a8.5 8.5 0 1 1-2.5-6"/><path d="M20.5 3.5V8H16"/><path d="M12 7.5V12l3 2"/>',
   news:'<path d="M4 4h13a3 3 0 0 1 3 3v13H7a3 3 0 0 1-3-3z"/><path d="M8 8h8M8 12h8M8 16h5"/>',
   companies:'<path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M9 9h1M14 9h1M9 13h1M14 13h1M9 17h1M14 17h1"/>',
   events:'<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4M8 14h3v3H8z"/>',
@@ -648,6 +729,7 @@ const VIEWS = () => ({
   overview:      {label:tr("İcmal","Overview"), sub:tr("Bu günün vəziyyəti: nə yenidir, nə təcilidir, hansı siqnallar vacibdir.","Today at a glance: what is new, what is urgent, which signals matter.")},
   opportunities: {label:tr("İmkanlar","Opportunities"), sub:tr("İştirak edə biləcəyiniz açıq tender, RFQ və satınalmalar: SOCAR, etender, SOCAR-KBR, Trend Tenders, World Bank, EBRD və s.","Open tenders, RFQs and procurements you can bid on: SOCAR, etender, SOCAR-KBR, Trend Tenders, World Bank, EBRD and more."), count:x => zoneOf(x) === "opportunity" && active(x)},
   intel:         {label:tr("Bazar kəşfiyyatı","Market intel"), sub:tr("Tender elan olunmamışdan əvvəlki siqnallar: FID, bağlanmış müqavilələr (award), EPC/FEED və layihə mərhələləri.","Signals before a tender exists: FIDs, concluded contracts (awards), EPC/FEED and project milestones."), count:x => zoneOf(x) === "intel"},
+  retender:      {label:tr("Təkrar tender radarı","Re-tender radar"), sub:tr("Müqaviləsi bitən alışlar: sifarişçi növbəti tenderi elan etməzdən əvvəl onun qapısında olun. Sifarişçi profili: nə alır, kim udur.","Purchases whose contract is ending: be at the buyer's door before the next tender is announced. Buyer profile: what they buy, who wins."), n:() => RT.filter(c => c.relevance !== "other" && rtState(c).k !== "soon").length},
   news:          {label:tr("Xəbərlər","News"), sub:tr("Ölkədə və sənayedə profilinizə aid baş verənlər: yerli xəbər saytları, sənaye nəşrləri və şirkətlərin öz xəbərləri.","What is happening in the country and the industry that touches your profile: local news, trade press and company news."), count:x => zoneOf(x) === "news"},
   companies:     {label:tr("Şirkətlər","Companies"), sub:tr("Müştərilər nə edir, rəqiblər nəyi qazanır, şirkət kataloqu və yoxlanmış əlaqələr, vendor qeydiyyatı izləyicisi.","What customers are doing, what competitors win, company directory with verified contacts, vendor registration tracker.")},
   events:        {label:tr("Sərgilər","Exhibitions"), sub:tr("Azərbaycanda qarşıdakı və gedən sərgi, forum və konfranslar: neft-qaz, enerji, tikinti və əlaqəli sektorlar. Bilet, stend, delegat qeydiyyatı və təqvimə əlavə buradan.","Upcoming and current exhibitions, forums and conferences in Azerbaijan: oil & gas, energy, construction and related sectors. Tickets, stands, delegate registration and calendar invites from here."), n:() => evUp().length},
@@ -658,7 +740,7 @@ let view = "executive", sortKey = "score", sortDir = -1, typeF = "", segF = "", 
 function renderNav(){
   const V = VIEWS(), item = k => { const v = V[k], n = v.n ? v.n() : v.count ? T.filter(v.count).length : null;
     return `<button data-v="${k}" class="${k===view?'on':''}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">${ICON[k]}</svg>${esc(v.label)}${n !== null ? `<span class="cnt">${n}</span>` : ""}</button>`; };
-  $("#nav").innerHTML = item("executive") + item("overview") + `<div class="sep">${esc(tr("Kəşfiyyat","Intelligence"))}</div>` + ["opportunities","intel","news","companies","events"].map(item).join("") + `<div class="sep">${esc(tr("Sistem","System"))}</div>` + item("settings");
+  $("#nav").innerHTML = item("executive") + item("overview") + `<div class="sep">${esc(tr("Kəşfiyyat","Intelligence"))}</div>` + ["opportunities","intel","retender","news","companies","events"].map(item).join("") + `<div class="sep">${esc(tr("Sistem","System"))}</div>` + item("settings");
 }
 function setView(v, keepScroll){
   if(v === "executive" && !keepScroll) animateNext = true;
@@ -849,8 +931,10 @@ const COLS = () => ({
   opportunities: [["score",tr("Skor","Score")],["title",tr("İmkan","Opportunity")],["buyer",tr("Sifarişçi","Buyer")],["segment",tr("Kateqoriya","Category")],["budget_value",tr("Büdcə","Budget")],["deadline",tr("Son tarix","Deadline")]],
   intel: [["score",tr("Skor","Score")],["title",tr("Siqnal","Signal")],["buyer",tr("Şirkət / qalib","Company / winner")],["signal_type",tr("Tip","Type")],["budget_value",tr("Məbləğ","Value")],["first_seen",tr("Tarix","Date")]]
 });
+// The list views are named in the plural ("opportunities"), their zone in the singular ("opportunity").
+const viewZone = () => view === "opportunities" ? "opportunity" : view;
 function listTools(){
-  const Z = T.filter(x => zoneOf(x) === view);
+  const Z = T.filter(x => zoneOf(x) === viewZone());
   const segs = [...new Set(Z.map(x => x.segment).filter(Boolean))].sort();
   const comps = {}; Z.forEach(t => (t.companies||[]).forEach(c => comps[c.name] = (comps[c.name]||0) + 1));
   const types = [["",tr("Hamısı","All")],["FID","FID"],["Award","Award"],["Layihə xəbəri",tr("EPC / layihə","EPC / project")]];
@@ -860,7 +944,7 @@ function listTools(){
 }
 function rows(){
   const q = $("#q").value.trim().toLowerCase();
-  const r = T.filter(x => zoneOf(x) === view && (!typeF || x.signal_type === typeF || (typeF === "Award" && isAward(x))) && (!segF || x.segment === segF) && (!compF || mentions(x, compF)) &&
+  const r = T.filter(x => zoneOf(x) === viewZone() && (!typeF || x.signal_type === typeF || (typeF === "Award" && isAward(x))) && (!segF || x.segment === segF) && (!compF || mentions(x, compF)) &&
     (!q || [x.title, x.buyer, x.winner, x.segment, x.tender_no, (x.companies||[]).map(c => c.name).join(" ")].join(" ").toLowerCase().includes(q)));
   const val = x => sortKey === "deadline" ? (x.deadline || "9999") : sortKey === "budget_value" ? (x.budget_value || 0) : (x[sortKey] ?? "");
   return r.sort((a,b) => { const A = val(a), B = val(b); return (typeof A === "number" ? A - B : String(A).localeCompare(String(B))) * sortDir; });
@@ -883,7 +967,9 @@ function renderList(){
     const dl = view === "intel" ? `<span class="num nw" style="color:var(--text2)">${esc((x.published || x.first_seen || "").slice(0,10))}</span>`
       : x.deadline ? `<span class="dl ${urg(d)}"><i></i>${d === 0 ? tr("Bu gün","Today") : tr(d + " gün", d + " d")} · ${esc(x.deadline)}</span>` : '<span style="color:var(--muted)">—</span>';
     const third = view === "intel" ? (sigChip(x) || `<span class="chip">${esc(tr("EPC / layihə","EPC / project"))}</span>`) : `<span class="chip">${esc(segName(x.segment) || "—")}</span>`;
-    return `<tr class="r" data-id="${esc(x.id)}">
+    const sc = isSince(x) && !triaged(x) ? " since" + (flashed.has("r:" + x.id) ? "" : " flash") : "";
+    if(sc) flashed.add("r:" + x.id);
+    return `<tr class="r${sc}" data-id="${esc(x.id)}">
       <td><span class="score ${scoreCls(x.score)}">${x.score}</span></td>
       <td><div class="tt">${esc(x.title)}</div><div class="ts">${x.is_new ? `<span class="chip new">${tr("YENİ","NEW")}</span>` : ""}${fitChip(x)}${(x.related||[]).length ? `<span class="chip">+${x.related.length} ${esc(tr("mənbə","sources"))}</span>` : ""}${(x.changes||[]).length ? `<span class="chip warn">${esc(tr("Dəyişiklik","Changed"))}</span>` : ""}${esc(srcName(x))}${x.tender_no ? " · № " + esc(x.tender_no) : ""}</div></td>
       <td><div class="cl">${esc(x.winner || x.buyer || (x.companies||[]).map(c => c.name).slice(0,2).join(", ") || "—")}</div></td>
@@ -943,7 +1029,7 @@ function renderTrend(){
 
 /* ================= COMPANIES ================= */
 const SHORT = n => n.split(" (")[0].split(" / ")[0];
-const CUST_ROLES = ["operator", "soc", "utility", "epc"];
+const CUST_ROLES = ["operator", "soc", "state", "utility", "epc"];
 const RIVALS = () => (DATA.companies || []).filter(c => c.competitor);
 const wonBy = (x, c) => { const w = (x.winner || "").toLowerCase(); return !!w && [c.name, ...(c.aliases || [])].some(a => a && w.includes(a.toLowerCase())); };
 function custRows(){
@@ -1092,6 +1178,7 @@ function summaryText(x){
 }
 function gauge(s){ const r = 32, c = 2*Math.PI*r; return `<div class="gauge"><svg viewBox="0 0 76 76"><circle cx="38" cy="38" r="${r}" fill="none" stroke="var(--line)" stroke-width="7"/><circle cx="38" cy="38" r="${r}" fill="none" stroke="${scoreVar(s)}" stroke-width="7" stroke-linecap="round" stroke-dasharray="${c*Math.min(100,s)/100} ${c}"/></svg><b>${s}</b></div>`; }
 function openDrawer(id){
+  if(String(id).startsWith("b:")) return openBuyer(id.slice(2));
   const x = T.find(t => t.id === id); if(!x) return;
   drawerId = id; lastSel = id; closeCopilot(true);
   const m = meta(id), u = safeUrl(x.url), ST = STAT(), Z = ZONE();
@@ -1118,6 +1205,7 @@ function openDrawer(id){
         <dt>${esc(tr("Sifarişçi","Buyer"))}</dt><dd>${esc(x.buyer || "—")}</dd>
         ${x.winner ? `<dt>${esc(tr("Qalib","Winner"))}</dt><dd><b>${esc(x.winner)}</b></dd>` : ""}
         ${x.contract_date ? `<dt>${esc(tr("Müqavilə tarixi","Contract date"))}</dt><dd class="num">${esc(x.contract_date)}${x.tender_type ? " · " + esc(x.tender_type) : ""}</dd>` : ""}
+        ${x.expire_date ? `<dt>${esc(tr("Müqavilə bitir","Contract ends"))}</dt><dd class="num">${esc(x.expire_date)} · ${esc(tr("təkrar tender pəncərəsi","re-tender window from"))} ${esc(windowOf(x.expire_date))}</dd>` : ""}
         <dt>${esc(tr("Dərc tarixi","Published"))}</dt><dd class="num">${esc(x.published || "—")}</dd>
         <dt>${esc(tr("Son tarix","Deadline"))}</dt><dd class="num">${esc(x.deadline || "—")}</dd>
         ${tc ? `<dt>${esc(tr("Əlaqə şəxsi","Contact person"))}</dt><dd>${tc}</dd>` : ""}
@@ -1265,6 +1353,195 @@ function icsFile(e){
   a.click(); URL.revokeObjectURL(a.href);
 }
 
+/* ================= SINCE LAST VISIT (triage) ================= */
+// The previous visit is read once per browser session, so a reload keeps the same "since" line.
+const LSVIS = "tenderRadar.visit.v1", REDUCED = () => matchMedia("(prefers-reduced-motion: reduce)").matches;
+const SINCE = (() => {
+  let s = "";
+  try{ s = sessionStorage.getItem("tenderRadar.since"); if(s === null){ s = ls.get(LSVIS).at || ""; sessionStorage.setItem("tenderRadar.since", s); } }catch(e){ s = ""; }
+  ls.set(LSVIS, {at:new Date().toISOString()});
+  const d = s ? new Date(s) : null; return d && !isNaN(d) ? d : null;
+})();
+const sinceD = SINCE || new Date(Date.now() - 3*864e5);   // first visit: the last 3 days
+const isSince = x => new Date(x.first_seen) > sinceD;
+const triaged = x => { const m = meta(x.id); return !!m.triage || m.status !== "new"; };
+const TRI = () => ({pursue:tr("İştirak et","Pursue"), watch:tr("İzlə","Watch"), pass:tr("Maraqsız","Not for us")});
+const flashed = new Set();   // a card flashes once per page load, not on every re-render
+let triAll = false, triPrev = null;
+function triRank(x){ const d = daysLeft(x.deadline); return x.score + (zoneOf(x) === "opportunity" ? 15 : 0) + (d !== null && d <= 7 ? 25 : 0) + ((x.product_fit||[]).length ? 8 : 0); }
+function roll(el, from){
+  if(REDUCED() || !el.animate || from === undefined || from === +el.textContent) return;
+  el.animate([{transform:`translateY(${+el.textContent < from ? "-" : ""}75%)`, opacity:0}, {transform:"none", opacity:1}], {duration:280, easing:"cubic-bezier(.2,.8,.2,1)"});
+}
+function renderTriage(){
+  if(!["executive","overview"].includes(view)) return;
+  const base = T.filter(x => zoneOf(x) !== "news" && isSince(x) && !(daysLeft(x.deadline) < 0));
+  const open = base.filter(x => !triaged(x)).sort((a,b) => triRank(b) - triRank(a));
+  const sd = sinceD.toISOString().slice(0,10), changed = T.filter(x => (x.changes||[]).some(c => c.slice(0,10) >= sd)).length;
+  const news = T.filter(x => zoneOf(x) === "news" && isSince(x)).length;
+  const cnt = {opp:open.filter(x => zoneOf(x) === "opportunity").length, intel:open.filter(x => zoneOf(x) === "intel").length, chg:changed, news};
+  const done = base.length - open.length, pct = base.length ? Math.round(100*done/base.length) : 100;
+  const stat = (k, go, l) => `<button type="button" class="bs${cnt[k] ? "" : " z"}" data-go="${go}"><b class="odo" data-k="${k}">${cnt[k]}</b>${esc(l)}</button>`;
+  const show = triAll ? open : open.slice(0, 5), Z = ZONE(), A = TRI();
+  let h = `<div class="tri-h"><div class="tri-t"><i></i>${esc(tr("Son girişdən bəri","Since your last visit"))}<small>· ${esc(SINCE ? azStamp(SINCE) : tr("ilk giriş: son 3 gün","first visit: last 3 days"))}</small></div>
+    <div class="tri-s">${stat("opp", "opportunities", tr("yeni imkan","new opportunities"))}${stat("intel", "intel", tr("kəşfiyyat","intel"))}${stat("chg", "opportunities", tr("son tarix dəyişdi","deadline changed"))}${stat("news", "news", tr("xəbər","news"))}</div>
+    ${base.length ? `<div class="tri-p"><span>${done}/${base.length} ${esc(tr("baxılıb","reviewed"))}</span><span class="pbar"><i style="width:${pct}%"></i></span></div>` : ""}</div>`;
+  h += show.map(x => { const d = daysLeft(x.deadline), fl = !flashed.has(x.id) ? " flash" : "", who = x.buyer || (x.companies||[]).map(c => c.name).slice(0,2).join(", ");
+    return `<div class="tc${fl}" data-tc="${esc(x.id)}"><span class="score ${scoreCls(x.score)}">${x.score}</span>
+      <div class="bd" data-id="${esc(x.id)}"><div class="t" title="${esc(x.title)}">${esc(splitTitle(x)[0])}</div>
+        <div class="mt"><span class="chip">${esc(Z[zoneOf(x)])}</span>${sigChip(x)}${fitChip(x)}${d !== null ? `<span class="chip${d <= 7 ? " warn" : ""}">${esc(d === 0 ? tr("Bu gün","Today") : tr(d + " gün qalıb", d + " days left"))}</span>` : ""}<span>${esc(short(who || srcName(x), 60))}</span></div></div>
+      <div class="ta"><button type="button" class="go" data-tri="pursue">✓ ${esc(A.pursue)}<kbd>P</kbd></button><button type="button" class="wt" data-tri="watch">${esc(A.watch)}<kbd>W</kbd></button><button type="button" class="no" data-tri="pass">${esc(A.pass)}<kbd>X</kbd></button></div></div>`; }).join("");
+  if(open.length > show.length) h += `<button type="button" class="tri-more" data-more="1">+${open.length - show.length} ${esc(tr("daha göstər","more"))}</button>`;
+  const check = `<svg viewBox="0 0 28 28"><circle cx="14" cy="14" r="13" fill="var(--teal-soft)"/><path d="M8 14.5l4 4 8-9" fill="none" stroke="var(--teal)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+  if(base.length && !open.length) h += `<div class="tri-done${triPrev && triPrev.open ? " anim" : ""}">${check}<span><b>${esc(tr("Hamısına baxılıb","All caught up"))}</b> · ${esc(tr(`${base.length} yeni elementin hamısı üçün qərar verilib.`, `a decision is made on all ${base.length} new items.`))}</span></div>`;
+  if(!base.length) h += `<div class="tri-done"><span>${esc(tr("Son girişdən bəri yeni imkan və ya kəşfiyyat siqnalı yoxdur.","No new opportunity or intel signal since your last visit."))}</span></div>`;
+  $("#triage").innerHTML = h;
+  show.forEach(x => flashed.add(x.id));
+  if(triPrev){ $("#triage").querySelectorAll(".odo").forEach(el => roll(el, triPrev.cnt[el.dataset.k]));
+    const bar = $("#triage .pbar i"); if(bar && bar.animate && !REDUCED() && triPrev.pct !== pct) bar.animate([{width:triPrev.pct + "%"}, {width:pct + "%"}], {duration:450, easing:"cubic-bezier(.2,.8,.2,1)"}); }
+  triPrev = {cnt, pct, open:open.length};
+}
+function decide(id, kind){
+  const x = T.find(t => t.id === id); if(!x) return;
+  const el = document.querySelector(`#triage [data-tc="${CSS.escape(id)}"]`), prev = state[id] ? {...state[id]} : null;
+  if(el){ if(el.dataset.busy) return; el.dataset.busy = "1"; el.style.pointerEvents = "none"; }
+  const patch = {triage:kind, ...(kind === "pursue" ? {status:"review"} : kind === "pass" ? {status:"pass"} : {})};
+  const commit = () => { save(id, patch); toast(`${TRI()[kind]}: ${short(splitTitle(x)[0], 60)}`, () => { if(prev) state[id] = prev; else delete state[id]; ls.set(LS, state); flashed.delete(id); renderAll(); }); };
+  if(!el || REDUCED() || !el.animate){ commit(); return; }
+  // out: slide toward the decision (right = keep, left = drop), then fold the row so the list closes up
+  el.animate([{transform:"none", opacity:1}, {transform:`translateX(${kind === "pass" ? -32 : 32}px)`, opacity:0}], {duration:180, easing:"cubic-bezier(.4,0,1,1)", fill:"forwards"}).finished
+    .then(() => el.animate([{height:el.offsetHeight + "px"}, {height:"0px", paddingTop:"0px", paddingBottom:"0px"}], {duration:200, easing:"cubic-bezier(.2,.8,.2,1)", fill:"forwards"}).finished)
+    .then(commit, commit);
+}
+let toastT = null;
+function toast(msg, undo){
+  const t = $("#toast"); clearTimeout(toastT);
+  t.innerHTML = `<span>${esc(msg)}</span>${undo ? `<button class="btn" type="button">${esc(tr("Geri al","Undo"))}</button>` : ""}`;
+  t.hidden = true; void t.offsetWidth; t.hidden = false;   // restart the entry animation
+  if(undo) t.querySelector("button").onclick = () => { t.hidden = true; undo(); };
+  toastT = setTimeout(() => { t.hidden = true; }, 5000);
+}
+$("#triage").addEventListener("click", e => {
+  const b = e.target.closest("[data-tri]"); if(b){ decide(b.closest(".tc").dataset.tc, b.dataset.tri); return; }
+  if(e.target.closest("[data-more]")){ triAll = true; renderTriage(); }
+});
+
+/* ================= RE-TENDER RADAR ================= */
+// Contract expiry (etender expireDate) minus lead_days = the window in which the buyer usually announces the
+// follow-up purchase. A date rule from real contract dates; no probability is computed.
+const BI = DATA.buyer_intel || {retender:[], buyers:[], contracts:0, lead_days:90};
+const RT = BI.retender || [];
+let rtRel = RT.some(c => c.relevance !== "other") ? "rel" : "", rtSt = "", rtCo = "", rtMonth = "", rtHi = "";
+const RELN = () => ({fit:tr("Portfolio uyğun","Portfolio fit"), equipment:tr("Avadanlıq","Equipment"), other:tr("Digər alış","Other purchase")});
+const AZ_M3 = ["yan","fev","mar","apr","may","iyn","iyl","avq","sen","okt","noy","dek"];   // "iyun"/"iyul" both start "iyu"
+const fmtD = iso => { const d = new Date(iso); return isNaN(d) ? "" : azShort(d) + "." + d.getFullYear(); };
+const windowOf = exp => { const d = new Date(exp); d.setDate(d.getDate() - (BI.lead_days || 90)); return d.toISOString().slice(0,10); };
+function rtState(c){
+  const e = daysLeft(c.expire_date), w = daysLeft(c.window_start);
+  if(e < 0) return {k:"gone", l:tr("Müqavilə bitib","Contract ended"), s:tr(`${-e} gün əvvəl · təkrar alış gözlənilir`, `${-e} days ago · follow-up purchase due`)};
+  if(w <= 0) return {k:"open", l:tr("Pəncərə açıqdır","Window open"), s:tr(`bitməyə ${e} gün`, `${e} days to expiry`)};
+  return {k:"soon", l:tr(`${w} gün sonra açılır`, `Opens in ${w} days`), s:fmtD(c.window_start)};
+}
+const wsHtml = c => { const s = rtState(c); return `<span class="ws ${s.k}"><i></i><span>${esc(s.l)}<small>${esc(s.s)}</small></span></span>`; };
+const relChip = c => c.relevance === "fit" ? `<span class="chip fit">${esc((c.product_fit||[]).length ? "Portfolio: " + c.product_fit[0].split(" (")[0] : RELN().fit)}</span>`
+  : c.relevance === "equipment" ? `<span class="chip eq">${esc(RELN().equipment)}</span>` : `<span class="chip">${esc(RELN().other)}</span>`;
+const typeChip = c => /bir mənbə/i.test(c.tender_type || "") ? `<span class="chip" title="${esc(c.tender_type)}">${esc(tr("Bir mənbədən","Single source"))}</span>` : /açıq/i.test(c.tender_type || "") ? `<span class="chip">${esc(tr("Açıq tender","Open tender"))}</span>` : "";
+const amtHtml = c => c.amount ? (c.amount_suspect ? `<span class="chip sus" title="${esc(tr("etender-də dərc olunan məbləğ real görünmür; cəmə daxil edilmir","The amount published on etender looks wrong; left out of totals"))}">${esc(fmtAZN(c.amount))} ?</span>` : esc(fmtAZN(c.amount))) : "—";
+const rivalOf = name => RIVALS().find(r => wonBy({winner:name}, r));
+function renderRtChart(R){
+  const now = today0(), MN = lang === "en" ? EN_M : AZ_M;
+  const M = Array.from({length:13}, (_,i) => { const d = new Date(now.getFullYear(), now.getMonth() + i, 1); return {d, k:`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}`, fit:0, equipment:0, other:0}; });
+  R.forEach(c => { const m = M.find(m => m.k === (c.expire_date || "").slice(0,7)); if(m) m[c.relevance]++; });
+  const RN = RELN(), SER = [["fit", RN.fit, "var(--s1)"], ["equipment", RN.equipment, "var(--s2)"], ["other", RN.other, "var(--s3)"]].filter(([k]) => !rtRel || k !== "other");
+  $("#rtLeg").innerHTML = SER.map(([,l,c]) => `<span><i style="background:${c}"></i>${esc(l)}</span>`).join("");
+  const mx = Math.max(1, ...M.map(m => SER.reduce((a,[k]) => a + m[k], 0))), Wd = 900, H = 190, pl = 28, pb = 24, pt = 22, bw = (Wd - pl)/M.length, y = v => (H - pt - pb) * v/mx;
+  // shaded band: months whose expiries already sit inside the lead window (their buyer may announce any day)
+  const band = Math.min(M.length, Math.ceil((BI.lead_days || 90)/30.4));
+  let s = `<svg viewBox="0 0 ${Wd} ${H}" role="img" aria-label="${esc(tr("Aylar üzrə bitən müqavilələr","Contracts expiring per month"))}">
+    <rect x="${pl}" y="${pt - 16}" width="${bw*band}" height="${H - pb - pt + 16}" rx="6" fill="var(--teal-soft)"/><text class="ax" x="${pl + 8}" y="${pt - 4}" style="fill:var(--teal2)">${esc(tr(`pəncərə açıq: ${BI.lead_days || 90} gün ərzində bitənlər`, `window open: ending within ${BI.lead_days || 90} days`))}</text>`;
+  [0, Math.ceil(mx/2), mx].filter((v,i,a) => a.indexOf(v) === i).forEach(v => s += `<line class="grid" x1="${pl}" x2="${Wd}" y1="${H-pb-y(v)}" y2="${H-pb-y(v)}"/><text class="ax" x="${pl-6}" y="${H-pb-y(v)+3}" text-anchor="end">${v}</text>`);
+  M.forEach((m,i) => { let base = H - pb; const x = pl + i*bw + bw*.22, bwid = bw*.56, dim = rtMonth && rtMonth !== m.k ? ' opacity=".3"' : "";
+    s += `<rect class="hit" data-i="${i}" x="${pl + i*bw}" y="${pt}" width="${bw}" height="${H-pt-pb}" fill="transparent" style="cursor:pointer"/>`;
+    SER.forEach(([k,,c], si) => { const h = y(m[k]); if(!h) return; const gap = base < H - pb ? 2 : 0, last = !SER.slice(si+1).some(([k2]) => m[k2]);
+      s += `<rect class="bar-in" style="animation-delay:${i*35}ms" x="${x}" y="${base - h + gap}" width="${bwid}" height="${Math.max(0, h - gap)}" rx="${last ? 4 : 0}" fill="${c}"${dim} pointer-events="none"/>`; base -= h; });
+    s += `<text class="ax" x="${x + bwid/2}" y="${H-7}" text-anchor="middle"${dim}>${esc((lang === "en" ? EN_M[m.d.getMonth()].slice(0,3) : AZ_M3[m.d.getMonth()]))}${m.d.getMonth() === 0 ? " " + String(m.d.getFullYear()).slice(2) : ""}</text>`; });
+  $("#rtChart").innerHTML = s + `<line x1="${pl}" x2="${Wd}" y1="${H-pb}" y2="${H-pb}" stroke="var(--line2)"/></svg>`;
+  $("#rtChart").querySelectorAll(".hit").forEach(r => { const m = M[+r.dataset.i];
+    r.onmousemove = e => showTip(e, `<b>${esc(MN[m.d.getMonth()] + " " + m.d.getFullYear())}</b>${SER.map(([k,l]) => `${esc(l)}: ${m[k]}`).join("<br>")}<br><span style="color:var(--muted)">${esc(tr("Klikləyin: siyahını süzün","Click to filter the list"))}</span>`);
+    r.onmouseleave = hideTip; r.onclick = () => { rtMonth = rtMonth === m.k ? "" : m.k; hideTip(); renderRetender(); }; });
+}
+function renderRetender(){
+  if(view !== "retender") return;
+  const q = $("#q").value.trim().toLowerCase();
+  const base = RT.filter(c => (!rtRel || c.relevance !== "other") && (!rtCo || c.company === rtCo) && (!q || [c.title, c.winner, c.buyer, c.company].join(" ").toLowerCase().includes(q)));
+  renderRtChart(base);
+  const R = base.filter(c => (!rtMonth || (c.expire_date || "").slice(0,7) === rtMonth) && (!rtSt || rtState(c).k === rtSt));
+  const seg = (id, cur, opts) => `<div class="seg" id="${id}">${opts.map(([v,l]) => `<button type="button" data-v="${esc(v)}" class="${cur === v ? "on" : ""}">${esc(l)}</button>`).join("")}</div>`;
+  const cos = [...new Set(RT.map(c => c.company))].sort();
+  const MN = lang === "en" ? EN_M : AZ_M;
+  $("#rtTools").innerHTML = seg("rtRel", rtRel, [["rel", tr("Portfolio + avadanlıq","Portfolio + equipment")], ["", tr("Bütün alışlar","All purchases")]]) +
+    seg("rtSt", rtSt, [["", tr("Hamısı","All")], ["open", tr("Pəncərə açıq","Window open")], ["gone", tr("Bitib","Ended")], ["soon", tr("Qarşıdakı","Upcoming")]]) +
+    `<select id="rtCo" aria-label="${esc(tr("Sifarişçi","Buyer"))}"><option value="">${esc(tr("Bütün sifarişçilər","All buyers"))}</option>${cos.map(c => `<option value="${esc(c)}" ${c === rtCo ? "selected" : ""}>${esc(SHORT(c))}</option>`).join("")}</select>` +
+    (rtMonth ? `<button type="button" class="chip new" id="rtMonthX" style="cursor:pointer">${esc(MN[+rtMonth.slice(5) - 1] + " " + rtMonth.slice(0,4))} ×</button>` : "");
+  $("#rtHint").textContent = tr(`${R.length} müqavilə`, `${R.length} contracts`);
+  $("#rtList").innerHTML = !RT.length ? `<div class="empty"><b>${esc(tr("Hələ müqavilə tarixçəsi yoxdur","No contract history yet"))}</b>${esc(tr("Tarixçə etender-dən yerli toplanışda dolur (həftədə bir dəfə 13 ay geriyə).","The history fills from etender on the local run (13 months back, once a week)."))}</div>`
+    : !R.length ? `<div class="empty"><b>${esc(tr("Bu filtrlə müqavilə yoxdur","No contracts for this filter"))}</b>${esc(tr("Filtrləri dəyişin və ya \"Bütün alışlar\" seçin.","Change the filters or pick \"All purchases\"."))}</div>`
+    : `<div class="rt h"><span>${esc(tr("Status","Status"))}</span><span>${esc(tr("Alış","Purchase"))}</span><span>${esc(tr("Sifarişçi","Buyer"))}</span><span>${esc(tr("Hazırkı təchizatçı","Current supplier"))}</span><span style="text-align:right">${esc(tr("Məbləğ","Value"))}</span><span>${esc(tr("Bitir","Ends"))}</span></div>` +
+      R.map(c => { const rv = rivalOf(c.winner);
+        return `<div class="rt" data-id="b:${esc(c.company)}" data-c="${esc(c.id)}"><span>${wsHtml(c)}</span>
+          <span><div class="t" title="${esc(c.title)}">${esc(c.title)}</div><div class="ts">${relChip(c)}${typeChip(c)}</div></span>
+          <span><div class="cl">${esc(SHORT(c.company))}</div><div class="ts">${esc(roleName(c.role))}</div></span>
+          <span><div class="cl" title="${esc(c.winner || "")}">${esc(c.winner || "—")}</div>${rv ? `<div class="ts"><span class="chip warn">${esc(tr("Rəqib","Competitor"))}</span></div>` : ""}</span>
+          <span class="num" style="text-align:right">${amtHtml(c)}</span><span class="num">${esc(fmtD(c.expire_date))}</span></div>`; }).join("");
+  $("#rtNote").textContent = tr(`Mənbə: etender.gov.az bağlanmış müqavilələri, izlənən sifarişçilər, son 13 ay (${BI.contracts || 0} müqavilə). Pəncərə = müqavilənin bitmə tarixi − ${BI.lead_days || 90} gün: sifarişçi növbəti alışı adətən bu vaxt elan edir. Bu tarix qaydasıdır, ehtimal deyil. Bir mənbədən alınan iş yenə birbaşa verilə bilər.`,
+    `Source: etender.gov.az concluded contracts, tracked buyers, last 13 months (${BI.contracts || 0} contracts). Window = contract end date − ${BI.lead_days || 90} days: buyers usually announce the follow-up purchase in this period. A date rule, not a probability. Single-source work may be awarded directly again.`);
+  const B = (BI.buyers || []).filter(b => !q || [b.company, ...b.suppliers.map(s => s.name)].join(" ").toLowerCase().includes(q));
+  $("#buyers").innerHTML = B.length ? B.map(b => { const mx = Math.max(1, ...b.suppliers.map(s => s.n));
+    return `<div class="cc bcard" data-id="b:${esc(b.company)}"><div class="n">${esc(SHORT(b.company))}<span class="r">${esc(roleName(b.role))}</span></div>
+      <div class="stats"><div><b>${b.n}</b>${esc(tr("Müqavilə","Contracts"))}</div><div><b>${b.total_azn ? esc(fmtAZN(b.total_azn)) : "—"}</b>${esc(tr("Məbləğ","Value"))}</div><div><b>${b.open_share}%</b>${esc(tr("Açıq tender","Open tender"))}</div><div><b>${b.expiring}</b>${esc(tr("Bitəcək","Expiring"))}</div></div>
+      <div class="p">${esc(tr("Ən çox qazananlar","Top winners"))}</div>
+      ${b.suppliers.slice(0,3).map((s,i) => `<div class="sb${rivalOf(s.name) ? " rv" : ""}"><span title="${esc(s.name)}">${esc(s.name)}</span><span class="num">${s.n}×</span><div class="bar"><i style="width:${100*s.n/mx}%;animation-delay:${i*70}ms"></i></div></div>`).join("")}
+      ${b.fit + b.equipment ? `<div class="ts" style="margin-top:8px">${b.fit ? `<span class="chip fit">${b.fit} ${esc(tr("Portfolio uyğun","Portfolio fit"))}</span>` : ""}${b.equipment ? `<span class="chip eq">${b.equipment} ${esc(tr("avadanlıq","equipment"))}</span>` : ""}</div>` : ""}</div>`; }).join("")
+    : `<div class="empty" style="grid-column:1/-1">${esc(tr("Sifarişçi profili hələ yoxdur","No buyer profiles yet"))}</div>`;
+}
+$("#rtTools").addEventListener("click", e => { const b = e.target.closest(".seg button");
+  if(b){ if(b.parentElement.id === "rtRel") rtRel = b.dataset.v; else rtSt = b.dataset.v; renderRetender(); return; }
+  if(e.target.closest("#rtMonthX")){ rtMonth = ""; renderRetender(); } });
+$("#rtTools").addEventListener("input", e => { if(e.target.id === "rtCo"){ rtCo = e.target.value; renderRetender(); } });
+$("#rtList").addEventListener("click", e => { const r = e.target.closest(".rt[data-c]"); rtHi = r ? r.dataset.c : ""; });
+function openBuyer(name){
+  const b = (BI.buyers || []).find(x => x.company === name); if(!b) return;
+  drawerId = "b:" + name; closeCopilot(true);
+  const ct = (ROSTER[name] || {}).contact, pu = safeUrl((ct || {}).procurement), its = RT.filter(c => c.company === name), mx = Math.max(1, ...b.suppliers.map(s => s.n)), top = b.suppliers[0];
+  const rel = its.filter(c => c.relevance !== "other").length, openN = its.filter(c => rtState(c).k !== "soon").length;
+  const sum = tr(`${SHORT(name)} son 13 ayda etender-də ${b.n} müqavilə bağlayıb${b.total_azn ? ` (${fmtAZN(b.total_azn)})` : ""}. Alışların ${b.open_share}%-i açıq tenderlədir.${top ? ` Ən çox ${top.name} qazanıb (${top.n} müqavilə).` : ""} ${its.length} müqavilə növbəti 13 ayda bitir${rel ? `, onlardan ${rel}-i Portfolio / avadanlıq profilindədir` : ""}${openN ? `; ${openN}-nin pəncərəsi artıq açıqdır` : ""}.`,
+    `${SHORT(name)} concluded ${b.n} contracts on etender in the last 13 months${b.total_azn ? ` (${fmtAZN(b.total_azn)})` : ""}. ${b.open_share}% of purchases went through open tenders.${top ? ` ${top.name} won most often (${top.n} contracts).` : ""} ${its.length} contracts end within 13 months${rel ? `, ${rel} of them in the Portfolio / equipment profile` : ""}${openN ? `; ${openN} already have an open window` : ""}.`);
+  $("#drawer").innerHTML = `
+    <div class="dh"><div class="bico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">${ICON.companies}</svg></div><div style="min-width:0;flex:1"><h3>${esc(name)}</h3>
+      <div class="ts" style="margin-top:7px"><span class="chip">${esc(roleName(b.role))}</span><span class="chip">${esc(tr("Sifarişçi profili","Buyer profile"))}</span><span class="chip">etender · ${esc(tr("13 ay","13 months"))}</span></div>
+      <div class="acts">${pu ? `<a class="btn p" href="${esc(pu)}" target="_blank" rel="noopener noreferrer">${esc(tr("Satınalma səhifəsi","Procurement page"))} ↗</a>` : ""}<button class="btn" id="bRadar">${esc(tr("Radarda göstər","Show on radar"))}</button></div></div>
+      <button class="ibtn" id="dClose" aria-label="${esc(tr("Bağla","Close"))}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg></button></div>
+    <div class="db">
+      <div class="sec summary"><small>${esc(tr("Avtomatik xülasə · müqavilə tarixçəsindən","Automatic summary · from the contract history"))}</small>${esc(sum)}</div>
+      <div class="sec mets">
+        <div class="met"><small>${esc(tr("Müqavilə","Contracts"))}</small><div>${b.n}</div></div>
+        <div class="met"><small>${esc(tr("Ümumi məbləğ","Total value"))}</small><div>${b.total_azn ? esc(fmtAZN(b.total_azn)) : "—"}${b.suspect ? ` <span class="chip sus" title="${esc(tr("Məbləği real görünməyən müqavilə cəmə daxil edilmir","A contract with an implausible amount is left out"))}">${b.suspect} ?</span>` : ""}</div></div>
+        <div class="met"><small>${esc(tr("Açıq tender payı","Open tender share"))}</small><div>${b.open_share}%</div></div>
+        <div class="met"><small>${esc(tr("Portfolio / avadanlıq","Portfolio / equipment"))}</small><div>${b.fit} / ${b.equipment}</div></div></div>
+      <div class="sec"><h4>${esc(tr("Kim qazanır","Who wins"))}</h4>${b.suppliers.map((s,i) => { const rv = rivalOf(s.name);
+        return `<div class="sb${rv ? " rv" : ""}"><span title="${esc(s.name)}">${esc(s.name)}${rv ? ` <span class="chip warn">${esc(tr("Rəqib","Competitor"))}</span>` : ""}</span><span class="num">${s.n}× · ${s.amount ? esc(fmtAZN(s.amount)) : "—"}</span><div class="bar"><i style="width:${100*s.n/mx}%;animation-delay:${i*60}ms"></i></div></div>`; }).join("")}</div>
+      ${its.length ? `<div class="sec"><h4>${esc(tr("Təkrar tender radarı","Re-tender radar"))} · ${its.length}</h4>${its.map(c => `<div class="rl2${c.id === rtHi ? " hi" : ""}"><span class="num">${esc(fmtD(c.expire_date))}</span><span>${esc(c.title)}<small>${esc(c.winner || "")}</small><span class="ts">${wsHtml(c)}${relChip(c)}</span></span><span class="num">${amtHtml(c)}</span></div>`).join("")}</div>` : ""}
+      <div class="sec"><h4>${esc(tr("Son müqavilələr","Recent contracts"))}</h4>${b.recent.map(c => { const u = safeUrl(c.url);
+        return `<div class="rl2"><span class="num">${esc(fmtD(c.contract_date || c.issued))}</span><span>${u ? `<a href="${esc(u)}" target="_blank" rel="noopener noreferrer">${esc(c.title)}</a>` : esc(c.title)}<small>${esc(c.winner || "")}${c.tender_type ? " · " + esc(c.tender_type) : ""}</small></span><span class="num">${amtHtml(c)}</span></div>`; }).join("")}</div>
+      ${b.units.length > 1 ? `<div class="sec"><h4>${esc(tr("Sifarişçi bölmələri","Buying units"))}</h4><ul>${b.units.map(u => `<li>${esc(u.name)} · ${u.n}</li>`).join("")}</ul></div>` : ""}
+      ${ct ? `<div class="sec"><h4>${esc(tr("Əlaqə","Contact"))}</h4>${contactHtml(ct)}</div>` : ""}
+      <p class="note sec">${esc(tr(`Pəncərə = bitmə tarixi − ${BI.lead_days || 90} gün. Qalib gəlmə ehtimalı hesablanmır.`, `Window = end date − ${BI.lead_days || 90} days. No win probability is computed.`))}</p>
+    </div>`;
+  $("#drawer").classList.add("open"); $("#drawer").setAttribute("aria-hidden","false"); $("#scrim").hidden = false;
+  $("#dClose").onclick = closeDrawer;
+  $("#bRadar").onclick = () => { rtCo = name; rtMonth = ""; rtSt = ""; closeDrawer(); setView("retender", view === "retender"); };
+}
+
 /* ================= NOTIFICATIONS / SOURCES ================= */
 // Bell: a notification stays listed while its condition holds; the badge counts only unread ones.
 // Opening the panel marks them read (per browser). Keys carry the stage, so a deadline re-alerts at 3 days, 1 day and today.
@@ -1275,6 +1552,7 @@ function bellItems(){
   T.filter(x => x.is_new && zoneOf(x) !== "news").forEach(x => n.push([0, tr("Yeni: ","New: ") + x.title, srcName(x), x.id, "n:" + x.id]));
   T.filter(x => (x.changes||[]).length).forEach(x => n.push([1, tr("Son tarix dəyişdi: ","Deadline changed: ") + x.title, trText(x.changes[x.changes.length-1]), x.id, "c:" + x.id + ":" + x.changes.length]));
   T.filter(active).forEach(x => { const d = daysLeft(x.deadline); if(d !== null && d <= 3) n.push([2, (d === 0 ? tr("Bu gün","Today") : tr(d + " gün qalıb", d + " days left")) + ": " + x.title, x.deadline, x.id, "d:" + x.id + ":" + (d <= 0 ? 0 : d <= 1 ? 1 : 3)]); });
+  RT.filter(c => c.relevance !== "other" && rtState(c).k !== "soon").forEach(c => n.push([1, tr("Təkrar tender pəncərəsi: ","Re-tender window: ") + c.title, SHORT(c.company) + " · " + rtState(c).l + " · " + fmtD(c.expire_date), "rt:" + c.id, "rt:" + c.id]));
   (DATA.sources||[]).filter(s => s.error).forEach(s => n.push([2, tr("Mənbə xətası: ","Source error: ") + (lang === "en" ? s.source_en || s.source : s.source), s.error, "", "e:" + s.id]));
   evUp().forEach(e => { const d = evDays(e.start), st = (estate[e.id]||{}).status;
     if(d <= 0 && e.relevance === "core") n.push([0, tr("Sərgi indi gedir: ","Exhibition on now: ") + e.title, evRange(e), "ev:" + e.id, "eo:" + e.id]);
@@ -1305,7 +1583,7 @@ function renderSources(){
 }
 
 /* ================= RENDER / EVENTS ================= */
-function renderAll(){ renderNav(); renderExec(); renderKpis(); renderPrio(); renderLanes(); renderTrend(); renderCoverage(); renderList(); renderNews(); renderCompanies(); renderEvents(); renderBell(); renderSources(); if(mapObj){ drawMarkers(); mapLegend(); } }
+function renderAll(){ renderNav(); renderTriage(); renderRetender(); renderExec(); renderKpis(); renderPrio(); renderLanes(); renderTrend(); renderCoverage(); renderList(); renderNews(); renderCompanies(); renderEvents(); renderBell(); renderSources(); if(mapObj){ drawMarkers(); mapLegend(); } }
 function setLang(l){ lang = l; try{ localStorage.setItem("tenderRadar.lang", l); }catch(e){} applyStatic(); if(DATA.generated_at){ const g = azStamp(DATA.generated_at); $("#gen").textContent = tr("Yeniləndi: ","Updated: ") + g; $("#sideGen").textContent = tr("Canlı · ","Live · ") + g; } setView(view, true); if(drawerId) openDrawer(drawerId); cpCtx(); }
 $("#langSeg").addEventListener("click", e => { const b = e.target.closest("button"); if(b && b.dataset.l !== lang) setLang(b.dataset.l); });
 $("#nav").addEventListener("click", e => { const b = e.target.closest("button"); if(b) setView(b.dataset.v); });
@@ -1335,8 +1613,8 @@ document.addEventListener("click", e => {
   if(e.target.closest("[data-stop]")) return;
   if(e.target.closest("[data-go]")){ setView(e.target.closest("[data-go]").dataset.go); return; }
   const ic = e.target.closest("#evExec [data-ics]"); if(ic){ const ev = EV.find(x => x.id === ic.dataset.ics); if(ev) icsFile(ev); return; }
-  const t = e.target.closest(".pi, .ni, .wr, .lane .it, .cc .lnk, .msg .lnk, .proj, .a3, .brief .lnk"); if(t && t.dataset.id){ openDrawer(t.dataset.id); return; }
-  const n = e.target.closest(".pop .n"); if(n){ $("#bellPop").hidden = true; if(n.dataset.id.startsWith("ev:")) setView("events"); else if(n.dataset.id) openDrawer(n.dataset.id); return; }
+  const t = e.target.closest(".pi, .ni, .wr, .lane .it, .cc .lnk, .msg .lnk, .proj, .a3, .brief .lnk, .tc .bd, .rt, .bcard"); if(t && t.dataset.id){ openDrawer(t.dataset.id); return; }
+  const n = e.target.closest(".pop .n"); if(n){ $("#bellPop").hidden = true; if(n.dataset.id.startsWith("ev:")) setView("events"); else if(n.dataset.id.startsWith("rt:")){ rtSt = ""; rtMonth = ""; setView("retender"); } else if(n.dataset.id) openDrawer(n.dataset.id); return; }
   if(!e.target.closest(".wrap")) $("#bellPop").hidden = true;
 });
 $("#scrim").onclick = () => { closeDrawer(); closeCopilot(); };
@@ -1345,7 +1623,11 @@ $("#aiBtn").onclick = () => $("#copilot").classList.contains("open") ? closeCopi
 $("#cpClose").onclick = () => closeCopilot();
 $("#cpChips").addEventListener("click", e => { const b = e.target.closest("button"); if(b) ask(b.textContent); });
 $("#cpForm").addEventListener("submit", e => { e.preventDefault(); const v = $("#cpIn").value.trim(); if(v){ ask(v); $("#cpIn").value = ""; } });
-document.addEventListener("keydown", e => { if(e.key === "Escape"){ closeDrawer(); closeCopilot(); $("#bellPop").hidden = true; } if(e.key === "/" && !/input|textarea|select/i.test(document.activeElement.tagName)){ e.preventDefault(); $("#q").focus(); } });
+document.addEventListener("keydown", e => { if(e.key === "Escape"){ closeDrawer(); closeCopilot(); $("#bellPop").hidden = true; } if(e.key === "/" && !/input|textarea|select/i.test(document.activeElement.tagName)){ e.preventDefault(); $("#q").focus(); }
+  // triage keys act on the top card: P pursue, W watch, X not for us
+  const k = {p:"pursue", w:"watch", x:"pass"}[e.key.toLowerCase()];
+  if(k && !e.ctrlKey && !e.metaKey && !e.altKey && !drawerId && ["executive","overview"].includes(view) && !/input|textarea|select/i.test(document.activeElement.tagName)){
+    const c = document.querySelector("#triage .tc:not([data-busy])"); if(c){ e.preventDefault(); decide(c.dataset.tc, k); } } });
 function setTheme(t){ document.documentElement.dataset.theme = t; try{ localStorage.setItem("tenderRadar.theme", t); }catch(e){} $("#themeSeg").querySelectorAll("button").forEach(b => b.classList.toggle("on", b.dataset.th === t)); }
 $("#themeBtn").onclick = () => setTheme(document.documentElement.dataset.theme === "light" ? "dark" : "light");
 $("#themeSeg").addEventListener("click", e => { const b = e.target.closest("button"); if(b) setTheme(b.dataset.th); });

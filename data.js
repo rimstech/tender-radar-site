@@ -1,5 +1,5 @@
 window.__RADAR__ = {
-  "generated_at": "2026-10-19T16:40:52+00:00",
+  "generated_at": "2026-10-19T20:38:18+00:00",
   "demo": false,
   "profile": {
     "company": "Portfolio",
@@ -12,7 +12,12 @@ window.__RADAR__ = {
     "publish_manual": false,
     "max_published_age_days": 45,
     "portfolio_source": "Presentation - Portfolio (2026)",
-    "news_min_score": 12
+    "news_min_score": 12,
+    "retender_lead_days": 90,
+    "award_amount_sanity_azn": 1000000000,
+    "retender_horizon_days": 400,
+    "retender_grace_days": 60,
+    "retender_note": "Təkrar tender radarı: etender müqavilənin bitmə tarixi (expireDate) minus retender_lead_days = sifarişçinin növbəti alışı elan edə biləcəyi pəncərə. Ehtimal deyil, tarix qaydasıdır."
   },
   "tenders": [
     {
@@ -32,7 +37,7 @@ window.__RADAR__ = {
         "procurement_stage: commissioning, expansion, əsaslı təmir (+20)",
         "şirkət: ADSEA (Dövlət Su Ehtiyatları Agentliyi) (+10)",
         "mənfi: heating (-20)",
-        "Son tarixə 9 gün (+5)"
+        "Son tarixə 8 gün (+5)"
       ],
       "keywords": [
         "check valves",
@@ -213,7 +218,7 @@ window.__RADAR__ = {
         "valve_direct: kran (+22)",
         "procurement_stage: quraşdırma (+12)",
         "şirkət: ADSEA (Dövlət Su Ehtiyatları Agentliyi) (+10)",
-        "Son tarixə 2 gün (+10)"
+        "Son tarixə 1 gün (+10)"
       ],
       "keywords": [
         "kran",
@@ -285,7 +290,7 @@ window.__RADAR__ = {
         "valve_direct: choke, valve (+30)",
         "equipment: nasos (+14)",
         "şirkət: ADSEA (Dövlət Su Ehtiyatları Agentliyi) (+10)",
-        "Son tarixə 10 gün (+5)"
+        "Son tarixə 9 gün (+5)"
       ],
       "keywords": [
         "choke",
@@ -694,7 +699,7 @@ window.__RADAR__ = {
       "companies": [
         {
           "name": "Azerenerji",
-          "role": "soc"
+          "role": "state"
         }
       ],
       "contractors": [],
@@ -719,6 +724,7 @@ window.__RADAR__ = {
       "zone": "intel",
       "winner": "\"ELECTRO İNDUSTRİES\" QAPALI SƏHMDAR CƏMİYYƏTİ",
       "contract_date": "2026-08-07",
+      "expire_date": "2027-03-06",
       "tender_type": "Açıq Tender",
       "budget_value": 2650752,
       "budget": "2 650 752 AZN"
@@ -767,6 +773,7 @@ window.__RADAR__ = {
       "zone": "intel",
       "winner": "\"HEBA COMPANY\" Məhdud Məsuliyyətli Cəmiyyəti",
       "contract_date": "2026-10-19",
+      "expire_date": "2026-12-31",
       "tender_type": "Açıq Tender",
       "budget_value": 91442.92,
       "budget": "91 443 AZN"
@@ -784,7 +791,7 @@ window.__RADAR__ = {
       "reasons": [
         "valve_direct: armatur (+22)",
         "şirkət: ADSEA (Dövlət Su Ehtiyatları Agentliyi) (+10)",
-        "Son tarixə 16 gün (+5)"
+        "Son tarixə 15 gün (+5)"
       ],
       "keywords": [
         "armatur"
@@ -857,7 +864,7 @@ window.__RADAR__ = {
       "reasons": [
         "valve_direct: ötürücü (+22)",
         "şirkət: ADSEA (Dövlət Su Ehtiyatları Agentliyi) (+10)",
-        "Son tarixə 17 gün (+5)"
+        "Son tarixə 16 gün (+5)"
       ],
       "keywords": [
         "ötürücü"
@@ -1270,8 +1277,8 @@ window.__RADAR__ = {
       "source_en": "ADSEA announcements (procurement, EOI)",
       "deadline": null,
       "published": "2026-09-04",
-      "first_seen": "2026-10-01T20:25:17+00:00",
-      "is_new": false,
+      "first_seen": "2026-10-19T20:38:18+00:00",
+      "is_new": true,
       "changes": [],
       "demo": false,
       "score10": 3,
@@ -1469,6 +1476,98 @@ window.__RADAR__ = {
       "strategic_value_en": "Medium",
       "revenue_potential_en": "Potentially high (project level, budget unknown)",
       "segment": "Piping",
+      "signal_type": "Layihə xəbəri",
+      "zone": "news"
+    },
+    {
+      "id": "65a7ecadfaf9",
+      "title": "Vallourec Wins TotalEnergies Contract for 16,000+ Tons of Tubulars at Absheron Gas Field - IndexBox",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPampOV21SWm1RT21HWHRBTTNYV0xnaWdOWWN2Ykwxb1RLOUZaVXpZdC05aWRmNUxLVjljeGRWakw1bUVXZ01CREhpYnNMa0VRVzgzMUN6UG5GazR4bVVmUHNHMFlOamN0eU5ZeHAwM3hvbnpwXzhqbW5nblZ5TDZhTnlya0VwWnN5a3hUTUQySmN6UHRKVjJHRU1zalN4dnRjd1BUcVljM3ZZTWtBR0JQeFJ0cjdXdGs?oc=5",
+      "source_id": "gn_service",
+      "source": "Google News: servis şirkətləri və operatorlar",
+      "category": "early_signal",
+      "buyer": null,
+      "score": 30,
+      "tier": "WATCH",
+      "reasons": [
+        "sector: absheron, gas field (+8)",
+        "procurement_stage: contract (+12)",
+        "şirkət: TotalEnergies (+10)"
+      ],
+      "keywords": [
+        "absheron",
+        "gas field"
+      ],
+      "companies": [
+        {
+          "name": "TotalEnergies",
+          "role": "operator"
+        }
+      ],
+      "contractors": [],
+      "action": "Erkən siqnal: TotalEnergies layihəsinin EPC podratçısını müəyyən edib vendor list-ə müraciət edin.",
+      "action_en": "Early signal: identify the EPC contractor of the TotalEnergies project and apply for its vendor list.",
+      "source_en": "Google News: service companies and operators",
+      "deadline": null,
+      "published": "2026-10-12",
+      "first_seen": "2026-10-13T08:03:25+00:00",
+      "is_new": false,
+      "changes": [],
+      "demo": false,
+      "score10": 3,
+      "competition": "Aşağı (erkən mərhələ, tender hələ elan olunmayıb)",
+      "strategic_value": "Orta",
+      "revenue_potential": "Potensial yüksək (layihə səviyyəsi, büdcə məlum deyil)",
+      "competition_en": "Low (early stage, no tender yet)",
+      "strategic_value_en": "Medium",
+      "revenue_potential_en": "Potentially high (project level, budget unknown)",
+      "segment": "Layihə siqnalı",
+      "signal_type": "Layihə xəbəri",
+      "zone": "news"
+    },
+    {
+      "id": "eb0f244230b2",
+      "title": "Vallourec Lands Major TotalEnergies Tubular Contract for Azerbaijan’s Absheron Gas Field - TipRanks",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOQ0c5cldyTGpuZmp1S3YySTRuVHZrYVFqYUNJQUNCVFE0SWhtWnV3VEZjYWtVMzRVM1FRTDE5U0N4YTBFcGpYYWQ0Vk9aWVE2b3djUHV0Y2lITS1qUVR6ZlNLaVRXS3NZdW1MWUZlSnAzS3pxRlRNMkkxRlBNYUxyV05qQkxUTXJqbUY4RDBNdUNPUjM1TnJkT2oxNW14WVlrREw3bUhWLW5tVUIzY0ctTVBrQUROWWVSUERFb1ZmZlBPUmh1anNJcFZBQmNrQS1iQ3pEajh3?oc=5",
+      "source_id": "gn_service",
+      "source": "Google News: servis şirkətləri və operatorlar",
+      "category": "early_signal",
+      "buyer": null,
+      "score": 30,
+      "tier": "WATCH",
+      "reasons": [
+        "sector: absheron, gas field (+8)",
+        "procurement_stage: contract (+12)",
+        "şirkət: TotalEnergies (+10)"
+      ],
+      "keywords": [
+        "absheron",
+        "gas field"
+      ],
+      "companies": [
+        {
+          "name": "TotalEnergies",
+          "role": "operator"
+        }
+      ],
+      "contractors": [],
+      "action": "Erkən siqnal: TotalEnergies layihəsinin EPC podratçısını müəyyən edib vendor list-ə müraciət edin.",
+      "action_en": "Early signal: identify the EPC contractor of the TotalEnergies project and apply for its vendor list.",
+      "source_en": "Google News: service companies and operators",
+      "deadline": null,
+      "published": "2026-10-12",
+      "first_seen": "2026-10-12T07:51:03+00:00",
+      "is_new": false,
+      "changes": [],
+      "demo": false,
+      "score10": 3,
+      "competition": "Aşağı (erkən mərhələ, tender hələ elan olunmayıb)",
+      "strategic_value": "Orta",
+      "revenue_potential": "Potensial yüksək (layihə səviyyəsi, büdcə məlum deyil)",
+      "competition_en": "Low (early stage, no tender yet)",
+      "strategic_value_en": "Medium",
+      "revenue_potential_en": "Potentially high (project level, budget unknown)",
+      "segment": "Layihə siqnalı",
       "signal_type": "Layihə xəbəri",
       "zone": "news"
     },
@@ -1703,98 +1802,6 @@ window.__RADAR__ = {
       "zone": "news"
     },
     {
-      "id": "eb0f244230b2",
-      "title": "Vallourec Lands Major TotalEnergies Tubular Contract for Azerbaijan’s Absheron Gas Field - TipRanks",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOQ0c5cldyTGpuZmp1S3YySTRuVHZrYVFqYUNJQUNCVFE0SWhtWnV3VEZjYWtVMzRVM1FRTDE5U0N4YTBFcGpYYWQ0Vk9aWVE2b3djUHV0Y2lITS1qUVR6ZlNLaVRXS3NZdW1MWUZlSnAzS3pxRlRNMkkxRlBNYUxyV05qQkxUTXJqbUY4RDBNdUNPUjM1TnJkT2oxNW14WVlrREw3bUhWLW5tVUIzY0ctTVBrQUROWWVSUERFb1ZmZlBPUmh1anNJcFZBQmNrQS1iQ3pEajh3?oc=5",
-      "source_id": "gn_service",
-      "source": "Google News: servis şirkətləri və operatorlar",
-      "category": "early_signal",
-      "buyer": null,
-      "score": 30,
-      "tier": "WATCH",
-      "reasons": [
-        "sector: absheron, gas field (+8)",
-        "procurement_stage: contract (+12)",
-        "şirkət: TotalEnergies (+10)"
-      ],
-      "keywords": [
-        "absheron",
-        "gas field"
-      ],
-      "companies": [
-        {
-          "name": "TotalEnergies",
-          "role": "operator"
-        }
-      ],
-      "contractors": [],
-      "action": "Erkən siqnal: TotalEnergies layihəsinin EPC podratçısını müəyyən edib vendor list-ə müraciət edin.",
-      "action_en": "Early signal: identify the EPC contractor of the TotalEnergies project and apply for its vendor list.",
-      "source_en": "Google News: service companies and operators",
-      "deadline": null,
-      "published": "2026-10-12",
-      "first_seen": "2026-10-12T07:51:03+00:00",
-      "is_new": false,
-      "changes": [],
-      "demo": false,
-      "score10": 3,
-      "competition": "Aşağı (erkən mərhələ, tender hələ elan olunmayıb)",
-      "strategic_value": "Orta",
-      "revenue_potential": "Potensial yüksək (layihə səviyyəsi, büdcə məlum deyil)",
-      "competition_en": "Low (early stage, no tender yet)",
-      "strategic_value_en": "Medium",
-      "revenue_potential_en": "Potentially high (project level, budget unknown)",
-      "segment": "Layihə siqnalı",
-      "signal_type": "Layihə xəbəri",
-      "zone": "news"
-    },
-    {
-      "id": "65a7ecadfaf9",
-      "title": "Vallourec Wins TotalEnergies Contract for 16,000+ Tons of Tubulars at Absheron Gas Field - IndexBox",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPampOV21SWm1RT21HWHRBTTNYV0xnaWdOWWN2Ykwxb1RLOUZaVXpZdC05aWRmNUxLVjljeGRWakw1bUVXZ01CREhpYnNMa0VRVzgzMUN6UG5GazR4bVVmUHNHMFlOamN0eU5ZeHAwM3hvbnpwXzhqbW5nblZ5TDZhTnlya0VwWnN5a3hUTUQySmN6UHRKVjJHRU1zalN4dnRjd1BUcVljM3ZZTWtBR0JQeFJ0cjdXdGs?oc=5",
-      "source_id": "gn_service",
-      "source": "Google News: servis şirkətləri və operatorlar",
-      "category": "early_signal",
-      "buyer": null,
-      "score": 30,
-      "tier": "WATCH",
-      "reasons": [
-        "sector: socar, газа (+8)",
-        "procurement_stage: закупки (+12)",
-        "şirkət: SOCAR (+10)"
-      ],
-      "keywords": [
-        "socar",
-        "газа"
-      ],
-      "companies": [
-        {
-          "name": "SOCAR",
-          "role": "soc"
-        }
-      ],
-      "contractors": [],
-      "action": "Erkən siqnal: SOCAR layihəsinin EPC podratçısını müəyyən edib vendor list-ə müraciət edin.",
-      "action_en": "Early signal: identify the EPC contractor of the SOCAR project and apply for its vendor list.",
-      "source_en": "Google News (Russian, AZ): SOCAR tenders / contractors",
-      "deadline": null,
-      "published": "2026-10-12",
-      "first_seen": "2026-10-13T08:03:25+00:00",
-      "is_new": false,
-      "changes": [],
-      "demo": false,
-      "score10": 3,
-      "competition": "Aşağı (erkən mərhələ, tender hələ elan olunmayıb)",
-      "strategic_value": "Orta",
-      "revenue_potential": "Potensial yüksək (layihə səviyyəsi, büdcə məlum deyil)",
-      "competition_en": "Low (early stage, no tender yet)",
-      "strategic_value_en": "Medium",
-      "revenue_potential_en": "Potentially high (project level, budget unknown)",
-      "segment": "Layihə siqnalı",
-      "signal_type": "Layihə xəbəri",
-      "zone": "news"
-    },
-    {
       "id": "bddb467781b9",
       "title": "SOCAR хочет возобновить закупки российского газа у «Газпрома» - Yerevan Today |",
       "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOZ1luRERuLUtPNzdPZzBYM2FQSnd6SVNkRExRS2tmZFZaTnlJaHlwU2FrMWdmaTFyeno3T2NsRWVpSnNmRFhpX2VEeFBCcDEzcEY1SnE3R0F2M0hnLWRzR2lxMTFVMmtyVm5yZ0EzeXBaLXZXbGtxSnF6UkJCNG8zdU5mYXlVUQ?oc=5",
@@ -1889,8 +1896,8 @@ window.__RADAR__ = {
       "id": "ff2ce45e2606",
       "title": "Vallourec shares up 4% on TotalEnergies Azerbaijan gas field contract - Investing.com",
       "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNd0JvYlJ5a29PR2VOWHBTS1VoYkhRZ0RZZjY4S2NZNnhkejQ4M3pXeldhZjlFcVJ1bldnX0FPbjd3bXdmZC1yS0VmY1N6MVE0RHgwcGl1T3gzeU5MX296S09Pek9sWlo3QzlQbmNzSHdHN2t5MzJISEptNkFQREJCZnRoNGJORzNuWURqTkwzT0tGRzNGMXhsTk5sQXFYd3NocEYzSkRsbV94QndJVzdwS3Z4US01UGROUnU4UW50NmVoMURqNjNCc2ln?oc=5",
-      "source_id": "gn_service",
-      "source": "Google News: servis şirkətləri və operatorlar",
+      "source_id": "gn_awards",
+      "source": "Google News: contract award / EPC / FEED (Azərbaycan, Xəzər)",
       "category": "early_signal",
       "buyer": null,
       "score": 28,
@@ -1912,7 +1919,7 @@ window.__RADAR__ = {
       "contractors": [],
       "action": "Erkən siqnal: TotalEnergies layihəsinin EPC podratçısını müəyyən edib vendor list-ə müraciət edin.",
       "action_en": "Early signal: identify the EPC contractor of the TotalEnergies project and apply for its vendor list.",
-      "source_en": "Google News: service companies and operators",
+      "source_en": "Google News: contract award / EPC / FEED (Azerbaijan, Caspian)",
       "deadline": null,
       "published": "2026-10-12",
       "first_seen": "2026-10-12T10:35:32+00:00",
@@ -2066,11 +2073,11 @@ window.__RADAR__ = {
       "zone": "news"
     },
     {
-      "id": "57537a3726d5",
-      "title": "TotalEnergies Awards Vallourec Contract for Azerbaijan Gas Field - Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNSXctbjE0OERJWU5XN3BreUxwZFFDQm53TEdLUXJiNkJlZDVLYTViUzVza3VRVndDaENpZGNNWlBhVXh4clNoQ0szQko4Um1aRXBfekM2YnlsWVAwd1RacGp0VllqVG01ODEzUjRzLUpLSGJNOU5ydTRaZWR4Yzl6ZTBDLTkzaUZqQlRGWEozSVJVZElDVENvdHpRNndfRDlLMUpCSVJwN2ozZmM?oc=5",
-      "source_id": "gn_awards",
-      "source": "Google News: contract award / EPC / FEED (Azərbaycan, Xəzər)",
+      "id": "0e9f9f8922a7",
+      "title": "TotalEnergies Awards Vallourec Contract for Azerbaijan Gas Field - www.marketscreener.com",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPT3NLU0cxQmVpWE1uLWkzaWdGY0pOeDFGOEt6MEZ4alpPOURSTk0yVURYTGRhV0h3UU8yZEJmV1JuU3ZwektMWS1waHpIMnNYQmNHTGJaU3ZqVy1XRmpsekc1cUltS2kxNnAzM1R5WVlxTEZWOVBiR1ZyT0dGOEJFU01Ub0dXSHZTcVFnLWsxdE5HcU1rQm9mbUFWNDl5dzRoQlMzWXdTY1lKN1h2ZTVIZ25jSlFlNUts?oc=5",
+      "source_id": "gn_service",
+      "source": "Google News: servis şirkətləri və operatorlar",
       "category": "early_signal",
       "buyer": null,
       "score": 28,
@@ -2092,7 +2099,7 @@ window.__RADAR__ = {
       "contractors": [],
       "action": "Erkən siqnal: TotalEnergies layihəsinin EPC podratçısını müəyyən edib vendor list-ə müraciət edin.",
       "action_en": "Early signal: identify the EPC contractor of the TotalEnergies project and apply for its vendor list.",
-      "source_en": "Google News: contract award / EPC / FEED (Azerbaijan, Caspian)",
+      "source_en": "Google News: service companies and operators",
       "deadline": null,
       "published": "2026-10-12",
       "first_seen": "2026-10-12T10:35:32+00:00",
@@ -3016,6 +3023,56 @@ window.__RADAR__ = {
       "zone": "news"
     },
     {
+      "id": "110699a69925",
+      "title": "SOCAR и Gran Tierra Energy начнут поиск нефти и газа в пяти районах Азербайджана - Vesti.az",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPaEJ0MDNqNi1PZ1B6QklHRk0tb1dhWE0zODNSZ0hWNzZCb0hrRlRicUN3VHEyMVV2eVB0OEt6UWZXXzFmMk5yUEJSQ1VtZEF1Z2JMNmFIbG54WUo2b1hqd1k5bXhqMzhUWUxOVzZOdWdMVjN3Rmhkd2ZFd0dETjJxaDFPN2V4YXlCVHNxSmVTUlB5bl92czlzS1MyWXpZOXhiQnhnem9MUHQyZlpzNWVZbGFQVV8tUQ?oc=5",
+      "source_id": "gn_az",
+      "source": "Google News (RU dili, AZ): SOCAR tender / podrat",
+      "category": "early_signal",
+      "buyer": null,
+      "score": 12,
+      "tier": "INFO",
+      "reasons": [
+        "sector: socar, газа, нефти (+10)",
+        "şirkət: SOCAR, Gran Tierra Energy (+14)"
+      ],
+      "keywords": [
+        "socar",
+        "газа",
+        "нефти"
+      ],
+      "companies": [
+        {
+          "name": "SOCAR",
+          "role": "soc"
+        },
+        {
+          "name": "Gran Tierra Energy",
+          "role": "operator"
+        }
+      ],
+      "contractors": [],
+      "action": "Erkən siqnal: SOCAR, Gran Tierra Energy layihəsinin EPC podratçısını müəyyən edib vendor list-ə müraciət edin.",
+      "action_en": "Early signal: identify the EPC contractor of the SOCAR, Gran Tierra Energy project and apply for its vendor list.",
+      "source_en": "Google News (Russian, AZ): SOCAR tenders / contractors",
+      "deadline": null,
+      "published": "2026-09-30",
+      "first_seen": "2026-10-01T14:21:09+00:00",
+      "is_new": false,
+      "changes": [],
+      "demo": false,
+      "score10": 1,
+      "competition": "Aşağı (erkən mərhələ, tender hələ elan olunmayıb)",
+      "strategic_value": "Orta",
+      "revenue_potential": "Potensial yüksək (layihə səviyyəsi, büdcə məlum deyil)",
+      "competition_en": "Low (early stage, no tender yet)",
+      "strategic_value_en": "Medium",
+      "revenue_potential_en": "Potentially high (project level, budget unknown)",
+      "segment": "Layihə siqnalı",
+      "signal_type": "Layihə xəbəri",
+      "zone": "news"
+    },
+    {
       "id": "4e5dbb6552a9",
       "title": "SOCAR и ExxonMobil договорились о добыче сланцевых нефти и газа в Азербайджане - ЭКСКЛЮЗИВ - Vesti.az",
       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOU2djQW1fU2lOdHpoN3FFMk1EeUFVRk42cGE1MVVFTXBBbWlvZVVzQ3ZVYTU2VUFOV0hzaUlnelFZdlJOVk1YUjB0RkxtVkRiNWNLNEZlbUI3N2RzVjZFVE9XUTdzWFNHeXNzZURVUl9HZzk5RHNvcFA5Wl93WTRvdWpaWFNxLWs4WFE5MUJLYTVOUUxXS2t4MU5neUd0Nlhpb3pORU1sX3VLXzM3ajlockh3VkdNZ2VGcFJhQVExbw?oc=5",
@@ -3114,56 +3171,6 @@ window.__RADAR__ = {
       "segment": "Layihə siqnalı",
       "signal_type": "Layihə xəbəri",
       "zone": "news"
-    },
-    {
-      "id": "110699a69925",
-      "title": "SOCAR и Gran Tierra Energy начнут поиск нефти и газа в пяти районах Азербайджана - Vesti.az",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPaEJ0MDNqNi1PZ1B6QklHRk0tb1dhWE0zODNSZ0hWNzZCb0hrRlRicUN3VHEyMVV2eVB0OEt6UWZXXzFmMk5yUEJSQ1VtZEF1Z2JMNmFIbG54WUo2b1hqd1k5bXhqMzhUWUxOVzZOdWdMVjN3Rmhkd2ZFd0dETjJxaDFPN2V4YXlCVHNxSmVTUlB5bl92czlzS1MyWXpZOXhiQnhnem9MUHQyZlpzNWVZbGFQVV8tUQ?oc=5",
-      "source_id": "gn_az",
-      "source": "Google News (RU dili, AZ): SOCAR tender / podrat",
-      "category": "early_signal",
-      "buyer": null,
-      "score": 12,
-      "tier": "INFO",
-      "reasons": [
-        "sector: socar, газа, нефти (+10)",
-        "şirkət: SOCAR, Gran Tierra Energy (+14)"
-      ],
-      "keywords": [
-        "socar",
-        "газа",
-        "нефти"
-      ],
-      "companies": [
-        {
-          "name": "SOCAR",
-          "role": "soc"
-        },
-        {
-          "name": "Gran Tierra Energy",
-          "role": "operator"
-        }
-      ],
-      "contractors": [],
-      "action": "Erkən siqnal: SOCAR, Gran Tierra Energy layihəsinin EPC podratçısını müəyyən edib vendor list-ə müraciət edin.",
-      "action_en": "Early signal: identify the EPC contractor of the SOCAR, Gran Tierra Energy project and apply for its vendor list.",
-      "source_en": "Google News (Russian, AZ): SOCAR tenders / contractors",
-      "deadline": null,
-      "published": "2026-09-30",
-      "first_seen": "2026-10-01T14:21:09+00:00",
-      "is_new": false,
-      "changes": [],
-      "demo": false,
-      "score10": 1,
-      "competition": "Aşağı (erkən mərhələ, tender hələ elan olunmayıb)",
-      "strategic_value": "Orta",
-      "revenue_potential": "Potensial yüksək (layihə səviyyəsi, büdcə məlum deyil)",
-      "competition_en": "Low (early stage, no tender yet)",
-      "strategic_value_en": "Medium",
-      "revenue_potential_en": "Potentially high (project level, budget unknown)",
-      "segment": "Layihə siqnalı",
-      "signal_type": "Layihə xəbəri",
-      "zone": "news"
     }
   ],
   "sources": [
@@ -3174,7 +3181,7 @@ window.__RADAR__ = {
       "fetched": 30,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-19T16:40:52+00:00"
+      "at": "2026-10-19T20:38:18+00:00"
     },
     {
       "source": "GlobalTenders - Azerbaijan Oil & Gas",
@@ -3183,7 +3190,7 @@ window.__RADAR__ = {
       "fetched": 20,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-19T16:40:52+00:00"
+      "at": "2026-10-19T20:38:18+00:00"
     },
     {
       "source": "Trend Tenders bölməsi",
@@ -3192,7 +3199,7 @@ window.__RADAR__ = {
       "fetched": 183,
       "relevant": 1,
       "error": null,
-      "at": "2026-10-19T16:40:52+00:00"
+      "at": "2026-10-19T20:38:18+00:00"
     },
     {
       "source": "ADSEA elanları (satınalma, EOI)",
@@ -3201,7 +3208,7 @@ window.__RADAR__ = {
       "fetched": 9,
       "relevant": 4,
       "error": null,
-      "at": "2026-10-19T16:40:52+00:00"
+      "at": "2026-10-19T20:38:18+00:00"
     },
     {
       "source": "bp Azerbaijan xəbərləri (press-reliz)",
@@ -3210,16 +3217,16 @@ window.__RADAR__ = {
       "fetched": 10,
       "relevant": 2,
       "error": null,
-      "at": "2026-10-19T16:40:52+00:00"
+      "at": "2026-10-19T20:38:18+00:00"
     },
     {
       "source": "Google News: Azerbaijan EPC / FEED",
       "source_en": "Google News: Azerbaijan EPC / FEED",
       "id": "gn_epc",
-      "fetched": 56,
+      "fetched": 52,
       "relevant": 9,
       "error": null,
-      "at": "2026-10-19T16:40:52+00:00"
+      "at": "2026-10-19T20:38:18+00:00"
     },
     {
       "source": "Google News: SOCAR tender / contract",
@@ -3228,61 +3235,61 @@ window.__RADAR__ = {
       "fetched": 43,
       "relevant": 3,
       "error": null,
-      "at": "2026-10-19T16:40:52+00:00"
+      "at": "2026-10-19T20:38:18+00:00"
     },
     {
       "source": "Google News: bp Azerbaijan projects",
       "source_en": "Google News: bp Azerbaijan projects",
       "id": "gn_bp",
-      "fetched": 47,
+      "fetched": 48,
       "relevant": 6,
       "error": null,
-      "at": "2026-10-19T16:40:52+00:00"
+      "at": "2026-10-19T20:38:18+00:00"
     },
     {
       "source": "Google News: EPC / fabrikasiya podratçıları",
       "source_en": "Google News: EPC / fabrication contractors",
       "id": "gn_contractors",
-      "fetched": 16,
+      "fetched": 15,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-19T16:40:52+00:00"
+      "at": "2026-10-19T20:38:18+00:00"
     },
     {
       "source": "Google News: servis şirkətləri və operatorlar",
       "source_en": "Google News: service companies and operators",
       "id": "gn_service",
-      "fetched": 63,
-      "relevant": 27,
+      "fetched": 62,
+      "relevant": 28,
       "error": null,
-      "at": "2026-10-19T16:40:52+00:00"
+      "at": "2026-10-19T20:38:18+00:00"
     },
     {
       "source": "Google News: SOCAR qrupu və törəmələri",
       "source_en": "Google News: SOCAR group and affiliates",
       "id": "gn_socar_group",
-      "fetched": 25,
+      "fetched": 24,
       "relevant": 4,
       "error": null,
-      "at": "2026-10-19T16:40:52+00:00"
+      "at": "2026-10-19T20:38:18+00:00"
     },
     {
       "source": "Google News: JOCAP, Nobel qrupu, SOCAR Upstream",
       "source_en": "Google News: JOCAP, Nobel group, SOCAR Upstream",
       "id": "gn_nobel_jocap",
-      "fetched": 9,
+      "fetched": 8,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-19T16:40:52+00:00"
+      "at": "2026-10-19T20:38:18+00:00"
     },
     {
       "source": "Google News (RU dili, AZ): SOCAR tender / podrat",
       "source_en": "Google News (Russian, AZ): SOCAR tenders / contractors",
       "id": "gn_az",
       "fetched": 57,
-      "relevant": 12,
+      "relevant": 13,
       "error": null,
-      "at": "2026-10-19T16:40:52+00:00"
+      "at": "2026-10-19T20:38:18+00:00"
     },
     {
       "source": "Trend News (ümumi lent)",
@@ -3291,7 +3298,7 @@ window.__RADAR__ = {
       "fetched": 25,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-19T16:40:52+00:00"
+      "at": "2026-10-19T20:38:18+00:00"
     },
     {
       "source": "Trend Energy bölməsi",
@@ -3300,7 +3307,7 @@ window.__RADAR__ = {
       "fetched": 164,
       "relevant": 1,
       "error": null,
-      "at": "2026-10-19T16:40:52+00:00"
+      "at": "2026-10-19T20:38:18+00:00"
     },
     {
       "source": "Offshore Energy (RSS)",
@@ -3309,7 +3316,7 @@ window.__RADAR__ = {
       "fetched": 50,
       "relevant": 1,
       "error": null,
-      "at": "2026-10-19T16:40:52+00:00"
+      "at": "2026-10-19T20:38:18+00:00"
     },
     {
       "source": "Rigzone (RSS)",
@@ -3318,7 +3325,7 @@ window.__RADAR__ = {
       "fetched": 20,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-19T16:40:52+00:00"
+      "at": "2026-10-19T20:38:18+00:00"
     },
     {
       "source": "Upstream · OGJ · Offshore Mag · Rigzone · Offshore Energy (Google News)",
@@ -3327,7 +3334,7 @@ window.__RADAR__ = {
       "fetched": 100,
       "relevant": 6,
       "error": null,
-      "at": "2026-10-19T16:40:52+00:00"
+      "at": "2026-10-19T20:38:18+00:00"
     },
     {
       "source": "Google News: contract award / EPC / FEED (Azərbaycan, Xəzər)",
@@ -3336,16 +3343,16 @@ window.__RADAR__ = {
       "fetched": 67,
       "relevant": 11,
       "error": null,
-      "at": "2026-10-19T16:40:52+00:00"
+      "at": "2026-10-19T20:38:18+00:00"
     },
     {
       "source": "Google News: brownfield / turnaround / offshore maintenance / valve replacement",
       "source_en": "Google News: brownfield / turnaround / offshore maintenance / valve replacement",
       "id": "gn_brownfield",
-      "fetched": 24,
+      "fetched": 25,
       "relevant": 1,
       "error": null,
-      "at": "2026-10-19T16:40:52+00:00"
+      "at": "2026-10-19T20:38:18+00:00"
     },
     {
       "source": "Google News: pipeline expansion / refinery upgrade / compression",
@@ -3354,7 +3361,7 @@ window.__RADAR__ = {
       "fetched": 25,
       "relevant": 4,
       "error": null,
-      "at": "2026-10-19T16:40:52+00:00"
+      "at": "2026-10-19T20:38:18+00:00"
     },
     {
       "source": "Azfen xəbərləri",
@@ -3363,7 +3370,7 @@ window.__RADAR__ = {
       "fetched": 10,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-19T16:40:52+00:00"
+      "at": "2026-10-19T20:38:18+00:00"
     },
     {
       "source": "Baku Shipyard xəbərləri",
@@ -3372,7 +3379,7 @@ window.__RADAR__ = {
       "fetched": 6,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-19T16:40:52+00:00"
+      "at": "2026-10-19T20:38:18+00:00"
     },
     {
       "source": "SOCAR-KBR xəbər və tender elanları",
@@ -3381,7 +3388,7 @@ window.__RADAR__ = {
       "fetched": 1,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-19T16:40:52+00:00"
+      "at": "2026-10-19T20:38:18+00:00"
     },
     {
       "source": "World Bank satınalma (Azərbaycan)",
@@ -3390,7 +3397,7 @@ window.__RADAR__ = {
       "fetched": 38,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-19T16:40:52+00:00"
+      "at": "2026-10-19T20:38:18+00:00"
     },
     {
       "source": "EBRD ECEPP satınalma (Azərbaycan)",
@@ -3399,16 +3406,16 @@ window.__RADAR__ = {
       "fetched": 31,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-19T16:40:52+00:00"
+      "at": "2026-10-19T20:38:18+00:00"
     },
     {
       "source": "etender.gov.az (dövlət satınalma portalı)",
       "source_en": "etender.gov.az (state procurement portal)",
       "id": "etender",
-      "fetched": 6179,
+      "fetched": 6165,
       "relevant": 9,
       "error": null,
-      "at": "2026-10-19T13:06:02+00:00"
+      "at": "2026-10-19T20:35:51+00:00"
     },
     {
       "source": "etender.gov.az bağlanmış müqavilələr (award)",
@@ -3417,7 +3424,7 @@ window.__RADAR__ = {
       "fetched": 71,
       "relevant": 2,
       "error": null,
-      "at": "2026-10-19T13:06:02+00:00"
+      "at": "2026-10-19T20:35:51+00:00"
     },
     {
       "source": "Report.az (ümumi lent)",
@@ -3426,7 +3433,7 @@ window.__RADAR__ = {
       "fetched": 30,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-19T13:06:02+00:00"
+      "at": "2026-10-19T20:35:51+00:00"
     },
     {
       "source": "Report.az Energy bölməsi",
@@ -3435,7 +3442,7 @@ window.__RADAR__ = {
       "fetched": 16,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-19T13:06:02+00:00"
+      "at": "2026-10-19T20:35:51+00:00"
     },
     {
       "source": "Iteca Caspian sərgi təqvimi",
@@ -3444,7 +3451,7 @@ window.__RADAR__ = {
       "fetched": 16,
       "relevant": 12,
       "error": null,
-      "at": "2026-10-19T16:40:52+00:00"
+      "at": "2026-10-19T20:38:18+00:00"
     },
     {
       "source": "AICC Caspian (asset integrity, corrosion)",
@@ -3453,7 +3460,7 @@ window.__RADAR__ = {
       "fetched": 1,
       "relevant": 1,
       "error": null,
-      "at": "2026-10-19T16:40:52+00:00"
+      "at": "2026-10-19T20:38:18+00:00"
     }
   ],
   "companies": [
@@ -3712,7 +3719,7 @@ window.__RADAR__ = {
     },
     {
       "name": "Azerenerji",
-      "role": "soc",
+      "role": "state",
       "note": "Qazla işləyən elektrik stansiyaları",
       "note_en": "Gas-fired power plants",
       "contact": {
@@ -3726,7 +3733,7 @@ window.__RADAR__ = {
     },
     {
       "name": "Azerbaijan Caspian Shipping (ASCO)",
-      "role": "soc",
+      "role": "state",
       "note": "Dəniz daşımaları, dəstək gəmiləri",
       "note_en": "Marine transport, support vessels",
       "contact": {
@@ -4555,7 +4562,7 @@ window.__RADAR__ = {
     },
     {
       "name": "Azərenerjikomplektləşdirmə",
-      "role": "soc",
+      "role": "state",
       "note": "Azərenerji təchizat şirkəti",
       "note_en": "Azerenerji supply company"
     },
@@ -5469,5 +5476,1882 @@ window.__RADAR__ = {
       "source_id": "aicc",
       "tba": true
     }
-  ]
+  ],
+  "buyer_intel": {
+    "retender": [
+      {
+        "id": "6bc1604a829a",
+        "title": "154/110/10 kV-luq “Babək” YS-nın yenidən qurulması işləri",
+        "buyer": "\"AZƏRENERJİ\" AÇIQ TİPLİ SƏHMDAR CƏMİYYƏTİ",
+        "company": "Azerenerji",
+        "role": "soc",
+        "winner": "\"ELECTRO İNDUSTRİES\" QAPALI SƏHMDAR CƏMİYYƏTİ",
+        "amount": 24083286.89,
+        "currency": "AZN",
+        "contract_date": "2025-09-25",
+        "expire_date": "2026-09-25",
+        "issued": "2025-09-25",
+        "tender_type": "Açıq Tender",
+        "url": "https://etender.gov.az/main/competition/detail/329926",
+        "relevance": "other",
+        "product_fit": [],
+        "window_start": "2026-06-27"
+      },
+      {
+        "id": "a70f9650e6c3",
+        "title": "Kəlbəcər Şəhər, Eyvazlı KSES-lərin tikintisi və yeni tikilən KSES-lərin enerjisistemə inteqrasiyası işlərinin satın alınması",
+        "buyer": "\"AZƏRENERJİ\" AÇIQ TİPLİ SƏHMDAR CƏMİYYƏTİ",
+        "company": "Azerenerji",
+        "role": "soc",
+        "winner": "\"ELECTRO İNDUSTRİES\" QAPALI SƏHMDAR CƏMİYYƏTİ",
+        "amount": 36150496.13,
+        "currency": "AZN",
+        "contract_date": "2025-10-09",
+        "expire_date": "2026-10-09",
+        "issued": "2025-10-09",
+        "tender_type": "Açıq Tender",
+        "url": "https://etender.gov.az/main/competition/detail/336916",
+        "relevance": "other",
+        "product_fit": [],
+        "window_start": "2026-07-11"
+      },
+      {
+        "id": "670101789ce0",
+        "title": "Elektrik və kommunikasiya avadanlıqlarının satın alınması",
+        "buyer": "\"AZƏRENERJİ\" AÇIQ TİPLİ SƏHMDAR CƏMİYYƏTİ",
+        "company": "Azerenerji",
+        "role": "soc",
+        "winner": "\"ELECTRO SERVİCE\" QAPALI SƏHMDAR CƏMİYYƏTİ",
+        "amount": 526766193,
+        "currency": "AZN",
+        "contract_date": "2025-10-17",
+        "expire_date": "2026-10-17",
+        "issued": "2025-10-17",
+        "tender_type": "Açıq Tender",
+        "url": "https://etender.gov.az/main/competition/detail/334643",
+        "relevance": "other",
+        "product_fit": [],
+        "window_start": "2026-07-19"
+      },
+      {
+        "id": "ca56895a728c",
+        "title": "Qoşasu, Seyidlər, Bülövlü KSES-lərin tikintisi işlərinin satınalınması",
+        "buyer": "\"AZƏRENERJİ\" AÇIQ TİPLİ SƏHMDAR CƏMİYYƏTİ",
+        "company": "Azerenerji",
+        "role": "soc",
+        "winner": "\"FARCON\" QAPALI SƏHMDAR CƏMİYYƏTİ",
+        "amount": 53808814.6,
+        "currency": "AZN",
+        "contract_date": "2025-10-27",
+        "expire_date": "2026-10-27",
+        "issued": "2025-10-27",
+        "tender_type": "Açıq Tender",
+        "url": "https://etender.gov.az/main/competition/detail/334235",
+        "relevance": "other",
+        "product_fit": [],
+        "window_start": "2026-07-29"
+      },
+      {
+        "id": "6caf86f5f09a",
+        "title": "Laçın və Kəlbəcər rayonlarında yerləşən KSES-lərin enerjisistemə inteqrasiyası işlərinin satın alınması",
+        "buyer": "\"AZƏRENERJİ\" AÇIQ TİPLİ SƏHMDAR CƏMİYYƏTİ",
+        "company": "Azerenerji",
+        "role": "soc",
+        "winner": "\"ENERJİ QRUP\" MƏHDUD MƏSULİYYƏTLİ CƏMİYYƏTİ",
+        "amount": 300539.71,
+        "currency": "AZN",
+        "contract_date": "2025-11-13",
+        "expire_date": "2026-11-13",
+        "issued": "2025-11-13",
+        "tender_type": "Açıq Tender",
+        "url": "https://etender.gov.az/main/competition/detail/339123",
+        "relevance": "other",
+        "product_fit": [],
+        "window_start": "2026-08-15"
+      },
+      {
+        "id": "5d8ead0c9855",
+        "title": "\"Nəvahi\" və \"Şəfəq\" YS-larının tikintisi üzrə əlavə işlərin satın alınması",
+        "buyer": "\"AZƏRENERJİ\" AÇIQ TİPLİ SƏHMDAR CƏMİYYƏTİ",
+        "company": "Azerenerji",
+        "role": "state",
+        "winner": "\"ELECTRO İNDUSTRİES\" QAPALI SƏHMDAR CƏMİYYƏTİ",
+        "amount": 11592909.08,
+        "currency": "AZN",
+        "contract_date": "2026-08-07",
+        "expire_date": "2026-12-06",
+        "issued": "2026-09-21",
+        "tender_type": "Açıq Tender",
+        "url": "https://etender.gov.az/main/competition/detail/351681",
+        "relevance": "other",
+        "product_fit": [],
+        "window_start": "2026-09-07"
+      },
+      {
+        "id": "3a33aced1cbc",
+        "title": "330 kV-luq \"Ordubad-Naxçıvan\" EVX-nin tikintisi (105 km) işləri",
+        "buyer": "\"AZƏRENERJİ\" AÇIQ TİPLİ SƏHMDAR CƏMİYYƏTİ",
+        "company": "Azerenerji",
+        "role": "soc",
+        "winner": "\"ElektrikQuraşdırma” Müəssisəsi",
+        "amount": 33600000,
+        "currency": "AZN",
+        "contract_date": "2025-12-10",
+        "expire_date": "2026-12-10",
+        "issued": "2025-12-12",
+        "tender_type": "Bir mənbə",
+        "url": "https://etender.gov.az/main/contracts-concluded",
+        "relevance": "other",
+        "product_fit": [],
+        "window_start": "2026-09-11"
+      },
+      {
+        "id": "019aa64f8bfc",
+        "title": "Təmizlik mallarının və müxtəlif ləvazimatların",
+        "buyer": "Azərbaycan Dövlət Su Ehtiyatları Agentliyi Regional Su Meliorasiya Xidməti Publik Hüquqi Şəxsi Qarabağ Su Meliorasiya Sistemlərinin İstismarı İdarəsi",
+        "company": "ADSEA (Dövlət Su Ehtiyatları Agentliyi)",
+        "role": "utility",
+        "winner": "\"HEBA COMPANY\" Məhdud Məsuliyyətli Cəmiyyəti",
+        "amount": 8520.78,
+        "currency": "AZN",
+        "contract_date": "2025-12-10",
+        "expire_date": "2026-12-10",
+        "issued": "2025-12-10",
+        "tender_type": "Kotirovka",
+        "url": "https://etender.gov.az/main/competition/detail/338930",
+        "relevance": "other",
+        "product_fit": [],
+        "window_start": "2026-09-11"
+      },
+      {
+        "id": "3e1bd20e01aa",
+        "title": "8 ədəd KSES-lərin tikintisi layihəsi çərçivəsində spiral tikişli polad boruların daşınaraq satınalınması",
+        "buyer": "\"AZƏRENERJİ\" AÇIQ TİPLİ SƏHMDAR CƏMİYYƏTİ",
+        "company": "Azerenerji",
+        "role": "soc",
+        "winner": "“AZERTEXNOLAYN” MMC",
+        "amount": 557869148,
+        "currency": "AZN",
+        "contract_date": "2025-12-16",
+        "expire_date": "2026-12-16",
+        "issued": "2025-12-19",
+        "tender_type": "Bir mənbə",
+        "url": "https://etender.gov.az/main/contracts-concluded",
+        "relevance": "equipment",
+        "product_fit": [],
+        "window_start": "2026-09-17"
+      },
+      {
+        "id": "697f54510d6a",
+        "title": "Müxtəlif növ kimyəvi maddələrin satınalınması",
+        "buyer": "\"AZƏRENERJİ\" AÇIQ TİPLİ SƏHMDAR CƏMİYYƏTİ",
+        "company": "Azerenerji",
+        "role": "soc",
+        "winner": "\"AQUALİNK\" MƏHDUD MƏSULİYYƏTLİ CƏMİYYƏTİ",
+        "amount": 1097200.11,
+        "currency": "AZN",
+        "contract_date": "2025-12-16",
+        "expire_date": "2026-12-16",
+        "issued": "2025-12-16",
+        "tender_type": "Açıq Tender",
+        "url": "https://etender.gov.az/main/competition/detail/333445",
+        "relevance": "other",
+        "product_fit": [],
+        "window_start": "2026-09-17"
+      },
+      {
+        "id": "41cdfda52b1a",
+        "title": "Müxtəlif növ elektrik mallarının satın alınması",
+        "buyer": "\"AZƏRENERJİ\" AÇIQ TİPLİ SƏHMDAR CƏMİYYƏTİ",
+        "company": "Azerenerji",
+        "role": "soc",
+        "winner": "\"ELECTRO SERVİCE\" QAPALI SƏHMDAR CƏMİYYƏTİ",
+        "amount": 978288.91,
+        "currency": "AZN",
+        "contract_date": "2025-12-16",
+        "expire_date": "2026-12-16",
+        "issued": "2025-12-16",
+        "tender_type": "Açıq Tender",
+        "url": "https://etender.gov.az/main/competition/detail/340187",
+        "relevance": "other",
+        "product_fit": [],
+        "window_start": "2026-09-17"
+      },
+      {
+        "id": "7cd1f8165d3c",
+        "title": "330 kV-luq \"Ağbənd-Ordubad\" EVX-nin tikintisi",
+        "buyer": "\"AZƏRENERJİ\" AÇIQ TİPLİ SƏHMDAR CƏMİYYƏTİ",
+        "company": "Azerenerji",
+        "role": "soc",
+        "winner": "\"AZENCO\" ASC",
+        "amount": 18100000,
+        "currency": "AZN",
+        "contract_date": "2025-12-26",
+        "expire_date": "2026-12-26",
+        "issued": "2025-12-30",
+        "tender_type": "Bir mənbə",
+        "url": "https://etender.gov.az/main/contracts-concluded",
+        "relevance": "other",
+        "product_fit": [],
+        "window_start": "2026-09-27"
+      },
+      {
+        "id": "6782939b33b1",
+        "title": "330kV-luq Ağbənd-Ordubad EVX-lərinin metal dayaqlarınının satın alınması",
+        "buyer": "\"AZƏRENERJİ\" AÇIQ TİPLİ SƏHMDAR CƏMİYYƏTİ",
+        "company": "Azerenerji",
+        "role": "soc",
+        "winner": "\"MİTAŞ ENDÜSTRİ SANAYİ TİC.A.Ş.\"",
+        "amount": 6516320.65,
+        "currency": "AZN",
+        "contract_date": "2025-12-26",
+        "expire_date": "2026-12-26",
+        "issued": "2025-12-30",
+        "tender_type": "Bir mənbə",
+        "url": "https://etender.gov.az/main/contracts-concluded",
+        "relevance": "other",
+        "product_fit": [],
+        "window_start": "2026-09-27"
+      },
+      {
+        "id": "13df3295f2fe",
+        "title": "\"TETRA\" radiorabitə vasitələrinin, aksesuarlarının və ehtiyat hissələrinin satın alınması",
+        "buyer": "AZƏRBAYCAN RESPUBLİKASI FÖVQƏLADƏ HALLAR NAZİRLİYİ DÖVLƏT YANĞINDAN MÜHAFİZƏ XİDMƏTİNİN AZƏRBAYCAN DÖVLƏT NEFT ŞİRKƏTİ OBYEKTLƏRİ ÜZRƏ YANĞINDAN MÜHAFİZƏ İDARƏSİ",
+        "company": "SOCAR",
+        "role": "soc",
+        "winner": "Azərbaycan Respublikasının Xüsusi Rabitə və İnformasiya Təhlükəsizliyi Dövlət Xidməti",
+        "amount": 58974.2,
+        "currency": "AZN",
+        "contract_date": "2026-05-05",
+        "expire_date": "2026-12-30",
+        "issued": "2026-06-11",
+        "tender_type": "Birbaşa",
+        "url": "https://etender.gov.az/main/contracts-concluded",
+        "relevance": "other",
+        "product_fit": [],
+        "window_start": "2026-10-01"
+      },
+      {
+        "id": "43fb81080a15",
+        "title": "Maşın və avadanlıqlara texniki xidmətin satınalınması",
+        "buyer": "AZƏRBAYCAN RESPUBLİKASI FÖVQƏLADƏ HALLAR NAZİRLİYİ DÖVLƏT YANĞINDAN MÜHAFİZƏ XİDMƏTİNİN AZƏRBAYCAN DÖVLƏT NEFT ŞİRKƏTİ OBYEKTLƏRİ ÜZRƏ YANĞINDAN MÜHAFİZƏ İDARƏSİ",
+        "company": "SOCAR",
+        "role": "soc",
+        "winner": "\"CASPİAN TECHNOLOGY GROUP\" Məhdud Məsuliyyətli Cəmiyyəti",
+        "amount": 56864.79,
+        "currency": "AZN",
+        "contract_date": "2026-05-25",
+        "expire_date": "2026-12-30",
+        "issued": "2026-06-10",
+        "tender_type": "Kotirovka",
+        "url": "https://etender.gov.az/main/competition/detail/348535",
+        "relevance": "equipment",
+        "product_fit": [],
+        "window_start": "2026-10-01"
+      },
+      {
+        "id": "5457bc34ea8d",
+        "title": "“MİTSUBİSHİ L200 İSTEHSAL İLİ 2021 BAN NÖMRƏSİ MMBNGV545NH004526 NƏQLİYYAT VASİTƏSİNİN TƏMİR OLUNMASI XİDMƏTİ ”",
+        "buyer": "Azərbaycan Dövlət Su Ehtiyatları Agentliyi Regional Su Meliorasiya Xidməti Publik Hüquqi Şəxsi Qarabağ Su Meliorasiya Sistemlərinin İstismarı İdarəsi",
+        "company": "ADSEA (Dövlət Su Ehtiyatları Agentliyi)",
+        "role": "utility",
+        "winner": "\"HAKİMOĞLU\" Məhdud Məsuliyyətli Cəmiyyəti",
+        "amount": 12500.92,
+        "currency": "AZN",
+        "contract_date": "2026-05-25",
+        "expire_date": "2026-12-30",
+        "issued": "2026-05-25",
+        "tender_type": "Kotirovka",
+        "url": "https://etender.gov.az/main/competition/detail/348511",
+        "relevance": "other",
+        "product_fit": [],
+        "window_start": "2026-10-01"
+      },
+      {
+        "id": "179bf25e07f0",
+        "title": "İdarənin Xidməti ərazisində olan inzibati binaların,su anbarlarının, su təmizləyici qurğuların,hidrotexniki qurğuların və nasos stansiyaların cari təmiri üçün mal materialın alınması",
+        "buyer": "Azərbaycan Dövlət Su Ehtiyatları Agentliyi Regional Su Meliorasiya Xidməti Publik Hüquqi Şəxsi Qarabağ Su Meliorasiya Sistemlərinin İstismarı İdarəsi",
+        "company": "ADSEA (Dövlət Su Ehtiyatları Agentliyi)",
+        "role": "utility",
+        "winner": "\"HEBA COMPANY\" Məhdud Məsuliyyətli Cəmiyyəti",
+        "amount": 91442.92,
+        "currency": "AZN",
+        "contract_date": "2026-10-19",
+        "expire_date": "2026-12-31",
+        "issued": "2026-10-19",
+        "tender_type": "Açıq Tender",
+        "url": "https://etender.gov.az/main/competition/detail/356086",
+        "relevance": "equipment",
+        "product_fit": [],
+        "window_start": "2026-10-02"
+      },
+      {
+        "id": "8920bcc33b51",
+        "title": "Zəmanət şərtləri daxilində 1 ədəd “JMC Grand Avenue” markalı bortlu, tentli qəza-bərpa avtomobilinə texniki servis xidmətinin satın alınması",
+        "buyer": "Azərbaycan Dövlət Su Ehtiyatları Agentliyi Regional Su Meliorasiya Xidməti Publik Hüquqi Şəxsi Qarabağ Su Meliorasiya Sistemlərinin İstismarı İdarəsi",
+        "company": "ADSEA (Dövlət Su Ehtiyatları Agentliyi)",
+        "role": "utility",
+        "winner": "İMOTORS MMC",
+        "amount": 2440,
+        "currency": "AZN",
+        "contract_date": "2026-06-08",
+        "expire_date": "2026-12-31",
+        "issued": "2026-06-08",
+        "tender_type": "Bir mənbə",
+        "url": "https://etender.gov.az/main/contracts-concluded",
+        "relevance": "other",
+        "product_fit": [],
+        "window_start": "2026-10-02"
+      },
+      {
+        "id": "d512a9261dcc",
+        "title": "\"Şəmkir\" və \"Yenikənd\" SES-lərin təsirlənmə sistemlərinin yenilənməsi",
+        "buyer": "\"AZƏRENERJİ\" AÇIQ TİPLİ SƏHMDAR CƏMİYYƏTİ",
+        "company": "Azerenerji",
+        "role": "soc",
+        "winner": "\"ELECTRO İNDUSTRİES\" QAPALI SƏHMDAR CƏMİYYƏTİ",
+        "amount": 4689730.95,
+        "currency": "AZN",
+        "contract_date": "2026-01-13",
+        "expire_date": "2027-01-13",
+        "issued": "2026-01-13",
+        "tender_type": "Açıq Tender",
+        "url": "https://etender.gov.az/main/competition/detail/342889",
+        "relevance": "other",
+        "product_fit": [],
+        "window_start": "2026-10-15"
+      },
+      {
+        "id": "45bfab4abe5e",
+        "title": "220/110 kV-luq “Novxanı” yarımstansiyasının tikintisi işlərinin satın alınması",
+        "buyer": "\"AZƏRENERJİ\" AÇIQ TİPLİ SƏHMDAR CƏMİYYƏTİ",
+        "company": "Azerenerji",
+        "role": "soc",
+        "winner": "\"ELECTRO İNDUSTRİES\" QAPALI SƏHMDAR CƏMİYYƏTİ",
+        "amount": 4930255207,
+        "currency": "AZN",
+        "contract_date": "2026-01-23",
+        "expire_date": "2027-01-23",
+        "issued": "2026-01-27",
+        "tender_type": "Açıq Tender",
+        "url": "https://etender.gov.az/main/competition/detail/342075",
+        "relevance": "other",
+        "product_fit": [],
+        "amount_suspect": true,
+        "window_start": "2026-10-25"
+      },
+      {
+        "id": "f0fc2c074f8a",
+        "title": "İnternet xidmətinin alınması maddə 221330",
+        "buyer": "Azərbaycan Dövlət Su Ehtiyatları Agentliyi Regional Su Meliorasiya Xidməti Publik Hüquqi Şəxsi Qarabağ Su Meliorasiya Sistemlərinin İstismarı İdarəsi",
+        "company": "ADSEA (Dövlət Su Ehtiyatları Agentliyi)",
+        "role": "utility",
+        "winner": "\"Aztelekom\" MMC ( Xankəndi şəhəri )",
+        "amount": 1200,
+        "currency": "AZN",
+        "contract_date": "2026-02-03",
+        "expire_date": "2027-02-03",
+        "issued": "2026-05-14",
+        "tender_type": "Birbaşa",
+        "url": "https://etender.gov.az/main/contracts-concluded",
+        "relevance": "other",
+        "product_fit": [],
+        "window_start": "2026-11-05"
+      },
+      {
+        "id": "154e726172cf",
+        "title": "Ölkədaxili telefon danışıq haqqlarının ödənilməsi - maddə 222311",
+        "buyer": "Azərbaycan Dövlət Su Ehtiyatları Agentliyi Regional Su Meliorasiya Xidməti Publik Hüquqi Şəxsi Qarabağ Su Meliorasiya Sistemlərinin İstismarı İdarəsi",
+        "company": "ADSEA (Dövlət Su Ehtiyatları Agentliyi)",
+        "role": "utility",
+        "winner": "\"Aztelekom\" MMC ( Xankəndi)",
+        "amount": 84,
+        "currency": "AZN",
+        "contract_date": "2026-02-03",
+        "expire_date": "2027-02-03",
+        "issued": "2026-05-14",
+        "tender_type": "Birbaşa",
+        "url": "https://etender.gov.az/main/contracts-concluded",
+        "relevance": "other",
+        "product_fit": [],
+        "window_start": "2026-11-05"
+      },
+      {
+        "id": "fc6dcbb7134a",
+        "title": "İnternet xidmətinin alınması maddə 221330",
+        "buyer": "Azərbaycan Dövlət Su Ehtiyatları Agentliyi Regional Su Meliorasiya Xidməti Publik Hüquqi Şəxsi Qarabağ Su Meliorasiya Sistemlərinin İstismarı İdarəsi",
+        "company": "ADSEA (Dövlət Su Ehtiyatları Agentliyi)",
+        "role": "utility",
+        "winner": "\"Aztelekom\" MMC ( Şuşa şəhəri )",
+        "amount": 420,
+        "currency": "AZN",
+        "contract_date": "2026-02-14",
+        "expire_date": "2027-02-14",
+        "issued": "2026-05-14",
+        "tender_type": "Birbaşa",
+        "url": "https://etender.gov.az/main/contracts-concluded",
+        "relevance": "other",
+        "product_fit": [],
+        "window_start": "2026-11-16"
+      },
+      {
+        "id": "6a8c93c5b300",
+        "title": "Elektrik veriliş xətlərində görüləcək əlavə işlərin satınalınması",
+        "buyer": "\"AZƏRENERJİ\" AÇIQ TİPLİ SƏHMDAR CƏMİYYƏTİ",
+        "company": "Azerenerji",
+        "role": "soc",
+        "winner": "ELEKTRİKQURAŞDIRMA MÜƏSSİSƏSİ",
+        "amount": 1853590.17,
+        "currency": "AZN",
+        "contract_date": "2026-02-25",
+        "expire_date": "2027-02-25",
+        "issued": "2026-02-26",
+        "tender_type": "Açıq Tender",
+        "url": "https://etender.gov.az/main/competition/detail/344719",
+        "relevance": "other",
+        "product_fit": [],
+        "window_start": "2026-11-27"
+      },
+      {
+        "id": "72732f03c797",
+        "title": "Kəlbəcər Şəhər, Qoşasu, Bülövlü, Seyidlər və Eyvazlı KSES-lər üçün turbin, generator və köməkçi avadanlıqların alınması, daşınması və quraşdırılmasının satınalınması",
+        "buyer": "\"AZƏRENERJİ\" AÇIQ TİPLİ SƏHMDAR CƏMİYYƏTİ",
+        "company": "Azerenerji",
+        "role": "soc",
+        "winner": "GUGLER Water Turbines GmbH",
+        "amount": 26466235,
+        "currency": "AZN",
+        "contract_date": "2026-03-02",
+        "expire_date": "2027-03-02",
+        "issued": "2026-03-06",
+        "tender_type": "Bir mənbə",
+        "url": "https://etender.gov.az/main/contracts-concluded",
+        "relevance": "other",
+        "product_fit": [],
+        "window_start": "2026-12-02"
+      },
+      {
+        "id": "22e48266877a",
+        "title": "Xəzər dənizi suyunun duzsuzlaşdırılması zavodunun xarici elektrik təchizatı üzrə 110 kV-luq EVX-nin tikintisi və elektrikquraşdırma işləri",
+        "buyer": "\"AZƏRENERJİ\" AÇIQ TİPLİ SƏHMDAR CƏMİYYƏTİ",
+        "company": "Azerenerji",
+        "role": "state",
+        "winner": "\"AZƏRELEKTRİK TİKİNTİ QURAŞDIRMA\" Məhdud Məsuliyyətli Cəmiyyəti",
+        "amount": 20645330.27,
+        "currency": "AZN",
+        "contract_date": "2026-08-07",
+        "expire_date": "2027-03-06",
+        "issued": "2026-09-21",
+        "tender_type": "Açıq Tender",
+        "url": "https://etender.gov.az/main/competition/detail/352214",
+        "relevance": "other",
+        "product_fit": [],
+        "window_start": "2026-12-06"
+      },
+      {
+        "id": "37ab3408b7f9",
+        "title": "Eyvazlı KSES üçün boru xəttinin tikintisi işlərinin satın alınması",
+        "buyer": "\"AZƏRENERJİ\" AÇIQ TİPLİ SƏHMDAR CƏMİYYƏTİ",
+        "company": "Azerenerji",
+        "role": "state",
+        "winner": "\"ELECTRO İNDUSTRİES\" QAPALI SƏHMDAR CƏMİYYƏTİ",
+        "amount": 2650752,
+        "currency": "AZN",
+        "contract_date": "2026-08-07",
+        "expire_date": "2027-03-06",
+        "issued": "2026-09-21",
+        "tender_type": "Açıq Tender",
+        "url": "https://etender.gov.az/main/competition/detail/347032",
+        "relevance": "equipment",
+        "product_fit": [],
+        "window_start": "2026-12-06"
+      },
+      {
+        "id": "7e2c3a87064f",
+        "title": "ÇARDAQLI-1 (608) və ÇARDAQLI-2 (609) Kiçik Su Elektrik Stansiyaları (KSES) üçün elektromexaniki avadanlıqlarının (Francis su turbinlərinin) layihələndirilməsi, istehsalı, nəqliyyatı, quraşdırılması və istismara verilməsinə nəzarətin satın alınması",
+        "buyer": "\"AZƏRENERJİ\" AÇIQ TİPLİ SƏHMDAR CƏMİYYƏTİ",
+        "company": "Azerenerji",
+        "role": "soc",
+        "winner": "GUGLER Water Turbines GmbH",
+        "amount": 16355579,
+        "currency": "AZN",
+        "contract_date": "2026-03-11",
+        "expire_date": "2027-03-11",
+        "issued": "2026-03-13",
+        "tender_type": "Bir mənbə",
+        "url": "https://etender.gov.az/main/contracts-concluded",
+        "relevance": "other",
+        "product_fit": [],
+        "window_start": "2026-12-11"
+      },
+      {
+        "id": "df84090390a5",
+        "title": "ƏLİAĞALI (610) Kiçik Su Elektrik Stansiyası (KSES) üçün elektromexaniki avadanlıqlarının (Francis su turbinlərinin) layihələndirilməsi, istehsalı, nəqliyyatı, quraşdırılması və istismara verilməsinə nəzarətin satın alınması",
+        "buyer": "\"AZƏRENERJİ\" AÇIQ TİPLİ SƏHMDAR CƏMİYYƏTİ",
+        "company": "Azerenerji",
+        "role": "soc",
+        "winner": "GUGLER Water Turbines GmbH",
+        "amount": 4746480,
+        "currency": "AZN",
+        "contract_date": "2026-03-11",
+        "expire_date": "2027-03-11",
+        "issued": "2026-03-13",
+        "tender_type": "Bir mənbə",
+        "url": "https://etender.gov.az/main/contracts-concluded",
+        "relevance": "other",
+        "product_fit": [],
+        "window_start": "2026-12-11"
+      },
+      {
+        "id": "8bfcf27c2962",
+        "title": "Xidməti minik avtomobillərin təmiri xidmətlərin satınalınması",
+        "buyer": "AZƏRBAYCAN RESPUBLİKASI FÖVQƏLADƏ HALLAR NAZİRLİYİ DÖVLƏT YANĞINDAN MÜHAFİZƏ XİDMƏTİNİN AZƏRBAYCAN DÖVLƏT NEFT ŞİRKƏTİ OBYEKTLƏRİ ÜZRƏ YANĞINDAN MÜHAFİZƏ İDARƏSİ",
+        "company": "SOCAR",
+        "role": "soc",
+        "winner": "TOYOTA ABŞERON CENTER",
+        "amount": 27580.2,
+        "currency": "AZN",
+        "contract_date": "2026-04-22",
+        "expire_date": "2027-04-22",
+        "issued": "2026-04-27",
+        "tender_type": "Bir mənbə",
+        "url": "https://etender.gov.az/main/contracts-concluded",
+        "relevance": "other",
+        "product_fit": [],
+        "window_start": "2027-01-22"
+      },
+      {
+        "id": "a5e5462a3f47",
+        "title": "Yeni tikilən YS-ya üçün avadanlıqların satın alınması",
+        "buyer": "\"AZƏRENERJİ\" AÇIQ TİPLİ SƏHMDAR CƏMİYYƏTİ",
+        "company": "Azerenerji",
+        "role": "state",
+        "winner": "\"AZCONSTRUCTION\" QAPALI SƏHMDAR CƏMİYYƏTİ",
+        "amount": 59996734.71,
+        "currency": "AZN",
+        "contract_date": "2026-06-25",
+        "expire_date": "2027-04-24",
+        "issued": "2026-09-21",
+        "tender_type": "Açıq Tender",
+        "url": "https://etender.gov.az/main/competition/detail/346811",
+        "relevance": "other",
+        "product_fit": [],
+        "window_start": "2027-01-24"
+      },
+      {
+        "id": "b3bd4b30f69d",
+        "title": "\"Elektron imza\" xidmətlərinin satınalınması",
+        "buyer": "Azərbaycan Dövlət Su Ehtiyatları Agentliyi Regional Su Meliorasiya Xidməti Publik Hüquqi Şəxsi Qarabağ Su Meliorasiya Sistemlərinin İstismarı İdarəsi",
+        "company": "ADSEA (Dövlət Su Ehtiyatları Agentliyi)",
+        "role": "utility",
+        "winner": "\"Azərbaycan Nəqliyyat və Kommunikasiya Holdinqi(AZCON)\" publik hüquqi şəxsin tərkibində fəaliyyət göstərən \"AzIntelecom\" Məhdud Məsuliyyətli Cəmiyyəti",
+        "amount": 72,
+        "currency": "AZN",
+        "contract_date": "2026-05-07",
+        "expire_date": "2027-05-07",
+        "issued": "2026-06-11",
+        "tender_type": "Birbaşa",
+        "url": "https://etender.gov.az/main/contracts-concluded",
+        "relevance": "other",
+        "product_fit": [],
+        "window_start": "2027-02-06"
+      },
+      {
+        "id": "00ca897eafa7",
+        "title": "3 ədəd 250 MVA transformatorların satın alınması",
+        "buyer": "\"AZƏRENERJİ\" AÇIQ TİPLİ SƏHMDAR CƏMİYYƏTİ",
+        "company": "Azerenerji",
+        "role": "soc",
+        "winner": "“ATEF Şirkətlər Qrupu” MMC",
+        "amount": 19470000,
+        "currency": "AZN",
+        "contract_date": "2025-10-17",
+        "expire_date": "2027-05-17",
+        "issued": "2025-10-20",
+        "tender_type": "Bir mənbə",
+        "url": "https://etender.gov.az/main/contracts-concluded",
+        "relevance": "equipment",
+        "product_fit": [],
+        "window_start": "2027-02-16"
+      },
+      {
+        "id": "297f1aac0a24",
+        "title": "Müxtəlif növ elektrik mallarının satınalınması",
+        "buyer": "\"AZƏRENERJİKOMPLEKTLƏŞDİRMƏ\" MƏHDUD MƏSULİYYƏTLİ CƏMİYYƏTİ",
+        "company": "Azərenerjikomplektləşdirmə",
+        "role": "soc",
+        "winner": "\"ELECTRO SERVİCE\" QAPALI SƏHMDAR CƏMİYYƏTİ",
+        "amount": 191414,
+        "currency": "AZN",
+        "contract_date": "2026-06-02",
+        "expire_date": "2027-06-02",
+        "issued": "2026-06-02",
+        "tender_type": "Açıq Tender",
+        "url": "https://etender.gov.az/main/competition/detail/346443",
+        "relevance": "other",
+        "product_fit": [],
+        "window_start": "2027-03-04"
+      },
+      {
+        "id": "801608788a67",
+        "title": "Müxtəlif ölçülərdə bannerlərin, şəkillərin, söz və şüarların, enerjisistemə aid xəritələrin çapı, güşələrin yığılması, albom və video-roliklərin hazırlanması xidmətlərinin satınalınması",
+        "buyer": "\"AZƏRENERJİ\" AÇIQ TİPLİ SƏHMDAR CƏMİYYƏTİ",
+        "company": "Azerenerji",
+        "role": "state",
+        "winner": "\"RED N LINE\" Məhdud Məsuliyyətli Cəmiyyəti",
+        "amount": 112985,
+        "currency": "AZN",
+        "contract_date": "2026-06-17",
+        "expire_date": "2027-06-16",
+        "issued": "2026-09-21",
+        "tender_type": "Açıq Tender",
+        "url": "https://etender.gov.az/main/competition/detail/349541",
+        "relevance": "other",
+        "product_fit": [],
+        "window_start": "2027-03-18"
+      },
+      {
+        "id": "62a7468ea588",
+        "title": "Müxtəlif informasiya-kommunikasiya texnologiyası avadanlıqlarının və ehtiyat hissələrinin satınalınması",
+        "buyer": "\"AZƏRENERJİKOMPLEKTLƏŞDİRMƏ\" MƏHDUD MƏSULİYYƏTLİ CƏMİYYƏTİ",
+        "company": "Azərenerjikomplektləşdirmə",
+        "role": "state",
+        "winner": "\"İNFİNİTECH\" MƏHDUD MƏSULİYYƏTLİ CƏMİYYƏTİ",
+        "amount": 863372.96,
+        "currency": "AZN",
+        "contract_date": "2026-07-03",
+        "expire_date": "2027-07-02",
+        "issued": "2026-09-21",
+        "tender_type": "Açıq Tender",
+        "url": "https://etender.gov.az/main/competition/detail/348824",
+        "relevance": "other",
+        "product_fit": [],
+        "window_start": "2027-04-03"
+      },
+      {
+        "id": "aa562b1d7ca5",
+        "title": "Müxtəlif növ kimyəvi maddələrin satınalınması",
+        "buyer": "\"AZƏRENERJİKOMPLEKTLƏŞDİRMƏ\" MƏHDUD MƏSULİYYƏTLİ CƏMİYYƏTİ",
+        "company": "Azərenerjikomplektləşdirmə",
+        "role": "state",
+        "winner": "FUAD-KİMYA SERVİS MƏHDUD MƏSULİYYƏTLİ CƏMİYYƏTİ",
+        "amount": 861127.42,
+        "currency": "AZN",
+        "contract_date": "2026-07-16",
+        "expire_date": "2027-07-15",
+        "issued": "2026-09-21",
+        "tender_type": "Açıq Tender",
+        "url": "https://etender.gov.az/main/competition/detail/349542",
+        "relevance": "other",
+        "product_fit": [],
+        "window_start": "2027-04-16"
+      },
+      {
+        "id": "91b844164270",
+        "title": "Qarabağ Su Meliorasiya Sistemləri İstismarı İdarəsində istismar olunan 1 ədəd (şassi nömrəsi: JCB3CX4TPS3567171, istehsal tarixi: 2025-ci il) “JCB 3CX” markalı ekskavator yükləyiciyə dövri texniki se",
+        "buyer": "Azərbaycan Dövlət Su Ehtiyatları Agentliyi Regional Su Meliorasiya Xidməti Publik Hüquqi Şəxsi Qarabağ Su Meliorasiya Sistemlərinin İstismarı İdarəsi",
+        "company": "ADSEA (Dövlət Su Ehtiyatları Agentliyi)",
+        "role": "utility",
+        "winner": "\"TEGETA MOTORS BAKU\" Məhdud Məsuliyyətli Cəmiyyəti",
+        "amount": 9202.31,
+        "currency": "AZN",
+        "contract_date": "2026-07-15",
+        "expire_date": "2027-07-15",
+        "issued": "2026-07-15",
+        "tender_type": "Bir mənbə",
+        "url": "https://etender.gov.az/main/contracts-concluded",
+        "relevance": "other",
+        "product_fit": [],
+        "window_start": "2027-04-16"
+      },
+      {
+        "id": "d5f244759565",
+        "title": "Çardaqlı-1 və Çardaqlı-2 KSES-lərin tikintisi işlərinin satın alınması",
+        "buyer": "\"AZƏRENERJİ\" AÇIQ TİPLİ SƏHMDAR CƏMİYYƏTİ",
+        "company": "Azerenerji",
+        "role": "state",
+        "winner": "\"BCC GROUP\" QAPALI SƏHMDAR CƏMİYYƏTİ",
+        "amount": 40831330.68,
+        "currency": "AZN",
+        "contract_date": "2026-07-24",
+        "expire_date": "2027-07-23",
+        "issued": "2026-09-21",
+        "tender_type": "Açıq Tender",
+        "url": "https://etender.gov.az/main/competition/detail/349544",
+        "relevance": "other",
+        "product_fit": [],
+        "window_start": "2027-04-24"
+      },
+      {
+        "id": "4b0156c0abd7",
+        "title": "Qaçan dalğa metodu ilə elektrik verilişi xətlərdə qısaqapanma yerinin təyini qurğusunun satınalınması",
+        "buyer": "\"AZƏRENERJİ\" AÇIQ TİPLİ SƏHMDAR CƏMİYYƏTİ",
+        "company": "Azerenerji",
+        "role": "state",
+        "winner": "\"İENSOL\" MƏHDUD MƏSULİYYƏTLİ CƏMİYYƏTİ",
+        "amount": 4971859.2,
+        "currency": "AZN",
+        "contract_date": "2026-07-24",
+        "expire_date": "2027-07-23",
+        "issued": "2026-09-21",
+        "tender_type": "Açıq Tender",
+        "url": "https://etender.gov.az/main/competition/detail/348783",
+        "relevance": "other",
+        "product_fit": [],
+        "window_start": "2027-04-24"
+      },
+      {
+        "id": "17d2b16cfc36",
+        "title": "Elektrik verilişi xətlərində online diaqnostika üçün avadanlıqların satınalınması",
+        "buyer": "\"AZƏRENERJİ\" AÇIQ TİPLİ SƏHMDAR CƏMİYYƏTİ",
+        "company": "Azerenerji",
+        "role": "state",
+        "winner": "\"İENSOL\" MƏHDUD MƏSULİYYƏTLİ CƏMİYYƏTİ",
+        "amount": 4764698.4,
+        "currency": "AZN",
+        "contract_date": "2026-07-24",
+        "expire_date": "2027-07-23",
+        "issued": "2026-09-21",
+        "tender_type": "Açıq Tender",
+        "url": "https://etender.gov.az/main/competition/detail/348784",
+        "relevance": "other",
+        "product_fit": [],
+        "window_start": "2027-04-24"
+      },
+      {
+        "id": "c1522b7a5109",
+        "title": "Kibertəhlükəsizlik səviyyəsinin artırılması, mərkəzləşdirilmiş təhlükəsizlik monitorinqi və nəzarət imkanlarının qurulması məqsədilə avadanlıq və həllərin satın alınması",
+        "buyer": "\"AZƏRENERJİ\" AÇIQ TİPLİ SƏHMDAR CƏMİYYƏTİ",
+        "company": "Azerenerji",
+        "role": "state",
+        "winner": "\"PROSOL\" QAPALI SƏHMDAR CƏMİYYƏTİ",
+        "amount": 1966029.01,
+        "currency": "AZN",
+        "contract_date": "2026-07-31",
+        "expire_date": "2027-07-30",
+        "issued": "2026-09-21",
+        "tender_type": "Açıq Tender",
+        "url": "https://etender.gov.az/main/competition/detail/353466",
+        "relevance": "other",
+        "product_fit": [],
+        "window_start": "2027-05-01"
+      },
+      {
+        "id": "bf4932bef008",
+        "title": "İdarənin balansında olan 3 ədəd “IVECO DAILY 50C15” markalı qəza-bərpa nəqliyyat vasitələri üçün texniki servis xidmətlərinin satın alınması",
+        "buyer": "Azərbaycan Dövlət Su Ehtiyatları Agentliyi Regional Su Meliorasiya Xidməti Publik Hüquqi Şəxsi Qarabağ Su Meliorasiya Sistemlərinin İstismarı İdarəsi",
+        "company": "ADSEA (Dövlət Su Ehtiyatları Agentliyi)",
+        "role": "utility",
+        "winner": "\"AZ-TEX-IMPORT\" Məhdud Məsuliyyətli Cəmiyyəti",
+        "amount": 4042.68,
+        "currency": "AZN",
+        "contract_date": "2026-07-31",
+        "expire_date": "2027-07-31",
+        "issued": "2026-07-31",
+        "tender_type": "Bir mənbə",
+        "url": "https://etender.gov.az/main/contracts-concluded",
+        "relevance": "other",
+        "product_fit": [],
+        "window_start": "2027-05-02"
+      },
+      {
+        "id": "80c1738fc326",
+        "title": "Xidməti minik avtomobillərinin, su nasosları və elektrikli əl alətlərinin (laqunda, mişar) təmiri və texniki qulluğun və açar dəstlərinin satınalınmas",
+        "buyer": "AZƏRBAYCAN RESPUBLİKASI FÖVQƏLADƏ HALLAR NAZİRLİYİ DÖVLƏT YANĞINDAN MÜHAFİZƏ XİDMƏTİNİN AZƏRBAYCAN DÖVLƏT NEFT ŞİRKƏTİ OBYEKTLƏRİ ÜZRƏ YANĞINDAN MÜHAFİZƏ İDARƏSİ",
+        "company": "SOCAR",
+        "role": "soc",
+        "winner": "SK SERVİS MMC",
+        "amount": 471207.39,
+        "currency": "AZN",
+        "contract_date": "2026-08-03",
+        "expire_date": "2027-08-03",
+        "issued": "2026-08-07",
+        "tender_type": "Açıq Tender",
+        "url": "https://etender.gov.az/main/contracts-concluded",
+        "relevance": "equipment",
+        "product_fit": [],
+        "window_start": "2027-05-05"
+      },
+      {
+        "id": "3644b592aac9",
+        "title": "110/35/10 kV-luq GİS tipli Duzsuzlaşdırma YS-nın tikintisi və enerji sistemininə inteqrasiyası, Yaşma YS-da gücləndirmə və genişləndirmə işləri ilə birgə satınalınması",
+        "buyer": "\"AZƏRENERJİ\" AÇIQ TİPLİ SƏHMDAR CƏMİYYƏTİ",
+        "company": "Azerenerji",
+        "role": "state",
+        "winner": "\"AZCONSTRUCTION\" QAPALI SƏHMDAR CƏMİYYƏTİ",
+        "amount": 45964995.01,
+        "currency": "AZN",
+        "contract_date": "2026-08-07",
+        "expire_date": "2027-08-06",
+        "issued": "2026-09-21",
+        "tender_type": "Açıq Tender",
+        "url": "https://etender.gov.az/main/competition/detail/352215",
+        "relevance": "other",
+        "product_fit": [],
+        "window_start": "2027-05-08"
+      },
+      {
+        "id": "1435846d242e",
+        "title": "Mövcud 220/10/10 kV-luq Qəbələ YS-nı 220/110/10 kV-luq YS-ya keçirməklə yenidən qurulması işləri",
+        "buyer": "\"AZƏRENERJİ\" AÇIQ TİPLİ SƏHMDAR CƏMİYYƏTİ",
+        "company": "Azerenerji",
+        "role": "state",
+        "winner": "\"AZCONSTRUCTION\" QAPALI SƏHMDAR CƏMİYYƏTİ",
+        "amount": 21280660.78,
+        "currency": "AZN",
+        "contract_date": "2026-08-07",
+        "expire_date": "2027-08-06",
+        "issued": "2026-09-21",
+        "tender_type": "Açıq Tender",
+        "url": "https://etender.gov.az/main/competition/detail/352058",
+        "relevance": "other",
+        "product_fit": [],
+        "window_start": "2027-05-08"
+      },
+      {
+        "id": "3e32d122530a",
+        "title": "Mövcud 1C proqram təminatının yenilənməsi xidmətlərinin satınalınması",
+        "buyer": "\"AZƏRENERJİ\" AÇIQ TİPLİ SƏHMDAR CƏMİYYƏTİ",
+        "company": "Azerenerji",
+        "role": "state",
+        "winner": "“ATL TECH” MƏHDUD MƏSULİYYƏTLİ CƏMİYYƏTİ",
+        "amount": 1792593.82,
+        "currency": "AZN",
+        "contract_date": "2026-08-17",
+        "expire_date": "2027-08-16",
+        "issued": "2026-09-21",
+        "tender_type": "Açıq Tender",
+        "url": "https://etender.gov.az/main/competition/detail/353467",
+        "relevance": "other",
+        "product_fit": [],
+        "window_start": "2027-05-18"
+      },
+      {
+        "id": "28ec3bdb4649",
+        "title": "İnformasiya texnologiya avadanlıqlarının servis xidmətinin satınalınması",
+        "buyer": "\"AZƏRENERJİKOMPLEKTLƏŞDİRMƏ\" MƏHDUD MƏSULİYYƏTLİ CƏMİYYƏTİ",
+        "company": "Azərenerjikomplektləşdirmə",
+        "role": "state",
+        "winner": "\"MİX PRO\" Məhdud Məsuliyyətli Cəmiyyəti",
+        "amount": 288122.96,
+        "currency": "AZN",
+        "contract_date": "2026-08-24",
+        "expire_date": "2027-08-23",
+        "issued": "2026-09-21",
+        "tender_type": "Açıq Tender",
+        "url": "https://etender.gov.az/main/competition/detail/351644",
+        "relevance": "other",
+        "product_fit": [],
+        "window_start": "2027-05-25"
+      },
+      {
+        "id": "6df67249d19f",
+        "title": "Müxtəlif növ elektrik mallarının satınalınması",
+        "buyer": "\"AZƏRENERJİKOMPLEKTLƏŞDİRMƏ\" MƏHDUD MƏSULİYYƏTLİ CƏMİYYƏTİ",
+        "company": "Azərenerjikomplektləşdirmə",
+        "role": "state",
+        "winner": "\"ELECTRO SERVİCE\" QAPALI SƏHMDAR CƏMİYYƏTİ",
+        "amount": 1052765.02,
+        "currency": "AZN",
+        "contract_date": "2026-09-01",
+        "expire_date": "2027-08-31",
+        "issued": "2026-09-21",
+        "tender_type": "Açıq Tender",
+        "url": "https://etender.gov.az/main/competition/detail/353464",
+        "relevance": "other",
+        "product_fit": [],
+        "window_start": "2027-06-02"
+      },
+      {
+        "id": "f741f8b30ece",
+        "title": "Naxçıvan MR-da ümumi gücü 50 MVt (25+25 MVt) olan GES-lərin enerjisistemə inteqrasiyası işləri",
+        "buyer": "\"AZƏRENERJİ\" AÇIQ TİPLİ SƏHMDAR CƏMİYYƏTİ",
+        "company": "Azerenerji",
+        "role": "state",
+        "winner": "\"AZCONSTRUCTION\" QSC",
+        "amount": 30746000,
+        "currency": "AZN",
+        "contract_date": "2026-09-21",
+        "expire_date": "2027-09-21",
+        "issued": "2026-09-21",
+        "tender_type": "Bir mənbə",
+        "url": "https://etender.gov.az/main/contracts-concluded",
+        "relevance": "other",
+        "product_fit": [],
+        "window_start": "2027-06-23"
+      },
+      {
+        "id": "f3f989a1e032",
+        "title": "Müxtəlif növ boya və boya məhsullarının satın alınması",
+        "buyer": "\"AZƏRENERJİKOMPLEKTLƏŞDİRMƏ\" MƏHDUD MƏSULİYYƏTLİ CƏMİYYƏTİ",
+        "company": "Azərenerjikomplektləşdirmə",
+        "role": "state",
+        "winner": "\"MURADLI-M\" MƏHDUD MƏSULİYYƏTLİ CƏMİYYƏTİ",
+        "amount": 724101.45,
+        "currency": "AZN",
+        "contract_date": "2026-10-06",
+        "expire_date": "2027-10-05",
+        "issued": "2026-10-07",
+        "tender_type": "Açıq Tender",
+        "url": "https://etender.gov.az/main/competition/detail/354221",
+        "relevance": "other",
+        "product_fit": [],
+        "window_start": "2027-07-07"
+      }
+    ],
+    "buyers": [
+      {
+        "company": "Azerenerji",
+        "role": "state",
+        "n": 37,
+        "total_azn": 1642579476,
+        "suspect": 1,
+        "open_share": 65,
+        "fit": 1,
+        "equipment": 4,
+        "first": "2025-09-25",
+        "last": "2026-09-21",
+        "expiring": 31,
+        "suppliers": [
+          {
+            "name": "\"ELECTRO İNDUSTRİES\" QAPALI SƏHMDAR CƏMİYYƏTİ",
+            "n": 6,
+            "amount": 79167175.05000001
+          },
+          {
+            "name": "\"AZCONSTRUCTION\" QSC",
+            "n": 5,
+            "amount": 164652945.95
+          },
+          {
+            "name": "\"MİTAŞ ENDÜSTRİ SANAYİ TİC.A.Ş.\"",
+            "n": 3,
+            "amount": 29499999.990000002
+          },
+          {
+            "name": "\"ELECTRO SERVİCE\" QAPALI SƏHMDAR CƏMİYYƏTİ",
+            "n": 2,
+            "amount": 527744481.91
+          },
+          {
+            "name": "\"AZƏRELEKTRİK TİKİNTİ QURAŞDIRMA\" Məhdud Məsuliyyətli Cəmiyyəti",
+            "n": 2,
+            "amount": 44325330.269999996
+          },
+          {
+            "name": "ELEKTRİKQURAŞDIRMA MÜƏSSİSƏSİ",
+            "n": 2,
+            "amount": 35453590.17
+          }
+        ],
+        "units": [
+          {
+            "name": "\"AZƏRENERJİ\" AÇIQ TİPLİ SƏHMDAR CƏMİYYƏTİ",
+            "n": 37
+          }
+        ],
+        "recent": [
+          {
+            "id": "f741f8b30ece",
+            "title": "Naxçıvan MR-da ümumi gücü 50 MVt (25+25 MVt) olan GES-lərin enerjisistemə inteqrasiyası işləri",
+            "buyer": "\"AZƏRENERJİ\" AÇIQ TİPLİ SƏHMDAR CƏMİYYƏTİ",
+            "company": "Azerenerji",
+            "role": "state",
+            "winner": "\"AZCONSTRUCTION\" QSC",
+            "amount": 30746000,
+            "currency": "AZN",
+            "contract_date": "2026-09-21",
+            "expire_date": "2027-09-21",
+            "issued": "2026-09-21",
+            "tender_type": "Bir mənbə",
+            "url": "https://etender.gov.az/main/contracts-concluded",
+            "relevance": "other",
+            "product_fit": []
+          },
+          {
+            "id": "3e32d122530a",
+            "title": "Mövcud 1C proqram təminatının yenilənməsi xidmətlərinin satınalınması",
+            "buyer": "\"AZƏRENERJİ\" AÇIQ TİPLİ SƏHMDAR CƏMİYYƏTİ",
+            "company": "Azerenerji",
+            "role": "state",
+            "winner": "“ATL TECH” MƏHDUD MƏSULİYYƏTLİ CƏMİYYƏTİ",
+            "amount": 1792593.82,
+            "currency": "AZN",
+            "contract_date": "2026-08-17",
+            "expire_date": "2027-08-16",
+            "issued": "2026-09-21",
+            "tender_type": "Açıq Tender",
+            "url": "https://etender.gov.az/main/competition/detail/353467",
+            "relevance": "other",
+            "product_fit": []
+          },
+          {
+            "id": "1435846d242e",
+            "title": "Mövcud 220/10/10 kV-luq Qəbələ YS-nı 220/110/10 kV-luq YS-ya keçirməklə yenidən qurulması işləri",
+            "buyer": "\"AZƏRENERJİ\" AÇIQ TİPLİ SƏHMDAR CƏMİYYƏTİ",
+            "company": "Azerenerji",
+            "role": "state",
+            "winner": "\"AZCONSTRUCTION\" QAPALI SƏHMDAR CƏMİYYƏTİ",
+            "amount": 21280660.78,
+            "currency": "AZN",
+            "contract_date": "2026-08-07",
+            "expire_date": "2027-08-06",
+            "issued": "2026-09-21",
+            "tender_type": "Açıq Tender",
+            "url": "https://etender.gov.az/main/competition/detail/352058",
+            "relevance": "other",
+            "product_fit": []
+          },
+          {
+            "id": "22e48266877a",
+            "title": "Xəzər dənizi suyunun duzsuzlaşdırılması zavodunun xarici elektrik təchizatı üzrə 110 kV-luq EVX-nin tikintisi və elektrikquraşdırma işləri",
+            "buyer": "\"AZƏRENERJİ\" AÇIQ TİPLİ SƏHMDAR CƏMİYYƏTİ",
+            "company": "Azerenerji",
+            "role": "state",
+            "winner": "\"AZƏRELEKTRİK TİKİNTİ QURAŞDIRMA\" Məhdud Məsuliyyətli Cəmiyyəti",
+            "amount": 20645330.27,
+            "currency": "AZN",
+            "contract_date": "2026-08-07",
+            "expire_date": "2027-03-06",
+            "issued": "2026-09-21",
+            "tender_type": "Açıq Tender",
+            "url": "https://etender.gov.az/main/competition/detail/352214",
+            "relevance": "other",
+            "product_fit": []
+          },
+          {
+            "id": "3644b592aac9",
+            "title": "110/35/10 kV-luq GİS tipli Duzsuzlaşdırma YS-nın tikintisi və enerji sistemininə inteqrasiyası, Yaşma YS-da gücləndirmə və genişləndirmə işləri ilə birgə satınalınması",
+            "buyer": "\"AZƏRENERJİ\" AÇIQ TİPLİ SƏHMDAR CƏMİYYƏTİ",
+            "company": "Azerenerji",
+            "role": "state",
+            "winner": "\"AZCONSTRUCTION\" QAPALI SƏHMDAR CƏMİYYƏTİ",
+            "amount": 45964995.01,
+            "currency": "AZN",
+            "contract_date": "2026-08-07",
+            "expire_date": "2027-08-06",
+            "issued": "2026-09-21",
+            "tender_type": "Açıq Tender",
+            "url": "https://etender.gov.az/main/competition/detail/352215",
+            "relevance": "other",
+            "product_fit": []
+          },
+          {
+            "id": "37ab3408b7f9",
+            "title": "Eyvazlı KSES üçün boru xəttinin tikintisi işlərinin satın alınması",
+            "buyer": "\"AZƏRENERJİ\" AÇIQ TİPLİ SƏHMDAR CƏMİYYƏTİ",
+            "company": "Azerenerji",
+            "role": "state",
+            "winner": "\"ELECTRO İNDUSTRİES\" QAPALI SƏHMDAR CƏMİYYƏTİ",
+            "amount": 2650752,
+            "currency": "AZN",
+            "contract_date": "2026-08-07",
+            "expire_date": "2027-03-06",
+            "issued": "2026-09-21",
+            "tender_type": "Açıq Tender",
+            "url": "https://etender.gov.az/main/competition/detail/347032",
+            "relevance": "equipment",
+            "product_fit": []
+          },
+          {
+            "id": "5d8ead0c9855",
+            "title": "\"Nəvahi\" və \"Şəfəq\" YS-larının tikintisi üzrə əlavə işlərin satın alınması",
+            "buyer": "\"AZƏRENERJİ\" AÇIQ TİPLİ SƏHMDAR CƏMİYYƏTİ",
+            "company": "Azerenerji",
+            "role": "state",
+            "winner": "\"ELECTRO İNDUSTRİES\" QAPALI SƏHMDAR CƏMİYYƏTİ",
+            "amount": 11592909.08,
+            "currency": "AZN",
+            "contract_date": "2026-08-07",
+            "expire_date": "2026-12-06",
+            "issued": "2026-09-21",
+            "tender_type": "Açıq Tender",
+            "url": "https://etender.gov.az/main/competition/detail/351681",
+            "relevance": "other",
+            "product_fit": []
+          },
+          {
+            "id": "c1522b7a5109",
+            "title": "Kibertəhlükəsizlik səviyyəsinin artırılması, mərkəzləşdirilmiş təhlükəsizlik monitorinqi və nəzarət imkanlarının qurulması məqsədilə avadanlıq və həllərin satın alınması",
+            "buyer": "\"AZƏRENERJİ\" AÇIQ TİPLİ SƏHMDAR CƏMİYYƏTİ",
+            "company": "Azerenerji",
+            "role": "state",
+            "winner": "\"PROSOL\" QAPALI SƏHMDAR CƏMİYYƏTİ",
+            "amount": 1966029.01,
+            "currency": "AZN",
+            "contract_date": "2026-07-31",
+            "expire_date": "2027-07-30",
+            "issued": "2026-09-21",
+            "tender_type": "Açıq Tender",
+            "url": "https://etender.gov.az/main/competition/detail/353466",
+            "relevance": "other",
+            "product_fit": []
+          },
+          {
+            "id": "17d2b16cfc36",
+            "title": "Elektrik verilişi xətlərində online diaqnostika üçün avadanlıqların satınalınması",
+            "buyer": "\"AZƏRENERJİ\" AÇIQ TİPLİ SƏHMDAR CƏMİYYƏTİ",
+            "company": "Azerenerji",
+            "role": "state",
+            "winner": "\"İENSOL\" MƏHDUD MƏSULİYYƏTLİ CƏMİYYƏTİ",
+            "amount": 4764698.4,
+            "currency": "AZN",
+            "contract_date": "2026-07-24",
+            "expire_date": "2027-07-23",
+            "issued": "2026-09-21",
+            "tender_type": "Açıq Tender",
+            "url": "https://etender.gov.az/main/competition/detail/348784",
+            "relevance": "other",
+            "product_fit": []
+          },
+          {
+            "id": "4b0156c0abd7",
+            "title": "Qaçan dalğa metodu ilə elektrik verilişi xətlərdə qısaqapanma yerinin təyini qurğusunun satınalınması",
+            "buyer": "\"AZƏRENERJİ\" AÇIQ TİPLİ SƏHMDAR CƏMİYYƏTİ",
+            "company": "Azerenerji",
+            "role": "state",
+            "winner": "\"İENSOL\" MƏHDUD MƏSULİYYƏTLİ CƏMİYYƏTİ",
+            "amount": 4971859.2,
+            "currency": "AZN",
+            "contract_date": "2026-07-24",
+            "expire_date": "2027-07-23",
+            "issued": "2026-09-21",
+            "tender_type": "Açıq Tender",
+            "url": "https://etender.gov.az/main/competition/detail/348783",
+            "relevance": "other",
+            "product_fit": []
+          },
+          {
+            "id": "d5f244759565",
+            "title": "Çardaqlı-1 və Çardaqlı-2 KSES-lərin tikintisi işlərinin satın alınması",
+            "buyer": "\"AZƏRENERJİ\" AÇIQ TİPLİ SƏHMDAR CƏMİYYƏTİ",
+            "company": "Azerenerji",
+            "role": "state",
+            "winner": "\"BCC GROUP\" QAPALI SƏHMDAR CƏMİYYƏTİ",
+            "amount": 40831330.68,
+            "currency": "AZN",
+            "contract_date": "2026-07-24",
+            "expire_date": "2027-07-23",
+            "issued": "2026-09-21",
+            "tender_type": "Açıq Tender",
+            "url": "https://etender.gov.az/main/competition/detail/349544",
+            "relevance": "other",
+            "product_fit": []
+          },
+          {
+            "id": "a5e5462a3f47",
+            "title": "Yeni tikilən YS-ya üçün avadanlıqların satın alınması",
+            "buyer": "\"AZƏRENERJİ\" AÇIQ TİPLİ SƏHMDAR CƏMİYYƏTİ",
+            "company": "Azerenerji",
+            "role": "state",
+            "winner": "\"AZCONSTRUCTION\" QAPALI SƏHMDAR CƏMİYYƏTİ",
+            "amount": 59996734.71,
+            "currency": "AZN",
+            "contract_date": "2026-06-25",
+            "expire_date": "2027-04-24",
+            "issued": "2026-09-21",
+            "tender_type": "Açıq Tender",
+            "url": "https://etender.gov.az/main/competition/detail/346811",
+            "relevance": "other",
+            "product_fit": []
+          }
+        ]
+      },
+      {
+        "company": "ADSEA (Dövlət Su Ehtiyatları Agentliyi)",
+        "role": "utility",
+        "n": 14,
+        "total_azn": 253254,
+        "suspect": 0,
+        "open_share": 7,
+        "fit": 0,
+        "equipment": 1,
+        "first": "2025-06-12",
+        "last": "2026-10-19",
+        "expiring": 10,
+        "suppliers": [
+          {
+            "name": "\"Aztelekom\" MMC ( Xocalı rayonu )",
+            "n": 4,
+            "amount": 2196.0
+          },
+          {
+            "name": "\"HEBA COMPANY\" Məhdud Məsuliyyətli Cəmiyyəti",
+            "n": 2,
+            "amount": 99963.7
+          },
+          {
+            "name": "\"HAKİMOĞLU\" Məhdud Məsuliyyətli Cəmiyyəti",
+            "n": 2,
+            "amount": 25337.370000000003
+          },
+          {
+            "name": "SOCAR PETROLEUM QSC",
+            "n": 1,
+            "amount": 75000.0
+          },
+          {
+            "name": "\"AQUALİNK\" MƏHDUD MƏSULİYYƏTLİ CƏMİYYƏTİ",
+            "n": 1,
+            "amount": 35000.0
+          },
+          {
+            "name": "\"TEGETA MOTORS BAKU\" Məhdud Məsuliyyətli Cəmiyyəti",
+            "n": 1,
+            "amount": 9202.31
+          }
+        ],
+        "units": [
+          {
+            "name": "Azərbaycan Dövlət Su Ehtiyatları Agentliyi Regional Su Meliorasiya Xidməti Publik Hüquqi Şəxsi Qarabağ Su Meliorasiya Sistemlərinin İstismarı İdarəsi",
+            "n": 14
+          }
+        ],
+        "recent": [
+          {
+            "id": "179bf25e07f0",
+            "title": "İdarənin Xidməti ərazisində olan inzibati binaların,su anbarlarının, su təmizləyici qurğuların,hidrotexniki qurğuların və nasos stansiyaların cari təmiri üçün mal materialın alınması",
+            "buyer": "Azərbaycan Dövlət Su Ehtiyatları Agentliyi Regional Su Meliorasiya Xidməti Publik Hüquqi Şəxsi Qarabağ Su Meliorasiya Sistemlərinin İstismarı İdarəsi",
+            "company": "ADSEA (Dövlət Su Ehtiyatları Agentliyi)",
+            "role": "utility",
+            "winner": "\"HEBA COMPANY\" Məhdud Məsuliyyətli Cəmiyyəti",
+            "amount": 91442.92,
+            "currency": "AZN",
+            "contract_date": "2026-10-19",
+            "expire_date": "2026-12-31",
+            "issued": "2026-10-19",
+            "tender_type": "Açıq Tender",
+            "url": "https://etender.gov.az/main/competition/detail/356086",
+            "relevance": "equipment",
+            "product_fit": []
+          },
+          {
+            "id": "2dec1416e1fa",
+            "title": "2026 ci il üçün Aİ 92 və Dizel markalı yanacaq alışı",
+            "buyer": "Azərbaycan Dövlət Su Ehtiyatları Agentliyi Regional Su Meliorasiya Xidməti Publik Hüquqi Şəxsi Qarabağ Su Meliorasiya Sistemlərinin İstismarı İdarəsi",
+            "company": "ADSEA (Dövlət Su Ehtiyatları Agentliyi)",
+            "role": "utility",
+            "winner": "SOCAR PETROLEUM QSC",
+            "amount": 75000,
+            "currency": "AZN",
+            "contract_date": "2026-08-05",
+            "expire_date": "2026-08-05",
+            "issued": "2026-08-05",
+            "tender_type": "Bir mənbə",
+            "url": "https://etender.gov.az/main/contracts-concluded",
+            "relevance": "other",
+            "product_fit": []
+          },
+          {
+            "id": "bf4932bef008",
+            "title": "İdarənin balansında olan 3 ədəd “IVECO DAILY 50C15” markalı qəza-bərpa nəqliyyat vasitələri üçün texniki servis xidmətlərinin satın alınması",
+            "buyer": "Azərbaycan Dövlət Su Ehtiyatları Agentliyi Regional Su Meliorasiya Xidməti Publik Hüquqi Şəxsi Qarabağ Su Meliorasiya Sistemlərinin İstismarı İdarəsi",
+            "company": "ADSEA (Dövlət Su Ehtiyatları Agentliyi)",
+            "role": "utility",
+            "winner": "\"AZ-TEX-IMPORT\" Məhdud Məsuliyyətli Cəmiyyəti",
+            "amount": 4042.68,
+            "currency": "AZN",
+            "contract_date": "2026-07-31",
+            "expire_date": "2027-07-31",
+            "issued": "2026-07-31",
+            "tender_type": "Bir mənbə",
+            "url": "https://etender.gov.az/main/contracts-concluded",
+            "relevance": "other",
+            "product_fit": []
+          },
+          {
+            "id": "91b844164270",
+            "title": "Qarabağ Su Meliorasiya Sistemləri İstismarı İdarəsində istismar olunan 1 ədəd (şassi nömrəsi: JCB3CX4TPS3567171, istehsal tarixi: 2025-ci il) “JCB 3CX” markalı ekskavator yükləyiciyə dövri texniki se",
+            "buyer": "Azərbaycan Dövlət Su Ehtiyatları Agentliyi Regional Su Meliorasiya Xidməti Publik Hüquqi Şəxsi Qarabağ Su Meliorasiya Sistemlərinin İstismarı İdarəsi",
+            "company": "ADSEA (Dövlət Su Ehtiyatları Agentliyi)",
+            "role": "utility",
+            "winner": "\"TEGETA MOTORS BAKU\" Məhdud Məsuliyyətli Cəmiyyəti",
+            "amount": 9202.31,
+            "currency": "AZN",
+            "contract_date": "2026-07-15",
+            "expire_date": "2027-07-15",
+            "issued": "2026-07-15",
+            "tender_type": "Bir mənbə",
+            "url": "https://etender.gov.az/main/contracts-concluded",
+            "relevance": "other",
+            "product_fit": []
+          },
+          {
+            "id": "8920bcc33b51",
+            "title": "Zəmanət şərtləri daxilində 1 ədəd “JMC Grand Avenue” markalı bortlu, tentli qəza-bərpa avtomobilinə texniki servis xidmətinin satın alınması",
+            "buyer": "Azərbaycan Dövlət Su Ehtiyatları Agentliyi Regional Su Meliorasiya Xidməti Publik Hüquqi Şəxsi Qarabağ Su Meliorasiya Sistemlərinin İstismarı İdarəsi",
+            "company": "ADSEA (Dövlət Su Ehtiyatları Agentliyi)",
+            "role": "utility",
+            "winner": "İMOTORS MMC",
+            "amount": 2440,
+            "currency": "AZN",
+            "contract_date": "2026-06-08",
+            "expire_date": "2026-12-31",
+            "issued": "2026-06-08",
+            "tender_type": "Bir mənbə",
+            "url": "https://etender.gov.az/main/contracts-concluded",
+            "relevance": "other",
+            "product_fit": []
+          },
+          {
+            "id": "5457bc34ea8d",
+            "title": "“MİTSUBİSHİ L200 İSTEHSAL İLİ 2021 BAN NÖMRƏSİ MMBNGV545NH004526 NƏQLİYYAT VASİTƏSİNİN TƏMİR OLUNMASI XİDMƏTİ ”",
+            "buyer": "Azərbaycan Dövlət Su Ehtiyatları Agentliyi Regional Su Meliorasiya Xidməti Publik Hüquqi Şəxsi Qarabağ Su Meliorasiya Sistemlərinin İstismarı İdarəsi",
+            "company": "ADSEA (Dövlət Su Ehtiyatları Agentliyi)",
+            "role": "utility",
+            "winner": "\"HAKİMOĞLU\" Məhdud Məsuliyyətli Cəmiyyəti",
+            "amount": 12500.92,
+            "currency": "AZN",
+            "contract_date": "2026-05-25",
+            "expire_date": "2026-12-30",
+            "issued": "2026-05-25",
+            "tender_type": "Kotirovka",
+            "url": "https://etender.gov.az/main/competition/detail/348511",
+            "relevance": "other",
+            "product_fit": []
+          },
+          {
+            "id": "b3bd4b30f69d",
+            "title": "\"Elektron imza\" xidmətlərinin satınalınması",
+            "buyer": "Azərbaycan Dövlət Su Ehtiyatları Agentliyi Regional Su Meliorasiya Xidməti Publik Hüquqi Şəxsi Qarabağ Su Meliorasiya Sistemlərinin İstismarı İdarəsi",
+            "company": "ADSEA (Dövlət Su Ehtiyatları Agentliyi)",
+            "role": "utility",
+            "winner": "\"Azərbaycan Nəqliyyat və Kommunikasiya Holdinqi(AZCON)\" publik hüquqi şəxsin tərkibində fəaliyyət göstərən \"AzIntelecom\" Məhdud Məsuliyyətli Cəmiyyəti",
+            "amount": 72,
+            "currency": "AZN",
+            "contract_date": "2026-05-07",
+            "expire_date": "2027-05-07",
+            "issued": "2026-06-11",
+            "tender_type": "Birbaşa",
+            "url": "https://etender.gov.az/main/contracts-concluded",
+            "relevance": "other",
+            "product_fit": []
+          },
+          {
+            "id": "faed0860e36b",
+            "title": "İnternet xidmətinin alınması maddə 221330",
+            "buyer": "Azərbaycan Dövlət Su Ehtiyatları Agentliyi Regional Su Meliorasiya Xidməti Publik Hüquqi Şəxsi Qarabağ Su Meliorasiya Sistemlərinin İstismarı İdarəsi",
+            "company": "ADSEA (Dövlət Su Ehtiyatları Agentliyi)",
+            "role": "utility",
+            "winner": "\"Aztelekom\" MMC ( Xocalı rayonu )",
+            "amount": 492,
+            "currency": "AZN",
+            "contract_date": "2026-04-29",
+            "expire_date": "2026-04-29",
+            "issued": "2026-04-29",
+            "tender_type": "Birbaşa",
+            "url": "https://etender.gov.az/main/contracts-concluded",
+            "relevance": "other",
+            "product_fit": []
+          },
+          {
+            "id": "fc6dcbb7134a",
+            "title": "İnternet xidmətinin alınması maddə 221330",
+            "buyer": "Azərbaycan Dövlət Su Ehtiyatları Agentliyi Regional Su Meliorasiya Xidməti Publik Hüquqi Şəxsi Qarabağ Su Meliorasiya Sistemlərinin İstismarı İdarəsi",
+            "company": "ADSEA (Dövlət Su Ehtiyatları Agentliyi)",
+            "role": "utility",
+            "winner": "\"Aztelekom\" MMC ( Şuşa şəhəri )",
+            "amount": 420,
+            "currency": "AZN",
+            "contract_date": "2026-02-14",
+            "expire_date": "2027-02-14",
+            "issued": "2026-05-14",
+            "tender_type": "Birbaşa",
+            "url": "https://etender.gov.az/main/contracts-concluded",
+            "relevance": "other",
+            "product_fit": []
+          },
+          {
+            "id": "154e726172cf",
+            "title": "Ölkədaxili telefon danışıq haqqlarının ödənilməsi - maddə 222311",
+            "buyer": "Azərbaycan Dövlət Su Ehtiyatları Agentliyi Regional Su Meliorasiya Xidməti Publik Hüquqi Şəxsi Qarabağ Su Meliorasiya Sistemlərinin İstismarı İdarəsi",
+            "company": "ADSEA (Dövlət Su Ehtiyatları Agentliyi)",
+            "role": "utility",
+            "winner": "\"Aztelekom\" MMC ( Xankəndi)",
+            "amount": 84,
+            "currency": "AZN",
+            "contract_date": "2026-02-03",
+            "expire_date": "2027-02-03",
+            "issued": "2026-05-14",
+            "tender_type": "Birbaşa",
+            "url": "https://etender.gov.az/main/contracts-concluded",
+            "relevance": "other",
+            "product_fit": []
+          },
+          {
+            "id": "f0fc2c074f8a",
+            "title": "İnternet xidmətinin alınması maddə 221330",
+            "buyer": "Azərbaycan Dövlət Su Ehtiyatları Agentliyi Regional Su Meliorasiya Xidməti Publik Hüquqi Şəxsi Qarabağ Su Meliorasiya Sistemlərinin İstismarı İdarəsi",
+            "company": "ADSEA (Dövlət Su Ehtiyatları Agentliyi)",
+            "role": "utility",
+            "winner": "\"Aztelekom\" MMC ( Xankəndi şəhəri )",
+            "amount": 1200,
+            "currency": "AZN",
+            "contract_date": "2026-02-03",
+            "expire_date": "2027-02-03",
+            "issued": "2026-05-14",
+            "tender_type": "Birbaşa",
+            "url": "https://etender.gov.az/main/contracts-concluded",
+            "relevance": "other",
+            "product_fit": []
+          },
+          {
+            "id": "019aa64f8bfc",
+            "title": "Təmizlik mallarının və müxtəlif ləvazimatların",
+            "buyer": "Azərbaycan Dövlət Su Ehtiyatları Agentliyi Regional Su Meliorasiya Xidməti Publik Hüquqi Şəxsi Qarabağ Su Meliorasiya Sistemlərinin İstismarı İdarəsi",
+            "company": "ADSEA (Dövlət Su Ehtiyatları Agentliyi)",
+            "role": "utility",
+            "winner": "\"HEBA COMPANY\" Məhdud Məsuliyyətli Cəmiyyəti",
+            "amount": 8520.78,
+            "currency": "AZN",
+            "contract_date": "2025-12-10",
+            "expire_date": "2026-12-10",
+            "issued": "2025-12-10",
+            "tender_type": "Kotirovka",
+            "url": "https://etender.gov.az/main/competition/detail/338930",
+            "relevance": "other",
+            "product_fit": []
+          }
+        ]
+      },
+      {
+        "company": "SOCAR",
+        "role": "soc",
+        "n": 11,
+        "total_azn": 109498957,
+        "suspect": 0,
+        "open_share": 45,
+        "fit": 0,
+        "equipment": 3,
+        "first": "2025-07-21",
+        "last": "2026-08-03",
+        "expiring": 4,
+        "suppliers": [
+          {
+            "name": "\"BCC GROUP\" QAPALI SƏHMDAR CƏMİYYƏTİ",
+            "n": 1,
+            "amount": 65696028.0
+          },
+          {
+            "name": "\"UNIVERSAL PRO\" Qapalı Səhmdar Cəmiyyəti",
+            "n": 1,
+            "amount": 42479992.0
+          },
+          {
+            "name": "SK SERVİS MMC",
+            "n": 1,
+            "amount": 471207.39
+          },
+          {
+            "name": "“AZƏRMAŞ PARK” MƏHDUD MƏSULİYYƏTLİ CƏMİYYƏTİ",
+            "n": 1,
+            "amount": 315000.0
+          },
+          {
+            "name": "\"MARZ” MMC",
+            "n": 1,
+            "amount": 259600.0
+          },
+          {
+            "name": "\"GLOBAL STATIONERY OFFICE\" Məhdud Məsuliyyətli Cəmiyyəti",
+            "n": 1,
+            "amount": 79336.12
+          }
+        ],
+        "units": [
+          {
+            "name": "AZƏRBAYCAN RESPUBLİKASI FÖVQƏLADƏ HALLAR NAZİRLİYİ DÖVLƏT YANĞINDAN MÜHAFİZƏ XİDMƏTİNİN AZƏRBAYCAN DÖVLƏT NEFT ŞİRKƏTİ OBYEKTLƏRİ ÜZRƏ YANĞINDAN MÜHAFİZƏ İDARƏSİ",
+            "n": 11
+          }
+        ],
+        "recent": [
+          {
+            "id": "80c1738fc326",
+            "title": "Xidməti minik avtomobillərinin, su nasosları və elektrikli əl alətlərinin (laqunda, mişar) təmiri və texniki qulluğun və açar dəstlərinin satınalınmas",
+            "buyer": "AZƏRBAYCAN RESPUBLİKASI FÖVQƏLADƏ HALLAR NAZİRLİYİ DÖVLƏT YANĞINDAN MÜHAFİZƏ XİDMƏTİNİN AZƏRBAYCAN DÖVLƏT NEFT ŞİRKƏTİ OBYEKTLƏRİ ÜZRƏ YANĞINDAN MÜHAFİZƏ İDARƏSİ",
+            "company": "SOCAR",
+            "role": "soc",
+            "winner": "SK SERVİS MMC",
+            "amount": 471207.39,
+            "currency": "AZN",
+            "contract_date": "2026-08-03",
+            "expire_date": "2027-08-03",
+            "issued": "2026-08-07",
+            "tender_type": "Açıq Tender",
+            "url": "https://etender.gov.az/main/contracts-concluded",
+            "relevance": "equipment",
+            "product_fit": []
+          },
+          {
+            "id": "43fb81080a15",
+            "title": "Maşın və avadanlıqlara texniki xidmətin satınalınması",
+            "buyer": "AZƏRBAYCAN RESPUBLİKASI FÖVQƏLADƏ HALLAR NAZİRLİYİ DÖVLƏT YANĞINDAN MÜHAFİZƏ XİDMƏTİNİN AZƏRBAYCAN DÖVLƏT NEFT ŞİRKƏTİ OBYEKTLƏRİ ÜZRƏ YANĞINDAN MÜHAFİZƏ İDARƏSİ",
+            "company": "SOCAR",
+            "role": "soc",
+            "winner": "\"CASPİAN TECHNOLOGY GROUP\" Məhdud Məsuliyyətli Cəmiyyəti",
+            "amount": 56864.79,
+            "currency": "AZN",
+            "contract_date": "2026-05-25",
+            "expire_date": "2026-12-30",
+            "issued": "2026-06-10",
+            "tender_type": "Kotirovka",
+            "url": "https://etender.gov.az/main/competition/detail/348535",
+            "relevance": "equipment",
+            "product_fit": []
+          },
+          {
+            "id": "13df3295f2fe",
+            "title": "\"TETRA\" radiorabitə vasitələrinin, aksesuarlarının və ehtiyat hissələrinin satın alınması",
+            "buyer": "AZƏRBAYCAN RESPUBLİKASI FÖVQƏLADƏ HALLAR NAZİRLİYİ DÖVLƏT YANĞINDAN MÜHAFİZƏ XİDMƏTİNİN AZƏRBAYCAN DÖVLƏT NEFT ŞİRKƏTİ OBYEKTLƏRİ ÜZRƏ YANĞINDAN MÜHAFİZƏ İDARƏSİ",
+            "company": "SOCAR",
+            "role": "soc",
+            "winner": "Azərbaycan Respublikasının Xüsusi Rabitə və İnformasiya Təhlükəsizliyi Dövlət Xidməti",
+            "amount": 58974.2,
+            "currency": "AZN",
+            "contract_date": "2026-05-05",
+            "expire_date": "2026-12-30",
+            "issued": "2026-06-11",
+            "tender_type": "Birbaşa",
+            "url": "https://etender.gov.az/main/contracts-concluded",
+            "relevance": "other",
+            "product_fit": []
+          },
+          {
+            "id": "8bfcf27c2962",
+            "title": "Xidməti minik avtomobillərin təmiri xidmətlərin satınalınması",
+            "buyer": "AZƏRBAYCAN RESPUBLİKASI FÖVQƏLADƏ HALLAR NAZİRLİYİ DÖVLƏT YANĞINDAN MÜHAFİZƏ XİDMƏTİNİN AZƏRBAYCAN DÖVLƏT NEFT ŞİRKƏTİ OBYEKTLƏRİ ÜZRƏ YANĞINDAN MÜHAFİZƏ İDARƏSİ",
+            "company": "SOCAR",
+            "role": "soc",
+            "winner": "TOYOTA ABŞERON CENTER",
+            "amount": 27580.2,
+            "currency": "AZN",
+            "contract_date": "2026-04-22",
+            "expire_date": "2027-04-22",
+            "issued": "2026-04-27",
+            "tender_type": "Bir mənbə",
+            "url": "https://etender.gov.az/main/contracts-concluded",
+            "relevance": "other",
+            "product_fit": []
+          },
+          {
+            "id": "cf8995cad493",
+            "title": "Minik avtomobillərinin təmir xidmətlərin satın alınması",
+            "buyer": "AZƏRBAYCAN RESPUBLİKASI FÖVQƏLADƏ HALLAR NAZİRLİYİ DÖVLƏT YANĞINDAN MÜHAFİZƏ XİDMƏTİNİN AZƏRBAYCAN DÖVLƏT NEFT ŞİRKƏTİ OBYEKTLƏRİ ÜZRƏ YANĞINDAN MÜHAFİZƏ İDARƏSİ",
+            "company": "SOCAR",
+            "role": "soc",
+            "winner": "\"Azərmaş Avto Servis\" MMC",
+            "amount": 23400,
+            "currency": "AZN",
+            "contract_date": "2026-02-27",
+            "expire_date": "2028-12-30",
+            "issued": "2026-03-03",
+            "tender_type": "Bir mənbə",
+            "url": "https://etender.gov.az/main/contracts-concluded",
+            "relevance": "other",
+            "product_fit": []
+          },
+          {
+            "id": "f374c1c954a5",
+            "title": "Təsərrüfat mallarının satınalınması",
+            "buyer": "AZƏRBAYCAN RESPUBLİKASI FÖVQƏLADƏ HALLAR NAZİRLİYİ DÖVLƏT YANĞINDAN MÜHAFİZƏ XİDMƏTİNİN AZƏRBAYCAN DÖVLƏT NEFT ŞİRKƏTİ OBYEKTLƏRİ ÜZRƏ YANĞINDAN MÜHAFİZƏ İDARƏSİ",
+            "company": "SOCAR",
+            "role": "soc",
+            "winner": "\"GLOBAL STATIONERY OFFICE\" Məhdud Məsuliyyətli Cəmiyyəti",
+            "amount": 79336.12,
+            "currency": "AZN",
+            "contract_date": "2026-02-04",
+            "expire_date": "2026-06-01",
+            "issued": "2026-02-07",
+            "tender_type": "Açıq Tender",
+            "url": "https://etender.gov.az/main/competition/detail/343598",
+            "relevance": "other",
+            "product_fit": []
+          },
+          {
+            "id": "783119b76030",
+            "title": "Mətbəə mallarının satınalınması",
+            "buyer": "AZƏRBAYCAN RESPUBLİKASI FÖVQƏLADƏ HALLAR NAZİRLİYİ DÖVLƏT YANĞINDAN MÜHAFİZƏ XİDMƏTİNİN AZƏRBAYCAN DÖVLƏT NEFT ŞİRKƏTİ OBYEKTLƏRİ ÜZRƏ YANĞINDAN MÜHAFİZƏ İDARƏSİ",
+            "company": "SOCAR",
+            "role": "soc",
+            "winner": "\"ÇAP POLİQRAFİYA\" Məhdud Məsuliyyətli Cəmiyyəti",
+            "amount": 30974,
+            "currency": "AZN",
+            "contract_date": "2025-12-24",
+            "expire_date": "2025-12-30",
+            "issued": "2026-01-06",
+            "tender_type": "Kotirovka",
+            "url": "https://etender.gov.az/main/competition/detail/341490",
+            "relevance": "other",
+            "product_fit": []
+          },
+          {
+            "id": "f80bd40ea400",
+            "title": "\"Ermak 18\" Yanğınsöndürmə avadanlığı alınması",
+            "buyer": "AZƏRBAYCAN RESPUBLİKASI FÖVQƏLADƏ HALLAR NAZİRLİYİ DÖVLƏT YANĞINDAN MÜHAFİZƏ XİDMƏTİNİN AZƏRBAYCAN DÖVLƏT NEFT ŞİRKƏTİ OBYEKTLƏRİ ÜZRƏ YANĞINDAN MÜHAFİZƏ İDARƏSİ",
+            "company": "SOCAR",
+            "role": "soc",
+            "winner": "\"MARZ” MMC",
+            "amount": 259600,
+            "currency": "AZN",
+            "contract_date": "2025-11-26",
+            "expire_date": "2025-12-30",
+            "issued": "2025-12-01",
+            "tender_type": "Bir mənbə",
+            "url": "https://etender.gov.az/main/contracts-concluded",
+            "relevance": "other",
+            "product_fit": []
+          },
+          {
+            "id": "eec8336988fc",
+            "title": "Səyyar dizel mühərrikli nasoslarıın satınalınması",
+            "buyer": "AZƏRBAYCAN RESPUBLİKASI FÖVQƏLADƏ HALLAR NAZİRLİYİ DÖVLƏT YANĞINDAN MÜHAFİZƏ XİDMƏTİNİN AZƏRBAYCAN DÖVLƏT NEFT ŞİRKƏTİ OBYEKTLƏRİ ÜZRƏ YANĞINDAN MÜHAFİZƏ İDARƏSİ",
+            "company": "SOCAR",
+            "role": "soc",
+            "winner": "\"BCC GROUP\" QAPALI SƏHMDAR CƏMİYYƏTİ",
+            "amount": 65696028,
+            "currency": "AZN",
+            "contract_date": "2025-10-30",
+            "expire_date": "2026-06-01",
+            "issued": "2025-11-05",
+            "tender_type": "Açıq Tender",
+            "url": "https://etender.gov.az/main/competition/detail/337889",
+            "relevance": "equipment",
+            "product_fit": []
+          },
+          {
+            "id": "bb5b13c8b25a",
+            "title": "Müxtəlif avadanlıqların satınalınması",
+            "buyer": "AZƏRBAYCAN RESPUBLİKASI FÖVQƏLADƏ HALLAR NAZİRLİYİ DÖVLƏT YANĞINDAN MÜHAFİZƏ XİDMƏTİNİN AZƏRBAYCAN DÖVLƏT NEFT ŞİRKƏTİ OBYEKTLƏRİ ÜZRƏ YANĞINDAN MÜHAFİZƏ İDARƏSİ",
+            "company": "SOCAR",
+            "role": "soc",
+            "winner": "\"UNIVERSAL PRO\" Qapalı Səhmdar Cəmiyyəti",
+            "amount": 42479992,
+            "currency": "AZN",
+            "contract_date": "2025-10-27",
+            "expire_date": "2026-02-20",
+            "issued": "2025-11-01",
+            "tender_type": "Açıq Tender",
+            "url": "https://etender.gov.az/main/competition/detail/336685",
+            "relevance": "other",
+            "product_fit": []
+          },
+          {
+            "id": "e5c71398cf26",
+            "title": "Xidməti minik avtomobillərinin satınalınması",
+            "buyer": "AZƏRBAYCAN RESPUBLİKASI FÖVQƏLADƏ HALLAR NAZİRLİYİ DÖVLƏT YANĞINDAN MÜHAFİZƏ XİDMƏTİNİN AZƏRBAYCAN DÖVLƏT NEFT ŞİRKƏTİ OBYEKTLƏRİ ÜZRƏ YANĞINDAN MÜHAFİZƏ İDARƏSİ",
+            "company": "SOCAR",
+            "role": "soc",
+            "winner": "“AZƏRMAŞ PARK” MƏHDUD MƏSULİYYƏTLİ CƏMİYYƏTİ",
+            "amount": 315000,
+            "currency": "AZN",
+            "contract_date": "2025-07-21",
+            "expire_date": "2025-12-30",
+            "issued": "2025-10-29",
+            "tender_type": "Açıq Tender",
+            "url": "https://etender.gov.az/main/competition/detail/330277",
+            "relevance": "other",
+            "product_fit": []
+          }
+        ]
+      },
+      {
+        "company": "Azərenerjikomplektləşdirmə",
+        "role": "state",
+        "n": 6,
+        "total_azn": 3980904,
+        "suspect": 0,
+        "open_share": 100,
+        "fit": 0,
+        "equipment": 0,
+        "first": "2026-06-02",
+        "last": "2026-10-06",
+        "expiring": 6,
+        "suppliers": [
+          {
+            "name": "\"ELECTRO SERVİCE\" QAPALI SƏHMDAR CƏMİYYƏTİ",
+            "n": 2,
+            "amount": 1244179.02
+          },
+          {
+            "name": "\"İNFİNİTECH\" MƏHDUD MƏSULİYYƏTLİ CƏMİYYƏTİ",
+            "n": 1,
+            "amount": 863372.96
+          },
+          {
+            "name": "FUAD-KİMYA SERVİS MƏHDUD MƏSULİYYƏTLİ CƏMİYYƏTİ",
+            "n": 1,
+            "amount": 861127.42
+          },
+          {
+            "name": "\"MURADLI-M\" MƏHDUD MƏSULİYYƏTLİ CƏMİYYƏTİ",
+            "n": 1,
+            "amount": 724101.45
+          },
+          {
+            "name": "\"MİX PRO\" Məhdud Məsuliyyətli Cəmiyyəti",
+            "n": 1,
+            "amount": 288122.96
+          }
+        ],
+        "units": [
+          {
+            "name": "\"AZƏRENERJİKOMPLEKTLƏŞDİRMƏ\" MƏHDUD MƏSULİYYƏTLİ CƏMİYYƏTİ",
+            "n": 6
+          }
+        ],
+        "recent": [
+          {
+            "id": "f3f989a1e032",
+            "title": "Müxtəlif növ boya və boya məhsullarının satın alınması",
+            "buyer": "\"AZƏRENERJİKOMPLEKTLƏŞDİRMƏ\" MƏHDUD MƏSULİYYƏTLİ CƏMİYYƏTİ",
+            "company": "Azərenerjikomplektləşdirmə",
+            "role": "state",
+            "winner": "\"MURADLI-M\" MƏHDUD MƏSULİYYƏTLİ CƏMİYYƏTİ",
+            "amount": 724101.45,
+            "currency": "AZN",
+            "contract_date": "2026-10-06",
+            "expire_date": "2027-10-05",
+            "issued": "2026-10-07",
+            "tender_type": "Açıq Tender",
+            "url": "https://etender.gov.az/main/competition/detail/354221",
+            "relevance": "other",
+            "product_fit": []
+          },
+          {
+            "id": "6df67249d19f",
+            "title": "Müxtəlif növ elektrik mallarının satınalınması",
+            "buyer": "\"AZƏRENERJİKOMPLEKTLƏŞDİRMƏ\" MƏHDUD MƏSULİYYƏTLİ CƏMİYYƏTİ",
+            "company": "Azərenerjikomplektləşdirmə",
+            "role": "state",
+            "winner": "\"ELECTRO SERVİCE\" QAPALI SƏHMDAR CƏMİYYƏTİ",
+            "amount": 1052765.02,
+            "currency": "AZN",
+            "contract_date": "2026-09-01",
+            "expire_date": "2027-08-31",
+            "issued": "2026-09-21",
+            "tender_type": "Açıq Tender",
+            "url": "https://etender.gov.az/main/competition/detail/353464",
+            "relevance": "other",
+            "product_fit": []
+          },
+          {
+            "id": "28ec3bdb4649",
+            "title": "İnformasiya texnologiya avadanlıqlarının servis xidmətinin satınalınması",
+            "buyer": "\"AZƏRENERJİKOMPLEKTLƏŞDİRMƏ\" MƏHDUD MƏSULİYYƏTLİ CƏMİYYƏTİ",
+            "company": "Azərenerjikomplektləşdirmə",
+            "role": "state",
+            "winner": "\"MİX PRO\" Məhdud Məsuliyyətli Cəmiyyəti",
+            "amount": 288122.96,
+            "currency": "AZN",
+            "contract_date": "2026-08-24",
+            "expire_date": "2027-08-23",
+            "issued": "2026-09-21",
+            "tender_type": "Açıq Tender",
+            "url": "https://etender.gov.az/main/competition/detail/351644",
+            "relevance": "other",
+            "product_fit": []
+          },
+          {
+            "id": "aa562b1d7ca5",
+            "title": "Müxtəlif növ kimyəvi maddələrin satınalınması",
+            "buyer": "\"AZƏRENERJİKOMPLEKTLƏŞDİRMƏ\" MƏHDUD MƏSULİYYƏTLİ CƏMİYYƏTİ",
+            "company": "Azərenerjikomplektləşdirmə",
+            "role": "state",
+            "winner": "FUAD-KİMYA SERVİS MƏHDUD MƏSULİYYƏTLİ CƏMİYYƏTİ",
+            "amount": 861127.42,
+            "currency": "AZN",
+            "contract_date": "2026-07-16",
+            "expire_date": "2027-07-15",
+            "issued": "2026-09-21",
+            "tender_type": "Açıq Tender",
+            "url": "https://etender.gov.az/main/competition/detail/349542",
+            "relevance": "other",
+            "product_fit": []
+          },
+          {
+            "id": "62a7468ea588",
+            "title": "Müxtəlif informasiya-kommunikasiya texnologiyası avadanlıqlarının və ehtiyat hissələrinin satınalınması",
+            "buyer": "\"AZƏRENERJİKOMPLEKTLƏŞDİRMƏ\" MƏHDUD MƏSULİYYƏTLİ CƏMİYYƏTİ",
+            "company": "Azərenerjikomplektləşdirmə",
+            "role": "state",
+            "winner": "\"İNFİNİTECH\" MƏHDUD MƏSULİYYƏTLİ CƏMİYYƏTİ",
+            "amount": 863372.96,
+            "currency": "AZN",
+            "contract_date": "2026-07-03",
+            "expire_date": "2027-07-02",
+            "issued": "2026-09-21",
+            "tender_type": "Açıq Tender",
+            "url": "https://etender.gov.az/main/competition/detail/348824",
+            "relevance": "other",
+            "product_fit": []
+          },
+          {
+            "id": "297f1aac0a24",
+            "title": "Müxtəlif növ elektrik mallarının satınalınması",
+            "buyer": "\"AZƏRENERJİKOMPLEKTLƏŞDİRMƏ\" MƏHDUD MƏSULİYYƏTLİ CƏMİYYƏTİ",
+            "company": "Azərenerjikomplektləşdirmə",
+            "role": "soc",
+            "winner": "\"ELECTRO SERVİCE\" QAPALI SƏHMDAR CƏMİYYƏTİ",
+            "amount": 191414,
+            "currency": "AZN",
+            "contract_date": "2026-06-02",
+            "expire_date": "2027-06-02",
+            "issued": "2026-06-02",
+            "tender_type": "Açıq Tender",
+            "url": "https://etender.gov.az/main/competition/detail/346443",
+            "relevance": "other",
+            "product_fit": []
+          }
+        ]
+      },
+      {
+        "company": "Naxçıvan Qaz İstismar Xidməti",
+        "role": "soc",
+        "n": 1,
+        "total_azn": 1617,
+        "suspect": 0,
+        "open_share": 0,
+        "fit": 0,
+        "equipment": 0,
+        "first": "2025-05-15",
+        "last": "2025-05-15",
+        "expiring": 0,
+        "suppliers": [
+          {
+            "name": "Bebiko MMC",
+            "n": 1,
+            "amount": 1616.6
+          }
+        ],
+        "units": [
+          {
+            "name": "NAXÇIVAN MUXTAR RESPUBLİKASI QAZ İSTİSMAR XİDMƏTİ",
+            "n": 1
+          }
+        ],
+        "recent": [
+          {
+            "id": "d8170bcd4ec3",
+            "title": "mərkəzi soyuducu sistemin təmiri",
+            "buyer": "NAXÇIVAN MUXTAR RESPUBLİKASI QAZ İSTİSMAR XİDMƏTİ",
+            "company": "Naxçıvan Qaz İstismar Xidməti",
+            "role": "soc",
+            "winner": "Bebiko MMC",
+            "amount": 1616.6,
+            "currency": "AZN",
+            "contract_date": "2025-05-15",
+            "expire_date": "2026-05-15",
+            "issued": "2025-09-19",
+            "tender_type": "Bir mənbə",
+            "url": "https://etender.gov.az/main/contracts-concluded",
+            "relevance": "other",
+            "product_fit": []
+          }
+        ]
+      }
+    ],
+    "contracts": 69,
+    "deep_at": "2026-10-20",
+    "lead_days": 90
+  }
 };
