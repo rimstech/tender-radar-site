@@ -1,5 +1,5 @@
 window.__RADAR__ = {
-  "generated_at": "2026-10-19T09:27:33+00:00",
+  "generated_at": "2026-10-19T06:16:20+00:00",
   "demo": false,
   "profile": {
     "company": "Portfolio",
@@ -32,7 +32,7 @@ window.__RADAR__ = {
         "procurement_stage: commissioning, expansion, əsaslı təmir (+20)",
         "şirkət: ADSEA (Dövlət Su Ehtiyatları Agentliyi) (+10)",
         "mənfi: heating (-20)",
-        "Son tarixə 11 gün (+5)"
+        "Son tarixə 9 gün (+5)"
       ],
       "keywords": [
         "check valves",
@@ -213,7 +213,7 @@ window.__RADAR__ = {
         "valve_direct: kran (+22)",
         "procurement_stage: quraşdırma (+12)",
         "şirkət: ADSEA (Dövlət Su Ehtiyatları Agentliyi) (+10)",
-        "Son tarixə 4 gün (+10)"
+        "Son tarixə 2 gün (+10)"
       ],
       "keywords": [
         "kran",
@@ -285,7 +285,7 @@ window.__RADAR__ = {
         "valve_direct: choke, valve (+30)",
         "equipment: nasos (+14)",
         "şirkət: ADSEA (Dövlət Su Ehtiyatları Agentliyi) (+10)",
-        "Son tarixə 12 gün (+5)"
+        "Son tarixə 10 gün (+5)"
       ],
       "keywords": [
         "choke",
@@ -569,6 +569,54 @@ window.__RADAR__ = {
       "budget": "2 650 752 AZN"
     },
     {
+      "id": "1273896d12b0",
+      "title": "Award: İdarənin Xidməti ərazisində olan inzibati binaların,su anbarlarının, su təmizləyici qurğuların,hidrotexniki qurğuların və nasos stansiyaların cari təmiri üçün mal materialın alınması → \"HEBA COMPANY\" Məhdud Məsuliyyətli Cəmiyyəti",
+      "url": "https://etender.gov.az/main/competition/detail/356086",
+      "source_id": "etender_awards",
+      "source": "etender.gov.az bağlanmış müqavilələr (award)",
+      "category": "award",
+      "buyer": "Azərbaycan Dövlət Su Ehtiyatları Agentliyi Regional Su Meliorasiya Xidməti Publik Hüquqi Şəxsi Qarabağ Su Meliorasiya Sistemlərinin İstismarı İdarəsi",
+      "score": 40,
+      "tier": "WARM",
+      "reasons": [
+        "equipment: nasos (+14)",
+        "procurement_stage: award, tender (+16)",
+        "şirkət: ADSEA (Dövlət Su Ehtiyatları Agentliyi) (+10)"
+      ],
+      "keywords": [],
+      "companies": [
+        {
+          "name": "ADSEA (Dövlət Su Ehtiyatları Agentliyi)",
+          "role": "utility"
+        }
+      ],
+      "contractors": [],
+      "action": "Qalib şirkətlə əlaqə qurun: subpodrat / valve-actuator təchizatı imkanını yoxlayın, qiymət səviyyəsini gələcək tenderlər üçün qeyd edin.",
+      "action_en": "Contact the winner: check subcontract / valve-actuator supply, note the price level for future tenders.",
+      "source_en": "etender.gov.az concluded contracts (awards)",
+      "deadline": null,
+      "published": "2026-10-19",
+      "first_seen": "2026-10-19T06:16:20+00:00",
+      "is_new": true,
+      "changes": [],
+      "demo": false,
+      "score10": 4,
+      "competition": "Bağlanıb: qalib müəyyəndir",
+      "strategic_value": "Yüksək",
+      "revenue_potential": "Orta (91 443 AZN)",
+      "competition_en": "Closed: winner known",
+      "strategic_value_en": "High",
+      "revenue_potential_en": "Medium (91 443 AZN)",
+      "segment": "Mechanical Equipment",
+      "signal_type": "Award",
+      "zone": "intel",
+      "winner": "\"HEBA COMPANY\" Məhdud Məsuliyyətli Cəmiyyəti",
+      "contract_date": "2026-10-19",
+      "tender_type": "Açıq Tender",
+      "budget_value": 91442.92,
+      "budget": "91 443 AZN"
+    },
+    {
       "id": "ff6a8864552e",
       "title": "\"Yuxarı Mil Kanalının və üzərində olan hidrotexniki qurğuların əsaslı təmiri\"",
       "url": "https://etender.gov.az/main/competition/detail/360260",
@@ -581,7 +629,7 @@ window.__RADAR__ = {
       "reasons": [
         "valve_direct: armatur (+22)",
         "şirkət: ADSEA (Dövlət Su Ehtiyatları Agentliyi) (+10)",
-        "Son tarixə 18 gün (+5)"
+        "Son tarixə 16 gün (+5)"
       ],
       "keywords": [
         "armatur"
@@ -654,7 +702,7 @@ window.__RADAR__ = {
       "reasons": [
         "valve_direct: ötürücü (+22)",
         "şirkət: ADSEA (Dövlət Su Ehtiyatları Agentliyi) (+10)",
-        "Son tarixə 19 gün (+5)"
+        "Son tarixə 17 gün (+5)"
       ],
       "keywords": [
         "ötürücü"
@@ -1254,7 +1302,7 @@ window.__RADAR__ = {
       "source_en": "Trend Energy section",
       "deadline": null,
       "published": null,
-      "first_seen": "2026-10-19T09:27:33+00:00",
+      "first_seen": "2026-10-19T06:16:20+00:00",
       "is_new": true,
       "changes": [],
       "demo": false,
@@ -1270,9 +1318,9 @@ window.__RADAR__ = {
       "zone": "news"
     },
     {
-      "id": "65a7ecadfaf9",
-      "title": "Vallourec Wins TotalEnergies Contract for 16,000+ Tons of Tubulars at Absheron Gas Field - IndexBox",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPampOV21SWm1RT21HWHRBTTNYV0xnaWdOWWN2Ykwxb1RLOUZaVXpZdC05aWRmNUxLVjljeGRWakw1bUVXZ01CREhpYnNMa0VRVzgzMUN6UG5GazR4bVVmUHNHMFlOamN0eU5ZeHAwM3hvbnpwXzhqbW5nblZ5TDZhTnlya0VwWnN5a3hUTUQySmN6UHRKVjJHRU1zalN4dnRjd1BUcVljM3ZZTWtBR0JQeFJ0cjdXdGs?oc=5",
+      "id": "eb0f244230b2",
+      "title": "Vallourec Lands Major TotalEnergies Tubular Contract for Azerbaijan’s Absheron Gas Field - TipRanks",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOQ0c5cldyTGpuZmp1S3YySTRuVHZrYVFqYUNJQUNCVFE0SWhtWnV3VEZjYWtVMzRVM1FRTDE5U0N4YTBFcGpYYWQ0Vk9aWVE2b3djUHV0Y2lITS1qUVR6ZlNLaVRXS3NZdW1MWUZlSnAzS3pxRlRNMkkxRlBNYUxyV05qQkxUTXJqbUY4RDBNdUNPUjM1TnJkT2oxNW14WVlrREw3bUhWLW5tVUIzY0ctTVBrQUROWWVSUERFb1ZmZlBPUmh1anNJcFZBQmNrQS1iQ3pEajh3?oc=5",
       "source_id": "gn_service",
       "source": "Google News: servis şirkətləri və operatorlar",
       "category": "early_signal",
@@ -1300,7 +1348,7 @@ window.__RADAR__ = {
       "source_en": "Google News: service companies and operators",
       "deadline": null,
       "published": "2026-10-12",
-      "first_seen": "2026-10-13T08:03:25+00:00",
+      "first_seen": "2026-10-12T07:51:03+00:00",
       "is_new": false,
       "changes": [],
       "demo": false,
@@ -1438,7 +1486,7 @@ window.__RADAR__ = {
       "source_en": "Google News (Russian, AZ): SOCAR tenders / contractors",
       "deadline": null,
       "published": "2026-10-16",
-      "first_seen": "2026-10-19T09:27:33+00:00",
+      "first_seen": "2026-10-19T06:16:20+00:00",
       "is_new": true,
       "changes": [],
       "demo": false,
@@ -1592,6 +1640,52 @@ window.__RADAR__ = {
       "zone": "news"
     },
     {
+      "id": "65a7ecadfaf9",
+      "title": "Vallourec Wins TotalEnergies Contract for 16,000+ Tons of Tubulars at Absheron Gas Field - IndexBox",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPampOV21SWm1RT21HWHRBTTNYV0xnaWdOWWN2Ykwxb1RLOUZaVXpZdC05aWRmNUxLVjljeGRWakw1bUVXZ01CREhpYnNMa0VRVzgzMUN6UG5GazR4bVVmUHNHMFlOamN0eU5ZeHAwM3hvbnpwXzhqbW5nblZ5TDZhTnlya0VwWnN5a3hUTUQySmN6UHRKVjJHRU1zalN4dnRjd1BUcVljM3ZZTWtBR0JQeFJ0cjdXdGs?oc=5",
+      "source_id": "gn_service",
+      "source": "Google News: servis şirkətləri və operatorlar",
+      "category": "early_signal",
+      "buyer": null,
+      "score": 30,
+      "tier": "WATCH",
+      "reasons": [
+        "sector: socar, газа (+8)",
+        "procurement_stage: закупки (+12)",
+        "şirkət: SOCAR (+10)"
+      ],
+      "keywords": [
+        "socar",
+        "газа"
+      ],
+      "companies": [
+        {
+          "name": "SOCAR",
+          "role": "soc"
+        }
+      ],
+      "contractors": [],
+      "action": "Erkən siqnal: SOCAR layihəsinin EPC podratçısını müəyyən edib vendor list-ə müraciət edin.",
+      "action_en": "Early signal: identify the EPC contractor of the SOCAR project and apply for its vendor list.",
+      "source_en": "Google News (Russian, AZ): SOCAR tenders / contractors",
+      "deadline": null,
+      "published": "2026-10-12",
+      "first_seen": "2026-10-13T08:03:25+00:00",
+      "is_new": false,
+      "changes": [],
+      "demo": false,
+      "score10": 3,
+      "competition": "Aşağı (erkən mərhələ, tender hələ elan olunmayıb)",
+      "strategic_value": "Orta",
+      "revenue_potential": "Potensial yüksək (layihə səviyyəsi, büdcə məlum deyil)",
+      "competition_en": "Low (early stage, no tender yet)",
+      "strategic_value_en": "Medium",
+      "revenue_potential_en": "Potentially high (project level, budget unknown)",
+      "segment": "Layihə siqnalı",
+      "signal_type": "Layihə xəbəri",
+      "zone": "news"
+    },
+    {
       "id": "bddb467781b9",
       "title": "SOCAR хочет возобновить закупки российского газа у «Газпрома» - Yerevan Today |",
       "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOZ1luRERuLUtPNzdPZzBYM2FQSnd6SVNkRExRS2tmZFZaTnlJaHlwU2FrMWdmaTFyeno3T2NsRWVpSnNmRFhpX2VEeFBCcDEzcEY1SnE3R0F2M0hnLWRzR2lxMTFVMmtyVm5yZ0EzeXBaLXZXbGtxSnF6UkJCNG8zdU5mYXlVUQ?oc=5",
@@ -1681,6 +1775,51 @@ window.__RADAR__ = {
       "segment": "Layihə siqnalı",
       "signal_type": "Layihə xəbəri",
       "zone": "intel"
+    },
+    {
+      "id": "ff2ce45e2606",
+      "title": "Vallourec shares up 4% on TotalEnergies Azerbaijan gas field contract - Investing.com",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNd0JvYlJ5a29PR2VOWHBTS1VoYkhRZ0RZZjY4S2NZNnhkejQ4M3pXeldhZjlFcVJ1bldnX0FPbjd3bXdmZC1yS0VmY1N6MVE0RHgwcGl1T3gzeU5MX296S09Pek9sWlo3QzlQbmNzSHdHN2t5MzJISEptNkFQREJCZnRoNGJORzNuWURqTkwzT0tGRzNGMXhsTk5sQXFYd3NocEYzSkRsbV94QndJVzdwS3Z4US01UGROUnU4UW50NmVoMURqNjNCc2ln?oc=5",
+      "source_id": "gn_awards",
+      "source": "Google News: contract award / EPC / FEED (Azərbaycan, Xəzər)",
+      "category": "early_signal",
+      "buyer": null,
+      "score": 28,
+      "tier": "WATCH",
+      "reasons": [
+        "sector: gas field (+6)",
+        "procurement_stage: contract (+12)",
+        "şirkət: TotalEnergies (+10)"
+      ],
+      "keywords": [
+        "gas field"
+      ],
+      "companies": [
+        {
+          "name": "TotalEnergies",
+          "role": "operator"
+        }
+      ],
+      "contractors": [],
+      "action": "Erkən siqnal: TotalEnergies layihəsinin EPC podratçısını müəyyən edib vendor list-ə müraciət edin.",
+      "action_en": "Early signal: identify the EPC contractor of the TotalEnergies project and apply for its vendor list.",
+      "source_en": "Google News: contract award / EPC / FEED (Azerbaijan, Caspian)",
+      "deadline": null,
+      "published": "2026-10-12",
+      "first_seen": "2026-10-12T10:35:32+00:00",
+      "is_new": false,
+      "changes": [],
+      "demo": false,
+      "score10": 3,
+      "competition": "Aşağı (erkən mərhələ, tender hələ elan olunmayıb)",
+      "strategic_value": "Orta",
+      "revenue_potential": "Potensial yüksək (layihə səviyyəsi, büdcə məlum deyil)",
+      "competition_en": "Low (early stage, no tender yet)",
+      "strategic_value_en": "Medium",
+      "revenue_potential_en": "Potentially high (project level, budget unknown)",
+      "segment": "Layihə siqnalı",
+      "signal_type": "Layihə xəbəri",
+      "zone": "news"
     },
     {
       "id": "3ea19312b3cb",
@@ -1863,51 +2002,6 @@ window.__RADAR__ = {
       "zone": "intel"
     },
     {
-      "id": "ff2ce45e2606",
-      "title": "Vallourec shares up 4% on TotalEnergies Azerbaijan gas field contract - Investing.com",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNd0JvYlJ5a29PR2VOWHBTS1VoYkhRZ0RZZjY4S2NZNnhkejQ4M3pXeldhZjlFcVJ1bldnX0FPbjd3bXdmZC1yS0VmY1N6MVE0RHgwcGl1T3gzeU5MX296S09Pek9sWlo3QzlQbmNzSHdHN2t5MzJISEptNkFQREJCZnRoNGJORzNuWURqTkwzT0tGRzNGMXhsTk5sQXFYd3NocEYzSkRsbV94QndJVzdwS3Z4US01UGROUnU4UW50NmVoMURqNjNCc2ln?oc=5",
-      "source_id": "gn_service",
-      "source": "Google News: servis şirkətləri və operatorlar",
-      "category": "early_signal",
-      "buyer": null,
-      "score": 28,
-      "tier": "WATCH",
-      "reasons": [
-        "sector: gas field (+6)",
-        "procurement_stage: contract (+12)",
-        "şirkət: TotalEnergies (+10)"
-      ],
-      "keywords": [
-        "gas field"
-      ],
-      "companies": [
-        {
-          "name": "TotalEnergies",
-          "role": "operator"
-        }
-      ],
-      "contractors": [],
-      "action": "Erkən siqnal: TotalEnergies layihəsinin EPC podratçısını müəyyən edib vendor list-ə müraciət edin.",
-      "action_en": "Early signal: identify the EPC contractor of the TotalEnergies project and apply for its vendor list.",
-      "source_en": "Google News: service companies and operators",
-      "deadline": null,
-      "published": "2026-10-12",
-      "first_seen": "2026-10-12T10:35:32+00:00",
-      "is_new": false,
-      "changes": [],
-      "demo": false,
-      "score10": 3,
-      "competition": "Aşağı (erkən mərhələ, tender hələ elan olunmayıb)",
-      "strategic_value": "Orta",
-      "revenue_potential": "Potensial yüksək (layihə səviyyəsi, büdcə məlum deyil)",
-      "competition_en": "Low (early stage, no tender yet)",
-      "strategic_value_en": "Medium",
-      "revenue_potential_en": "Potentially high (project level, budget unknown)",
-      "segment": "Layihə siqnalı",
-      "signal_type": "Layihə xəbəri",
-      "zone": "news"
-    },
-    {
       "id": "ee9dcc09e421",
       "title": "Vallourec Wins Major TotalEnergies Contract for Azerbaijan Gas Field - ChemAnalyst",
       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPWTZHLTROcmJ0TXUtdkJ1cEd1Qkt4c1llZWlidHJLdU1RMWt2OElXemZROVpEUjFHTXItZ0NnbXEzdGhrR2ZBX0JPcERjT1BEcHZLZDROTTlMdldrV2xBUW10bW9vV3o3cmdSWXVSMnBLamY3TXZnSU9NVWpfR0lXbU9ZQ19CNFd5aGNrb1lFRnlReDFYaTZRSHd5a1doTVBXZ00zektlWUZoaGYyRElCUWtPZUp2cVNsRVdnOTh3?oc=5",
@@ -2069,7 +2163,7 @@ window.__RADAR__ = {
       "source_en": "ADSEA announcements (procurement, EOI)",
       "deadline": null,
       "published": "2026-10-19",
-      "first_seen": "2026-10-19T09:27:33+00:00",
+      "first_seen": "2026-10-19T06:16:20+00:00",
       "is_new": true,
       "changes": [],
       "demo": false,
@@ -2560,7 +2654,7 @@ window.__RADAR__ = {
       "source_en": "Google News (Russian, AZ): SOCAR tenders / contractors",
       "deadline": null,
       "published": "2026-10-17",
-      "first_seen": "2026-10-19T09:27:33+00:00",
+      "first_seen": "2026-10-19T06:16:20+00:00",
       "is_new": true,
       "changes": [],
       "demo": false,
@@ -2599,7 +2693,7 @@ window.__RADAR__ = {
       "source_en": "Upstream · OGJ · Offshore Mag · Rigzone · Offshore Energy (Google News)",
       "deadline": null,
       "published": "2026-10-14",
-      "first_seen": "2026-10-19T09:27:33+00:00",
+      "first_seen": "2026-10-19T06:16:20+00:00",
       "is_new": true,
       "changes": [],
       "demo": false,
@@ -2771,6 +2865,56 @@ window.__RADAR__ = {
       "zone": "news"
     },
     {
+      "id": "110699a69925",
+      "title": "SOCAR и Gran Tierra Energy начнут поиск нефти и газа в пяти районах Азербайджана - Vesti.az",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPaEJ0MDNqNi1PZ1B6QklHRk0tb1dhWE0zODNSZ0hWNzZCb0hrRlRicUN3VHEyMVV2eVB0OEt6UWZXXzFmMk5yUEJSQ1VtZEF1Z2JMNmFIbG54WUo2b1hqd1k5bXhqMzhUWUxOVzZOdWdMVjN3Rmhkd2ZFd0dETjJxaDFPN2V4YXlCVHNxSmVTUlB5bl92czlzS1MyWXpZOXhiQnhnem9MUHQyZlpzNWVZbGFQVV8tUQ?oc=5",
+      "source_id": "gn_az",
+      "source": "Google News (RU dili, AZ): SOCAR tender / podrat",
+      "category": "early_signal",
+      "buyer": null,
+      "score": 12,
+      "tier": "INFO",
+      "reasons": [
+        "sector: socar, газа, нефти (+10)",
+        "şirkət: SOCAR, Gran Tierra Energy (+14)"
+      ],
+      "keywords": [
+        "socar",
+        "газа",
+        "нефти"
+      ],
+      "companies": [
+        {
+          "name": "SOCAR",
+          "role": "soc"
+        },
+        {
+          "name": "Gran Tierra Energy",
+          "role": "operator"
+        }
+      ],
+      "contractors": [],
+      "action": "Erkən siqnal: SOCAR, Gran Tierra Energy layihəsinin EPC podratçısını müəyyən edib vendor list-ə müraciət edin.",
+      "action_en": "Early signal: identify the EPC contractor of the SOCAR, Gran Tierra Energy project and apply for its vendor list.",
+      "source_en": "Google News (Russian, AZ): SOCAR tenders / contractors",
+      "deadline": null,
+      "published": "2026-09-30",
+      "first_seen": "2026-10-01T14:21:09+00:00",
+      "is_new": false,
+      "changes": [],
+      "demo": false,
+      "score10": 1,
+      "competition": "Aşağı (erkən mərhələ, tender hələ elan olunmayıb)",
+      "strategic_value": "Orta",
+      "revenue_potential": "Potensial yüksək (layihə səviyyəsi, büdcə məlum deyil)",
+      "competition_en": "Low (early stage, no tender yet)",
+      "strategic_value_en": "Medium",
+      "revenue_potential_en": "Potentially high (project level, budget unknown)",
+      "segment": "Layihə siqnalı",
+      "signal_type": "Layihə xəbəri",
+      "zone": "news"
+    },
+    {
       "id": "4e5dbb6552a9",
       "title": "SOCAR и ExxonMobil договорились о добыче сланцевых нефти и газа в Азербайджане - ЭКСКЛЮЗИВ - Vesti.az",
       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOU2djQW1fU2lOdHpoN3FFMk1EeUFVRk42cGE1MVVFTXBBbWlvZVVzQ3ZVYTU2VUFOV0hzaUlnelFZdlJOVk1YUjB0RkxtVkRiNWNLNEZlbUI3N2RzVjZFVE9XUTdzWFNHeXNzZURVUl9HZzk5RHNvcFA5Wl93WTRvdWpaWFNxLWs4WFE5MUJLYTVOUUxXS2t4MU5neUd0Nlhpb3pORU1sX3VLXzM3ajlockh3VkdNZ2VGcFJhQVExbw?oc=5",
@@ -2869,56 +3013,6 @@ window.__RADAR__ = {
       "segment": "Layihə siqnalı",
       "signal_type": "Layihə xəbəri",
       "zone": "news"
-    },
-    {
-      "id": "110699a69925",
-      "title": "SOCAR и Gran Tierra Energy начнут поиск нефти и газа в пяти районах Азербайджана - Vesti.az",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPaEJ0MDNqNi1PZ1B6QklHRk0tb1dhWE0zODNSZ0hWNzZCb0hrRlRicUN3VHEyMVV2eVB0OEt6UWZXXzFmMk5yUEJSQ1VtZEF1Z2JMNmFIbG54WUo2b1hqd1k5bXhqMzhUWUxOVzZOdWdMVjN3Rmhkd2ZFd0dETjJxaDFPN2V4YXlCVHNxSmVTUlB5bl92czlzS1MyWXpZOXhiQnhnem9MUHQyZlpzNWVZbGFQVV8tUQ?oc=5",
-      "source_id": "gn_az",
-      "source": "Google News (RU dili, AZ): SOCAR tender / podrat",
-      "category": "early_signal",
-      "buyer": null,
-      "score": 12,
-      "tier": "INFO",
-      "reasons": [
-        "sector: socar, газа, нефти (+10)",
-        "şirkət: SOCAR, Gran Tierra Energy (+14)"
-      ],
-      "keywords": [
-        "socar",
-        "газа",
-        "нефти"
-      ],
-      "companies": [
-        {
-          "name": "SOCAR",
-          "role": "soc"
-        },
-        {
-          "name": "Gran Tierra Energy",
-          "role": "operator"
-        }
-      ],
-      "contractors": [],
-      "action": "Erkən siqnal: SOCAR, Gran Tierra Energy layihəsinin EPC podratçısını müəyyən edib vendor list-ə müraciət edin.",
-      "action_en": "Early signal: identify the EPC contractor of the SOCAR, Gran Tierra Energy project and apply for its vendor list.",
-      "source_en": "Google News (Russian, AZ): SOCAR tenders / contractors",
-      "deadline": null,
-      "published": "2026-09-30",
-      "first_seen": "2026-10-01T14:21:09+00:00",
-      "is_new": false,
-      "changes": [],
-      "demo": false,
-      "score10": 1,
-      "competition": "Aşağı (erkən mərhələ, tender hələ elan olunmayıb)",
-      "strategic_value": "Orta",
-      "revenue_potential": "Potensial yüksək (layihə səviyyəsi, büdcə məlum deyil)",
-      "competition_en": "Low (early stage, no tender yet)",
-      "strategic_value_en": "Medium",
-      "revenue_potential_en": "Potentially high (project level, budget unknown)",
-      "segment": "Layihə siqnalı",
-      "signal_type": "Layihə xəbəri",
-      "zone": "news"
     }
   ],
   "sources": [
@@ -2926,10 +3020,28 @@ window.__RADAR__ = {
       "source": "SOCAR satınalma elanları",
       "source_en": "SOCAR procurement notices",
       "id": "socar_tenders",
-      "fetched": 30,
+      "fetched": 0,
       "relevant": 0,
+      "error": "RuntimeError: <urlopen error [Errno 11001] getaddrinfo failed>",
+      "at": "2026-10-19T06:16:20+00:00"
+    },
+    {
+      "source": "etender.gov.az (dövlət satınalma portalı)",
+      "source_en": "etender.gov.az (state procurement portal)",
+      "id": "etender",
+      "fetched": 6146,
+      "relevant": 7,
       "error": null,
-      "at": "2026-10-19T09:27:33+00:00"
+      "at": "2026-10-19T06:16:20+00:00"
+    },
+    {
+      "source": "etender.gov.az bağlanmış müqavilələr (award)",
+      "source_en": "etender.gov.az concluded contracts (awards)",
+      "id": "etender_awards",
+      "fetched": 71,
+      "relevant": 2,
+      "error": null,
+      "at": "2026-10-19T06:16:20+00:00"
     },
     {
       "source": "GlobalTenders - Azerbaijan Oil & Gas",
@@ -2938,7 +3050,7 @@ window.__RADAR__ = {
       "fetched": 20,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-19T09:27:33+00:00"
+      "at": "2026-10-19T06:16:20+00:00"
     },
     {
       "source": "Trend Tenders bölməsi",
@@ -2947,7 +3059,7 @@ window.__RADAR__ = {
       "fetched": 184,
       "relevant": 1,
       "error": null,
-      "at": "2026-10-19T09:27:33+00:00"
+      "at": "2026-10-19T06:16:20+00:00"
     },
     {
       "source": "ADSEA elanları (satınalma, EOI)",
@@ -2956,7 +3068,7 @@ window.__RADAR__ = {
       "fetched": 9,
       "relevant": 4,
       "error": null,
-      "at": "2026-10-19T09:27:33+00:00"
+      "at": "2026-10-19T06:16:20+00:00"
     },
     {
       "source": "bp Azerbaijan xəbərləri (press-reliz)",
@@ -2965,52 +3077,52 @@ window.__RADAR__ = {
       "fetched": 10,
       "relevant": 2,
       "error": null,
-      "at": "2026-10-19T09:27:33+00:00"
+      "at": "2026-10-19T06:16:20+00:00"
     },
     {
       "source": "Google News: Azerbaijan EPC / FEED",
       "source_en": "Google News: Azerbaijan EPC / FEED",
       "id": "gn_epc",
-      "fetched": 55,
-      "relevant": 8,
+      "fetched": 57,
+      "relevant": 9,
       "error": null,
-      "at": "2026-10-19T09:27:33+00:00"
+      "at": "2026-10-19T06:16:20+00:00"
     },
     {
       "source": "Google News: SOCAR tender / contract",
       "source_en": "Google News: SOCAR tender / contract",
       "id": "gn_socar",
-      "fetched": 42,
+      "fetched": 44,
       "relevant": 3,
       "error": null,
-      "at": "2026-10-19T09:27:33+00:00"
+      "at": "2026-10-19T06:16:20+00:00"
     },
     {
       "source": "Google News: bp Azerbaijan projects",
       "source_en": "Google News: bp Azerbaijan projects",
       "id": "gn_bp",
-      "fetched": 50,
+      "fetched": 47,
       "relevant": 6,
       "error": null,
-      "at": "2026-10-19T09:27:33+00:00"
+      "at": "2026-10-19T06:16:20+00:00"
     },
     {
       "source": "Google News: EPC / fabrikasiya podratçıları",
       "source_en": "Google News: EPC / fabrication contractors",
       "id": "gn_contractors",
-      "fetched": 14,
+      "fetched": 13,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-19T09:27:33+00:00"
+      "at": "2026-10-19T06:16:20+00:00"
     },
     {
       "source": "Google News: servis şirkətləri və operatorlar",
       "source_en": "Google News: service companies and operators",
       "id": "gn_service",
-      "fetched": 61,
+      "fetched": 64,
       "relevant": 27,
       "error": null,
-      "at": "2026-10-19T09:27:33+00:00"
+      "at": "2026-10-19T06:16:20+00:00"
     },
     {
       "source": "Google News: SOCAR qrupu və törəmələri",
@@ -3019,7 +3131,7 @@ window.__RADAR__ = {
       "fetched": 24,
       "relevant": 3,
       "error": null,
-      "at": "2026-10-19T09:27:33+00:00"
+      "at": "2026-10-19T06:16:20+00:00"
     },
     {
       "source": "Google News: JOCAP, Nobel qrupu, SOCAR Upstream",
@@ -3028,16 +3140,16 @@ window.__RADAR__ = {
       "fetched": 9,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-19T09:27:33+00:00"
+      "at": "2026-10-19T06:16:20+00:00"
     },
     {
       "source": "Google News (RU dili, AZ): SOCAR tender / podrat",
       "source_en": "Google News (Russian, AZ): SOCAR tenders / contractors",
       "id": "gn_az",
-      "fetched": 56,
-      "relevant": 12,
+      "fetched": 57,
+      "relevant": 13,
       "error": null,
-      "at": "2026-10-19T09:27:33+00:00"
+      "at": "2026-10-19T06:16:20+00:00"
     },
     {
       "source": "Trend News (ümumi lent)",
@@ -3046,133 +3158,7 @@ window.__RADAR__ = {
       "fetched": 25,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-19T09:27:33+00:00"
-    },
-    {
-      "source": "Trend Energy bölməsi",
-      "source_en": "Trend Energy section",
-      "id": "trend_energy",
-      "fetched": 170,
-      "relevant": 1,
-      "error": null,
-      "at": "2026-10-19T09:27:33+00:00"
-    },
-    {
-      "source": "Offshore Energy (RSS)",
-      "source_en": "Offshore Energy (RSS)",
-      "id": "offshore_energy",
-      "fetched": 50,
-      "relevant": 1,
-      "error": null,
-      "at": "2026-10-19T09:27:33+00:00"
-    },
-    {
-      "source": "Rigzone (RSS)",
-      "source_en": "Rigzone (RSS)",
-      "id": "rigzone",
-      "fetched": 20,
-      "relevant": 0,
-      "error": null,
-      "at": "2026-10-19T09:27:33+00:00"
-    },
-    {
-      "source": "Upstream · OGJ · Offshore Mag · Rigzone · Offshore Energy (Google News)",
-      "source_en": "Upstream · OGJ · Offshore Mag · Rigzone · Offshore Energy (Google News)",
-      "id": "gn_trade_press",
-      "fetched": 100,
-      "relevant": 6,
-      "error": null,
-      "at": "2026-10-19T09:27:33+00:00"
-    },
-    {
-      "source": "Google News: contract award / EPC / FEED (Azərbaycan, Xəzər)",
-      "source_en": "Google News: contract award / EPC / FEED (Azerbaijan, Caspian)",
-      "id": "gn_awards",
-      "fetched": 69,
-      "relevant": 11,
-      "error": null,
-      "at": "2026-10-19T09:27:33+00:00"
-    },
-    {
-      "source": "Google News: brownfield / turnaround / offshore maintenance / valve replacement",
-      "source_en": "Google News: brownfield / turnaround / offshore maintenance / valve replacement",
-      "id": "gn_brownfield",
-      "fetched": 23,
-      "relevant": 1,
-      "error": null,
-      "at": "2026-10-19T09:27:33+00:00"
-    },
-    {
-      "source": "Google News: pipeline expansion / refinery upgrade / compression",
-      "source_en": "Google News: pipeline expansion / refinery upgrade / compression",
-      "id": "gn_expansion",
-      "fetched": 23,
-      "relevant": 4,
-      "error": null,
-      "at": "2026-10-19T09:27:33+00:00"
-    },
-    {
-      "source": "Azfen xəbərləri",
-      "source_en": "Azfen news",
-      "id": "azfen_news",
-      "fetched": 10,
-      "relevant": 0,
-      "error": null,
-      "at": "2026-10-19T09:27:33+00:00"
-    },
-    {
-      "source": "Baku Shipyard xəbərləri",
-      "source_en": "Baku Shipyard news",
-      "id": "bakushipyard_news",
-      "fetched": 6,
-      "relevant": 0,
-      "error": null,
-      "at": "2026-10-19T09:27:33+00:00"
-    },
-    {
-      "source": "SOCAR-KBR xəbər və tender elanları",
-      "source_en": "SOCAR-KBR news and tender notices",
-      "id": "socarkbr_blogs",
-      "fetched": 1,
-      "relevant": 0,
-      "error": null,
-      "at": "2026-10-19T09:27:33+00:00"
-    },
-    {
-      "source": "World Bank satınalma (Azərbaycan)",
-      "source_en": "World Bank procurement (Azerbaijan)",
-      "id": "worldbank",
-      "fetched": 38,
-      "relevant": 0,
-      "error": null,
-      "at": "2026-10-19T09:27:33+00:00"
-    },
-    {
-      "source": "EBRD ECEPP satınalma (Azərbaycan)",
-      "source_en": "EBRD ECEPP procurement (Azerbaijan)",
-      "id": "ebrd_ecepp",
-      "fetched": 31,
-      "relevant": 0,
-      "error": null,
-      "at": "2026-10-19T09:27:33+00:00"
-    },
-    {
-      "source": "etender.gov.az (dövlət satınalma portalı)",
-      "source_en": "etender.gov.az (state procurement portal)",
-      "id": "etender",
-      "fetched": 6145,
-      "relevant": 7,
-      "error": null,
-      "at": "2026-10-16T20:48:40+00:00"
-    },
-    {
-      "source": "etender.gov.az bağlanmış müqavilələr (award)",
-      "source_en": "etender.gov.az concluded contracts (awards)",
-      "id": "etender_awards",
-      "fetched": 71,
-      "relevant": 1,
-      "error": null,
-      "at": "2026-10-16T20:48:40+00:00"
+      "at": "2026-10-19T06:16:20+00:00"
     },
     {
       "source": "Report.az (ümumi lent)",
@@ -3181,16 +3167,124 @@ window.__RADAR__ = {
       "fetched": 30,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-16T20:48:40+00:00"
+      "at": "2026-10-19T06:16:20+00:00"
     },
     {
       "source": "Report.az Energy bölməsi",
       "source_en": "Report.az Energy section",
       "id": "report_energy",
-      "fetched": 15,
+      "fetched": 16,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-16T20:48:40+00:00"
+      "at": "2026-10-19T06:16:20+00:00"
+    },
+    {
+      "source": "Trend Energy bölməsi",
+      "source_en": "Trend Energy section",
+      "id": "trend_energy",
+      "fetched": 170,
+      "relevant": 1,
+      "error": null,
+      "at": "2026-10-19T06:16:20+00:00"
+    },
+    {
+      "source": "Offshore Energy (RSS)",
+      "source_en": "Offshore Energy (RSS)",
+      "id": "offshore_energy",
+      "fetched": 50,
+      "relevant": 1,
+      "error": null,
+      "at": "2026-10-19T06:16:20+00:00"
+    },
+    {
+      "source": "Rigzone (RSS)",
+      "source_en": "Rigzone (RSS)",
+      "id": "rigzone",
+      "fetched": 20,
+      "relevant": 0,
+      "error": null,
+      "at": "2026-10-19T06:16:20+00:00"
+    },
+    {
+      "source": "Upstream · OGJ · Offshore Mag · Rigzone · Offshore Energy (Google News)",
+      "source_en": "Upstream · OGJ · Offshore Mag · Rigzone · Offshore Energy (Google News)",
+      "id": "gn_trade_press",
+      "fetched": 100,
+      "relevant": 6,
+      "error": null,
+      "at": "2026-10-19T06:16:20+00:00"
+    },
+    {
+      "source": "Google News: contract award / EPC / FEED (Azərbaycan, Xəzər)",
+      "source_en": "Google News: contract award / EPC / FEED (Azerbaijan, Caspian)",
+      "id": "gn_awards",
+      "fetched": 69,
+      "relevant": 12,
+      "error": null,
+      "at": "2026-10-19T06:16:20+00:00"
+    },
+    {
+      "source": "Google News: brownfield / turnaround / offshore maintenance / valve replacement",
+      "source_en": "Google News: brownfield / turnaround / offshore maintenance / valve replacement",
+      "id": "gn_brownfield",
+      "fetched": 22,
+      "relevant": 1,
+      "error": null,
+      "at": "2026-10-19T06:16:20+00:00"
+    },
+    {
+      "source": "Google News: pipeline expansion / refinery upgrade / compression",
+      "source_en": "Google News: pipeline expansion / refinery upgrade / compression",
+      "id": "gn_expansion",
+      "fetched": 24,
+      "relevant": 4,
+      "error": null,
+      "at": "2026-10-19T06:16:20+00:00"
+    },
+    {
+      "source": "Azfen xəbərləri",
+      "source_en": "Azfen news",
+      "id": "azfen_news",
+      "fetched": 10,
+      "relevant": 0,
+      "error": null,
+      "at": "2026-10-19T06:16:20+00:00"
+    },
+    {
+      "source": "Baku Shipyard xəbərləri",
+      "source_en": "Baku Shipyard news",
+      "id": "bakushipyard_news",
+      "fetched": 6,
+      "relevant": 0,
+      "error": null,
+      "at": "2026-10-19T06:16:20+00:00"
+    },
+    {
+      "source": "SOCAR-KBR xəbər və tender elanları",
+      "source_en": "SOCAR-KBR news and tender notices",
+      "id": "socarkbr_blogs",
+      "fetched": 1,
+      "relevant": 0,
+      "error": null,
+      "at": "2026-10-19T06:16:20+00:00"
+    },
+    {
+      "source": "World Bank satınalma (Azərbaycan)",
+      "source_en": "World Bank procurement (Azerbaijan)",
+      "id": "worldbank",
+      "fetched": 38,
+      "relevant": 0,
+      "error": null,
+      "at": "2026-10-19T06:16:20+00:00"
+    },
+    {
+      "source": "EBRD ECEPP satınalma (Azərbaycan)",
+      "source_en": "EBRD ECEPP procurement (Azerbaijan)",
+      "id": "ebrd_ecepp",
+      "fetched": 31,
+      "relevant": 0,
+      "error": null,
+      "at": "2026-10-19T06:16:20+00:00"
     },
     {
       "source": "Iteca Caspian sərgi təqvimi",
@@ -3199,7 +3293,7 @@ window.__RADAR__ = {
       "fetched": 16,
       "relevant": 12,
       "error": null,
-      "at": "2026-10-19T09:27:33+00:00"
+      "at": "2026-10-19T06:16:20+00:00"
     },
     {
       "source": "AICC Caspian (asset integrity, corrosion)",
@@ -3208,7 +3302,7 @@ window.__RADAR__ = {
       "fetched": 1,
       "relevant": 1,
       "error": null,
-      "at": "2026-10-19T09:27:33+00:00"
+      "at": "2026-10-19T06:16:20+00:00"
     }
   ],
   "companies": [
