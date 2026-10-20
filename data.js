@@ -1,5 +1,5 @@
 window.__RADAR__ = {
-  "generated_at": "2026-10-20T09:01:40+00:00",
+  "generated_at": "2026-10-20T14:33:01+00:00",
   "demo": false,
   "profile": {
     "company": "Portfolio",
@@ -423,23 +423,23 @@ window.__RADAR__ = {
           "source": "Upstream · OGJ · Offshore Mag · Rigzone · Offshore Energy (Google News)"
         },
         {
-          "title": "TotalEnergies takes final investment decision on Absheron full-field development - AzerNews",
-          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE92TkJiaWZYZnV2dkR6STlaM3ZqNkx6VW5DSGwwRjRFU0F4WndwcmtIa3BFcUdPdHUzNXNPd3I0SnVmekFwaHVQVGtwRGRfaTRFUE1vcW41MA?oc=5",
-          "source": "Google News: servis şirkətləri və operatorlar"
-        },
-        {
-          "title": "XRG backs major Azerbaijan gas expansion with Absheron Investment Decision - www.wam.ae",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQb01KWUhHYmtXdElJM3BVOEFmdWZvM3lKWVlWQlBYU2pmZkZWZWt1TmdZdXY4NTZRWm5YVUREeXk4bGd2NXh3SGZSTVFJUkxyby1WSElVd3dkeGxlTzFhSWpqUnNfWWsyd0lSVHhRU0ZZUm9ONFgtOTFjQzNtRFk0c3ZsLXhXZEFCZWNv?oc=5",
-          "source": "Google News: servis şirkətləri və operatorlar"
-        },
-        {
           "title": "TotalEnergies takes FID on Absheron gas development offshore Azerbaijan - World Oil",
           "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNaDU0YjBxdmthbE81dUlJUjBDb0xPcGludXlETWxkZUtmVjhnWjlfTXoxeEt2ODMwdVRUSFpySUNwWEhMM3VsWTNwNkFCVmt4ak4zZWtBdlVrcGtMSHZMSWo0b1BpRGR1OHBTWVBFd3pNYUZGcjdNaXVLVFNMa0lVRmdxdkd0MnBycVJzZm5sbXA1eF8yclptdElLdVJqYk5Vb2w3M2xjWEdCclEwWUQzVUpB?oc=5",
           "source": "Google News: pipeline expansion / refinery upgrade / compression"
         },
         {
-          "title": "TotalEnergies and partners approve Absheron gas project FID - Offshore Technology",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOb3RhN2Y4VVRlTHV1RVYyOVZzWHFUNmdCRTBDc0FmTmdtN28wMGR5MjRqTTRKcWM0NklJTms2RkdTNDMwd2JPam56ekdtSzlFUjV3VnJkdHhBNFZDY3JWaVJwbXQ2X2ZSdm92T21VMVZTSFVfTGY1RGxTdE5sUng2S3BYdTF4N29E?oc=5",
+          "title": "TotalEnergies Declares FID on Absheron Gas and Condensate Full-Field Development - JPT Homepage",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOMXlRVkdZWnhyRVdMMFVDdllBb2lBWE83NzVsSkpsSkxXWnZ5ZmQtUzB2d0wtU09Td2M0a0RhbnhBanZCUjBPMEdiN2pCMFJZQUFralk4MXFGM0hibHQ3Y090WHlZNHY3a2tlaWtJQmxHUFd3VHpzSWdrWVdMSzZHY3A2Q3Q4X2ptTUlNVERMQjhhSXg2YUpNdDhZcndpengzbVE?oc=5",
+          "source": "Google News: servis şirkətləri və operatorlar"
+        },
+        {
+          "title": "TotalEnergies Approves Full Development of the Absheron Gas Field in Azerbaijan - energynews.pro",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQOUhRQVNkbDRhVWRTVWkySHdBSE5uZHJ4bUUzd2k4dy1jQ2pBQ1h0WV9ib2tiWlJCYk1EUXFSbDh3Z0tWTlVuclh1ZnA5eVJJRlI2NTBrcHk5dm43X3dsZGVKbThsUzlBNk4tQXhseHNHOFZYWFBRdFRvVndKOGg0Y3B4Mlg0SkY1cXhPS1d4N1UtMHlTb2d1ejl6WV9oZWhNZ2RneVpKa2k?oc=5",
+          "source": "Google News: contract award / EPC / FEED (Azərbaycan, Xəzər)"
+        },
+        {
+          "title": "TotalEnergies approves full development of Absheron, a 6 Bcm/year gas field in Azerbaijan - energynews.pro",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQMndvc3N6WUpvbUV2dnVzNVQ4TmRoVTBXa0ZsdFE3amZudzc2c2VfRW9jOEZvVEc0Rk1sdlNMUzhacS03bWJyUVpTazZmUDJueHhkRWIwdGItaklTSmd1Mk9TNVd6VnVHTldPU2IwRVhPcDQxRGpaRlFYS1ZCSEtEVFI4SnRxNnlmY0lMYUl3Q0tpLWxJbWVQTEFsRHpRTGxPVTBRSS16czNHVUZCV241a0xPdw?oc=5",
           "source": "Google News: servis şirkətləri və operatorlar"
         }
       ]
@@ -1254,8 +1254,8 @@ window.__RADAR__ = {
       "id": "d03eb9addda3",
       "title": "ExxonMobil and SOCAR have moved from study agreements to a 50/50 production-sharing contract for unconventional oil and gas in Azerbaijan’s Middle Kura Basin. - Energy News Beat",
       "url": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxNLW9jZ1BmMVFEdU90V1FKLWxWWDZRV1RPVENaMkgtQk5EZnNTd1RJdGVTYlVwNUVfSlBhTzRONHd4Rjl1aWtnTGVIZHRuNGVsM3otR2Frb1N2cVRSNVFzZ2IzcktVVHRDV0tER09yaVlld1NIdmY5VTNjY05GVkRpSHF4TFFVMkdfanVwcHptTXVrck41eGV0XzYzMFBJdU1pZVVETGtfSkNPbnh0WFVSQjVtTU9nWEtkN2hfZGFhWkxGVTJuV2sycHQzcUFOa3BydVRqc3hGZTV5aVFPWWxZLTdfNDV2dkxaSlh3MDBQSlJ2R0V5U2hoUmFvRU4xb0V3d1RZMmNxeXRmdGRiVEd4OUd4c3YtbGtvb3B2TW9pb2Y5WkRWY1hZbA?oc=5",
-      "source_id": "gn_service",
-      "source": "Google News: servis şirkətləri və operatorlar",
+      "source_id": "gn_bp",
+      "source": "Google News: bp Azerbaijan projects",
       "category": "early_signal",
       "buyer": null,
       "score": 34,
@@ -1282,7 +1282,7 @@ window.__RADAR__ = {
       "contractors": [],
       "action": "Erkən siqnal: SOCAR, ExxonMobil layihəsinin EPC podratçısını müəyyən edib vendor list-ə müraciət edin.",
       "action_en": "Early signal: identify the EPC contractor of the SOCAR, ExxonMobil project and apply for its vendor list.",
-      "source_en": "Google News: service companies and operators",
+      "source_en": "Google News: bp Azerbaijan projects",
       "deadline": null,
       "published": "2026-09-27",
       "first_seen": "2026-10-01T14:21:09+00:00",
@@ -1559,7 +1559,7 @@ window.__RADAR__ = {
       "action_en": "Early signal: identify the EPC contractor of the SOCAR project and apply for its vendor list.",
       "source_en": "Google News (Russian, AZ): SOCAR tenders / contractors",
       "deadline": null,
-      "published": "2026-10-16",
+      "published": "2026-10-20",
       "first_seen": "2026-10-19T06:16:20+00:00",
       "is_new": false,
       "changes": [],
@@ -2747,9 +2747,9 @@ window.__RADAR__ = {
       "zone": "news"
     },
     {
-      "id": "77ccd00f09ef",
+      "id": "70c3e95d7192",
       "title": "Газовый реверс: Азербайджан возобновляет закупки газа у России - Рамблер",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOM3V1eUdta0RFM2xsRDFJd3JsVDhfMlR4clNoNDFwZ3A4RzhDVGxLYzhYendqenVTZ0dyc2xjdlZGbmJ2V3AyOTN5ZXdWMFpVNGpnUFRlMVlab014Wm04XzNxZFRzTlN6dTZUN3RxS0x1VTBBa0xmSUdHeGpLY1NIekxoSjBwc2lwazNoRjA4VUpPTldULVpVMlVJY3FFeXRBLUU5cTAyak9PMUHSAasBQVVfeXFMTjN1dXlHbWtERTNsbEQxSXdybFQ4XzJUeHJTaDQxcGdwOEc4Q1RsS2M4WHp3anp1U2dHcnNsY3ZWRm5idldwMjkzeWV3VjBaVTRqZ1BUZTFZWm9NeFptOF8zcWRUc05TenU2VDd0cUtMdVUwQWtMZklHR3hqS2NTSHpMaEowcHNpcGszaEYwOFVKT05XVC1aVTJVSWNxRXl0QS1FOXEwMmpPTzFB?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNVk85TlR3eDBEbUtqaU44UHBVVVlzVFVWRW81bEFWbXh4Q21VclA0Vmd0aG85TklsRUhBOG9qaTBhN3RIV1Jxb0ZFdXUzY3ZlWlYySGVva3dVbzRTXzlpOHlQTVdWTG1IczRVeTFoQjJLbEVZeU5vX01LdFM2YUQ3UkMzdE1BRURJRFlLekhEb3A0MHRiTmN6VUU3RUdxYkpxWnFXQ3d30gGrAUFVX3lxTE4zdXV5R21rREUzbGxEMUl3cmxUOF8yVHhyU2g0MXBncDhHOENUbEtjOFh6d2p6dVNnR3JzbGN2VkZuYnZXcDI5M3lld1YwWlU0amdQVGUxWVpvTXhabThfM3FkVHNOU3p1NlQ3dHFLTHVVMEFrTGZJR0d4aktjU0h6TGhKMHBzaXBrM2hGMDhVSk9OV1QtWlUyVUljcUV5dEEtRTlxMDJqT08xQQ?oc=5",
       "source_id": "gn_az",
       "source": "Google News (RU dili, AZ): SOCAR tender / podrat",
       "category": "early_signal",
@@ -3139,7 +3139,7 @@ window.__RADAR__ = {
       "fetched": 30,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-20T09:01:40+00:00"
+      "at": "2026-10-20T14:33:01+00:00"
     },
     {
       "source": "GlobalTenders - Azerbaijan Oil & Gas",
@@ -3148,7 +3148,7 @@ window.__RADAR__ = {
       "fetched": 20,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-20T09:01:40+00:00"
+      "at": "2026-10-20T14:33:01+00:00"
     },
     {
       "source": "Trend Tenders bölməsi",
@@ -3157,7 +3157,7 @@ window.__RADAR__ = {
       "fetched": 182,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-20T09:01:40+00:00"
+      "at": "2026-10-20T14:33:01+00:00"
     },
     {
       "source": "ADSEA elanları (satınalma, EOI)",
@@ -3166,61 +3166,61 @@ window.__RADAR__ = {
       "fetched": 9,
       "relevant": 3,
       "error": null,
-      "at": "2026-10-20T09:01:40+00:00"
+      "at": "2026-10-20T14:33:01+00:00"
     },
     {
       "source": "bp Azerbaijan xəbərləri (press-reliz)",
       "source_en": "bp Azerbaijan press releases",
       "id": "bp_az_news",
-      "fetched": 10,
+      "fetched": 11,
       "relevant": 2,
       "error": null,
-      "at": "2026-10-20T09:01:40+00:00"
+      "at": "2026-10-20T14:33:01+00:00"
     },
     {
       "source": "Google News: Azerbaijan EPC / FEED",
       "source_en": "Google News: Azerbaijan EPC / FEED",
       "id": "gn_epc",
-      "fetched": 56,
+      "fetched": 61,
       "relevant": 9,
       "error": null,
-      "at": "2026-10-20T09:01:40+00:00"
+      "at": "2026-10-20T14:33:01+00:00"
     },
     {
       "source": "Google News: SOCAR tender / contract",
       "source_en": "Google News: SOCAR tender / contract",
       "id": "gn_socar",
-      "fetched": 40,
+      "fetched": 39,
       "relevant": 3,
       "error": null,
-      "at": "2026-10-20T09:01:40+00:00"
+      "at": "2026-10-20T14:33:01+00:00"
     },
     {
       "source": "Google News: bp Azerbaijan projects",
       "source_en": "Google News: bp Azerbaijan projects",
       "id": "gn_bp",
-      "fetched": 51,
+      "fetched": 54,
       "relevant": 6,
       "error": null,
-      "at": "2026-10-20T09:01:40+00:00"
+      "at": "2026-10-20T14:33:01+00:00"
     },
     {
       "source": "Google News: EPC / fabrikasiya podratçıları",
       "source_en": "Google News: EPC / fabrication contractors",
       "id": "gn_contractors",
-      "fetched": 16,
+      "fetched": 14,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-20T09:01:40+00:00"
+      "at": "2026-10-20T14:33:01+00:00"
     },
     {
       "source": "Google News: servis şirkətləri və operatorlar",
       "source_en": "Google News: service companies and operators",
       "id": "gn_service",
-      "fetched": 63,
-      "relevant": 28,
+      "fetched": 36,
+      "relevant": 16,
       "error": null,
-      "at": "2026-10-20T09:01:40+00:00"
+      "at": "2026-10-20T14:33:01+00:00"
     },
     {
       "source": "Google News: SOCAR qrupu və törəmələri",
@@ -3229,7 +3229,7 @@ window.__RADAR__ = {
       "fetched": 25,
       "relevant": 4,
       "error": null,
-      "at": "2026-10-20T09:01:40+00:00"
+      "at": "2026-10-20T14:33:01+00:00"
     },
     {
       "source": "Google News: JOCAP, Nobel qrupu, SOCAR Upstream",
@@ -3238,16 +3238,16 @@ window.__RADAR__ = {
       "fetched": 8,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-20T09:01:40+00:00"
+      "at": "2026-10-20T14:33:01+00:00"
     },
     {
       "source": "Google News (RU dili, AZ): SOCAR tender / podrat",
       "source_en": "Google News (Russian, AZ): SOCAR tenders / contractors",
       "id": "gn_az",
-      "fetched": 59,
+      "fetched": 61,
       "relevant": 13,
       "error": null,
-      "at": "2026-10-20T09:01:40+00:00"
+      "at": "2026-10-20T14:33:01+00:00"
     },
     {
       "source": "Trend News (ümumi lent)",
@@ -3256,25 +3256,25 @@ window.__RADAR__ = {
       "fetched": 25,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-20T09:01:40+00:00"
+      "at": "2026-10-20T14:33:01+00:00"
     },
     {
       "source": "Trend Energy bölməsi",
       "source_en": "Trend Energy section",
       "id": "trend_energy",
-      "fetched": 162,
+      "fetched": 165,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-20T09:01:40+00:00"
+      "at": "2026-10-20T14:33:01+00:00"
     },
     {
       "source": "Offshore Energy (RSS)",
       "source_en": "Offshore Energy (RSS)",
       "id": "offshore_energy",
       "fetched": 50,
-      "relevant": 1,
+      "relevant": 0,
       "error": null,
-      "at": "2026-10-20T09:01:40+00:00"
+      "at": "2026-10-20T14:33:01+00:00"
     },
     {
       "source": "Rigzone (RSS)",
@@ -3283,7 +3283,7 @@ window.__RADAR__ = {
       "fetched": 20,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-20T09:01:40+00:00"
+      "at": "2026-10-20T14:33:01+00:00"
     },
     {
       "source": "Upstream · OGJ · Offshore Mag · Rigzone · Offshore Energy (Google News)",
@@ -3292,7 +3292,7 @@ window.__RADAR__ = {
       "fetched": 100,
       "relevant": 7,
       "error": null,
-      "at": "2026-10-20T09:01:40+00:00"
+      "at": "2026-10-20T14:33:01+00:00"
     },
     {
       "source": "Google News: contract award / EPC / FEED (Azərbaycan, Xəzər)",
@@ -3301,7 +3301,7 @@ window.__RADAR__ = {
       "fetched": 69,
       "relevant": 12,
       "error": null,
-      "at": "2026-10-20T09:01:40+00:00"
+      "at": "2026-10-20T14:33:01+00:00"
     },
     {
       "source": "Google News: brownfield / turnaround / offshore maintenance / valve replacement",
@@ -3310,16 +3310,16 @@ window.__RADAR__ = {
       "fetched": 27,
       "relevant": 1,
       "error": null,
-      "at": "2026-10-20T09:01:40+00:00"
+      "at": "2026-10-20T14:33:01+00:00"
     },
     {
       "source": "Google News: pipeline expansion / refinery upgrade / compression",
       "source_en": "Google News: pipeline expansion / refinery upgrade / compression",
       "id": "gn_expansion",
-      "fetched": 25,
+      "fetched": 23,
       "relevant": 4,
       "error": null,
-      "at": "2026-10-20T09:01:40+00:00"
+      "at": "2026-10-20T14:33:01+00:00"
     },
     {
       "source": "Azfen xəbərləri",
@@ -3328,7 +3328,7 @@ window.__RADAR__ = {
       "fetched": 10,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-20T09:01:40+00:00"
+      "at": "2026-10-20T14:33:01+00:00"
     },
     {
       "source": "Baku Shipyard xəbərləri",
@@ -3337,16 +3337,16 @@ window.__RADAR__ = {
       "fetched": 6,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-20T09:01:40+00:00"
+      "at": "2026-10-20T14:33:01+00:00"
     },
     {
       "source": "SOCAR-KBR xəbər və tender elanları",
       "source_en": "SOCAR-KBR news and tender notices",
       "id": "socarkbr_blogs",
-      "fetched": 1,
+      "fetched": 0,
       "relevant": 0,
-      "error": null,
-      "at": "2026-10-20T09:01:40+00:00"
+      "error": "RuntimeError: <urlopen error timed out>",
+      "at": "2026-10-20T14:33:01+00:00"
     },
     {
       "source": "World Bank satınalma (Azərbaycan)",
@@ -3355,7 +3355,7 @@ window.__RADAR__ = {
       "fetched": 38,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-20T09:01:40+00:00"
+      "at": "2026-10-20T14:33:01+00:00"
     },
     {
       "source": "EBRD ECEPP satınalma (Azərbaycan)",
@@ -3364,7 +3364,7 @@ window.__RADAR__ = {
       "fetched": 31,
       "relevant": 0,
       "error": null,
-      "at": "2026-10-20T09:01:40+00:00"
+      "at": "2026-10-20T14:33:01+00:00"
     },
     {
       "source": "etender.gov.az (dövlət satınalma portalı)",
@@ -3406,19 +3406,19 @@ window.__RADAR__ = {
       "source": "Iteca Caspian sərgi təqvimi",
       "source_en": "Iteca Caspian exhibition calendar",
       "id": "iteca",
-      "fetched": 15,
-      "relevant": 12,
+      "fetched": 36,
+      "relevant": 19,
       "error": null,
-      "at": "2026-10-20T09:01:40+00:00"
+      "at": "2026-10-20T14:33:01+00:00"
     },
     {
       "source": "AICC Caspian (asset integrity, corrosion)",
       "source_en": "AICC Caspian (asset integrity, corrosion)",
       "id": "aicc",
-      "fetched": 1,
-      "relevant": 1,
-      "error": null,
-      "at": "2026-10-20T09:01:40+00:00"
+      "fetched": 0,
+      "relevant": 0,
+      "error": "RuntimeError: <urlopen error [Errno 101] Network is unreachable>",
+      "at": "2026-10-20T14:33:01+00:00"
     }
   ],
   "companies": [
@@ -5099,6 +5099,256 @@ window.__RADAR__ = {
   },
   "events": [
     {
+      "title": "6th Azerbaijan International Defence Exhibition",
+      "start": "2026-09-30",
+      "end": "2026-10-02",
+      "dates_text": "30 September - 2 October 2026",
+      "url": "https://#",
+      "organizer": "Iteca Caspian",
+      "venue": "Baku Expo Center",
+      "ticket": "https://#/en/get-the-ticket",
+      "stand": "https://#/en/reservation",
+      "delegate": null,
+      "sponsor": null,
+      "id": "152c5ceeb7",
+      "tags": [],
+      "relevance": "other",
+      "source_id": "iteca",
+      "tba": false
+    },
+    {
+      "title": "15th International Exhibition for Internal Security, Safety and Rescue Equipment",
+      "start": "2026-09-30",
+      "end": "2026-10-02",
+      "dates_text": "30 September - 2 October 2026",
+      "url": "https://#",
+      "organizer": "Iteca Caspian",
+      "venue": "Baku Expo Center",
+      "ticket": "https://#/en/get-the-ticket",
+      "stand": "https://#/en/reservation",
+      "delegate": null,
+      "sponsor": null,
+      "id": "a68e48bafc",
+      "tags": [
+        "safety"
+      ],
+      "relevance": "related",
+      "source_id": "iteca",
+      "tba": false
+    },
+    {
+      "title": "12th Baku International Book Fair",
+      "start": "2026-10-01",
+      "end": "2026-10-07",
+      "dates_text": "1 - 7 October 2026",
+      "url": "https://bakubookfair.az",
+      "organizer": "Iteca Caspian",
+      "venue": "Baku Expo Center",
+      "ticket": "https://bakubookfair.az/en/get-the-ticket",
+      "stand": "https://bakubookfair.az/en/reservation",
+      "delegate": null,
+      "sponsor": null,
+      "id": "c8e3c3caac",
+      "tags": [],
+      "relevance": "other",
+      "source_id": "iteca",
+      "tba": false
+    },
+    {
+      "title": "Caspian Construction Week",
+      "start": "2026-10-14",
+      "end": "2026-10-16",
+      "dates_text": "14 - 16 October 2026",
+      "url": "https://#",
+      "organizer": "Iteca Caspian",
+      "venue": "Baku Expo Center",
+      "ticket": "https://#/en/get-the-ticket",
+      "stand": "https://#/en/reservation",
+      "delegate": null,
+      "sponsor": null,
+      "id": "1d162e38e7",
+      "tags": [
+        "construction"
+      ],
+      "relevance": "related",
+      "source_id": "iteca",
+      "tba": false
+    },
+    {
+      "title": "31st Azerbaijan International Construction Exhibition",
+      "start": "2026-10-14",
+      "end": "2026-10-16",
+      "dates_text": "14 - 16 October 2026",
+      "url": "https://#",
+      "organizer": "Iteca Caspian",
+      "venue": "Baku Expo Center",
+      "ticket": "https://#/en/get-the-ticket",
+      "stand": "https://#/en/reservation",
+      "delegate": null,
+      "sponsor": null,
+      "id": "983f7d8a7d",
+      "tags": [
+        "construction"
+      ],
+      "relevance": "related",
+      "source_id": "iteca",
+      "tba": false
+    },
+    {
+      "title": "18th International Exhibition for Heating, Ventilation, Air-Conditioning, Water Supply, Sanitary and Swimming Pool",
+      "start": "2026-10-14",
+      "end": "2026-10-16",
+      "dates_text": "14 - 16 October 2026",
+      "url": "https://#",
+      "organizer": "Iteca Caspian",
+      "venue": "Baku Expo Center",
+      "ticket": "https://#/en/get-the-ticket",
+      "stand": "https://#/en/reservation",
+      "delegate": null,
+      "sponsor": null,
+      "id": "2e5ccdc10a",
+      "tags": [
+        "water",
+        "hvac"
+      ],
+      "relevance": "related",
+      "source_id": "iteca",
+      "tba": false
+    },
+    {
+      "title": "6th Azerbaijan International Restoration, Reconstruction and Development of Garabagh Exhibition",
+      "start": "2026-10-14",
+      "end": "2026-10-16",
+      "dates_text": "14 - 16 October 2026",
+      "url": "https://#",
+      "organizer": "Iteca Caspian",
+      "venue": "Baku Expo Center",
+      "ticket": "https://#/en/get-the-ticket",
+      "stand": "https://#/en/reservation",
+      "delegate": null,
+      "sponsor": null,
+      "id": "f955538c3c",
+      "tags": [
+        "construction",
+        "infrastructure"
+      ],
+      "relevance": "related",
+      "source_id": "iteca",
+      "tba": false
+    },
+    {
+      "title": "5th Anniversary Caspian International Plastics and Polymers Industry Exhibition",
+      "start": "2026-10-14",
+      "end": "2026-10-16",
+      "dates_text": "14 - 16 October 2026",
+      "url": "https://#",
+      "organizer": "Iteca Caspian",
+      "venue": "Baku Expo Center",
+      "ticket": "https://#/en/get-the-ticket",
+      "stand": "https://#/en/reservation",
+      "delegate": null,
+      "sponsor": null,
+      "id": "184a9494e8",
+      "tags": [
+        "polymers"
+      ],
+      "relevance": "related",
+      "source_id": "iteca",
+      "tba": false
+    },
+    {
+      "title": "14th Caspian International Furniture Manufacturing and Woodworking Exhibition",
+      "start": "2026-10-14",
+      "end": "2026-10-16",
+      "dates_text": "14 - 16 October 2026",
+      "url": "https://#",
+      "organizer": "Iteca Caspian",
+      "venue": "Baku Expo Center",
+      "ticket": "https://#/en/get-the-ticket",
+      "stand": "https://#/en/reservation",
+      "delegate": null,
+      "sponsor": null,
+      "id": "71d861629b",
+      "tags": [],
+      "relevance": "other",
+      "source_id": "iteca",
+      "tba": false
+    },
+    {
+      "title": "14th Caspian International Road Infrastructure and Public Transport Exhibition",
+      "start": "2026-10-14",
+      "end": "2026-10-16",
+      "dates_text": "14 - 16 October 2026",
+      "url": "https://#",
+      "organizer": "Iteca Caspian",
+      "venue": "Baku Expo Center",
+      "ticket": "https://#/en/get-the-ticket",
+      "stand": "https://#/en/reservation",
+      "delegate": null,
+      "sponsor": null,
+      "id": "7e0f580d92",
+      "tags": [
+        "infrastructure"
+      ],
+      "relevance": "related",
+      "source_id": "iteca",
+      "tba": false
+    },
+    {
+      "title": "28th Azerbaijan International Medical Innovations Exhibition",
+      "start": "2026-10-29",
+      "end": "2026-10-31",
+      "dates_text": "29 - 31 October 2026",
+      "url": "https://#",
+      "organizer": "Iteca Caspian",
+      "venue": "Baku Expo Center",
+      "ticket": "https://#/en/get-the-ticket",
+      "stand": "https://#/en/reservation",
+      "delegate": null,
+      "sponsor": null,
+      "id": "888bb3ebd8",
+      "tags": [],
+      "relevance": "other",
+      "source_id": "iteca",
+      "tba": false
+    },
+    {
+      "title": "15th Anniversary Azerbaijan International Beauty Industry Exhibition",
+      "start": "2026-10-29",
+      "end": "2026-10-31",
+      "dates_text": "29 - 31 October 2026",
+      "url": "https://#",
+      "organizer": "Iteca Caspian",
+      "venue": "Baku Expo Center",
+      "ticket": "https://#/en/get-the-ticket",
+      "stand": "https://#/en/reservation",
+      "delegate": null,
+      "sponsor": null,
+      "id": "2ad814e863",
+      "tags": [],
+      "relevance": "other",
+      "source_id": "iteca",
+      "tba": false
+    },
+    {
+      "title": "Azerbaijan International Sports, Fitness, Wellness & Active Lifestyle Exhibition",
+      "start": "2026-11-26",
+      "end": "2026-11-28",
+      "dates_text": "26 - 28 November 2026",
+      "url": "https://#",
+      "organizer": "Iteca Caspian",
+      "venue": "Baku Expo Center",
+      "ticket": "https://#/en/get-the-ticket",
+      "stand": "https://#/en/reservation",
+      "delegate": null,
+      "sponsor": null,
+      "id": "d0215601f3",
+      "tags": [],
+      "relevance": "other",
+      "source_id": "iteca",
+      "tba": false
+    },
+    {
       "title": "3rd International Exhibition and Conference for Water Management",
       "start": "2027-04-14",
       "end": "2027-04-16",
@@ -5394,27 +5644,6 @@ window.__RADAR__ = {
       "relevance": "other",
       "source_id": "iteca",
       "tba": false
-    },
-    {
-      "title": "AICC Caspian: Asset Integrity, Corrosion & Coatings Conference & Showcase",
-      "start": "2025-12-09",
-      "end": "2025-12-11",
-      "dates_text": "",
-      "url": "https://www.aicccaspian.com/",
-      "organizer": "Aldrich Energy",
-      "venue": "Baku",
-      "ticket": "https://www.aicccaspian.com/visitor-registration/",
-      "stand": "https://www.aicccaspian.com/become-an-exhibitor/",
-      "delegate": "https://www.aicccaspian.com/delegate-registration/",
-      "sponsor": "https://www.aicccaspian.com/sponsorship-enquiry/",
-      "id": "83e153673d",
-      "tags": [
-        "integrity",
-        "oil_gas"
-      ],
-      "relevance": "core",
-      "source_id": "aicc",
-      "tba": true
     }
   ],
   "buyer_intel": {
