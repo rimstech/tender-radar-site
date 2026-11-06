@@ -1,5 +1,5 @@
 window.__RADAR__ = {
-  "generated_at": "2026-11-05T17:44:08+00:00",
+  "generated_at": "2026-11-06T11:42:23+00:00",
   "demo": false,
   "profile": {
     "company": "Portfolio",
@@ -633,55 +633,6 @@ window.__RADAR__ = {
       "zone": "opportunity"
     },
     {
-      "id": "9f86ab7699e9",
-      "title": "Award: Eyvazlı KSES üçün boru xəttinin tikintisi işlərinin satın alınması → \"ELECTRO İNDUSTRİES\" QAPALI SƏHMDAR CƏMİYYƏTİ",
-      "url": "https://etender.gov.az/main/competition/detail/347032",
-      "source_id": "etender_awards",
-      "source": "etender.gov.az bağlanmış müqavilələr (award)",
-      "category": "award",
-      "buyer": "\"AZƏRENERJİ\" AÇIQ TİPLİ SƏHMDAR CƏMİYYƏTİ",
-      "score": 40,
-      "tier": "WARM",
-      "reasons": [
-        "equipment: boru (+14)",
-        "procurement_stage: award, tender (+16)",
-        "şirkət: Azerenerji (+10)"
-      ],
-      "keywords": [],
-      "companies": [
-        {
-          "name": "Azerenerji",
-          "role": "state"
-        }
-      ],
-      "contractors": [],
-      "action": "Qalib şirkətlə əlaqə qurun: subpodrat / valve-actuator təchizatı imkanını yoxlayın, qiymət səviyyəsini gələcək tenderlər üçün qeyd edin.",
-      "action_en": "Contact the winner: check subcontract / valve-actuator supply, note the price level for future tenders.",
-      "source_en": "etender.gov.az concluded contracts (awards)",
-      "deadline": null,
-      "published": "2026-09-21",
-      "first_seen": "2026-10-01T14:21:09+00:00",
-      "is_new": false,
-      "changes": [],
-      "demo": false,
-      "score10": 4,
-      "competition": "Bağlanıb: qalib müəyyəndir",
-      "strategic_value": "Yüksək",
-      "revenue_potential": "Yüksək (2 650 752 AZN)",
-      "competition_en": "Closed: winner known",
-      "strategic_value_en": "High",
-      "revenue_potential_en": "High (2 650 752 AZN)",
-      "segment": "Piping",
-      "signal_type": "Award",
-      "zone": "intel",
-      "winner": "\"ELECTRO İNDUSTRİES\" QAPALI SƏHMDAR CƏMİYYƏTİ",
-      "contract_date": "2026-08-07",
-      "expire_date": "2027-03-06",
-      "tender_type": "Açıq Tender",
-      "budget_value": 2650752,
-      "budget": "2 650 752 AZN"
-    },
-    {
       "id": "1273896d12b0",
       "title": "Award: İdarənin Xidməti ərazisində olan inzibati binaların,su anbarlarının, su təmizləyici qurğuların,hidrotexniki qurğuların və nasos stansiyaların cari təmiri üçün mal materialın alınması → \"HEBA COMPANY\" Məhdud Məsuliyyətli Cəmiyyəti",
       "url": "https://etender.gov.az/main/competition/detail/356086",
@@ -729,81 +680,6 @@ window.__RADAR__ = {
       "tender_type": "Açıq Tender",
       "budget_value": 91442.92,
       "budget": "91 443 AZN"
-    },
-    {
-      "id": "05971c738f8d",
-      "title": "\"Avtodartıcılar (yarımqoşu ilə)\" ın satın alınması",
-      "url": "https://etender.gov.az/main/competition/detail/359964",
-      "source_id": "etender",
-      "source": "etender.gov.az (dövlət satınalma portalı)",
-      "category": "direct_tender",
-      "buyer": "\"REGİONAL SU MELİORASİYA XİDMƏTİ\" PUBLİK HÜQUQİ ŞƏXSİ",
-      "score": 37,
-      "tier": "WARM",
-      "reasons": [
-        "valve_direct: ötürücü (+22)",
-        "şirkət: ADSEA (Dövlət Su Ehtiyatları Agentliyi) (+10)",
-        "Son tarixə 8 gün (+5)"
-      ],
-      "keywords": [
-        "ötürücü"
-      ],
-      "companies": [
-        {
-          "name": "ADSEA (Dövlət Su Ehtiyatları Agentliyi)",
-          "role": "utility"
-        }
-      ],
-      "contractors": [],
-      "action": "Tender sənədlərini endirin, vendor qeydiyyatını/pre-kvalifikasiyanı yoxlayın, son tarixi təqvimə yazın.",
-      "action_en": "Download the tender documents, check vendor registration / pre-qualification, put the deadline in the calendar.",
-      "source_en": "etender.gov.az (state procurement portal)",
-      "deadline": "2026-11-05",
-      "published": "2026-10-08",
-      "first_seen": "2026-10-12T07:51:03+00:00",
-      "is_new": false,
-      "changes": [],
-      "demo": false,
-      "tender_no": "2026/AT/05039/V2",
-      "budget": "825 257 AZN",
-      "contacts": [
-        {
-          "name": "Elşad Fərəcov",
-          "position": "Şöbə müdirinin müavini - sektor müdiri",
-          "phone": "+994 12 377 07 70 (601)",
-          "email": "elshad.ferecov@rsmx.gov.az"
-        }
-      ],
-      "address": "Bakı ş. AZ1000, Hökümət Evi, mər. 5",
-      "eligibility": [
-        "Minimum 3 iştirakçı",
-        "İştirak haqqı 450 AZN",
-        "Sənədə baxış haqqı 25 AZN"
-      ],
-      "items_preview": [
-        "Avtodartıcılar (yarımqoşqu ilə) Təkər formulu :6x4 , Öz çəkisi, minimal :9 ton Yük dartma qabiliyyəti, minimal :70 ton K"
-      ],
-      "items_total": 1,
-      "score10": 4,
-      "competition": "Yüksək (açıq dövlət tenderi)",
-      "strategic_value": "Yüksək",
-      "revenue_potential": "Yüksək (825 257 AZN)",
-      "competition_en": "High (open public tender)",
-      "strategic_value_en": "High",
-      "revenue_potential_en": "High (825 257 AZN)",
-      "budget_value": 825256.6,
-      "segment": "Valve & Actuator",
-      "signal_type": "Tender",
-      "zone": "opportunity",
-      "product_fit": [
-        {
-          "line": "Actuators (pneumatic, hydraulic, electric, gas-over-oil)",
-          "brand": "ProControl",
-          "terms": [
-            "ötürücü"
-          ]
-        }
-      ]
     },
     {
       "id": "6425f711342b",
@@ -3383,8 +3259,8 @@ window.__RADAR__ = {
       "zone": "news"
     },
     {
-      "id": "d57c79b8d54e",
-      "title": "Азербайджан планирует возобновить закупки российского газа - Новые Известия",
+      "id": "fc73f6e06c36",
+      "title": "Азербайджан планирует возобновить закупки российского газа - newizv.ru",
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNNzhVWjJxdEczWkxMaV9qSnMwejQ0ODgtMTZCUFVOTFBSVGlaM29KTnVRR1N5elFVMWNXNVdsQXJyc1BDRUVzeEJxVTJxNVlZNjBoVDRfa19BRWNRQkd0U1JpWjJheEdaSldBaHRHUUF2cXJjdmswbWNxdHA1VUlOYldTU3gtNHphMWJtblBUNzRYWGR6TW02OFRlWF9fWFhG?oc=5",
       "source_id": "gn_az",
       "source": "Google News (RU dili, AZ): SOCAR tender / podrat",
@@ -4204,7 +4080,7 @@ window.__RADAR__ = {
       "fetched": 30,
       "relevant": 0,
       "error": null,
-      "at": "2026-11-05T17:44:08+00:00"
+      "at": "2026-11-06T11:42:23+00:00"
     },
     {
       "source": "GlobalTenders - Azerbaijan Oil & Gas",
@@ -4213,16 +4089,16 @@ window.__RADAR__ = {
       "fetched": 20,
       "relevant": 0,
       "error": null,
-      "at": "2026-11-05T17:44:08+00:00"
+      "at": "2026-11-06T11:42:23+00:00"
     },
     {
       "source": "Trend Tenders bölməsi",
       "source_en": "Trend Tenders section",
       "id": "trend_tenders",
-      "fetched": 184,
+      "fetched": 183,
       "relevant": 0,
       "error": null,
-      "at": "2026-11-05T17:44:08+00:00"
+      "at": "2026-11-06T11:42:23+00:00"
     },
     {
       "source": "ADSEA elanları (satınalma, EOI)",
@@ -4231,7 +4107,7 @@ window.__RADAR__ = {
       "fetched": 9,
       "relevant": 3,
       "error": null,
-      "at": "2026-11-05T17:44:08+00:00"
+      "at": "2026-11-06T11:42:23+00:00"
     },
     {
       "source": "bp Azerbaijan xəbərləri (press-reliz)",
@@ -4240,7 +4116,7 @@ window.__RADAR__ = {
       "fetched": 8,
       "relevant": 2,
       "error": null,
-      "at": "2026-11-05T17:44:08+00:00"
+      "at": "2026-11-06T11:42:23+00:00"
     },
     {
       "source": "Google News: Azerbaijan EPC / FEED",
@@ -4249,52 +4125,52 @@ window.__RADAR__ = {
       "fetched": 34,
       "relevant": 4,
       "error": null,
-      "at": "2026-11-05T17:44:08+00:00"
+      "at": "2026-11-06T11:42:23+00:00"
     },
     {
       "source": "Google News: SOCAR tender / contract",
       "source_en": "Google News: SOCAR tender / contract",
       "id": "gn_socar",
-      "fetched": 21,
+      "fetched": 23,
       "relevant": 2,
       "error": null,
-      "at": "2026-11-05T17:44:08+00:00"
+      "at": "2026-11-06T11:42:23+00:00"
     },
     {
       "source": "Google News: bp Azerbaijan projects",
       "source_en": "Google News: bp Azerbaijan projects",
       "id": "gn_bp",
-      "fetched": 28,
+      "fetched": 30,
       "relevant": 4,
       "error": null,
-      "at": "2026-11-05T17:44:08+00:00"
+      "at": "2026-11-06T11:42:23+00:00"
     },
     {
       "source": "Google News: EPC / fabrikasiya podratçıları",
       "source_en": "Google News: EPC / fabrication contractors",
       "id": "gn_contractors",
-      "fetched": 8,
+      "fetched": 7,
       "relevant": 1,
       "error": null,
-      "at": "2026-11-05T17:44:08+00:00"
+      "at": "2026-11-06T11:42:23+00:00"
     },
     {
       "source": "Google News: servis şirkətləri və operatorlar",
       "source_en": "Google News: service companies and operators",
       "id": "gn_service",
-      "fetched": 46,
+      "fetched": 48,
       "relevant": 12,
       "error": null,
-      "at": "2026-11-05T17:44:08+00:00"
+      "at": "2026-11-06T11:42:23+00:00"
     },
     {
       "source": "Google News: SOCAR qrupu və törəmələri",
       "source_en": "Google News: SOCAR group and affiliates",
       "id": "gn_socar_group",
-      "fetched": 9,
+      "fetched": 10,
       "relevant": 1,
       "error": null,
-      "at": "2026-11-05T17:44:08+00:00"
+      "at": "2026-11-06T11:42:23+00:00"
     },
     {
       "source": "Google News: JOCAP, Nobel qrupu, SOCAR Upstream",
@@ -4303,7 +4179,7 @@ window.__RADAR__ = {
       "fetched": 5,
       "relevant": 0,
       "error": null,
-      "at": "2026-11-05T17:44:08+00:00"
+      "at": "2026-11-06T11:42:23+00:00"
     },
     {
       "source": "Google News (RU dili, AZ): SOCAR tender / podrat",
@@ -4312,7 +4188,7 @@ window.__RADAR__ = {
       "fetched": 27,
       "relevant": 8,
       "error": null,
-      "at": "2026-11-05T17:44:08+00:00"
+      "at": "2026-11-06T11:42:23+00:00"
     },
     {
       "source": "Trend News (ümumi lent)",
@@ -4321,7 +4197,7 @@ window.__RADAR__ = {
       "fetched": 25,
       "relevant": 0,
       "error": null,
-      "at": "2026-11-05T17:44:08+00:00"
+      "at": "2026-11-06T11:42:23+00:00"
     },
     {
       "source": "Trend Energy bölməsi",
@@ -4330,7 +4206,7 @@ window.__RADAR__ = {
       "fetched": 160,
       "relevant": 0,
       "error": null,
-      "at": "2026-11-05T17:44:08+00:00"
+      "at": "2026-11-06T11:42:23+00:00"
     },
     {
       "source": "Offshore Energy (RSS)",
@@ -4339,7 +4215,7 @@ window.__RADAR__ = {
       "fetched": 50,
       "relevant": 0,
       "error": null,
-      "at": "2026-11-05T17:44:08+00:00"
+      "at": "2026-11-06T11:42:23+00:00"
     },
     {
       "source": "Rigzone (RSS)",
@@ -4348,43 +4224,43 @@ window.__RADAR__ = {
       "fetched": 20,
       "relevant": 0,
       "error": null,
-      "at": "2026-11-05T17:44:08+00:00"
+      "at": "2026-11-06T11:42:23+00:00"
     },
     {
       "source": "Upstream · OGJ · Offshore Mag · Rigzone · Offshore Energy (Google News)",
       "source_en": "Upstream · OGJ · Offshore Mag · Rigzone · Offshore Energy (Google News)",
       "id": "gn_trade_press",
-      "fetched": 45,
+      "fetched": 49,
       "relevant": 5,
       "error": null,
-      "at": "2026-11-05T17:44:08+00:00"
+      "at": "2026-11-06T11:42:23+00:00"
     },
     {
       "source": "Google News: contract award / EPC / FEED (Azərbaycan, Xəzər)",
       "source_en": "Google News: contract award / EPC / FEED (Azerbaijan, Caspian)",
       "id": "gn_awards",
-      "fetched": 32,
+      "fetched": 33,
       "relevant": 6,
       "error": null,
-      "at": "2026-11-05T17:44:08+00:00"
+      "at": "2026-11-06T11:42:23+00:00"
     },
     {
       "source": "Google News: brownfield / turnaround / offshore maintenance / valve replacement",
       "source_en": "Google News: brownfield / turnaround / offshore maintenance / valve replacement",
       "id": "gn_brownfield",
-      "fetched": 23,
+      "fetched": 24,
       "relevant": 0,
       "error": null,
-      "at": "2026-11-05T17:44:08+00:00"
+      "at": "2026-11-06T11:42:23+00:00"
     },
     {
       "source": "Google News: pipeline expansion / refinery upgrade / compression",
       "source_en": "Google News: pipeline expansion / refinery upgrade / compression",
       "id": "gn_expansion",
-      "fetched": 29,
+      "fetched": 31,
       "relevant": 8,
       "error": null,
-      "at": "2026-11-05T17:44:08+00:00"
+      "at": "2026-11-06T11:42:23+00:00"
     },
     {
       "source": "Azfen xəbərləri",
@@ -4393,7 +4269,7 @@ window.__RADAR__ = {
       "fetched": 10,
       "relevant": 0,
       "error": null,
-      "at": "2026-11-05T17:44:08+00:00"
+      "at": "2026-11-06T11:42:23+00:00"
     },
     {
       "source": "Baku Shipyard xəbərləri",
@@ -4402,7 +4278,7 @@ window.__RADAR__ = {
       "fetched": 6,
       "relevant": 0,
       "error": null,
-      "at": "2026-11-05T17:44:08+00:00"
+      "at": "2026-11-06T11:42:23+00:00"
     },
     {
       "source": "SOCAR-KBR xəbər və tender elanları",
@@ -4411,7 +4287,7 @@ window.__RADAR__ = {
       "fetched": 1,
       "relevant": 0,
       "error": null,
-      "at": "2026-11-05T17:44:08+00:00"
+      "at": "2026-11-06T11:42:23+00:00"
     },
     {
       "source": "World Bank satınalma (Azərbaycan)",
@@ -4420,7 +4296,7 @@ window.__RADAR__ = {
       "fetched": 38,
       "relevant": 1,
       "error": null,
-      "at": "2026-11-05T17:44:08+00:00"
+      "at": "2026-11-06T11:42:23+00:00"
     },
     {
       "source": "EBRD ECEPP satınalma (Azərbaycan)",
@@ -4429,7 +4305,7 @@ window.__RADAR__ = {
       "fetched": 31,
       "relevant": 0,
       "error": null,
-      "at": "2026-11-05T17:44:08+00:00"
+      "at": "2026-11-06T11:42:23+00:00"
     },
     {
       "source": "etender.gov.az (dövlət satınalma portalı)",
@@ -4474,7 +4350,7 @@ window.__RADAR__ = {
       "fetched": 31,
       "relevant": 18,
       "error": null,
-      "at": "2026-11-05T17:44:08+00:00"
+      "at": "2026-11-06T11:42:23+00:00"
     },
     {
       "source": "AICC Caspian (asset integrity, corrosion)",
@@ -4483,7 +4359,7 @@ window.__RADAR__ = {
       "fetched": 1,
       "relevant": 1,
       "error": null,
-      "at": "2026-11-05T17:44:08+00:00"
+      "at": "2026-11-06T11:42:23+00:00"
     }
   ],
   "companies": [
