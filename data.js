@@ -1,5 +1,5 @@
 window.__RADAR__ = {
-  "generated_at": "2026-11-16T19:54:59+00:00",
+  "generated_at": "2026-11-17T12:39:07+00:00",
   "demo": false,
   "profile": {
     "company": "Portfolio",
@@ -20,92 +20,6 @@ window.__RADAR__ = {
     "retender_note": "Təkrar tender radarı: etender müqavilənin bitmə tarixi (expireDate) minus retender_lead_days = sifarişçinin növbəti alışı elan edə biləcəyi pəncərə. Ehtimal deyil, tarix qaydasıdır."
   },
   "tenders": [
-    {
-      "id": "e745a0f67d89",
-      "title": "Qaracəmirli 3 saylı nasos stansiyasının (nasos,elektrik mühərriki,elektrik təsərrüfatı, sorma və vurma boruları, təzyiqli boru xətti və digər köməkçi avadanlıqlar) əsaslı təmiri işləri",
-      "url": "https://etender.gov.az/main/competition/detail/360584",
-      "source_id": "etender",
-      "source": "etender.gov.az (dövlət satınalma portalı)",
-      "category": "direct_tender",
-      "buyer": "\"REGİONAL SU MELİORASİYA XİDMƏTİ\" PUBLİK HÜQUQİ ŞƏXSİ",
-      "score": 79,
-      "tier": "HOT",
-      "reasons": [
-        "sector: qaz (+6)",
-        "valve_direct: klapan, siyirtmə (+30)",
-        "equipment: boru, flans, nasos, su kəməri (+28)",
-        "şirkət: ADSEA (Dövlət Su Ehtiyatları Agentliyi) (+10)",
-        "Son tarixə 19 gün (+5)"
-      ],
-      "keywords": [
-        "klapan",
-        "qaz",
-        "siyirtmə"
-      ],
-      "companies": [
-        {
-          "name": "ADSEA (Dövlət Su Ehtiyatları Agentliyi)",
-          "role": "utility"
-        }
-      ],
-      "contractors": [],
-      "action": "Tender sənədlərini endirin, vendor qeydiyyatını/pre-kvalifikasiyanı yoxlayın, son tarixi təqvimə yazın.",
-      "action_en": "Download the tender documents, check vendor registration / pre-qualification, put the deadline in the calendar.",
-      "source_en": "etender.gov.az (state procurement portal)",
-      "deadline": "2026-11-16",
-      "published": "2026-10-16",
-      "first_seen": "2026-10-14T08:45:24+00:00",
-      "is_new": false,
-      "changes": [],
-      "demo": false,
-      "tender_no": "2026/AT/05164/V2",
-      "budget": "80 000 AZN",
-      "contacts": [
-        {
-          "name": "Elşad Fərəcov",
-          "position": "Şöbə müdirinin müavini – sektor müdiri",
-          "phone": "+994 12 377 07 70 (601)",
-          "email": "elshad.ferecov@rsmx.gov.az"
-        }
-      ],
-      "address": "Bakı ş. AZ1000, Hökümət Evi, mər. 5",
-      "eligibility": [
-        "Minimum 2 iştirakçı",
-        "İştirak haqqı 160 AZN",
-        "Sənədə baxış haqqı 25 AZN"
-      ],
-      "items_preview": [
-        "4 MPa-a qədər şərti təzyiqli əl ilə ötürücülü və ya ötürücüsüz su kəməri üçün flans armaturu, şərti keçid diametri: 400 ",
-        "4 MPa-a qədər şərti təzyiqli əl ilə ötürücülü və ya ötürücüsüz su kəməri üçün flans armaturu, şərti keçid diametri: 400 ",
-        "Əl ilə idarə olunan kəpənək klapan D=400 (10atm) Nasos stansiya binası",
-        "4 MPa-a qədər şərti təzyiqli əl ilə ötürücülü və ya ötürücüsüz su kəməri üçün flans armaturu, şərti keçid diametri: 300 ",
-        "4 MPa-a qədər şərti təzyiqli əl ilə ötürücülü və ya ötürücüsüz su kəməri üçün flans armaturu, şərti keçid diametri: 300 ",
-        "Kəpənək siyirtmə yivli qutulu D=300mm 10bar Nasos stansiya binası",
-        "Çalovunun tutumu 0,65 (0,5-1) m3 olan ekskavatorlarla qruntun kənara atılaraq qazılması, qruntun qrupu: 2 Nasos stansiya",
-        "Dərinliyi 2 m-ə qədər olan yamaclı xəndəklərdə qruntun bərkitmələr olmadan əl ilə qazılması, qruntun qrupu: 2 (boru üstü"
-      ],
-      "items_total": 74,
-      "score10": 8,
-      "competition": "Yüksək (açıq dövlət tenderi)",
-      "strategic_value": "Yüksək",
-      "revenue_potential": "Orta (80 000 AZN)",
-      "competition_en": "High (open public tender)",
-      "strategic_value_en": "High",
-      "revenue_potential_en": "Medium (80 000 AZN)",
-      "budget_value": 80000,
-      "segment": "Valve & Actuator",
-      "signal_type": "Tender",
-      "zone": "opportunity",
-      "product_fit": [
-        {
-          "line": "Gate & globe valves",
-          "brand": "PetrolValves",
-          "terms": [
-            "siyirtmə"
-          ]
-        }
-      ]
-    },
     {
       "id": "7f4be8d9f555",
       "title": "\"Tabeli qurumların komplektləşdirilməsi üçün maşın-mexanizmlər\"in satın alınması",
@@ -431,7 +345,18 @@ window.__RADAR__ = {
       "segment": "Layihə siqnalı",
       "signal_type": "Award",
       "zone": "intel",
-      "related": []
+      "related": [
+        {
+          "title": "TotalEnergies awards Vallourec tubulars contract for Absheron gas field tieback - Offshore Magazine",
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOWmV4VnFnalFhQmltanpBMEtwQ19LV0M0WG0xcGhTd2ZFeFlLQ0htMGNkWVA2NmR0U1RxR0tWRm0yYkw1ZTYyaWxiQjNUWlY3TmVCXzRhV0N5ZWVva294cUtfRHYxVk1FTTdjOVJnN3cxd1Vrcjc5bGN3SWRfck54NklLUktkaEhpRkt5WDFWWl9QUzFZZ3MyV3A3NWxDYkhheHBjMklpODhjME81c1dROUVMQW5JTjRnQ213TUxDT1dTenZob0Z0X1pieEV6QWdTRHJyZHF0ckVmQQ?oc=5",
+          "source": "Upstream · OGJ · Offshore Mag · Rigzone · Offshore Energy (Google News)"
+        },
+        {
+          "title": "TotalEnergies awards contract for Absheron gas field - Oil & Gas Journal",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPU25ucXJjTGZRMGpHcklqak54a1JNaV9JV0NLVk5pWVhiUkZFel9IYURsVWN3VVdsaElUeU9sQVkwa1NLM3FGQ0dVU2JrYXBKZVBROGtfWGstUWNpVElKXzVKYlg3Q0ZhNG5paXo4LWt0ZHJnZ1hOcEF4Y25yV0VlMmYxLXFDUUpTanlKSl91RXVzLXVTZE5TOW1MQmFScEtEcVhpOWJRaEFaMkRFME9Z?oc=5",
+          "source": "Upstream · OGJ · Offshore Mag · Rigzone · Offshore Energy (Google News)"
+        }
+      ]
     },
     {
       "id": "81575c7d4dbf",
@@ -738,51 +663,44 @@ window.__RADAR__ = {
       "zone": "intel"
     },
     {
-      "id": "3b4b21fdef93",
-      "title": "bp completes gas reinjection expansion and subsea intervention projects on ACG Field - Offshore Magazine",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQMHZmRk1qdWc1bXZKRmtDbzJzalB2VGRKTndMMXFmQjdUcUs0Nm1vRkczX1ZqazFBN2JzeEpGeEZtZGpPejN0NFBrdDljS2xqaUhZSlZqZTFfLUFHWTExRVRoUTZGTWV0dHBwSkNLM0xjSXYySDdqUnJYWWx3ZEc1WEVvM2xJRE1jcXZ3c21zUWp2MDB1a0RERW5TR1Z0T19sb0dFYUFyZTcxQXZTZjlVZzk1aFBSM3prNnFIWmF2Xzh4YVMzLU94NTBfRkFuNWpnZElxcg?oc=5",
-      "source_id": "gn_trade_press",
-      "source": "Upstream · OGJ · Offshore Mag · Rigzone · Offshore Energy (Google News)",
-      "category": "early_signal",
+      "id": "08758afc64e7",
+      "title": "Procurement of engineering- geological research works in Nakhchivan Autonomous Republic Drilling of exploratory wells in Gulustan settlement Drilling of exploratory wells in the \"Yayci-2\" field Drilling of exploratory wells in the \"Jahri-1\" field Drilling of exploratory wells along the pipeline route Rock sampling and laboratory studies Water and soil sampling and chemical analysis",
+      "url": "https://www.globaltenders.com/tender-detail/procurement-of-engineering-geological-resear-MZz9n1NkjjDxAPVz",
+      "source_id": "globaltenders_oilgas",
+      "source": "GlobalTenders - Azerbaijan Oil & Gas",
+      "category": "direct_tender",
       "buyer": null,
       "score": 32,
       "tier": "WATCH",
       "reasons": [
-        "sector: acg, offshore, subsea (+10)",
-        "procurement_stage: expansion (+12)",
-        "şirkət: bp (AIOC/BTC/SCP/Shah Deniz) (+10)"
+        "sector: pipeline (+6)",
+        "procurement_stage: engineering, procurement (+16)",
+        "Son tarixə 0 gün (+10)"
       ],
       "keywords": [
-        "acg",
-        "offshore",
-        "subsea"
+        "pipeline"
       ],
-      "companies": [
-        {
-          "name": "bp (AIOC/BTC/SCP/Shah Deniz)",
-          "role": "operator"
-        }
-      ],
+      "companies": [],
       "contractors": [],
-      "action": "Erkən siqnal: bp (AIOC/BTC/SCP/Shah Deniz) layihəsinin EPC podratçısını müəyyən edib vendor list-ə müraciət edin.",
-      "action_en": "Early signal: identify the EPC contractor of the bp (AIOC/BTC/SCP/Shah Deniz) project and apply for its vendor list.",
-      "source_en": "Upstream · OGJ · Offshore Mag · Rigzone · Offshore Energy (Google News)",
-      "deadline": null,
-      "published": "2026-10-02",
-      "first_seen": "2026-10-02T19:01:28+00:00",
-      "is_new": false,
+      "action": "Tender sənədlərini endirin, vendor qeydiyyatını/pre-kvalifikasiyanı yoxlayın, son tarixi təqvimə yazın.",
+      "action_en": "Download the tender documents, check vendor registration / pre-qualification, put the deadline in the calendar.",
+      "source_en": "GlobalTenders - Azerbaijan Oil & Gas",
+      "deadline": "2026-11-17",
+      "published": "2026-11-16",
+      "first_seen": "2026-11-17T12:39:07+00:00",
+      "is_new": true,
       "changes": [],
       "demo": false,
       "score10": 3,
-      "competition": "Aşağı (erkən mərhələ, tender hələ elan olunmayıb)",
-      "strategic_value": "Orta",
-      "revenue_potential": "Potensial yüksək (layihə səviyyəsi, büdcə məlum deyil)",
-      "competition_en": "Low (early stage, no tender yet)",
-      "strategic_value_en": "Medium",
-      "revenue_potential_en": "Potentially high (project level, budget unknown)",
-      "segment": "Layihə siqnalı",
-      "signal_type": "Layihə xəbəri",
-      "zone": "news"
+      "competition": "Yüksək (açıq dövlət tenderi)",
+      "strategic_value": "Aşağı",
+      "revenue_potential": "Naməlum (büdcə dərc olunmayıb)",
+      "competition_en": "High (open public tender)",
+      "strategic_value_en": "Low",
+      "revenue_potential_en": "Unknown (budget not published)",
+      "segment": "Procurement Package",
+      "signal_type": "Tender",
+      "zone": "opportunity"
     },
     {
       "id": "0b935e7c7d09",
@@ -2394,123 +2312,6 @@ window.__RADAR__ = {
       "deadline": null,
       "published": "2026-11-16",
       "first_seen": "2026-11-16T19:54:59+00:00",
-      "is_new": true,
-      "changes": [],
-      "demo": false,
-      "score10": 2,
-      "competition": "Aşağı (erkən mərhələ, tender hələ elan olunmayıb)",
-      "strategic_value": "Aşağı",
-      "revenue_potential": "Naməlum (büdcə dərc olunmayıb)",
-      "competition_en": "Low (early stage, no tender yet)",
-      "strategic_value_en": "Low",
-      "revenue_potential_en": "Unknown (budget not published)",
-      "segment": "Layihə siqnalı",
-      "signal_type": "Layihə xəbəri",
-      "zone": "intel"
-    },
-    {
-      "id": "ee15ff9ec5f6",
-      "title": "Energy, trade and connectivity: Key economic outcomes of Dublin EPC summit for Azerbaijan - Trend News Agency",
-      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE82cGZvYXdaMHJiMTltOWJaRl9xbFJka08yY2Q0YzJzbG5QUWlnY0xhZVRjU19mb0FDUV9PU2pWU3YwS2JOUEhQR3FreFc1cEZZeUZQaHVjNA?oc=5",
-      "source_id": "gn_epc",
-      "source": "Google News: Azerbaijan EPC / FEED",
-      "category": "early_signal",
-      "buyer": null,
-      "score": 18,
-      "tier": "INFO",
-      "reasons": [
-        "sector: epc (+6)",
-        "procurement_stage: epc (+12)"
-      ],
-      "keywords": [
-        "epc"
-      ],
-      "companies": [],
-      "contractors": [],
-      "action": "Erkən siqnal: layihənin EPC podratçısını müəyyən edin və vendor list-ə müraciət edin.",
-      "action_en": "Early signal: identify the project's EPC contractor and apply for its vendor list.",
-      "source_en": "Google News: Azerbaijan EPC / FEED",
-      "deadline": null,
-      "published": "2026-11-13",
-      "first_seen": "2026-11-13T11:45:03+00:00",
-      "is_new": false,
-      "changes": [],
-      "demo": false,
-      "score10": 2,
-      "competition": "Aşağı (erkən mərhələ, tender hələ elan olunmayıb)",
-      "strategic_value": "Aşağı",
-      "revenue_potential": "Naməlum (büdcə dərc olunmayıb)",
-      "competition_en": "Low (early stage, no tender yet)",
-      "strategic_value_en": "Low",
-      "revenue_potential_en": "Unknown (budget not published)",
-      "segment": "Layihə siqnalı",
-      "signal_type": "Layihə xəbəri",
-      "zone": "intel"
-    },
-    {
-      "id": "a4c24c4d5234",
-      "title": "Dublin EPC summit offers new prospects for Azerbaijan — report by Trend’s special correspondent (VIDEO) - Trend News Agency",
-      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9mV3p0RUFxWTBYZWhrclBqUGJVNnFKMDNLNS1haWxJTWg5UTlXaks2Zlo4cUxFVVlHdW1KV0dkSTh3TndTZlZUSnRRMzlEVWtzdWlPUnNGbw?oc=5",
-      "source_id": "gn_epc",
-      "source": "Google News: Azerbaijan EPC / FEED",
-      "category": "early_signal",
-      "buyer": null,
-      "score": 18,
-      "tier": "INFO",
-      "reasons": [
-        "sector: epc (+6)",
-        "procurement_stage: epc (+12)"
-      ],
-      "keywords": [
-        "epc"
-      ],
-      "companies": [],
-      "contractors": [],
-      "action": "Erkən siqnal: layihənin EPC podratçısını müəyyən edin və vendor list-ə müraciət edin.",
-      "action_en": "Early signal: identify the project's EPC contractor and apply for its vendor list.",
-      "source_en": "Google News: Azerbaijan EPC / FEED",
-      "deadline": null,
-      "published": "2026-11-12",
-      "first_seen": "2026-11-12T17:47:12+00:00",
-      "is_new": false,
-      "changes": [],
-      "demo": false,
-      "score10": 2,
-      "competition": "Aşağı (erkən mərhələ, tender hələ elan olunmayıb)",
-      "strategic_value": "Aşağı",
-      "revenue_potential": "Naməlum (büdcə dərc olunmayıb)",
-      "competition_en": "Low (early stage, no tender yet)",
-      "strategic_value_en": "Low",
-      "revenue_potential_en": "Unknown (budget not published)",
-      "segment": "Layihə siqnalı",
-      "signal_type": "Layihə xəbəri",
-      "zone": "intel"
-    },
-    {
-      "id": "1b1d35e9a3e7",
-      "title": "Azerbaijan did not join three documents adopted at EPC summit – MFA - Trend News Agency",
-      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFAyaUVLZy05R2hJTC1LWFQ4bEtpY210dnQzSXpjajZHNVdwY09qREFka1NvUV9nSVh6UlEyRnQ5ckVKellzT0dWVWRwY3JySWdTVHByVTNCdw?oc=5",
-      "source_id": "gn_epc",
-      "source": "Google News: Azerbaijan EPC / FEED",
-      "category": "early_signal",
-      "buyer": null,
-      "score": 18,
-      "tier": "INFO",
-      "reasons": [
-        "sector: epc (+6)",
-        "procurement_stage: epc (+12)"
-      ],
-      "keywords": [
-        "epc"
-      ],
-      "companies": [],
-      "contractors": [],
-      "action": "Erkən siqnal: layihənin EPC podratçısını müəyyən edin və vendor list-ə müraciət edin.",
-      "action_en": "Early signal: identify the project's EPC contractor and apply for its vendor list.",
-      "source_en": "Google News: Azerbaijan EPC / FEED",
-      "deadline": null,
-      "published": "2026-11-13",
-      "first_seen": "2026-11-13T11:45:03+00:00",
       "is_new": false,
       "changes": [],
       "demo": false,
@@ -2547,45 +2348,6 @@ window.__RADAR__ = {
       "action": "Erkən siqnal: layihənin EPC podratçısını müəyyən edin və vendor list-ə müraciət edin.",
       "action_en": "Early signal: identify the project's EPC contractor and apply for its vendor list.",
       "source_en": "Google News: Azerbaijan EPC / FEED",
-      "deadline": null,
-      "published": "2026-11-13",
-      "first_seen": "2026-11-13T11:45:03+00:00",
-      "is_new": false,
-      "changes": [],
-      "demo": false,
-      "score10": 2,
-      "competition": "Aşağı (erkən mərhələ, tender hələ elan olunmayıb)",
-      "strategic_value": "Aşağı",
-      "revenue_potential": "Naməlum (büdcə dərc olunmayıb)",
-      "competition_en": "Low (early stage, no tender yet)",
-      "strategic_value_en": "Low",
-      "revenue_potential_en": "Unknown (budget not published)",
-      "segment": "Layihə siqnalı",
-      "signal_type": "Layihə xəbəri",
-      "zone": "intel"
-    },
-    {
-      "id": "90dbda56c33d",
-      "title": "Azerbaijan did not join three documents at the EPC summit - Baku.ws",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPV3VwQ05kQ0VhSHQ1ZGdGUmhya2RNMzJGYktmeDV4Vk5CcHVQckZDZVpWRXNScklfdGNwRXVyUW5qbGJ0SVV2U1Y4V3Yyb0U1eHBqWkgza0Z0WXdoN2xzZlFrY1VURmEwRktBc1dKRFBIWXJCOEVFeFdvbTRZSnE0X1BLYTM3QmVUdDlEbFRn?oc=5",
-      "source_id": "gn_awards",
-      "source": "Google News: contract award / EPC / FEED (Azərbaycan, Xəzər)",
-      "category": "early_signal",
-      "buyer": null,
-      "score": 18,
-      "tier": "INFO",
-      "reasons": [
-        "sector: epc (+6)",
-        "procurement_stage: epc (+12)"
-      ],
-      "keywords": [
-        "epc"
-      ],
-      "companies": [],
-      "contractors": [],
-      "action": "Erkən siqnal: layihənin EPC podratçısını müəyyən edin və vendor list-ə müraciət edin.",
-      "action_en": "Early signal: identify the project's EPC contractor and apply for its vendor list.",
-      "source_en": "Google News: contract award / EPC / FEED (Azerbaijan, Caspian)",
       "deadline": null,
       "published": "2026-11-13",
       "first_seen": "2026-11-13T11:45:03+00:00",
@@ -2719,6 +2481,162 @@ window.__RADAR__ = {
       "segment": "Layihə siqnalı",
       "signal_type": "Layihə xəbəri",
       "zone": "news"
+    },
+    {
+      "id": "ee15ff9ec5f6",
+      "title": "Energy, trade and connectivity: Key economic outcomes of Dublin EPC summit for Azerbaijan - Trend News Agency",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE82cGZvYXdaMHJiMTltOWJaRl9xbFJka08yY2Q0YzJzbG5QUWlnY0xhZVRjU19mb0FDUV9PU2pWU3YwS2JOUEhQR3FreFc1cEZZeUZQaHVjNA?oc=5",
+      "source_id": "gn_epc",
+      "source": "Google News: Azerbaijan EPC / FEED",
+      "category": "early_signal",
+      "buyer": null,
+      "score": 18,
+      "tier": "INFO",
+      "reasons": [
+        "sector: epc (+6)",
+        "procurement_stage: epc (+12)"
+      ],
+      "keywords": [
+        "epc"
+      ],
+      "companies": [],
+      "contractors": [],
+      "action": "Erkən siqnal: layihənin EPC podratçısını müəyyən edin və vendor list-ə müraciət edin.",
+      "action_en": "Early signal: identify the project's EPC contractor and apply for its vendor list.",
+      "source_en": "Google News: Azerbaijan EPC / FEED",
+      "deadline": null,
+      "published": "2026-11-13",
+      "first_seen": "2026-11-13T11:45:03+00:00",
+      "is_new": false,
+      "changes": [],
+      "demo": false,
+      "score10": 2,
+      "competition": "Aşağı (erkən mərhələ, tender hələ elan olunmayıb)",
+      "strategic_value": "Aşağı",
+      "revenue_potential": "Naməlum (büdcə dərc olunmayıb)",
+      "competition_en": "Low (early stage, no tender yet)",
+      "strategic_value_en": "Low",
+      "revenue_potential_en": "Unknown (budget not published)",
+      "segment": "Layihə siqnalı",
+      "signal_type": "Layihə xəbəri",
+      "zone": "intel"
+    },
+    {
+      "id": "a4c24c4d5234",
+      "title": "Dublin EPC summit offers new prospects for Azerbaijan — report by Trend’s special correspondent (VIDEO) - Trend News Agency",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9mV3p0RUFxWTBYZWhrclBqUGJVNnFKMDNLNS1haWxJTWg5UTlXaks2Zlo4cUxFVVlHdW1KV0dkSTh3TndTZlZUSnRRMzlEVWtzdWlPUnNGbw?oc=5",
+      "source_id": "gn_epc",
+      "source": "Google News: Azerbaijan EPC / FEED",
+      "category": "early_signal",
+      "buyer": null,
+      "score": 18,
+      "tier": "INFO",
+      "reasons": [
+        "sector: epc (+6)",
+        "procurement_stage: epc (+12)"
+      ],
+      "keywords": [
+        "epc"
+      ],
+      "companies": [],
+      "contractors": [],
+      "action": "Erkən siqnal: layihənin EPC podratçısını müəyyən edin və vendor list-ə müraciət edin.",
+      "action_en": "Early signal: identify the project's EPC contractor and apply for its vendor list.",
+      "source_en": "Google News: Azerbaijan EPC / FEED",
+      "deadline": null,
+      "published": "2026-11-12",
+      "first_seen": "2026-11-12T17:47:12+00:00",
+      "is_new": false,
+      "changes": [],
+      "demo": false,
+      "score10": 2,
+      "competition": "Aşağı (erkən mərhələ, tender hələ elan olunmayıb)",
+      "strategic_value": "Aşağı",
+      "revenue_potential": "Naməlum (büdcə dərc olunmayıb)",
+      "competition_en": "Low (early stage, no tender yet)",
+      "strategic_value_en": "Low",
+      "revenue_potential_en": "Unknown (budget not published)",
+      "segment": "Layihə siqnalı",
+      "signal_type": "Layihə xəbəri",
+      "zone": "intel"
+    },
+    {
+      "id": "1b1d35e9a3e7",
+      "title": "Azerbaijan did not join three documents adopted at EPC summit – MFA - Trend News Agency",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFAyaUVLZy05R2hJTC1LWFQ4bEtpY210dnQzSXpjajZHNVdwY09qREFka1NvUV9nSVh6UlEyRnQ5ckVKellzT0dWVWRwY3JySWdTVHByVTNCdw?oc=5",
+      "source_id": "gn_epc",
+      "source": "Google News: Azerbaijan EPC / FEED",
+      "category": "early_signal",
+      "buyer": null,
+      "score": 18,
+      "tier": "INFO",
+      "reasons": [
+        "sector: epc (+6)",
+        "procurement_stage: epc (+12)"
+      ],
+      "keywords": [
+        "epc"
+      ],
+      "companies": [],
+      "contractors": [],
+      "action": "Erkən siqnal: layihənin EPC podratçısını müəyyən edin və vendor list-ə müraciət edin.",
+      "action_en": "Early signal: identify the project's EPC contractor and apply for its vendor list.",
+      "source_en": "Google News: Azerbaijan EPC / FEED",
+      "deadline": null,
+      "published": "2026-11-13",
+      "first_seen": "2026-11-13T11:45:03+00:00",
+      "is_new": false,
+      "changes": [],
+      "demo": false,
+      "score10": 2,
+      "competition": "Aşağı (erkən mərhələ, tender hələ elan olunmayıb)",
+      "strategic_value": "Aşağı",
+      "revenue_potential": "Naməlum (büdcə dərc olunmayıb)",
+      "competition_en": "Low (early stage, no tender yet)",
+      "strategic_value_en": "Low",
+      "revenue_potential_en": "Unknown (budget not published)",
+      "segment": "Layihə siqnalı",
+      "signal_type": "Layihə xəbəri",
+      "zone": "intel"
+    },
+    {
+      "id": "90dbda56c33d",
+      "title": "Azerbaijan did not join three documents at the EPC summit - Baku.ws",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPV3VwQ05kQ0VhSHQ1ZGdGUmhya2RNMzJGYktmeDV4Vk5CcHVQckZDZVpWRXNScklfdGNwRXVyUW5qbGJ0SVV2U1Y4V3Yyb0U1eHBqWkgza0Z0WXdoN2xzZlFrY1VURmEwRktBc1dKRFBIWXJCOEVFeFdvbTRZSnE0X1BLYTM3QmVUdDlEbFRn?oc=5",
+      "source_id": "gn_awards",
+      "source": "Google News: contract award / EPC / FEED (Azərbaycan, Xəzər)",
+      "category": "early_signal",
+      "buyer": null,
+      "score": 18,
+      "tier": "INFO",
+      "reasons": [
+        "sector: epc (+6)",
+        "procurement_stage: epc (+12)"
+      ],
+      "keywords": [
+        "epc"
+      ],
+      "companies": [],
+      "contractors": [],
+      "action": "Erkən siqnal: layihənin EPC podratçısını müəyyən edin və vendor list-ə müraciət edin.",
+      "action_en": "Early signal: identify the project's EPC contractor and apply for its vendor list.",
+      "source_en": "Google News: contract award / EPC / FEED (Azerbaijan, Caspian)",
+      "deadline": null,
+      "published": "2026-11-13",
+      "first_seen": "2026-11-13T11:45:03+00:00",
+      "is_new": false,
+      "changes": [],
+      "demo": false,
+      "score10": 2,
+      "competition": "Aşağı (erkən mərhələ, tender hələ elan olunmayıb)",
+      "strategic_value": "Aşağı",
+      "revenue_potential": "Naməlum (büdcə dərc olunmayıb)",
+      "competition_en": "Low (early stage, no tender yet)",
+      "strategic_value_en": "Low",
+      "revenue_potential_en": "Unknown (budget not published)",
+      "segment": "Layihə siqnalı",
+      "signal_type": "Layihə xəbəri",
+      "zone": "intel"
     },
     {
       "id": "2cc4e7ae0160",
@@ -3832,25 +3750,25 @@ window.__RADAR__ = {
       "fetched": 30,
       "relevant": 0,
       "error": null,
-      "at": "2026-11-16T19:54:59+00:00"
+      "at": "2026-11-17T12:39:07+00:00"
     },
     {
       "source": "GlobalTenders - Azerbaijan Oil & Gas",
       "source_en": "GlobalTenders - Azerbaijan Oil & Gas",
       "id": "globaltenders_oilgas",
       "fetched": 20,
-      "relevant": 0,
+      "relevant": 1,
       "error": null,
-      "at": "2026-11-16T19:54:59+00:00"
+      "at": "2026-11-17T12:39:07+00:00"
     },
     {
       "source": "Trend Tenders bölməsi",
       "source_en": "Trend Tenders section",
       "id": "trend_tenders",
-      "fetched": 180,
+      "fetched": 183,
       "relevant": 0,
       "error": null,
-      "at": "2026-11-16T19:54:59+00:00"
+      "at": "2026-11-17T12:39:07+00:00"
     },
     {
       "source": "ADSEA elanları (satınalma, EOI)",
@@ -3859,70 +3777,70 @@ window.__RADAR__ = {
       "fetched": 9,
       "relevant": 2,
       "error": null,
-      "at": "2026-11-16T19:54:59+00:00"
+      "at": "2026-11-17T12:39:07+00:00"
     },
     {
       "source": "bp Azerbaijan xəbərləri (press-reliz)",
       "source_en": "bp Azerbaijan press releases",
       "id": "bp_az_news",
-      "fetched": 8,
+      "fetched": 9,
       "relevant": 2,
       "error": null,
-      "at": "2026-11-16T19:54:59+00:00"
+      "at": "2026-11-17T12:39:07+00:00"
     },
     {
       "source": "Google News: Azerbaijan EPC / FEED",
       "source_en": "Google News: Azerbaijan EPC / FEED",
       "id": "gn_epc",
       "fetched": 27,
-      "relevant": 8,
+      "relevant": 4,
       "error": null,
-      "at": "2026-11-16T19:54:59+00:00"
+      "at": "2026-11-17T12:39:07+00:00"
     },
     {
       "source": "Google News: SOCAR tender / contract",
       "source_en": "Google News: SOCAR tender / contract",
       "id": "gn_socar",
-      "fetched": 11,
+      "fetched": 10,
       "relevant": 1,
       "error": null,
-      "at": "2026-11-16T19:54:59+00:00"
+      "at": "2026-11-17T12:39:07+00:00"
     },
     {
       "source": "Google News: bp Azerbaijan projects",
       "source_en": "Google News: bp Azerbaijan projects",
       "id": "gn_bp",
-      "fetched": 32,
-      "relevant": 2,
+      "fetched": 33,
+      "relevant": 3,
       "error": null,
-      "at": "2026-11-16T19:54:59+00:00"
+      "at": "2026-11-17T12:39:07+00:00"
     },
     {
       "source": "Google News: EPC / fabrikasiya podratçıları",
       "source_en": "Google News: EPC / fabrication contractors",
       "id": "gn_contractors",
-      "fetched": 2,
+      "fetched": 6,
       "relevant": 0,
       "error": null,
-      "at": "2026-11-16T19:54:59+00:00"
+      "at": "2026-11-17T12:39:07+00:00"
     },
     {
       "source": "Google News: servis şirkətləri və operatorlar",
       "source_en": "Google News: service companies and operators",
       "id": "gn_service",
-      "fetched": 33,
+      "fetched": 31,
       "relevant": 3,
       "error": null,
-      "at": "2026-11-16T19:54:59+00:00"
+      "at": "2026-11-17T12:39:07+00:00"
     },
     {
       "source": "Google News: SOCAR qrupu və törəmələri",
       "source_en": "Google News: SOCAR group and affiliates",
       "id": "gn_socar_group",
-      "fetched": 12,
+      "fetched": 11,
       "relevant": 1,
       "error": null,
-      "at": "2026-11-16T19:54:59+00:00"
+      "at": "2026-11-17T12:39:07+00:00"
     },
     {
       "source": "Google News: JOCAP, Nobel qrupu, SOCAR Upstream",
@@ -3931,16 +3849,16 @@ window.__RADAR__ = {
       "fetched": 7,
       "relevant": 0,
       "error": null,
-      "at": "2026-11-16T19:54:59+00:00"
+      "at": "2026-11-17T12:39:07+00:00"
     },
     {
       "source": "Google News (RU dili, AZ): SOCAR tender / podrat",
       "source_en": "Google News (Russian, AZ): SOCAR tenders / contractors",
       "id": "gn_az",
-      "fetched": 22,
+      "fetched": 26,
       "relevant": 2,
       "error": null,
-      "at": "2026-11-16T19:54:59+00:00"
+      "at": "2026-11-17T12:39:07+00:00"
     },
     {
       "source": "Trend News (ümumi lent)",
@@ -3949,7 +3867,7 @@ window.__RADAR__ = {
       "fetched": 25,
       "relevant": 0,
       "error": null,
-      "at": "2026-11-16T19:54:59+00:00"
+      "at": "2026-11-17T12:39:07+00:00"
     },
     {
       "source": "Trend Energy bölməsi",
@@ -3958,7 +3876,7 @@ window.__RADAR__ = {
       "fetched": 160,
       "relevant": 0,
       "error": null,
-      "at": "2026-11-16T19:54:59+00:00"
+      "at": "2026-11-17T12:39:07+00:00"
     },
     {
       "source": "Offshore Energy (RSS)",
@@ -3967,7 +3885,7 @@ window.__RADAR__ = {
       "fetched": 50,
       "relevant": 0,
       "error": null,
-      "at": "2026-11-16T19:54:59+00:00"
+      "at": "2026-11-17T12:39:07+00:00"
     },
     {
       "source": "Rigzone (RSS)",
@@ -3976,43 +3894,43 @@ window.__RADAR__ = {
       "fetched": 20,
       "relevant": 0,
       "error": null,
-      "at": "2026-11-16T19:54:59+00:00"
+      "at": "2026-11-17T12:39:07+00:00"
     },
     {
       "source": "Upstream · OGJ · Offshore Mag · Rigzone · Offshore Energy (Google News)",
       "source_en": "Upstream · OGJ · Offshore Mag · Rigzone · Offshore Energy (Google News)",
       "id": "gn_trade_press",
-      "fetched": 0,
-      "relevant": 0,
-      "error": "RuntimeError: HTTP Error 429: Too Many Requests",
-      "at": "2026-11-16T19:54:59+00:00"
+      "fetched": 50,
+      "relevant": 3,
+      "error": null,
+      "at": "2026-11-17T12:39:07+00:00"
     },
     {
       "source": "Google News: contract award / EPC / FEED (Azərbaycan, Xəzər)",
       "source_en": "Google News: contract award / EPC / FEED (Azerbaijan, Caspian)",
       "id": "gn_awards",
       "fetched": 33,
-      "relevant": 5,
+      "relevant": 3,
       "error": null,
-      "at": "2026-11-16T19:54:59+00:00"
+      "at": "2026-11-17T12:39:07+00:00"
     },
     {
       "source": "Google News: brownfield / turnaround / offshore maintenance / valve replacement",
       "source_en": "Google News: brownfield / turnaround / offshore maintenance / valve replacement",
       "id": "gn_brownfield",
-      "fetched": 22,
+      "fetched": 24,
       "relevant": 0,
       "error": null,
-      "at": "2026-11-16T19:54:59+00:00"
+      "at": "2026-11-17T12:39:07+00:00"
     },
     {
       "source": "Google News: pipeline expansion / refinery upgrade / compression",
       "source_en": "Google News: pipeline expansion / refinery upgrade / compression",
       "id": "gn_expansion",
-      "fetched": 24,
+      "fetched": 25,
       "relevant": 4,
       "error": null,
-      "at": "2026-11-16T19:54:59+00:00"
+      "at": "2026-11-17T12:39:07+00:00"
     },
     {
       "source": "Azfen xəbərləri",
@@ -4021,7 +3939,7 @@ window.__RADAR__ = {
       "fetched": 10,
       "relevant": 0,
       "error": null,
-      "at": "2026-11-16T19:54:59+00:00"
+      "at": "2026-11-17T12:39:07+00:00"
     },
     {
       "source": "Baku Shipyard xəbərləri",
@@ -4030,7 +3948,7 @@ window.__RADAR__ = {
       "fetched": 0,
       "relevant": 0,
       "error": null,
-      "at": "2026-11-16T19:54:59+00:00"
+      "at": "2026-11-17T12:39:07+00:00"
     },
     {
       "source": "SOCAR-KBR xəbər və tender elanları",
@@ -4039,7 +3957,7 @@ window.__RADAR__ = {
       "fetched": 1,
       "relevant": 0,
       "error": null,
-      "at": "2026-11-16T19:54:59+00:00"
+      "at": "2026-11-17T12:39:07+00:00"
     },
     {
       "source": "World Bank satınalma (Azərbaycan)",
@@ -4048,7 +3966,7 @@ window.__RADAR__ = {
       "fetched": 38,
       "relevant": 1,
       "error": null,
-      "at": "2026-11-16T19:54:59+00:00"
+      "at": "2026-11-17T12:39:07+00:00"
     },
     {
       "source": "EBRD ECEPP satınalma (Azərbaycan)",
@@ -4057,7 +3975,7 @@ window.__RADAR__ = {
       "fetched": 31,
       "relevant": 0,
       "error": null,
-      "at": "2026-11-16T19:54:59+00:00"
+      "at": "2026-11-17T12:39:07+00:00"
     },
     {
       "source": "etender.gov.az (dövlət satınalma portalı)",
@@ -4102,7 +4020,7 @@ window.__RADAR__ = {
       "fetched": 31,
       "relevant": 12,
       "error": null,
-      "at": "2026-11-16T19:54:59+00:00"
+      "at": "2026-11-17T12:39:07+00:00"
     },
     {
       "source": "AICC Caspian (asset integrity, corrosion)",
@@ -4111,7 +4029,7 @@ window.__RADAR__ = {
       "fetched": 1,
       "relevant": 1,
       "error": null,
-      "at": "2026-11-16T19:54:59+00:00"
+      "at": "2026-11-17T12:39:07+00:00"
     }
   ],
   "companies": [
