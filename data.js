@@ -1,5 +1,5 @@
 window.__RADAR__ = {
-  "generated_at": "2026-11-18T12:30:25+00:00",
+  "generated_at": "2026-11-18T18:29:31+00:00",
   "demo": false,
   "profile": {
     "company": "Portfolio",
@@ -2204,6 +2204,45 @@ window.__RADAR__ = {
       "zone": "intel"
     },
     {
+      "id": "1b1d35e9a3e7",
+      "title": "Azerbaijan did not join three documents adopted at EPC summit – MFA - Trend News Agency",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFAyaUVLZy05R2hJTC1LWFQ4bEtpY210dnQzSXpjajZHNVdwY09qREFka1NvUV9nSVh6UlEyRnQ5ckVKellzT0dWVWRwY3JySWdTVHByVTNCdw?oc=5",
+      "source_id": "gn_epc",
+      "source": "Google News: Azerbaijan EPC / FEED",
+      "category": "early_signal",
+      "buyer": null,
+      "score": 18,
+      "tier": "INFO",
+      "reasons": [
+        "sector: epc (+6)",
+        "procurement_stage: epc (+12)"
+      ],
+      "keywords": [
+        "epc"
+      ],
+      "companies": [],
+      "contractors": [],
+      "action": "Erkən siqnal: layihənin EPC podratçısını müəyyən edin və vendor list-ə müraciət edin.",
+      "action_en": "Early signal: identify the project's EPC contractor and apply for its vendor list.",
+      "source_en": "Google News: Azerbaijan EPC / FEED",
+      "deadline": null,
+      "published": "2026-11-13",
+      "first_seen": "2026-11-13T11:45:03+00:00",
+      "is_new": false,
+      "changes": [],
+      "demo": false,
+      "score10": 2,
+      "competition": "Aşağı (erkən mərhələ, tender hələ elan olunmayıb)",
+      "strategic_value": "Aşağı",
+      "revenue_potential": "Naməlum (büdcə dərc olunmayıb)",
+      "competition_en": "Low (early stage, no tender yet)",
+      "strategic_value_en": "Low",
+      "revenue_potential_en": "Unknown (budget not published)",
+      "segment": "Layihə siqnalı",
+      "signal_type": "Layihə xəbəri",
+      "zone": "intel"
+    },
+    {
       "id": "90dbda56c33d",
       "title": "Azerbaijan did not join three documents at the EPC summit - Baku.ws",
       "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPV3VwQ05kQ0VhSHQ1ZGdGUmhya2RNMzJGYktmeDV4Vk5CcHVQckZDZVpWRXNScklfdGNwRXVyUW5qbGJ0SVV2U1Y4V3Yyb0U1eHBqWkgza0Z0WXdoN2xzZlFrY1VURmEwRktBc1dKRFBIWXJCOEVFeFdvbTRZSnE0X1BLYTM3QmVUdDlEbFRn?oc=5",
@@ -2402,45 +2441,6 @@ window.__RADAR__ = {
       "id": "ee15ff9ec5f6",
       "title": "Energy, trade and connectivity: Key economic outcomes of Dublin EPC summit for Azerbaijan - Trend News Agency",
       "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE82cGZvYXdaMHJiMTltOWJaRl9xbFJka08yY2Q0YzJzbG5QUWlnY0xhZVRjU19mb0FDUV9PU2pWU3YwS2JOUEhQR3FreFc1cEZZeUZQaHVjNA?oc=5",
-      "source_id": "gn_epc",
-      "source": "Google News: Azerbaijan EPC / FEED",
-      "category": "early_signal",
-      "buyer": null,
-      "score": 18,
-      "tier": "INFO",
-      "reasons": [
-        "sector: epc (+6)",
-        "procurement_stage: epc (+12)"
-      ],
-      "keywords": [
-        "epc"
-      ],
-      "companies": [],
-      "contractors": [],
-      "action": "Erkən siqnal: layihənin EPC podratçısını müəyyən edin və vendor list-ə müraciət edin.",
-      "action_en": "Early signal: identify the project's EPC contractor and apply for its vendor list.",
-      "source_en": "Google News: Azerbaijan EPC / FEED",
-      "deadline": null,
-      "published": "2026-11-13",
-      "first_seen": "2026-11-13T11:45:03+00:00",
-      "is_new": false,
-      "changes": [],
-      "demo": false,
-      "score10": 2,
-      "competition": "Aşağı (erkən mərhələ, tender hələ elan olunmayıb)",
-      "strategic_value": "Aşağı",
-      "revenue_potential": "Naməlum (büdcə dərc olunmayıb)",
-      "competition_en": "Low (early stage, no tender yet)",
-      "strategic_value_en": "Low",
-      "revenue_potential_en": "Unknown (budget not published)",
-      "segment": "Layihə siqnalı",
-      "signal_type": "Layihə xəbəri",
-      "zone": "intel"
-    },
-    {
-      "id": "1b1d35e9a3e7",
-      "title": "Azerbaijan did not join three documents adopted at EPC summit – MFA - Trend News Agency",
-      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFAyaUVLZy05R2hJTC1LWFQ4bEtpY210dnQzSXpjajZHNVdwY09qREFka1NvUV9nSVh6UlEyRnQ5ckVKellzT0dWVWRwY3JySWdTVHByVTNCdw?oc=5",
       "source_id": "gn_epc",
       "source": "Google News: Azerbaijan EPC / FEED",
       "category": "early_signal",
@@ -3588,7 +3588,7 @@ window.__RADAR__ = {
       "fetched": 30,
       "relevant": 0,
       "error": null,
-      "at": "2026-11-18T12:30:25+00:00"
+      "at": "2026-11-18T18:29:31+00:00"
     },
     {
       "source": "GlobalTenders - Azerbaijan Oil & Gas",
@@ -3597,16 +3597,16 @@ window.__RADAR__ = {
       "fetched": 20,
       "relevant": 0,
       "error": null,
-      "at": "2026-11-18T12:30:25+00:00"
+      "at": "2026-11-18T18:29:31+00:00"
     },
     {
       "source": "Trend Tenders bölməsi",
       "source_en": "Trend Tenders section",
       "id": "trend_tenders",
-      "fetched": 184,
+      "fetched": 181,
       "relevant": 0,
       "error": null,
-      "at": "2026-11-18T12:30:25+00:00"
+      "at": "2026-11-18T18:29:31+00:00"
     },
     {
       "source": "ADSEA elanları (satınalma, EOI)",
@@ -3615,7 +3615,7 @@ window.__RADAR__ = {
       "fetched": 9,
       "relevant": 2,
       "error": null,
-      "at": "2026-11-18T12:30:25+00:00"
+      "at": "2026-11-18T18:29:31+00:00"
     },
     {
       "source": "bp Azerbaijan xəbərləri (press-reliz)",
@@ -3624,61 +3624,61 @@ window.__RADAR__ = {
       "fetched": 9,
       "relevant": 2,
       "error": null,
-      "at": "2026-11-18T12:30:25+00:00"
+      "at": "2026-11-18T18:29:31+00:00"
     },
     {
       "source": "Google News: Azerbaijan EPC / FEED",
       "source_en": "Google News: Azerbaijan EPC / FEED",
       "id": "gn_epc",
       "fetched": 23,
-      "relevant": 5,
+      "relevant": 6,
       "error": null,
-      "at": "2026-11-18T12:30:25+00:00"
+      "at": "2026-11-18T18:29:31+00:00"
     },
     {
       "source": "Google News: SOCAR tender / contract",
       "source_en": "Google News: SOCAR tender / contract",
       "id": "gn_socar",
-      "fetched": 11,
+      "fetched": 10,
       "relevant": 1,
       "error": null,
-      "at": "2026-11-18T12:30:25+00:00"
+      "at": "2026-11-18T18:29:31+00:00"
     },
     {
       "source": "Google News: bp Azerbaijan projects",
       "source_en": "Google News: bp Azerbaijan projects",
       "id": "gn_bp",
-      "fetched": 33,
+      "fetched": 32,
       "relevant": 2,
       "error": null,
-      "at": "2026-11-18T12:30:25+00:00"
+      "at": "2026-11-18T18:29:31+00:00"
     },
     {
       "source": "Google News: EPC / fabrikasiya podratçıları",
       "source_en": "Google News: EPC / fabrication contractors",
       "id": "gn_contractors",
-      "fetched": 5,
+      "fetched": 7,
       "relevant": 0,
       "error": null,
-      "at": "2026-11-18T12:30:25+00:00"
+      "at": "2026-11-18T18:29:31+00:00"
     },
     {
       "source": "Google News: servis şirkətləri və operatorlar",
       "source_en": "Google News: service companies and operators",
       "id": "gn_service",
-      "fetched": 36,
+      "fetched": 34,
       "relevant": 2,
       "error": null,
-      "at": "2026-11-18T12:30:25+00:00"
+      "at": "2026-11-18T18:29:31+00:00"
     },
     {
       "source": "Google News: SOCAR qrupu və törəmələri",
       "source_en": "Google News: SOCAR group and affiliates",
       "id": "gn_socar_group",
-      "fetched": 10,
+      "fetched": 9,
       "relevant": 0,
       "error": null,
-      "at": "2026-11-18T12:30:25+00:00"
+      "at": "2026-11-18T18:29:31+00:00"
     },
     {
       "source": "Google News: JOCAP, Nobel qrupu, SOCAR Upstream",
@@ -3687,16 +3687,16 @@ window.__RADAR__ = {
       "fetched": 7,
       "relevant": 0,
       "error": null,
-      "at": "2026-11-18T12:30:25+00:00"
+      "at": "2026-11-18T18:29:31+00:00"
     },
     {
       "source": "Google News (RU dili, AZ): SOCAR tender / podrat",
       "source_en": "Google News (Russian, AZ): SOCAR tenders / contractors",
       "id": "gn_az",
       "fetched": 26,
-      "relevant": 2,
+      "relevant": 1,
       "error": null,
-      "at": "2026-11-18T12:30:25+00:00"
+      "at": "2026-11-18T18:29:31+00:00"
     },
     {
       "source": "Trend News (ümumi lent)",
@@ -3705,7 +3705,7 @@ window.__RADAR__ = {
       "fetched": 25,
       "relevant": 0,
       "error": null,
-      "at": "2026-11-18T12:30:25+00:00"
+      "at": "2026-11-18T18:29:31+00:00"
     },
     {
       "source": "Trend Energy bölməsi",
@@ -3714,7 +3714,7 @@ window.__RADAR__ = {
       "fetched": 160,
       "relevant": 0,
       "error": null,
-      "at": "2026-11-18T12:30:25+00:00"
+      "at": "2026-11-18T18:29:31+00:00"
     },
     {
       "source": "Offshore Energy (RSS)",
@@ -3723,7 +3723,7 @@ window.__RADAR__ = {
       "fetched": 50,
       "relevant": 0,
       "error": null,
-      "at": "2026-11-18T12:30:25+00:00"
+      "at": "2026-11-18T18:29:31+00:00"
     },
     {
       "source": "Rigzone (RSS)",
@@ -3732,16 +3732,16 @@ window.__RADAR__ = {
       "fetched": 20,
       "relevant": 0,
       "error": null,
-      "at": "2026-11-18T12:30:25+00:00"
+      "at": "2026-11-18T18:29:31+00:00"
     },
     {
       "source": "Upstream · OGJ · Offshore Mag · Rigzone · Offshore Energy (Google News)",
       "source_en": "Upstream · OGJ · Offshore Mag · Rigzone · Offshore Energy (Google News)",
       "id": "gn_trade_press",
-      "fetched": 52,
+      "fetched": 53,
       "relevant": 3,
       "error": null,
-      "at": "2026-11-18T12:30:25+00:00"
+      "at": "2026-11-18T18:29:31+00:00"
     },
     {
       "source": "Google News: contract award / EPC / FEED (Azərbaycan, Xəzər)",
@@ -3750,25 +3750,25 @@ window.__RADAR__ = {
       "fetched": 34,
       "relevant": 2,
       "error": null,
-      "at": "2026-11-18T12:30:25+00:00"
+      "at": "2026-11-18T18:29:31+00:00"
     },
     {
       "source": "Google News: brownfield / turnaround / offshore maintenance / valve replacement",
       "source_en": "Google News: brownfield / turnaround / offshore maintenance / valve replacement",
       "id": "gn_brownfield",
-      "fetched": 22,
+      "fetched": 26,
       "relevant": 0,
       "error": null,
-      "at": "2026-11-18T12:30:25+00:00"
+      "at": "2026-11-18T18:29:31+00:00"
     },
     {
       "source": "Google News: pipeline expansion / refinery upgrade / compression",
       "source_en": "Google News: pipeline expansion / refinery upgrade / compression",
       "id": "gn_expansion",
-      "fetched": 20,
+      "fetched": 19,
       "relevant": 4,
       "error": null,
-      "at": "2026-11-18T12:30:25+00:00"
+      "at": "2026-11-18T18:29:31+00:00"
     },
     {
       "source": "Azfen xəbərləri",
@@ -3777,7 +3777,7 @@ window.__RADAR__ = {
       "fetched": 10,
       "relevant": 0,
       "error": null,
-      "at": "2026-11-18T12:30:25+00:00"
+      "at": "2026-11-18T18:29:31+00:00"
     },
     {
       "source": "Baku Shipyard xəbərləri",
@@ -3786,7 +3786,7 @@ window.__RADAR__ = {
       "fetched": 0,
       "relevant": 0,
       "error": null,
-      "at": "2026-11-18T12:30:25+00:00"
+      "at": "2026-11-18T18:29:31+00:00"
     },
     {
       "source": "SOCAR-KBR xəbər və tender elanları",
@@ -3795,7 +3795,7 @@ window.__RADAR__ = {
       "fetched": 1,
       "relevant": 0,
       "error": null,
-      "at": "2026-11-18T12:30:25+00:00"
+      "at": "2026-11-18T18:29:31+00:00"
     },
     {
       "source": "World Bank satınalma (Azərbaycan)",
@@ -3804,7 +3804,7 @@ window.__RADAR__ = {
       "fetched": 38,
       "relevant": 1,
       "error": null,
-      "at": "2026-11-18T12:30:25+00:00"
+      "at": "2026-11-18T18:29:31+00:00"
     },
     {
       "source": "EBRD ECEPP satınalma (Azərbaycan)",
@@ -3813,7 +3813,7 @@ window.__RADAR__ = {
       "fetched": 31,
       "relevant": 0,
       "error": null,
-      "at": "2026-11-18T12:30:25+00:00"
+      "at": "2026-11-18T18:29:31+00:00"
     },
     {
       "source": "etender.gov.az (dövlət satınalma portalı)",
@@ -3858,7 +3858,7 @@ window.__RADAR__ = {
       "fetched": 31,
       "relevant": 12,
       "error": null,
-      "at": "2026-11-18T12:30:25+00:00"
+      "at": "2026-11-18T18:29:31+00:00"
     },
     {
       "source": "AICC Caspian (asset integrity, corrosion)",
@@ -3867,7 +3867,7 @@ window.__RADAR__ = {
       "fetched": 1,
       "relevant": 1,
       "error": null,
-      "at": "2026-11-18T12:30:25+00:00"
+      "at": "2026-11-18T18:29:31+00:00"
     }
   ],
   "companies": [
