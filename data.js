@@ -1,5 +1,5 @@
 window.__RADAR__ = {
-  "generated_at": "2026-11-24T14:28:44+00:00",
+  "generated_at": "2026-11-24T20:25:01+00:00",
   "demo": false,
   "profile": {
     "company": "Portfolio",
@@ -155,7 +155,7 @@ window.__RADAR__ = {
       "deadline": null,
       "published": "2026-11-24",
       "first_seen": "2026-11-24T14:28:44+00:00",
-      "is_new": true,
+      "is_new": false,
       "changes": [],
       "demo": false,
       "score10": 4,
@@ -258,18 +258,7 @@ window.__RADAR__ = {
       "segment": "Layihə siqnalı",
       "signal_type": "Award",
       "zone": "intel",
-      "related": [
-        {
-          "title": "TotalEnergies awards Vallourec tubulars contract for Absheron gas field tieback - Offshore Magazine",
-          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOWmV4VnFnalFhQmltanpBMEtwQ19LV0M0WG0xcGhTd2ZFeFlLQ0htMGNkWVA2NmR0U1RxR0tWRm0yYkw1ZTYyaWxiQjNUWlY3TmVCXzRhV0N5ZWVva294cUtfRHYxVk1FTTdjOVJnN3cxd1Vrcjc5bGN3SWRfck54NklLUktkaEhpRkt5WDFWWl9QUzFZZ3MyV3A3NWxDYkhheHBjMklpODhjME81c1dROUVMQW5JTjRnQ213TUxDT1dTenZob0Z0X1pieEV6QWdTRHJyZHF0ckVmQQ?oc=5",
-          "source": "Upstream · OGJ · Offshore Mag · Rigzone · Offshore Energy (Google News)"
-        },
-        {
-          "title": "TotalEnergies awards contract for Absheron gas field - Oil & Gas Journal",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPU25ucXJjTGZRMGpHcklqak54a1JNaV9JV0NLVk5pWVhiUkZFel9IYURsVWN3VVdsaElUeU9sQVkwa1NLM3FGQ0dVU2JrYXBKZVBROGtfWGstUWNpVElKXzVKYlg3Q0ZhNG5paXo4LWt0ZHJnZ1hOcEF4Y25yV0VlMmYxLXFDUUpTanlKSl91RXVzLXVTZE5TOW1MQmFScEtEcVhpOWJRaEFaMkRFME9Z?oc=5",
-          "source": "Upstream · OGJ · Offshore Mag · Rigzone · Offshore Energy (Google News)"
-        }
-      ]
+      "related": []
     },
     {
       "id": "7c1559576e72",
@@ -455,7 +444,7 @@ window.__RADAR__ = {
       "deadline": null,
       "published": null,
       "first_seen": "2026-11-24T14:28:44+00:00",
-      "is_new": true,
+      "is_new": false,
       "changes": [],
       "demo": false,
       "score10": 3,
@@ -500,7 +489,7 @@ window.__RADAR__ = {
       "deadline": null,
       "published": null,
       "first_seen": "2026-11-24T14:28:44+00:00",
-      "is_new": true,
+      "is_new": false,
       "changes": [],
       "demo": false,
       "score10": 3,
@@ -3402,7 +3391,7 @@ window.__RADAR__ = {
       "fetched": 30,
       "relevant": 0,
       "error": null,
-      "at": "2026-11-24T14:28:44+00:00"
+      "at": "2026-11-24T20:25:01+00:00"
     },
     {
       "source": "GlobalTenders - Azerbaijan Oil & Gas",
@@ -3411,16 +3400,16 @@ window.__RADAR__ = {
       "fetched": 20,
       "relevant": 0,
       "error": null,
-      "at": "2026-11-24T14:28:44+00:00"
+      "at": "2026-11-24T20:25:01+00:00"
     },
     {
       "source": "Trend Tenders bölməsi",
       "source_en": "Trend Tenders section",
       "id": "trend_tenders",
-      "fetched": 182,
+      "fetched": 181,
       "relevant": 2,
       "error": null,
-      "at": "2026-11-24T14:28:44+00:00"
+      "at": "2026-11-24T20:25:01+00:00"
     },
     {
       "source": "ADSEA elanları (satınalma, EOI)",
@@ -3429,7 +3418,7 @@ window.__RADAR__ = {
       "fetched": 9,
       "relevant": 2,
       "error": null,
-      "at": "2026-11-24T14:28:44+00:00"
+      "at": "2026-11-24T20:25:01+00:00"
     },
     {
       "source": "bp Azerbaijan xəbərləri (press-reliz)",
@@ -3438,79 +3427,79 @@ window.__RADAR__ = {
       "fetched": 10,
       "relevant": 2,
       "error": null,
-      "at": "2026-11-24T14:28:44+00:00"
+      "at": "2026-11-24T20:25:01+00:00"
     },
     {
       "source": "Google News: Azerbaijan EPC / FEED",
       "source_en": "Google News: Azerbaijan EPC / FEED",
       "id": "gn_epc",
-      "fetched": 30,
-      "relevant": 4,
-      "error": null,
-      "at": "2026-11-24T14:28:44+00:00"
+      "fetched": 0,
+      "relevant": 0,
+      "error": "RuntimeError: HTTP Error 503: Service Unavailable",
+      "at": "2026-11-24T20:25:01+00:00"
     },
     {
       "source": "Google News: SOCAR tender / contract",
       "source_en": "Google News: SOCAR tender / contract",
       "id": "gn_socar",
-      "fetched": 38,
-      "relevant": 2,
-      "error": null,
-      "at": "2026-11-24T14:28:44+00:00"
+      "fetched": 0,
+      "relevant": 0,
+      "error": "RuntimeError: HTTP Error 503: Service Unavailable",
+      "at": "2026-11-24T20:25:01+00:00"
     },
     {
       "source": "Google News: bp Azerbaijan projects",
       "source_en": "Google News: bp Azerbaijan projects",
       "id": "gn_bp",
-      "fetched": 32,
-      "relevant": 3,
-      "error": null,
-      "at": "2026-11-24T14:28:44+00:00"
+      "fetched": 0,
+      "relevant": 0,
+      "error": "RuntimeError: HTTP Error 503: Service Unavailable",
+      "at": "2026-11-24T20:25:01+00:00"
     },
     {
       "source": "Google News: EPC / fabrikasiya podratçıları",
       "source_en": "Google News: EPC / fabrication contractors",
       "id": "gn_contractors",
-      "fetched": 9,
+      "fetched": 0,
       "relevant": 0,
-      "error": null,
-      "at": "2026-11-24T14:28:44+00:00"
+      "error": "RuntimeError: HTTP Error 503: Service Unavailable",
+      "at": "2026-11-24T20:25:01+00:00"
     },
     {
       "source": "Google News: servis şirkətləri və operatorlar",
       "source_en": "Google News: service companies and operators",
       "id": "gn_service",
-      "fetched": 37,
-      "relevant": 3,
-      "error": null,
-      "at": "2026-11-24T14:28:44+00:00"
+      "fetched": 0,
+      "relevant": 0,
+      "error": "RuntimeError: HTTP Error 503: Service Unavailable",
+      "at": "2026-11-24T20:25:01+00:00"
     },
     {
       "source": "Google News: SOCAR qrupu və törəmələri",
       "source_en": "Google News: SOCAR group and affiliates",
       "id": "gn_socar_group",
-      "fetched": 17,
+      "fetched": 0,
       "relevant": 0,
-      "error": null,
-      "at": "2026-11-24T14:28:44+00:00"
+      "error": "RuntimeError: HTTP Error 503: Service Unavailable",
+      "at": "2026-11-24T20:25:01+00:00"
     },
     {
       "source": "Google News: JOCAP, Nobel qrupu, SOCAR Upstream",
       "source_en": "Google News: JOCAP, Nobel group, SOCAR Upstream",
       "id": "gn_nobel_jocap",
-      "fetched": 2,
+      "fetched": 0,
       "relevant": 0,
-      "error": null,
-      "at": "2026-11-24T14:28:44+00:00"
+      "error": "RuntimeError: HTTP Error 503: Service Unavailable",
+      "at": "2026-11-24T20:25:01+00:00"
     },
     {
       "source": "Google News (RU dili, AZ): SOCAR tender / podrat",
       "source_en": "Google News (Russian, AZ): SOCAR tenders / contractors",
       "id": "gn_az",
-      "fetched": 31,
+      "fetched": 0,
       "relevant": 0,
-      "error": null,
-      "at": "2026-11-24T14:28:44+00:00"
+      "error": "RuntimeError: HTTP Error 503: Service Unavailable",
+      "at": "2026-11-24T20:25:01+00:00"
     },
     {
       "source": "Trend News (ümumi lent)",
@@ -3519,7 +3508,7 @@ window.__RADAR__ = {
       "fetched": 25,
       "relevant": 0,
       "error": null,
-      "at": "2026-11-24T14:28:44+00:00"
+      "at": "2026-11-24T20:25:01+00:00"
     },
     {
       "source": "Trend Energy bölməsi",
@@ -3528,7 +3517,7 @@ window.__RADAR__ = {
       "fetched": 160,
       "relevant": 2,
       "error": null,
-      "at": "2026-11-24T14:28:44+00:00"
+      "at": "2026-11-24T20:25:01+00:00"
     },
     {
       "source": "Offshore Energy (RSS)",
@@ -3537,7 +3526,7 @@ window.__RADAR__ = {
       "fetched": 50,
       "relevant": 0,
       "error": null,
-      "at": "2026-11-24T14:28:44+00:00"
+      "at": "2026-11-24T20:25:01+00:00"
     },
     {
       "source": "Rigzone (RSS)",
@@ -3546,43 +3535,43 @@ window.__RADAR__ = {
       "fetched": 20,
       "relevant": 0,
       "error": null,
-      "at": "2026-11-24T14:28:44+00:00"
+      "at": "2026-11-24T20:25:01+00:00"
     },
     {
       "source": "Upstream · OGJ · Offshore Mag · Rigzone · Offshore Energy (Google News)",
       "source_en": "Upstream · OGJ · Offshore Mag · Rigzone · Offshore Energy (Google News)",
       "id": "gn_trade_press",
-      "fetched": 75,
-      "relevant": 2,
-      "error": null,
-      "at": "2026-11-24T14:28:44+00:00"
+      "fetched": 0,
+      "relevant": 0,
+      "error": "RuntimeError: HTTP Error 503: Service Unavailable",
+      "at": "2026-11-24T20:25:01+00:00"
     },
     {
       "source": "Google News: contract award / EPC / FEED (Azərbaycan, Xəzər)",
       "source_en": "Google News: contract award / EPC / FEED (Azerbaijan, Caspian)",
       "id": "gn_awards",
-      "fetched": 63,
-      "relevant": 4,
-      "error": null,
-      "at": "2026-11-24T14:28:44+00:00"
+      "fetched": 0,
+      "relevant": 0,
+      "error": "RuntimeError: HTTP Error 503: Service Unavailable",
+      "at": "2026-11-24T20:25:01+00:00"
     },
     {
       "source": "Google News: brownfield / turnaround / offshore maintenance / valve replacement",
       "source_en": "Google News: brownfield / turnaround / offshore maintenance / valve replacement",
       "id": "gn_brownfield",
-      "fetched": 12,
+      "fetched": 0,
       "relevant": 0,
-      "error": null,
-      "at": "2026-11-24T14:28:44+00:00"
+      "error": "RuntimeError: HTTP Error 503: Service Unavailable",
+      "at": "2026-11-24T20:25:01+00:00"
     },
     {
       "source": "Google News: pipeline expansion / refinery upgrade / compression",
       "source_en": "Google News: pipeline expansion / refinery upgrade / compression",
       "id": "gn_expansion",
-      "fetched": 23,
-      "relevant": 2,
-      "error": null,
-      "at": "2026-11-24T14:28:44+00:00"
+      "fetched": 0,
+      "relevant": 0,
+      "error": "RuntimeError: HTTP Error 429: Too Many Requests",
+      "at": "2026-11-24T20:25:01+00:00"
     },
     {
       "source": "Azfen xəbərləri",
@@ -3591,7 +3580,7 @@ window.__RADAR__ = {
       "fetched": 10,
       "relevant": 0,
       "error": null,
-      "at": "2026-11-24T14:28:44+00:00"
+      "at": "2026-11-24T20:25:01+00:00"
     },
     {
       "source": "Baku Shipyard xəbərləri",
@@ -3600,7 +3589,7 @@ window.__RADAR__ = {
       "fetched": 0,
       "relevant": 0,
       "error": null,
-      "at": "2026-11-24T14:28:44+00:00"
+      "at": "2026-11-24T20:25:01+00:00"
     },
     {
       "source": "SOCAR-KBR xəbər və tender elanları",
@@ -3609,7 +3598,7 @@ window.__RADAR__ = {
       "fetched": 1,
       "relevant": 0,
       "error": null,
-      "at": "2026-11-24T14:28:44+00:00"
+      "at": "2026-11-24T20:25:01+00:00"
     },
     {
       "source": "World Bank satınalma (Azərbaycan)",
@@ -3618,7 +3607,7 @@ window.__RADAR__ = {
       "fetched": 38,
       "relevant": 1,
       "error": null,
-      "at": "2026-11-24T14:28:44+00:00"
+      "at": "2026-11-24T20:25:01+00:00"
     },
     {
       "source": "EBRD ECEPP satınalma (Azərbaycan)",
@@ -3627,7 +3616,7 @@ window.__RADAR__ = {
       "fetched": 31,
       "relevant": 0,
       "error": null,
-      "at": "2026-11-24T14:28:44+00:00"
+      "at": "2026-11-24T20:25:01+00:00"
     },
     {
       "source": "etender.gov.az (dövlət satınalma portalı)",
@@ -3672,16 +3661,16 @@ window.__RADAR__ = {
       "fetched": 31,
       "relevant": 12,
       "error": null,
-      "at": "2026-11-24T14:28:44+00:00"
+      "at": "2026-11-24T20:25:01+00:00"
     },
     {
       "source": "AICC Caspian (asset integrity, corrosion)",
       "source_en": "AICC Caspian (asset integrity, corrosion)",
       "id": "aicc",
-      "fetched": 1,
-      "relevant": 1,
-      "error": null,
-      "at": "2026-11-24T14:28:44+00:00"
+      "fetched": 0,
+      "relevant": 0,
+      "error": "RuntimeError: <urlopen error [Errno 101] Network is unreachable>",
+      "at": "2026-11-24T20:25:01+00:00"
     }
   ],
   "companies": [
@@ -5657,27 +5646,6 @@ window.__RADAR__ = {
       "relevance": "other",
       "source_id": "iteca",
       "tba": false
-    },
-    {
-      "title": "AICC Caspian: Asset Integrity, Corrosion & Coatings Conference & Showcase",
-      "start": "2025-12-09",
-      "end": "2025-12-11",
-      "dates_text": "",
-      "url": "https://www.aicccaspian.com/",
-      "organizer": "Aldrich Energy",
-      "venue": "Baku",
-      "ticket": "https://www.aicccaspian.com/visitor-registration/",
-      "stand": "https://www.aicccaspian.com/become-an-exhibitor/",
-      "delegate": "https://www.aicccaspian.com/delegate-registration/",
-      "sponsor": "https://www.aicccaspian.com/sponsorship-enquiry/",
-      "id": "83e153673d",
-      "tags": [
-        "integrity",
-        "oil_gas"
-      ],
-      "relevance": "core",
-      "source_id": "aicc",
-      "tba": true
     }
   ],
   "buyer_intel": {
